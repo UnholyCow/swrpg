@@ -1,0 +1,26 @@
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Squada+One);
+
+$body-font: 'Ubuntu', sans-serif;
+$header-font: 'Squada One', sans-serif;
+
+/* Colors */
+$bkg: #333;
+$eoteblue: #76CDDA;
+$eotered: #761213;
+$eotegreen: #51634B;
+$eotebrown: #B1A58F;
+$eoteslate: #495558;
+$eotetan: #C8BCAB;
+$eoteyellow: #DFC663;
+$eoteblack: #222;
+$eotecream: #F4F4F2;
+$eotedarkblue: #284666;
+
+/* Tools */
+$testborder: 1px solid red;
+
+/* Media Queries */
+$firstbreak: 51em;
+$secondbreak: 91em;

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Star Wars Roleplaying</title>
+	<link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link rel="icon" href="img/icon.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<div id="hamburger">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="logo"></div>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="groups.html" id="groups-nav">Groups</a></li>
+			<li><a href="rules.html" id="rules-nav" class="active">Rules</a></li>
+			<li><a href="sessions.html" id="sessions-nav">Sessions</a></li>
+		</ul>
+	</nav>
+	<section class="sub-menu">
+		<ul>
+			<li><a href="results.html">Results</a></li>
+			<li><a href="crits.html" class="active">Criticals</a></li>
+			<li><a href="initiative.html">Initiative Tracker</a></li>
+		</ul>
+	</section>
+	<div class="container">
+	<div class="section">
+		<div class="resultsSwitch">
+			<ul>
+				<li class="active" id="character">Characters</li>
+				<li id="vehicle">Vehicles</li>
+			</ul>
+		</div>
+	</div>
+	<div id="die-results" class="section">
+		<h2>Critical Injury Result</h2>
+		<table class="eoteTable justifyLast">
+			<tr>
+				<th>d100</th>
+				<th>Severity</th>
+				<th>Result</th>
+			</tr>
+			<tr>
+				<td>01-05</td>
+				<td><span>Easy</span> (<div class="difficulty"></div>)</td>
+				<td><span>Minor Nick:</span> The target suffers 1 strain.</td>
+			</tr>
+			<tr>
+				<td>06-10</td>
+				<td><span>Easy</span> (<div class="difficulty"></div>)</td>
+				<td><span>Slowed Down:</span> Target can only act in the last allied initiative slot on their next turn.</td>
+			</tr>
+			<tr>
+				<td>11-15</td>
+				<td><span>Easy</span> (<div class="difficulty"></div>)</td>
+				<td><span>Sudden Jolt:</span> The target drops whatever is in hand.</td>
+			</tr>
+			<tr>
+				<td>16-20</td>
+				<td><span>Easy</span> (<div class="difficulty"></div>)</td>
+				<td><span>Distracted:</span> The target cannot perform a free maneuver during their next turn.</td>
+			</tr>
+			<tr>
+				<td>21-25</td>
+				<td><span>Easy</span> (<div class="difficulty"></div>)</td>
+				<td><span>Off Balance:</span> Add <div class="setback"></div> to next skill check.</td>
+			</tr>
+			<tr>
+				<td>26-30</td>
+				<td><span>Easy</span> (<div class="difficulty"></div>)</td>
+				<td><span>Discouraging Wound:</span> Flip one light side Destiny Point to the dark side. (Opposite if NPC)</td>
+			</tr>
+			<tr>
+				<td>31-35</td>
+				<td><span>Easy</span> (<div class="difficulty"></div>)</td>
+				<td><span>Stunned:</span> Target is staggered until the end of their next turn.</td>
+			</tr>
+			<tr>
+				<td>36-40</td>
+				<td><span>Easy</span> (<div class="difficulty"></div>)</td>
+				<td><span>Stinger:</span> Increase difficulty of next check by one.</td>
+			</tr>
+			<tr>
+				<td>41-45</td>
+				<td><span>Average</span> (<div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Bowled Over:</span> Target is knocked prone and suffers 1 strain.</td>
+			</tr>
+			<tr>
+				<td>46-50</td>
+				<td><span>Average</span> (<div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Head Ringer:</span> Target increases the difficulty of Cunning and Intellect checks by one <br>until the end of the encounter.</td>
+			</tr>
+			<tr>
+				<td>51-55</td>
+				<td><span>Average</span> (<div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Fearsome Wound:</span> Target increases the difficulty of Presence and Willpower checks by one <br>until the end of the encounter.</td>
+			</tr>
+			<tr>
+				<td>56-60</td>
+				<td><span>Average</span> (<div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Agonizing Wound:</span> Target increases the difficulty of Brawn and Agility checks by one <br>until the end of the encounter.</td>
+			</tr>
+			<tr>
+				<td>61-65</td>
+				<td><span>Average</span> (<div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Slightly Dazed:</span> Target is disoriented until the end of the encounter.</td>
+			</tr>
+			<tr>
+				<td>66-70</td>
+				<td><span>Average</span> (<div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Scattered Senses:</span> Target removes <div class="boost"></div> from skill checks until the end of the encounter.</td>
+			</tr>
+			<tr>
+				<td>71-75</td>
+				<td><span>Average</span> (<div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Hamstrung:</span> Target loses their free maneuver until the end of the encounter.</td>
+			</tr>
+			<tr>
+				<td>76-80</td>
+				<td><span>Average</span> (<div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Overpowered:</span> The target leaves themselves open, and the attacker may immediately attempt <br> another free attack against them, using the exact same pool as the original attack.</td>
+			</tr>
+			<tr>
+				<td>81-85</td>
+				<td><span>Average</span> (<div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Winded:</span> Until the end of the encounter, the target cannot suffer strain to activate any <br> abilities or gain additional maneuvers.</td>
+			</tr>
+			<tr>
+				<td>86-90</td>
+				<td><span>Average</span> (<div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Compromised:</span> Increase difficulty of all skill checks until the end of the encounter.</td>
+			</tr>
+			<tr>
+				<td>91-95</td>
+				<td><span>Hard</span> (<div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>At the Brink:</span> Target suffers 1 strain each time they perform an action.</td>
+			</tr>
+			<tr>
+				<td>96-100</td>
+				<td><span>Hard</span> (<div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Crippled:</span> One of the target's limbs (selected by the GM) is crippled until healed or replaced. <br> Increase the difficulty of all checks that require use of that limb by one.</td>
+			</tr>
+			<tr>
+				<td>101-105</td>
+				<td><span>Hard</span> (<div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Maimed:</span> One of the target's limbs (selected by the GM) is permanently lost. <br> Checks that require use of that limb cannot be performed. All other actions gain <div class="setback"></div>.</td>
+			</tr>
+			<tr>
+				<td>106-110</td>
+				<td><span>Hard</span> (<div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Horrific Injury:</span> Roll 1d10 to determine one of the target's characteristics.<br>1-3 for Brawn, 4-6 for Agility, 7 for Intellect, 8 for Cunning, 9 for Presence, 10 for Willpower.<br> Until this Critical Injury is healed, treat that characteristic as one point lower.</td>
+			</tr>
+			<tr>
+				<td>111-115</td>
+				<td><span>Hard</span> (<div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Temporarily Lame:</span> Until this Critical Injury is healed,<br>the target cannot perform more than one maneuver during their turn.</td>
+			</tr>
+			<tr>
+				<td>116-120</td>
+				<td><span>Hard</span> (<div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Blinded:</span> The target can no longer see. Upgrade the difficulty of all checks twice.<br>Upgrade the difficulty of Perception and Vigilance checks three times.</td>
+			</tr>
+			<tr>
+				<td>121-125</td>
+				<td><span>Hard</span> (<div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Knocked Senseless:</span> The target is staggered for the remainder of the encounter.</td>
+			</tr>
+			<tr>
+				<td>126-130</td>
+				<td><span>Daunting</span><br>(<div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Gruesome Injury:</span> Roll 1d10 to determine one of the target's characteristics.<br>1-3 for Brawn, 4-6 for Agility, 7 for Intellect, 8 for Cunning, 9 for Presence, 10 for Willpower.<br> That characteristic is permanently reduced by one, to a minimum of one.</td>
+			</tr>
+			<tr>
+				<td>131-140</td>
+				<td><span>Daunting</span><br>(<div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Bleeding Out:</span> Every round, the target suffers 1 wound and 1 strain at the beginning of their turn.<br>For every five wounds they suffer beyond their wound threshold, they suffer one additional Critical Injury.<br>Roll on the chart, suffering the injury. (If this  injury is suffered, roll again.)</td>
+			</tr>
+			<tr>
+				<td>141-150</td>
+				<td><span>Daunting</span><br>(<div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>The End is Nigh:</span> The target will die after the final initiative slot during the next round.</td>
+			</tr>
+			<tr>
+				<td>151+</td>
+				<td>-</td>
+				<td><span>Dead:</span> Complete, obliterated death.</td>
+			</tr>
+		</table>
+	</div>
+	<div id="vehicle-die-results" class="section hidden">
+		<h2>Critical Hit Result</h2>
+		<table class="eoteTable justifyLast">
+			<tr>
+				<th>d100</th>
+				<th>Severity</th>
+				<th>Result</th>
+			</tr>
+			<tr>
+				<td>01-09</td>
+				<td><span>Easy</span> (<div class="difficulty"></div>)</td>
+				<td><span>Mechanical Stress:</span> The ship or vehicle suffers one points of system strain.</td>
+			</tr>
+			<tr>
+				<td>10-18</td>
+				<td><span>Easy</span> (<div class="difficulty"></div>)</td>
+				<td><span>Jostled:</span> A small explosion or impact rocks the vehicle. All crew members suffer one strain and are disoriented for one round.</td>
+			</tr>
+			<tr>
+				<td>19-27</td>
+				<td><span>Easy</span> (<div class="difficulty"></div>)</td>
+				<td><span>Losing Power to Shields:</span> Decrease defense in affected defense zone by one until the Critical Hit is repaired.<br>If the ship or vehicle has no defense, suffer one point of system strain..</td>
+			</tr>
+			<tr>
+				<td>28-36</td>
+				<td><span>Easy</span> (<div class="difficulty"></div>)</td>
+				<td><span>Knocked Off Course:</span> A particularly strong blast or impact sends the ship or vehicle careening<br>off in a new direction. On his next turn, the pilot cannot execcute any maneuvers and must make a<br><span>Piloting check</span> to regain control. The difficulty of this check depends on his current speed.</td>
+			</tr>
+			<tr>
+				<td>37-45</td>
+				<td><span>Easy</span> (<div class="difficulty"></div>)</td>
+				<td><span>Tailspin:</span> All firing from the ship or vehicle suffers <div class="setback"></div> <div class="setback"></div> until the end of the pilot's next turn.<br>All crewmembers are immobilized until the end of the pilot's next turn.</td>
+			</tr>
+			<tr>
+				<td>46-54</td>
+				<td><span>Easy</span> (<div class="difficulty"></div>)</td>
+				<td><span>Component Hit:</span> One component of the attacker's choice is knocked offline, and is rendered inoperable<br>until the end of the following round. See Component lists below.</td>
+			</tr>
+			<tr>
+				<td>55-63</td>
+				<td><span>Average</span> (<div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Shields Failing:</span> Reduce defense in all defense zones by one point until the Critical Hit is repaired.<br>If the ship or vehicle has no defense, suffer two points of system strain.</td>
+			</tr>
+			<tr>
+				<td>64-72</td>
+				<td><span>Average</span> (<div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Navicomputer Failure:</span> The navicomputer (or its astromech) fails and ship cannot make the<br>jump to hyperspace until the Critical Hit is repaired. If the ship or vehicle is without a hyperdrive<br>its navigation systems fail, leaving it flying or driving blind, unable to tell where it is or where it's going.</td>
+			</tr>
+			<tr>
+				<td>73-81</td>
+				<td><span>Average</span> (<div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Power Fluctuations:</span> The ship or vehicle is beset by random power surges and outages.<br>The pilot cannot voluntarily inflict system strain on the ship until the Critical Hit is repaired.</td>
+			</tr>
+			<tr>
+				<td>82-90</td>
+				<td><span>Hard</span> (<div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Shields Down:</span> Decrease defense in affected zone to zero, and decrease defense in all other zones by one<br>until the Crit is repaired. If the ship or vehicle is without defense, suffer four points of system strain.</td>
+			</tr>
+			<tr>
+				<td>91-99</td>
+				<td><span>Hard</span> (<div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Engine Damaged:</span> The ship or vehicle's maximum speed is reduced by one point, to a minimum of one until the Crit is repaired.</td>
+			</tr>
+			<tr>
+				<td>100-108</td>
+				<td><span>Hard</span> (<div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Shield Overload:</span> The shields completely fail. Decrease the defense of all zones to zero. The Crit cannot be repaired<br>until the end of the encounter, and the ship suffer two points of system strain. If the ship or vehicle is without defense,<br>reduce armor by 1 until the Crit is repaired.</td>
+			</tr>
+			<tr>
+				<td>109-117</td>
+				<td><span>Hard</span> (<div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Engines Down:</span> Maximum speed reduced to zero until the Crit is repaired, although it continues<br>on its present course due to momentum. In addition, the ship cannot execute any maneuvers until the Crit is repaired.</td>
+			</tr>
+			<tr>
+				<td>118-126</td>
+				<td><span>Hard</span> (<div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Major System Failure:</span> One component of the attacker's choice is heavily damaged and inoperable until repaired.<br>See component lists below.</td>
+			</tr>
+			<tr>
+				<td>127-133</td>
+				<td><span>Daunting</span><br>(<div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Major Hull Breach:</span> A huge, gaping tear is torn in the ship's hull and it depressurizes.<br>Silhouette 4 and lower depressurize in the same number of rounds as its silhouette. Larger ships tend to be<br>highly compartmentalized, but parts do. Vehicles in atmosphere instead suffer the Destabilized Critical Hit instead.</td>
+			</tr>
+			<tr>
+				<td>134-138</td>
+				<td><span>Daunting</span><br>(<div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Destabilized:</span> The ship or vehicle's structural integrity is seriously damaged.<br>Reduce both hull trauma and system strain thresholds to half their original values until repaired.</td>
+			</tr>
+			<tr>
+				<td>139-144</td>
+				<td><span>Daunting</span><br>(<div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Fire!:</span> Fire rages through the ship and it immediately takes 2 points of system strain.<br>Anyone caught in the fire takes damage as on p214. The fire can be put out with some quick thinking and appropriate skill.<br>Vigilance and/or Cool checks at the GMs discretion. Once going, a fire takes half of the ship's silhouette points in rounds to put out.</td>
+			</tr>
+			<tr>
+				<td>145-153</td>
+				<td><span>Daunting</span><br>(<div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div>)</td>
+				<td><span>Breaking Up:</span> The vehicle or ship has suffered so much damage that it begins to come apart,<br>breaking up and disintegrating around the crew. At the end of the following round, the ship is completely destroyed<br>and the surrounding environment is littered with debris. Anyone aboard has one round to get to an escape pod, bail out,<br>or dive for the nearest hatch before they are lost.</td>
+			</tr>
+			<tr>
+				<td>154+</td>
+				<td>-</td>
+				<td><span>Vaporized:</span> Complete destruction in a dramatic explosion. Nothing survives.</td>
+			</tr>
+		</table>
+		<h2>Small Ship or Vehicle Components</h2>
+		<table class="eoteTable justifyLast">
+			<tr>
+				<th>Component</th>
+				<th>Description</th>
+			</tr>
+			<tr>
+				<td>Support Droid</td>
+				<td>Typically an astromech, the droid is knocked out of comission until it can be repaired. If this droid is a PC, it immediately suffers 10 strain.</td>
+			</tr>
+			<tr>
+				<td>Ejection System</td>
+				<td>The pilot and/or crew are unable to escape the ship in an emergency until this system resets or is repaired, depending on the severity of the Crit.</td>
+			</tr>
+			<tr>
+				<td>Weapon System</td>
+				<td>One weapon system of the attacker's choice is knocked offline.</td>
+			</tr>
+			<tr>
+				<td>Sensors</td>
+				<td>Sensor range is reduced by one range band. If the ship's sensors are already close range, they are knocked offline completely and the ship is effectively blind until the sensors are rebooted or repaired, depending on the severity of the Crit.</td>
+			</tr>
+			<tr>
+				<td>Comms</td>
+				<td>The comms are knocked offline and the ship can neither send nor receive any electronic signals or data.</td>
+			</tr>
+			<tr>
+				<td>Sublight Engines</td>
+				<td>The engines are slightly damaged and the ship's speed is reduced by one point.</td>
+			</tr>
+			<tr>
+				<td>Hyperdrive</td>
+				<td>Either the hyperdrive or the navicomputer are damaged, and the ship cannot make the jump to hyperspace.</td>
+			</tr>
+			<tr>
+				<td>Shields</td>
+				<td>The ship's defense is reduced by one point in all zones.</td>
+			</tr>
+		</table>
+		<h2>Large Ship or Vehicle Components</h2>
+		<table class="eoteTable justifyLast">
+			<tr>
+				<th>Component</th>
+				<th>Description</th>
+			</tr>
+			<tr>
+				<td>Landing Gear</td>
+				<td>The ship's landing gear is stuck. Any attempt to land a ship that cannot deploy its landing gear results in two points of hull trauma and system strain. This only applies to ships of silhouette 5; anything larger is unable to enter a planet's atmosphere.</td>
+			</tr>
+			<tr>
+				<td>Weapon System</td>
+				<td>One weapon system of the attacker's choice is knocked offline.</td>
+			</tr>
+			<tr>
+				<td>Sensors</td>
+				<td>Sensor range is reduced by one range band.</td>
+			</tr>
+			<tr>
+				<td>Comms</td>
+				<td>The comms are knocked offline and the ship can neither send nor receive any electronic signals or data.</td>
+			</tr>
+			<tr>
+				<td>Sublight Engines</td>
+				<td>The engines are slightly damaged and the ship's speed is reduced by one point.</td>
+			</tr>
+			<tr>
+				<td>Hyperdrive</td>
+				<td>The hyperdrive is damaged and the ship cannot make the jump to hyperspace.</td>
+			</tr>
+			<tr>
+				<td>Shields</td>
+				<td>The ship's defense is reduced by one point in all zones.</td>
+			</tr>
+			<tr>
+				<td>Landing Bay</td>
+				<td>One of the vessel's landing bays is knocked out of commission. The severity is left up to the GM.</td>
+			</tr>
+			<tr>
+				<td>Cargo Hold</td>
+				<td>The ship is hulled and one of the cargo holds is exposed to vacuum. Cargo may be damaged or lost and everyone in the cargo hold takes damage according to the GM.</td>
+			</tr>
+			<tr>
+				<td>Bridge</td>
+				<td>The bridge is damaged. No starship maneuvers or actions may be executed aboard the ship until the damage is repaired. In addition, the ship continues on its current course and speed, and cannot be stopped or change course until the damage is fixed.</td>
+			</tr>
+		</table>
+		<div class="section footer">
+			<p class="aurebesh-bold">This Star Wars site is created solely to enjoy the Fantasy Flight Games tabletop game. It is in no way official.</p>
+		</div>
+	</div>
+	<script src="js/results-swap.js"></script>
+	<div class="back-to-top"><a href="#">TOP</a></div>
+	<script src="js/main.js"></script>
+</body>
+</html>

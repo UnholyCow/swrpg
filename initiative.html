@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Star Wars Roleplaying</title>
+	<link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link rel="icon" href="img/icon.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+		<div id="hamburger">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="logo"></div>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="groups.html" id="groups-nav">Groups</a></li>
+			<li><a href="rules.html" id="rules-nav" class="active">Rules</a></li>
+			<li><a href="sessions.html" id="sessions-nav">Sessions</a></li>
+		</ul>
+	</nav>
+	<section class="sub-menu">
+		<ul>
+			<li><a href="results.html">Results</a></li>
+			<li><a href="crits.html">Criticals</a></li>
+			<li><a href="initiative.html" class="active">Initiative Tracker</a></li>
+		</ul>
+	</section>
+	<div class="container">
+		<div class="section">
+			<h1>Initiative Tracker</h1>
+		</div>
+		<div class="add-combatant left">
+			<h2>Add Combatant</h2>
+			<p>Enter Successes and Advantages rolled and select the slot type to add.</p>
+			<form id="" action="" method="post">
+				<input type="text" name="success" value="" placeholder="Success">
+				<input type="text" name="advantage" value="" placeholder="Advantage">
+			</form>
+			<button type="button" name="pc" class="add-pc">+PC</button>
+			<button type="button" name="ally" class="add-ally">+Ally</button>
+			<button type="button" name="npc" class="add-enemy">+Enemy</button>
+		</div>
+		<div class="tracker right">
+			<h2>Tracker</h2>
+			<div class="round-counter"><h2>Round <span id="round-count">1</span></h2></div>
+			<button type="button" name="end-turn" id="end-turn">End Turn</button>
+			<div class="tracker-list">
+				<div class="slot active finished">
+					<div class="field player">
+						<span>PC</span>
+					</div>
+					<div class="field success-roll">
+						<span>3</span><div class="successBig"></div>
+					</div>
+					<div class="field advantage-roll">
+						<span>1</span><div class="advantageBig"></div>
+					</div>
+					<div class="field">
+						<div class="remove">X</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section footer">
+			<p class="aurebesh-bold">This Star Wars site is created solely to enjoy the Fantasy Flight Games tabletop game. It is in no way official.</p>
+		</div>
+	</div>
+	<div class="back-to-top"><a href="#">TOP</a></div>
+	<script src="js/main.js"></script>
+	<script src="js/init.js"></script>
+</body>
+</html>

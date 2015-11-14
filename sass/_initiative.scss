@@ -1,0 +1,155 @@
+.active {
+  box-shadow: 0 0 5px 5px $eoteblue;
+}
+.add-combatant {
+  width: 500px;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #222;
+  form {
+    display: inline-block;
+  }
+  h2 {
+    margin: 0;
+  }
+  input {
+    margin: 5px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 15px;
+    width: 100px;
+    height: 60px;
+    border: none;
+    background-color: $eoteslate;
+    color: #FFF;
+    line-height: 30px;
+    font-size: 1.2em;
+    padding: 0;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:focus {
+      box-shadow: 0 0 5px 5px $eoteyellow;
+      outline: none;
+    }
+  }
+  button {
+    display: inline-block;
+    height: 60px;
+    width: 80px;
+    border-radius: 15px;
+    border: none;
+    margin: 5px;
+    vertical-align: middle;
+    font-size: 1em;
+    font-weight: 600;
+    color: $eotecream;
+    background-color: #222;
+    // border: 2px solid $eoteyellow;
+    transition: background-color .5s;
+  }
+  .add-ally,
+  .add-enemy,
+  .add-pc {
+    &:focus {
+      outline: none;
+    }
+  }
+  .add-ally {
+    &:hover {
+      background-color: $eotedarkblue;
+    }
+  }
+  .add-pc {
+    &:hover {
+      background-color: $eotegreen;
+    }
+  }
+  .add-enemy {
+    &:hover {
+      background-color: $eotered;
+    }
+  }
+}
+.ally {
+  background-color: $eotedarkblue;
+}
+.enemy {
+  background-color: $eotered;
+}
+.field {
+  display: inline-block;
+  margin: 0;
+  padding: 0 10px;
+  height: 60px;
+  width: 70px;
+  line-height: 60px;
+  font-size: 50px;
+  text-align: center;
+  &:first-child {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    text-align: right;
+    width: 85px;
+  }
+  &:last-child {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+}
+.finished {
+  box-shadow: 0 0 5px 5px $eotered;
+}
+.player {
+  background-color: $eotegreen;
+}
+.remove {
+  color: $eoteyellow;
+  cursor: pointer;
+  transition: color .3s, background-color .5s;
+  &:hover {
+    color: #FFF;
+    background-color: $eotered;
+  }
+}
+.slot {
+  display: inline-block;
+  width: 390px;
+  margin: 8px;
+  border-radius: 15px;
+  transition: box-shadow .5s;
+  background-color: $eoteslate;
+}
+.tracker {
+  width: 450px;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #222;
+  position: relative;
+  #end-turn {
+    position: absolute;
+    top: 25px;
+    right: 120px;
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #FFF;
+    background-color: #222;
+    transition: color .3s, background-color .5s;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      color: #FFF;
+      background-color: $eotered;
+    }
+  }
+  .round-counter {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
+}

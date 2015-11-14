@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Star Wars Roleplaying</title>
+	<link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link rel="icon" href="img/icon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+		<div id="hamburger">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="logo"></div>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="groups.html" id="groups-nav">Groups</a></li>
+			<li><a href="rules.html" id="rules-nav" class="active">Rules</a></li>
+			<li><a href="sessions.html" id="sessions-nav">Sessions</a></li>
+		</ul>
+	</nav>
+	<section class="sub-menu">
+		<ul>
+			<li><a href="results.html" class="active">Results</a></li>
+			<li><a href="crits.html">Criticals</a></li>
+			<li><a href="initiative.html">Initiative Tracker</a></li>
+		</ul>
+	</section>
+	<div class="container">
+		<div class="section">
+			<div class="resultsSwitch">
+				<ul>
+					<li class="active" id="character">Characters</li>
+					<li id="vehicle">Vehicles</li>
+				</ul>
+			</div>
+		</div>
+		<div class="section" id="die-results">
+			<h2>Spending <div class="advantageBig"></div> and <div class="triumphBig"></div> in combat</h2>
+			<table class="eoteTable justifyLast">
+				<tr>
+					<th>Cost</th>
+					<th>Result Options</th>
+				</tr>
+				<tr>
+					<td>
+						<div class="advantage"></div> or
+						<div class="triumph"></div>
+					</td>
+					<td>
+						Recover 1 strain (this option may be selected more than once.)<br>
+						Add <div class="boost"></div> to the next allied active character's check.<br>
+						Notice a single important point in the ongoing conflict, such as the location of a blast door's control panel or a weak point on an attack speeder.<br>
+						Inflict a Critical Injury with a successful attack that deals damage past soak (<div class="advantage"></div> cost may vary).<br>
+						Activate a weapon quality (<div class="advantage"></div> cost may vary).
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="advantage"></div>
+						<div class="advantage"></div> or
+						<div class="triumph"></div>
+						</td>
+					<td>
+						Perform an immediate free maneuver that does not exceed the two maneuver per turn limit.<br>
+						Add <div class="setback"></div> to the targeted character's next check.<br>
+						Add <div class="boost"></div> to any allied character's next check, including the active character.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="advantage"></div>
+						<div class="advantage"></div>
+						<div class="advantage"></div> or
+						<div class="triumph"></div>
+					</td>
+					<td>
+						Negate the targeted enemy's defensive bonuses until the end of the current round.<br>
+						Ignore penalizing environmental effects until the end of the active character's next turn.<br>
+						When dealing damage to a target, have the attack disable the opponent or one piece of gear rather than dealing wounds or strain.<br> This could include hobbling him temporarily with a shot to the leg, or disabling his comlink. The effects should be temporary, and not too excessive.<br>
+						Gain +1 melee or ranged defense until the end of the active character's next turn.<br>
+						Force the target to drop a melee or ranged weapon it is wielding.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="triumph"></div>
+					</td>
+					<td>
+						Upgrade the difficulty of the targeted character's next check.<br>
+						Upgrade any allied character's next check, including the current active character.<br>
+						Do something vital, such as shooting the controls to the nearby blast doors to seal them shut.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="triumph"></div>
+						<div class="triumph"></div>
+					</td>
+					<td>
+						When dealing damage to a target, have the attack destroy a piece of equipment the target is using.
+					</td>
+				</tr>
+			</table>
+			<h2>Spending <div class="threatBig"></div> and <div class="despairBig"></div> in Combat</h2>
+			<table class="eoteTable justifyLast">
+				<tr>
+					<th>Cost</th>
+					<th>Result Options</th>
+				</tr>
+				<tr>
+					<td>
+						<div class="threat"></div> or
+						<div class="despair"></div>
+					</td>
+					<td>
+						The active character suffers 1 strain (this option may be selected more than once).<br>
+						The active character loses the benefits of a prior maneuver (such as from taking cover or assuming a Guarded Stance) until he performs the maneuver again.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="threat"></div>
+						<div class="threat"></div> or
+						<div class="despair"></div>
+					</td>
+					<td>
+						An opponent may immediately perform one free maneuver in response to the active character's check.<br>
+						Add <div class="boost"></div> to the targeted character's next check.<br>
+						The active character or an allied character suffers <div class="setback"></div> on his next action.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="threat"></div>
+						<div class="threat"></div>
+						<div class="threat"></div> or
+						<div class="despair"></div>
+					</td>
+					<td>
+						The active character falls prone.<br>
+						The active character grants the enemy a significant advantage in the ongoing encounter, such as accidentally blasting the controls to a bridge he was planning to use for his escape.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="despair"></div>
+					</td>
+					<td>
+						The character's ranged weapon immediately runs out of ammunition and may not be used for the remainder of the encounter.<br>
+						Upgrade the difficulty of an allied character's next check, including the current active character.<br>
+						The tool or melee weapon the character is using becomes damage (see page 159).
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="section hidden" id="vehicle-die-results">
+			<h2>Spending <div class="advantageBig"></div> and <div class="triumphBig"></div> in combat</h2>
+			<table class="eoteTable justifyLast">
+				<tr>
+					<th>Cost</th>
+					<th>Result Options</th>
+				</tr>
+				<tr>
+					<td>
+						<div class="advantage"></div> or
+						<div class="triumph"></div>
+					</td>
+					<td>
+						Add <div class="boost"></div> to the next allied active character's Piloting, Gunnery, Computers, or mechanics check.<br>
+						Notice a single important point in the ongoing conflict, such as a flaw in an enemy ship's course or a weak point on an attack speeder.<br>
+						Inflict a Critical Injury with a successful attack that deals damage past soak (<div class="advantage"></div> cost may vary).<br>
+						Activate a weapon quality (<div class="advantage"></div> cost may vary).
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="advantage"></div>
+						<div class="advantage"></div> or
+						<div class="triumph"></div>
+						</td>
+					<td>
+						Perform an immediate free maneuver, provided the active character has not already performed two maneuvers in that turn.<br>
+						Add <div class="setback"></div> to the targeted character's next Piloting or Gunnery check.<br>
+						Add <div class="boost"></div> to any allied character's next Piloting, Gunner, Computers, or Mechanics check, including the active character.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="advantage"></div>
+						<div class="advantage"></div>
+						<div class="advantage"></div> or
+						<div class="triumph"></div>
+					</td>
+					<td>
+						When dealing damage to an opposing vehicle or ship, have the shot temporarily damage a component of the attacker's choice<br>rather than deal hull damage or system strain. The effects are up to the attacker and the GM and should make logical sense.<br>
+						Ignore penalizing terrain or stellar effects until the end of the active character's next turn.<br>
+						If piloting the ship, perform one free Pilot Only maneuver (provided it does not break the limit of maximum number of<br>Pilot Only maneuvers in a turn).<br>
+						Force the target ship or vehicle to veer off, breaking any Aim or Stay on Target maneuvers.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="triumph"></div>
+					</td>
+					<td>
+						Upgrade the difficulty of the targeted character's next Piloting or Gunnery check.<br>
+						Upgrade any allied character's next Piloting, Gunnery, Computers, or Mechanics check.<br>
+						Do something vital to turn the tide of battle, such as destroying a capitol ship's shield generator or losing a pursuing ship in an asteroid field.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="triumph"></div>
+						<div class="triumph"></div>
+					</td>
+					<td>
+						When dealing damage to an opposing vehicle or ship, have the shot destroy some important component of the attacker's choice rather<br>than deal hull damage or system strain, leaving it completely inoperable until fully repaired.
+					</td>
+				</tr>
+			</table>
+			<h2>Spending <div class="threatBig"></div> and <div class="despairBig"></div> in Combat</h2>
+			<table class="eoteTable justifyLast">
+				<tr>
+					<th>Cost</th>
+					<th>Result Options</th>
+				</tr>
+				<tr>
+					<td>
+						<div class="threat"></div> or
+						<div class="despair"></div>
+					</td>
+					<td>
+						If piloting a ship, sudden maneuvers force the ship to slow down by one speed.<br>
+						The active character loses the benefits of a prior maneuver (such as Evasive Maneuvers or Aim) until he performs the maneuver again.<br>
+						The character's active ship or vehicle suffers 1 system strain. (This option may be selected more than once)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="threat"></div>
+						<div class="threat"></div> or
+						<div class="despair"></div>
+					</td>
+					<td>
+						An opponent may immediately perform one free maneuver in response to the active character's check.<br>
+						Add <div class="boost"></div> to the targeted character's next Piloting or Gunnery check.<br>
+						The active character or an allied character suffers <div class="setback"></div> on his next action.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="threat"></div>
+						<div class="threat"></div>
+						<div class="threat"></div> or
+						<div class="despair"></div>
+					</td>
+					<td>
+						The initiative slot being used by the active player drops to last in the initiative order.<br>
+						The active character grants the enemy a significant advantage int he ongoing encounter, such as drifting straight into his line of fire, decreasing the difficulty of any checks made against it by one until the beginning of his next turn.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="despair"></div>
+					</td>
+					<td>
+						The primary weapon system of the active character's ship (or weapon system being manned) suffers the effects of the Component Hit Critical. This does not count toward the ship's accumulated Critical Hits.<br>
+						Upgrade the difficulty of an allied character's next Gunnery, Piloting, Computers, or Mechanics check, including the current active character.<br>
+						The active character suffers a minor collision with one of their opponents within close range, or with the stellar phenomena/terrain they are flying or driving through.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="despair"></div><br>
+						(plus failed check)
+					</td>
+					<td>
+						The active character suffers a major collision with one of their opponents within close range, or with the stellar phenomena/terrain they are flying or driving through.
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="section footer">
+			<p class="aurebesh-bold">This Star Wars site is created solely to enjoy the Fantasy Flight Games tabletop game. It is in no way official.</p>
+		</div>
+	</div>
+	<script src="js/results-swap.js"></script>
+	<div class="back-to-top"><a href="#">TOP</a></div>
+	<script src="js/main.js"></script>
+</body>
+</html>
