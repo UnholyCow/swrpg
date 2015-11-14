@@ -1,0 +1,361 @@
+body {
+	background: #333;
+	color: #DDD;
+	overflow-x: hidden;
+	p, li {
+		font-size: 1.15em;
+		line-height: 1.15em;
+	}
+}
+h1 {
+	font-family: $header-font;
+	font-size: 2.75em;
+	color: $eoteblue;
+	text-transform: uppercase;
+	margin: 10px 0;
+}
+h2 {
+	font-family: $header-font;
+	font-size: 2.2em;
+	color: $eoteyellow;
+	text-transform: uppercase;
+	margin: 8px 0;
+}
+h3 {
+	font-family: $header-font;
+	font-size: 1.8em;
+	color: $eoteyellow;
+	margin: 5px 0;
+}
+p {
+	font-family: $body-font;
+}
+.aurebesh {
+	font-family: "Aurebesh";
+}
+.aurebesh-bold {
+	font-family: "Aurebesh Bold";
+}
+.aurebesh-italic {
+	font-family: "Aurebesh Italic";
+}
+.aurebesh-small {
+	font-family: "Aurebesh Condensed";
+}
+.chunk {
+	width: 90%;
+	display: inline-block;
+	vertical-align: top;
+	@media screen and (min-width: $firstbreak) {
+		width: 40%;
+	}
+	@media screen and (min-width: $secondbreak) {
+		width: 300px;
+		text-align: left;
+	}
+}
+.container {
+	width: 100%;
+	margin: 0 auto;
+	background: $bkg;
+	padding-top: 60px;
+	display: block;
+	position: relative;
+	z-index: 1;
+	@media screen and (min-width: $firstbreak) {
+		padding-top: 0;
+	}
+	@media screen and (min-width: $secondbreak) {
+		width: 70%;
+		margin: 0 auto;
+	}
+}
+.crew-block {
+	display: inline-block;
+	width: 90%;
+	height: 100px;
+	background-color: $eotered;
+	border: 3px solid #FFF;
+	transition: border 1s;
+	img {
+		width: 100px;
+		height: 100px;
+	}
+	&:hover {
+		border: 3px solid #222;
+	}
+}
+.crewmember {
+	padding: 5px;
+	transition: background-color .3s, color .5s, font-family 1s;
+	a {
+		text-decoration: none;
+	}
+	&:hover {
+		background-color: $eoteyellow;
+		h3 {
+			color: #222;
+			font-family: "Aurebesh Bold";
+		}
+	}
+	@media screen and (min-width: $firstbreak) {
+		display: inline-block;
+		width: 40%;
+	}
+}
+.eoteTable {
+	font-size: 1.15em;
+	width: 100%;
+	span {
+		font-weight: 600;
+	}
+	th {
+		background-color: #222;
+		color: $eoteyellow;
+		vertical-align: middle;
+		line-height: 1.5em;
+		font-weight: 600;
+		padding: 5px;
+		text-align: center;
+		text-transform: uppercase;
+		&:first-child {
+			border-top-left-radius: 15px;
+		}
+		&:last-child {
+			border-top-right-radius: 15px;
+		}
+	}
+	td {
+		text-align: center;
+	}
+	tr {
+		padding: 5px;
+		line-height: 1.5em;
+		&:nth-child(even) {
+			color: #222;
+			background-color: $eotecream;
+		}
+		&:nth-child(odd):not(:first-child) {
+			color: #222;
+			background-color: $eotetan;
+		}
+		&:last-child td:first-child {
+			border-bottom-left-radius: 15px;
+		}
+		&:last-child td:last-child {
+			border-bottom-right-radius: 15px;
+		}
+	}
+}
+.eoteTableSmall {
+	@extend .eoteTable;
+	width: 40%;
+}
+.footer {
+	background-color: #222;
+	color: $eoteslate;
+	font-size: .8em;
+	margin-top: 15px;
+	p {
+		padding: 15px 10px;
+	}
+}
+.group {
+	text-align: center;
+	padding-bottom: 3px;
+	box-shadow: inset 0 -3px 0 0 $eoteyellow;
+	a {
+		text-decoration: none;
+	}
+	h1 {
+		padding: 5px;
+		display: inline-block;
+		width: auto;
+		&:hover {
+			background-color: $eoteyellow;
+			color: #222;
+			transition: background-color .3s, color .5s;
+		}
+	}
+}
+.hidden {
+	display: none;
+}
+.justifyLast {
+	th, td {
+		padding: 0 10px;
+	}
+	td:last-child, th:last-child {
+		text-align: justify;
+		padding-left: 20px;
+	}
+	td:first-child {
+		min-width: 80px;
+	}
+}
+.left {
+	float: left;
+}
+.info {
+	margin: 10px;
+	padding: 10px 20px;
+	background-color: #222;
+	border-radius: 15px;
+	position: relative;
+	h2 {
+		margin-bottom: 10px;
+		z-index: 10;
+	}
+	.stinger {
+		font-size: 150%;
+		top: 10px;
+		color: $eoteslate;
+		z-index: 2;
+		font-weight: 600;
+		margin: 10px 0;
+	}
+	.corner {
+		position: absolute;
+		top: 10px;
+		right: 20px;
+	}
+	p {
+		margin: 3px 0;
+		z-index: 3;
+		margin: 10px 0;
+		text-align: justify;
+	}
+}
+.pcBase {
+	align-self: center;
+}
+.right {
+	float: right;
+}
+.ruleDie {
+	background-color: #222;
+	border-radius: 15px;
+	display: inline-block;
+	margin: 5px;
+	padding: 15px;
+}
+.ruleSymbol {
+	background-color: #222;
+	border-radius: 15px;
+	display: inline-block;
+	margin: 5px;
+	padding: 15px;
+}
+.session {
+	border-radius: 15px;
+	background-color: #222;
+	padding: 15px;
+	position: relative;
+	@media screen and (min-width: $firstbreak) {
+		display: inline-block;
+		width: 45%;
+	}
+	@media screen and (min-width: $secondbreak) {
+		display: inline-block;
+		width: auto;
+	}
+	a img {
+		width: 75px;
+		position: absolute;
+		right: 10px;
+		top: 45%;
+		@media screen and (min-width: $firstbreak) {
+			width: 120px;
+			top: 15%;
+		}
+		@media screen and (min-width: $secondbreak) {
+			width: 240px;
+			top: 15%;
+		}
+	}
+	.sessionText {
+		display: none;
+		padding-bottom: 15px;
+		@media screen and (min-width: $secondbreak) {
+			display: inline-block;
+			width: 75%;
+		}
+	}
+	&:not(:first-child) {
+		margin-top: 10px;
+	}
+}
+.sessionMonth {
+	margin: 15px 0 0 0;
+	padding: 3px 0 3px 10px;
+	background-color: #222;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	h1 {
+		margin: 0;
+	}
+}
+.sessionMonthContainer {
+	margin: 0;
+	padding: 15px;
+	background-color: $eotecream;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+.splitLeft {
+	width: 100%;
+	h1 {
+		text-align: center;
+	}
+	@media screen and (min-width: $firstbreak) {
+		width: 45%;
+		float: left;
+	}
+}
+.splitRight {
+	width: 100%;
+	h1 {
+		text-align: center;
+	}
+	@media screen and (min-width: $firstbreak) {
+		width: 45%;
+		float: right;
+	}
+}
+.starship {
+	display: inline-block;
+	text-align: center;
+	-webkit-align-self: center;
+	align-self: center;
+	padding: 5px;
+	transition: background .3s;
+	h3 {
+		padding: 3px;
+		transition: color .5s, font-family 1s;
+		margin: 0;
+	}
+	img {
+		height: 100px;
+		width: 90%;
+		border: solid 3px #FFF;
+		background-color: $eotered;
+		transition: border 1s;
+	}
+	&:hover {
+		background-color: $eoteyellow;
+		h3 {
+			color: #222;
+			font-family: "Aurebesh Bold";
+		}
+		img {
+			border: solid 3px #222;
+		}
+	}
+	@media screen and (min-width: $firstbreak) {
+		width: 40%;
+	}
+}
+.updates {
+	width: 40%;
+	float: right;
+}

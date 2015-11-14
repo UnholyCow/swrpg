@@ -1,0 +1,140 @@
+@import url(http://fonts.googleapis.com/css?family=News+Cycle:400,700);
+/* line 5, ../sass/crawl.scss */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font: 700 1em "News Cycle", sans-serif;
+  letter-spacing: .15em;
+  color: #ff6;
+  background: #000;
+  overflow: hidden;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 20, ../sass/crawl.scss */
+.starwars section {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  z-index: 1;
+}
+/* line 27, ../sass/crawl.scss */
+.starwars .start {
+  font-size: 240%;
+  width: 14em;
+  margin: -4em 0 0 -7em;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 35, ../sass/crawl.scss */
+.starwars .start span {
+  color: #DFC663;
+}
+/* line 40, ../sass/crawl.scss */
+.starwars .intro {
+  width: 80%;
+  margin: -2.8% 0 0 -20%;
+  font-size: 340%;
+  font-weight: 600;
+  color: #4bd5ee;
+  opacity: 0;
+  animation: intro 6s ease-out 1s;
+}
+/* line 51, ../sass/crawl.scss */
+.starwars .logo {
+  opacity: 0;
+  animation: logo 9s ease-out 9s;
+}
+/* line 55, ../sass/crawl.scss */
+.starwars .logo svg {
+  width: inherit;
+}
+/* line 60, ../sass/crawl.scss */
+.starwars .titles {
+  width: 95%;
+  margin: 0 0 0 -47.5%;
+  top: auto;
+  bottom: 0;
+  height: 50em;
+  font-size: 450%;
+  text-align: justify;
+  overflow: hidden;
+  transform-origin: 50% 100%;
+  -moz-transform: perspective(300px) rotateX(15deg);
+  -ms-transform: perspective(300px) rotateX(15deg);
+  -webkit-transform: perspective(300px) rotateX(15deg);
+  transform: perspective(300px) rotateX(15deg);
+}
+/* line 73, ../sass/crawl.scss */
+.starwars .titles > div {
+  position: absolute;
+  top: 100%;
+  animation: titles 70s linear 13s;
+}
+/* line 78, ../sass/crawl.scss */
+.starwars .titles > div > p {
+  margin: 1.35em 0 1.85em 0;
+  line-height: 1.50em;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes logo {
+  0% {
+    width: 24em;
+    margin: -12em 0 0 -12em;
+    -moz-transform: scale(2.75);
+    -ms-transform: scale(2.75);
+    -webkit-transform: scale(2.75);
+    transform: scale(2.75);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+    width: 25em;
+    margin: -12.5em 0 0 -12.5em;
+  }
+  100% {
+    -moz-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 0;
+    width: 25em;
+    margin: -12.5em 0 0 -12.5em;
+  }
+}
+@keyframes titles {
+  0% {
+    top: 100%;
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    top: 10%;
+    opacity: 0;
+  }
+}
+/* line 143, ../sass/crawl.scss */
+.crawl_episode, .crawl_title {
+  text-align: center;
+}

@@ -1,0 +1,110 @@
+.stat {
+	display: inline-block;
+	width: 130px;
+	text-align: center;
+	margin: 10px;
+}
+.tag {
+	display: block;
+	width: 100%;
+	height: 15%;
+	background: $eoteslate;
+	color: #FFF;
+	padding: 5px;
+	font-size: 1.2em;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.tagBlue {
+	@extend .tag;
+	background: $eotedarkblue; 
+}
+.tagRed {
+	@extend .tag;
+	background: $eotered; 
+}
+.value {
+	width: 100%;
+	background: $eotecream;
+	color: #222;
+	font-size: 3em;
+	padding: 5px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.section {
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+}
+.pill {
+	display: inline-block;
+	margin: 10px;
+	font-size: 1.1em;
+}
+.pillLeft {
+	display: inline;
+	padding: 5px 10px;
+	color: #FFF;
+	background: $eoteslate; 
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.pillRight {
+	display: inline;
+	padding: 5px 10px;
+	color: #222;
+	background: $eotecream;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.pcPic {
+	height: 300px;
+	background: url(../img/rebel_bkg.jpg);
+	background-size: cover;
+	background-position: 0 -180px;
+	position: relative;
+	text-align: center;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	h1 {
+		position: absolute; 
+		display: block;
+		background: #222;
+		padding: 10px 0;
+		bottom: 0;
+		width: 100%;
+		border-bottom: 2px solid $eoteyellow;
+		margin: 0; 
+	}
+}
+.nysroPic {
+	@extend .pcPic;
+	background: url(../img/nysro.jpg);
+	background-size: cover;
+	background-position: 0 -80px; 
+}
+.hayynqPic {
+	@extend .pcPic;
+	background: url(../img/hayynq.jpg);
+	background-size: cover;
+	background-position: 0 -40px; 
+}
+.ruskuPic {
+	@extend .pcPic;
+	background: url(../img/rusku.jpg);
+	background-size: cover;
+	background-position: 0 -70px;
+}
+.monarchPic {
+	@extend .pcPic;
+	background: url(../img/yt1300_long.jpg);
+	background-size: cover;
+	background-position: 0 -40px; 
+}
+.trooperPic {
+	@extend .pcPic;
+	background: url(../img/trooper.jpg);
+	background-size: cover;
+	background-position: 0 -40px; 
+}
