@@ -45,6 +45,7 @@
     font-weight: 600;
     color: $eotecream;
     background-color: #222;
+    cursor: pointer;
     // border: 2px solid $eoteyellow;
     transition: background-color .5s;
   }
@@ -126,6 +127,9 @@
   padding: 20px;
   background-color: #222;
   position: relative;
+  button {
+    cursor: pointer;
+  }
   #end-turn {
     position: absolute;
     top: 25px;

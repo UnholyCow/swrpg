@@ -39,9 +39,9 @@
 		<div class="add-combatant left">
 			<h2>Add Combatant</h2>
 			<p>Enter Successes and Advantages rolled and select the slot type to add.</p>
-			<form id="" action="" method="post">
-				<input type="text" name="success" value="" placeholder="Success">
-				<input type="text" name="advantage" value="" placeholder="Advantage">
+			<form action="" method="post">
+				<input id="success-roll" type="text" name="success" value="" placeholder="Success">
+				<input id="advantage-roll" type="text" name="advantage" value="" placeholder="Advantage">
 			</form>
 			<button type="button" name="pc" class="add-pc">+PC</button>
 			<button type="button" name="ally" class="add-ally">+Ally</button>
@@ -52,7 +52,49 @@
 			<div class="round-counter"><h2>Round <span id="round-count">1</span></h2></div>
 			<button type="button" name="end-turn" id="end-turn">End Turn</button>
 			<div class="tracker-list">
-				<div class="slot active finished">
+				<div class="slot finished">
+					<div class="field player">
+						<span>PC</span>
+					</div>
+					<div class="field success-roll">
+						<span>3</span><div class="successBig"></div>
+					</div>
+					<div class="field advantage-roll">
+						<span>1</span><div class="advantageBig"></div>
+					</div>
+					<div class="field">
+						<div class="remove">X</div>
+					</div>
+				</div>
+				<div class="slot finished">
+					<div class="field ally">
+						<span>NPC</span>
+					</div>
+					<div class="field success-roll">
+						<span>3</span><div class="successBig"></div>
+					</div>
+					<div class="field advantage-roll">
+						<span>1</span><div class="advantageBig"></div>
+					</div>
+					<div class="field">
+						<div class="remove">X</div>
+					</div>
+				</div>
+				<div class="slot finished">
+					<div class="field enemy">
+						<span>NPC</span>
+					</div>
+					<div class="field success-roll">
+						<span>3</span><div class="successBig"></div>
+					</div>
+					<div class="field advantage-roll">
+						<span>1</span><div class="advantageBig"></div>
+					</div>
+					<div class="field">
+						<div class="remove">X</div>
+					</div>
+				</div>
+				<div class="slot active">
 					<div class="field player">
 						<span>PC</span>
 					</div>
