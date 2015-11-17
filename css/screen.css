@@ -419,51 +419,56 @@ h3 {
 }
 
 /* line 30, ../sass/_styles.scss */
-p {
+div,
+p,
+li,
+span,
+tr,
+td {
   font-family: "Ubuntu", sans-serif;
 }
 
-/* line 33, ../sass/_styles.scss */
+/* line 38, ../sass/_styles.scss */
 .aurebesh {
   font-family: "Aurebesh";
 }
 
-/* line 36, ../sass/_styles.scss */
+/* line 41, ../sass/_styles.scss */
 .aurebesh-bold {
   font-family: "Aurebesh Bold";
 }
 
-/* line 39, ../sass/_styles.scss */
+/* line 44, ../sass/_styles.scss */
 .aurebesh-italic {
   font-family: "Aurebesh Italic";
 }
 
-/* line 42, ../sass/_styles.scss */
+/* line 47, ../sass/_styles.scss */
 .aurebesh-small {
   font-family: "Aurebesh Condensed";
 }
 
-/* line 45, ../sass/_styles.scss */
+/* line 50, ../sass/_styles.scss */
 .chunk {
   width: 90%;
   display: inline-block;
   vertical-align: top;
 }
 @media screen and (min-width: 51em) {
-  /* line 45, ../sass/_styles.scss */
+  /* line 50, ../sass/_styles.scss */
   .chunk {
     width: 40%;
   }
 }
 @media screen and (min-width: 91em) {
-  /* line 45, ../sass/_styles.scss */
+  /* line 50, ../sass/_styles.scss */
   .chunk {
     width: 300px;
     text-align: left;
   }
 }
 
-/* line 57, ../sass/_styles.scss */
+/* line 62, ../sass/_styles.scss */
 .container {
   width: 100%;
   margin: 0 auto;
@@ -474,20 +479,20 @@ p {
   z-index: 1;
 }
 @media screen and (min-width: 51em) {
-  /* line 57, ../sass/_styles.scss */
+  /* line 62, ../sass/_styles.scss */
   .container {
     padding-top: 0;
   }
 }
 @media screen and (min-width: 91em) {
-  /* line 57, ../sass/_styles.scss */
+  /* line 62, ../sass/_styles.scss */
   .container {
     width: 70%;
     margin: 0 auto;
   }
 }
 
-/* line 73, ../sass/_styles.scss */
+/* line 78, ../sass/_styles.scss */
 .crew-block {
   display: inline-block;
   width: 90%;
@@ -496,52 +501,52 @@ p {
   border: 3px solid #FFF;
   transition: border 1s;
 }
-/* line 80, ../sass/_styles.scss */
+/* line 85, ../sass/_styles.scss */
 .crew-block img {
   width: 100px;
   height: 100px;
 }
-/* line 84, ../sass/_styles.scss */
+/* line 89, ../sass/_styles.scss */
 .crew-block:hover {
   border: 3px solid #222;
 }
 
-/* line 88, ../sass/_styles.scss */
+/* line 93, ../sass/_styles.scss */
 .crewmember {
   padding: 5px;
   transition: background-color .3s, color .5s, font-family 1s;
 }
-/* line 91, ../sass/_styles.scss */
+/* line 96, ../sass/_styles.scss */
 .crewmember a {
   text-decoration: none;
 }
-/* line 94, ../sass/_styles.scss */
+/* line 99, ../sass/_styles.scss */
 .crewmember:hover {
   background-color: #DFC663;
 }
-/* line 96, ../sass/_styles.scss */
+/* line 101, ../sass/_styles.scss */
 .crewmember:hover h3 {
   color: #222;
   font-family: "Aurebesh Bold";
 }
 @media screen and (min-width: 51em) {
-  /* line 88, ../sass/_styles.scss */
+  /* line 93, ../sass/_styles.scss */
   .crewmember {
     display: inline-block;
     width: 40%;
   }
 }
 
-/* line 106, ../sass/_styles.scss */
+/* line 111, ../sass/_styles.scss */
 .eoteTable, .eoteTableSmall {
   font-size: 1.15em;
   width: 100%;
 }
-/* line 109, ../sass/_styles.scss */
+/* line 114, ../sass/_styles.scss */
 .eoteTable span, .eoteTableSmall span {
   font-weight: 600;
 }
-/* line 112, ../sass/_styles.scss */
+/* line 117, ../sass/_styles.scss */
 .eoteTable th, .eoteTableSmall th {
   background-color: #222;
   color: #DFC663;
@@ -552,107 +557,107 @@ p {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 121, ../sass/_styles.scss */
+/* line 126, ../sass/_styles.scss */
 .eoteTable th:first-child, .eoteTableSmall th:first-child {
   border-top-left-radius: 15px;
 }
-/* line 124, ../sass/_styles.scss */
+/* line 129, ../sass/_styles.scss */
 .eoteTable th:last-child, .eoteTableSmall th:last-child {
   border-top-right-radius: 15px;
 }
-/* line 128, ../sass/_styles.scss */
+/* line 133, ../sass/_styles.scss */
 .eoteTable td, .eoteTableSmall td {
   text-align: center;
 }
-/* line 131, ../sass/_styles.scss */
+/* line 136, ../sass/_styles.scss */
 .eoteTable tr, .eoteTableSmall tr {
   padding: 5px;
   line-height: 1.5em;
 }
-/* line 134, ../sass/_styles.scss */
+/* line 139, ../sass/_styles.scss */
 .eoteTable tr:nth-child(even), .eoteTableSmall tr:nth-child(even) {
   color: #222;
   background-color: #F4F4F2;
 }
-/* line 138, ../sass/_styles.scss */
+/* line 143, ../sass/_styles.scss */
 .eoteTable tr:nth-child(odd):not(:first-child), .eoteTableSmall tr:nth-child(odd):not(:first-child) {
   color: #222;
   background-color: #C8BCAB;
 }
-/* line 142, ../sass/_styles.scss */
+/* line 147, ../sass/_styles.scss */
 .eoteTable tr:last-child td:first-child, .eoteTableSmall tr:last-child td:first-child {
   border-bottom-left-radius: 15px;
 }
-/* line 145, ../sass/_styles.scss */
+/* line 150, ../sass/_styles.scss */
 .eoteTable tr:last-child td:last-child, .eoteTableSmall tr:last-child td:last-child {
   border-bottom-right-radius: 15px;
 }
 
-/* line 150, ../sass/_styles.scss */
+/* line 155, ../sass/_styles.scss */
 .eoteTableSmall {
   width: 40%;
 }
 
-/* line 154, ../sass/_styles.scss */
+/* line 159, ../sass/_styles.scss */
 .footer {
   background-color: #222;
   color: #495558;
   font-size: .8em;
   margin-top: 15px;
 }
-/* line 159, ../sass/_styles.scss */
+/* line 164, ../sass/_styles.scss */
 .footer p {
   padding: 15px 10px;
 }
 
-/* line 163, ../sass/_styles.scss */
+/* line 168, ../sass/_styles.scss */
 .group {
   text-align: center;
   padding-bottom: 3px;
   box-shadow: inset 0 -3px 0 0 #DFC663;
 }
-/* line 167, ../sass/_styles.scss */
+/* line 172, ../sass/_styles.scss */
 .group a {
   text-decoration: none;
 }
-/* line 170, ../sass/_styles.scss */
+/* line 175, ../sass/_styles.scss */
 .group h1 {
   padding: 5px;
   display: inline-block;
   width: auto;
 }
-/* line 174, ../sass/_styles.scss */
+/* line 179, ../sass/_styles.scss */
 .group h1:hover {
   background-color: #DFC663;
   color: #222;
   transition: background-color .3s, color .5s;
 }
 
-/* line 181, ../sass/_styles.scss */
+/* line 186, ../sass/_styles.scss */
 .hidden {
   display: none;
 }
 
-/* line 185, ../sass/_styles.scss */
+/* line 190, ../sass/_styles.scss */
 .justifyLast th, .justifyLast td {
   padding: 0 10px;
 }
-/* line 188, ../sass/_styles.scss */
+/* line 193, ../sass/_styles.scss */
 .justifyLast td:last-child, .justifyLast th:last-child {
   text-align: justify;
   padding-left: 20px;
 }
-/* line 192, ../sass/_styles.scss */
+/* line 197, ../sass/_styles.scss */
 .justifyLast td:first-child {
   min-width: 80px;
 }
 
-/* line 196, ../sass/_styles.scss */
+/* line 201, ../sass/_styles.scss */
 .left {
   float: left;
 }
 
-/* line 199, ../sass/_styles.scss */
+/* line 204, ../sass/_styles.scss */
 .info {
   margin: 10px;
   padding: 10px 20px;
@@ -660,12 +665,12 @@ p {
   border-radius: 15px;
   position: relative;
 }
-/* line 205, ../sass/_styles.scss */
+/* line 210, ../sass/_styles.scss */
 .info h2 {
   margin-bottom: 10px;
   z-index: 10;
 }
-/* line 209, ../sass/_styles.scss */
+/* line 214, ../sass/_styles.scss */
 .info .stinger {
   font-size: 150%;
   top: 10px;
@@ -674,31 +679,36 @@ p {
   font-weight: 600;
   margin: 10px 0;
 }
-/* line 217, ../sass/_styles.scss */
+/* line 222, ../sass/_styles.scss */
 .info .corner {
   position: absolute;
   top: 10px;
   right: 20px;
 }
-/* line 222, ../sass/_styles.scss */
+/* line 227, ../sass/_styles.scss */
 .info p {
   margin: 3px 0;
   z-index: 3;
   margin: 10px 0;
   text-align: justify;
 }
+/* line 233, ../sass/_styles.scss */
+.info strong {
+  font-weight: 600;
+  color: #DFC663;
+}
 
-/* line 229, ../sass/_styles.scss */
+/* line 238, ../sass/_styles.scss */
 .pcBase {
   align-self: center;
 }
 
-/* line 232, ../sass/_styles.scss */
+/* line 241, ../sass/_styles.scss */
 .right {
   float: right;
 }
 
-/* line 235, ../sass/_styles.scss */
+/* line 244, ../sass/_styles.scss */
 .ruleDie {
   background-color: #222;
   border-radius: 15px;
@@ -707,7 +717,7 @@ p {
   padding: 15px;
 }
 
-/* line 242, ../sass/_styles.scss */
+/* line 251, ../sass/_styles.scss */
 .ruleSymbol {
   background-color: #222;
   border-radius: 15px;
@@ -716,7 +726,7 @@ p {
   padding: 15px;
 }
 
-/* line 249, ../sass/_styles.scss */
+/* line 258, ../sass/_styles.scss */
 .session {
   border-radius: 15px;
   background-color: #222;
@@ -724,20 +734,20 @@ p {
   position: relative;
 }
 @media screen and (min-width: 51em) {
-  /* line 249, ../sass/_styles.scss */
+  /* line 258, ../sass/_styles.scss */
   .session {
     display: inline-block;
     width: 45%;
   }
 }
 @media screen and (min-width: 91em) {
-  /* line 249, ../sass/_styles.scss */
+  /* line 258, ../sass/_styles.scss */
   .session {
     display: inline-block;
-    width: auto;
+    width: 98%;
   }
 }
-/* line 262, ../sass/_styles.scss */
+/* line 271, ../sass/_styles.scss */
 .session a img {
   width: 75px;
   position: absolute;
@@ -745,37 +755,37 @@ p {
   top: 45%;
 }
 @media screen and (min-width: 51em) {
-  /* line 262, ../sass/_styles.scss */
+  /* line 271, ../sass/_styles.scss */
   .session a img {
     width: 120px;
     top: 15%;
   }
 }
 @media screen and (min-width: 91em) {
-  /* line 262, ../sass/_styles.scss */
+  /* line 271, ../sass/_styles.scss */
   .session a img {
     width: 240px;
     top: 15%;
   }
 }
-/* line 276, ../sass/_styles.scss */
+/* line 285, ../sass/_styles.scss */
 .session .sessionText {
   display: none;
   padding-bottom: 15px;
 }
 @media screen and (min-width: 91em) {
-  /* line 276, ../sass/_styles.scss */
+  /* line 285, ../sass/_styles.scss */
   .session .sessionText {
     display: inline-block;
     width: 75%;
   }
 }
-/* line 284, ../sass/_styles.scss */
+/* line 293, ../sass/_styles.scss */
 .session:not(:first-child) {
   margin-top: 10px;
 }
 
-/* line 288, ../sass/_styles.scss */
+/* line 297, ../sass/_styles.scss */
 .sessionMonth {
   margin: 15px 0 0 0;
   padding: 3px 0 3px 10px;
@@ -783,12 +793,12 @@ p {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-/* line 294, ../sass/_styles.scss */
+/* line 303, ../sass/_styles.scss */
 .sessionMonth h1 {
   margin: 0;
 }
 
-/* line 298, ../sass/_styles.scss */
+/* line 307, ../sass/_styles.scss */
 .sessionMonthContainer {
   margin: 0;
   padding: 15px;
@@ -797,39 +807,39 @@ p {
   border-bottom-right-radius: 15px;
 }
 
-/* line 305, ../sass/_styles.scss */
+/* line 314, ../sass/_styles.scss */
 .splitLeft {
   width: 100%;
 }
-/* line 307, ../sass/_styles.scss */
+/* line 316, ../sass/_styles.scss */
 .splitLeft h1 {
   text-align: center;
 }
 @media screen and (min-width: 51em) {
-  /* line 305, ../sass/_styles.scss */
+  /* line 314, ../sass/_styles.scss */
   .splitLeft {
     width: 45%;
     float: left;
   }
 }
 
-/* line 315, ../sass/_styles.scss */
+/* line 324, ../sass/_styles.scss */
 .splitRight {
   width: 100%;
 }
-/* line 317, ../sass/_styles.scss */
+/* line 326, ../sass/_styles.scss */
 .splitRight h1 {
   text-align: center;
 }
 @media screen and (min-width: 51em) {
-  /* line 315, ../sass/_styles.scss */
+  /* line 324, ../sass/_styles.scss */
   .splitRight {
     width: 45%;
     float: right;
   }
 }
 
-/* line 325, ../sass/_styles.scss */
+/* line 334, ../sass/_styles.scss */
 .starship {
   display: inline-block;
   text-align: center;
@@ -838,13 +848,13 @@ p {
   padding: 5px;
   transition: background .3s;
 }
-/* line 332, ../sass/_styles.scss */
+/* line 341, ../sass/_styles.scss */
 .starship h3 {
   padding: 3px;
   transition: color .5s, font-family 1s;
   margin: 0;
 }
-/* line 337, ../sass/_styles.scss */
+/* line 346, ../sass/_styles.scss */
 .starship img {
   height: 100px;
   width: 90%;
@@ -852,34 +862,34 @@ p {
   background-color: #761213;
   transition: border 1s;
 }
-/* line 344, ../sass/_styles.scss */
+/* line 353, ../sass/_styles.scss */
 .starship:hover {
   background-color: #DFC663;
 }
-/* line 346, ../sass/_styles.scss */
+/* line 355, ../sass/_styles.scss */
 .starship:hover h3 {
   color: #222;
   font-family: "Aurebesh Bold";
 }
-/* line 350, ../sass/_styles.scss */
+/* line 359, ../sass/_styles.scss */
 .starship:hover img {
   border: solid 3px #222;
 }
 @media screen and (min-width: 51em) {
-  /* line 325, ../sass/_styles.scss */
+  /* line 334, ../sass/_styles.scss */
   .starship {
     width: 40%;
   }
 }
 
-/* line 358, ../sass/_styles.scss */
+/* line 367, ../sass/_styles.scss */
 .updates {
   width: 40%;
   float: right;
 }
 
 /* line 1, ../sass/_charsheet.scss */
-.stat {
+.stat, .stat-small {
   display: inline-block;
   width: 130px;
   text-align: center;
@@ -887,7 +897,13 @@ p {
 }
 
 /* line 7, ../sass/_charsheet.scss */
-.tag, .tagBlue, .tagRed {
+.stat-small {
+  width: 70px;
+  margin: 5px;
+}
+
+/* line 12, ../sass/_charsheet.scss */
+.tag, .tag-small, .tagBlue, .tagRed {
   display: block;
   width: 100%;
   height: 15%;
@@ -899,18 +915,23 @@ p {
   border-top-right-radius: 10px;
 }
 
-/* line 18, ../sass/_charsheet.scss */
+/* line 23, ../sass/_charsheet.scss */
+.tag-small {
+  font-size: .9em;
+}
+
+/* line 27, ../sass/_charsheet.scss */
 .tagBlue {
   background: #284666;
 }
 
-/* line 22, ../sass/_charsheet.scss */
+/* line 31, ../sass/_charsheet.scss */
 .tagRed {
   background: #761213;
 }
 
-/* line 26, ../sass/_charsheet.scss */
-.value {
+/* line 35, ../sass/_charsheet.scss */
+.value, .value-small {
   width: 100%;
   background: #F4F4F2;
   color: #222;
@@ -920,21 +941,26 @@ p {
   border-bottom-right-radius: 10px;
 }
 
-/* line 35, ../sass/_charsheet.scss */
+/* line 44, ../sass/_charsheet.scss */
+.value-small {
+  font-size: 2em;
+}
+
+/* line 48, ../sass/_charsheet.scss */
 .section {
   width: 100%;
   text-align: center;
   display: inline-block;
 }
 
-/* line 40, ../sass/_charsheet.scss */
+/* line 53, ../sass/_charsheet.scss */
 .pill {
   display: inline-block;
   margin: 10px;
   font-size: 1.1em;
 }
 
-/* line 45, ../sass/_charsheet.scss */
+/* line 58, ../sass/_charsheet.scss */
 .pillLeft {
   display: inline;
   padding: 5px 10px;
@@ -944,7 +970,7 @@ p {
   border-bottom-left-radius: 10px;
 }
 
-/* line 53, ../sass/_charsheet.scss */
+/* line 66, ../sass/_charsheet.scss */
 .pillRight {
   display: inline;
   padding: 5px 10px;
@@ -954,7 +980,7 @@ p {
   border-bottom-right-radius: 10px;
 }
 
-/* line 61, ../sass/_charsheet.scss */
+/* line 74, ../sass/_charsheet.scss */
 .pcPic, .nysroPic, .hayynqPic, .ruskuPic, .monarchPic, .trooperPic {
   height: 300px;
   background: url(../img/rebel_bkg.jpg);
@@ -965,7 +991,7 @@ p {
   margin-bottom: 15px;
   margin-top: 15px;
 }
-/* line 70, ../sass/_charsheet.scss */
+/* line 83, ../sass/_charsheet.scss */
 .pcPic h1, .nysroPic h1, .hayynqPic h1, .ruskuPic h1, .monarchPic h1, .trooperPic h1 {
   position: absolute;
   display: block;
@@ -977,35 +1003,35 @@ p {
   margin: 0;
 }
 
-/* line 81, ../sass/_charsheet.scss */
+/* line 94, ../sass/_charsheet.scss */
 .nysroPic {
   background: url(../img/nysro.jpg);
   background-size: cover;
   background-position: 0 -80px;
 }
 
-/* line 87, ../sass/_charsheet.scss */
+/* line 100, ../sass/_charsheet.scss */
 .hayynqPic {
   background: url(../img/hayynq.jpg);
   background-size: cover;
   background-position: 0 -40px;
 }
 
-/* line 93, ../sass/_charsheet.scss */
+/* line 106, ../sass/_charsheet.scss */
 .ruskuPic {
   background: url(../img/rusku.jpg);
   background-size: cover;
   background-position: 0 -70px;
 }
 
-/* line 99, ../sass/_charsheet.scss */
+/* line 112, ../sass/_charsheet.scss */
 .monarchPic {
   background: url(../img/yt1300_long.jpg);
   background-size: cover;
   background-position: 0 -40px;
 }
 
-/* line 105, ../sass/_charsheet.scss */
+/* line 118, ../sass/_charsheet.scss */
 .trooperPic {
   background: url(../img/trooper.jpg);
   background-size: cover;
@@ -1018,7 +1044,8 @@ p {
 .boost,
 .difficulty,
 .challenge,
-.setback {
+.setback,
+.force {
   background: url(../img/dice.png) no-repeat;
   width: 20px;
   height: 20px;
@@ -1026,34 +1053,39 @@ p {
   vertical-align: middle;
 }
 
-/* line 13, ../sass/_dice.scss */
+/* line 14, ../sass/_dice.scss */
 .ability {
   background-position: 0 0;
 }
 
-/* line 16, ../sass/_dice.scss */
+/* line 17, ../sass/_dice.scss */
 .proficiency {
   background-position: -21px 0;
 }
 
-/* line 19, ../sass/_dice.scss */
+/* line 20, ../sass/_dice.scss */
 .boost {
   background-position: -42px 0;
 }
 
-/* line 22, ../sass/_dice.scss */
+/* line 23, ../sass/_dice.scss */
 .difficulty {
   background-position: -63px 0;
 }
 
-/* line 25, ../sass/_dice.scss */
+/* line 26, ../sass/_dice.scss */
 .challenge {
   background-position: -106px 0;
 }
 
-/* line 28, ../sass/_dice.scss */
+/* line 29, ../sass/_dice.scss */
 .setback {
   background-position: -84px 0;
+}
+
+/* line 32, ../sass/_dice.scss */
+.force {
+  background-position: -128px 0;
 }
 
 /* line 1, ../sass/_symbols.scss */
@@ -1062,7 +1094,9 @@ p {
 .triumph, .triumphAlt,
 .failure, .failureAlt,
 .threat, .threatAlt,
-.despair, .despairAlt {
+.despair, .despairAlt,
+.lightSide, .darkSide,
+.eitherSide {
   background: url(../img/symbols.png) no-repeat;
   width: 20px;
   height: 20px;
@@ -1070,67 +1104,82 @@ p {
   vertical-align: middle;
 }
 
-/* line 13, ../sass/_symbols.scss */
+/* line 15, ../sass/_symbols.scss */
 .success {
   background-position: 0 0;
 }
 
-/* line 16, ../sass/_symbols.scss */
+/* line 18, ../sass/_symbols.scss */
 .advantage {
   background-position: -18px 0;
 }
 
-/* line 19, ../sass/_symbols.scss */
+/* line 21, ../sass/_symbols.scss */
 .triumph {
   background-position: -40px 0;
 }
 
-/* line 22, ../sass/_symbols.scss */
+/* line 24, ../sass/_symbols.scss */
 .failure {
   background-position: -60px 0;
 }
 
-/* line 25, ../sass/_symbols.scss */
+/* line 27, ../sass/_symbols.scss */
 .threat {
   background-position: -78px 0;
 }
 
-/* line 28, ../sass/_symbols.scss */
+/* line 30, ../sass/_symbols.scss */
 .despair {
   background-position: -98px 0;
 }
 
-/* line 31, ../sass/_symbols.scss */
+/* line 33, ../sass/_symbols.scss */
+.lightSide {
+  background-position: -118px 0;
+}
+
+/* line 36, ../sass/_symbols.scss */
+.darkSide {
+  background-position: -138px 0;
+}
+
+/* line 39, ../sass/_symbols.scss */
+.eitherSide {
+  background-position: -158px 0;
+}
+
+/* line 42, ../sass/_symbols.scss */
 .successAlt {
   background-position: 0 -20px;
 }
 
-/* line 34, ../sass/_symbols.scss */
+/* line 45, ../sass/_symbols.scss */
 .advantageAlt {
   background-position: -18px -20px;
 }
 
-/* line 37, ../sass/_symbols.scss */
+/* line 48, ../sass/_symbols.scss */
 .triumphAlt {
   background-position: -40px -20px;
 }
 
-/* line 40, ../sass/_symbols.scss */
+/* line 51, ../sass/_symbols.scss */
 .failureAlt {
   background-position: -60px -20px;
 }
 
-/* line 43, ../sass/_symbols.scss */
+/* line 54, ../sass/_symbols.scss */
 .threatAlt {
   background-position: -78px -20px;
 }
 
-/* line 46, ../sass/_symbols.scss */
+/* line 57, ../sass/_symbols.scss */
 .despairAlt {
   background-position: -98px -20px;
 }
 
-/* line 49, ../sass/_symbols.scss */
+/* line 60, ../sass/_symbols.scss */
 .successBig,
 .advantageBig,
 .triumphBig,
@@ -1144,38 +1193,38 @@ p {
   vertical-align: middle;
 }
 
-/* line 61, ../sass/_symbols.scss */
+/* line 72, ../sass/_symbols.scss */
 .successBig {
   background-position: 1px -40px;
 }
 
-/* line 64, ../sass/_symbols.scss */
+/* line 75, ../sass/_symbols.scss */
 .advantageBig {
   background-position: -35px -40px;
 }
 
-/* line 67, ../sass/_symbols.scss */
+/* line 78, ../sass/_symbols.scss */
 .triumphBig {
   background-position: -70px -40px;
 }
 
-/* line 70, ../sass/_symbols.scss */
+/* line 81, ../sass/_symbols.scss */
 .failureBig {
   background-position: -105px -40px;
 }
 
-/* line 73, ../sass/_symbols.scss */
+/* line 84, ../sass/_symbols.scss */
 .threatBig {
   background-position: -140px -40px;
 }
 
-/* line 76, ../sass/_symbols.scss */
+/* line 87, ../sass/_symbols.scss */
 .despairBig {
   background-position: -175px -40px;
 }
 
 /* line 1, ../sass/_initiative.scss */
-.active {
+.active-slot {
   box-shadow: 0 0 5px 5px #76CDDA;
 }
 
@@ -1231,38 +1280,39 @@ p {
   font-weight: 600;
   color: #F4F4F2;
   background-color: #222;
+  cursor: pointer;
   transition: background-color .5s;
 }
-/* line 54, ../sass/_initiative.scss */
+/* line 55, ../sass/_initiative.scss */
 .add-combatant .add-ally:focus,
 .add-combatant .add-enemy:focus,
 .add-combatant .add-pc:focus {
   outline: none;
 }
-/* line 59, ../sass/_initiative.scss */
+/* line 60, ../sass/_initiative.scss */
 .add-combatant .add-ally:hover {
   background-color: #284666;
 }
-/* line 64, ../sass/_initiative.scss */
+/* line 65, ../sass/_initiative.scss */
 .add-combatant .add-pc:hover {
   background-color: #51634B;
 }
-/* line 69, ../sass/_initiative.scss */
+/* line 70, ../sass/_initiative.scss */
 .add-combatant .add-enemy:hover {
   background-color: #761213;
 }
 
-/* line 74, ../sass/_initiative.scss */
+/* line 75, ../sass/_initiative.scss */
 .ally {
   background-color: #284666;
 }
 
-/* line 77, ../sass/_initiative.scss */
+/* line 78, ../sass/_initiative.scss */
 .enemy {
   background-color: #761213;
 }
 
-/* line 80, ../sass/_initiative.scss */
+/* line 81, ../sass/_initiative.scss */
 .field {
   display: inline-block;
   margin: 0;
@@ -1273,42 +1323,42 @@ p {
   font-size: 50px;
   text-align: center;
 }
-/* line 89, ../sass/_initiative.scss */
+/* line 90, ../sass/_initiative.scss */
 .field:first-child {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   text-align: right;
   width: 85px;
 }
-/* line 95, ../sass/_initiative.scss */
+/* line 96, ../sass/_initiative.scss */
 .field:last-child {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
 
-/* line 100, ../sass/_initiative.scss */
+/* line 101, ../sass/_initiative.scss */
 .finished {
   box-shadow: 0 0 5px 5px #761213;
 }
 
-/* line 103, ../sass/_initiative.scss */
+/* line 104, ../sass/_initiative.scss */
 .player {
   background-color: #51634B;
 }
 
-/* line 106, ../sass/_initiative.scss */
+/* line 107, ../sass/_initiative.scss */
 .remove {
   color: #DFC663;
   cursor: pointer;
   transition: color .3s, background-color .5s;
 }
-/* line 110, ../sass/_initiative.scss */
+/* line 111, ../sass/_initiative.scss */
 .remove:hover {
   color: #FFF;
   background-color: #761213;
 }
 
-/* line 115, ../sass/_initiative.scss */
+/* line 116, ../sass/_initiative.scss */
 .slot {
   display: inline-block;
   width: 390px;
@@ -1318,7 +1368,7 @@ p {
   background-color: #495558;
 }
 
-/* line 123, ../sass/_initiative.scss */
+/* line 124, ../sass/_initiative.scss */
 .tracker {
   width: 450px;
   border-radius: 15px;
@@ -1326,31 +1376,35 @@ p {
   background-color: #222;
   position: relative;
 }
-/* line 129, ../sass/_initiative.scss */
-.tracker #end-turn {
+/* line 130, ../sass/_initiative.scss */
+.tracker button {
+  cursor: pointer;
+}
+/* line 133, ../sass/_initiative.scss */
+.tracker #end-round {
   position: absolute;
   top: 25px;
   right: 120px;
   height: 40px;
-  width: 100px;
+  width: 120px;
   border: none;
-  border-radius: 15px;
+  border-radius: 5px;
   font-weight: 600;
   font-size: 1.2em;
   color: #FFF;
   background-color: #222;
   transition: color .3s, background-color .5s;
 }
-/* line 142, ../sass/_initiative.scss */
-.tracker #end-turn:focus {
+/* line 146, ../sass/_initiative.scss */
+.tracker #end-round:focus {
   outline: none;
 }
-/* line 145, ../sass/_initiative.scss */
-.tracker #end-turn:hover {
+/* line 149, ../sass/_initiative.scss */
+.tracker #end-round:hover {
   color: #FFF;
   background-color: #761213;
 }
-/* line 150, ../sass/_initiative.scss */
+/* line 154, ../sass/_initiative.scss */
 .tracker .round-counter {
   position: absolute;
   top: 20px;

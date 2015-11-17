@@ -4,6 +4,11 @@
 	text-align: center;
 	margin: 10px;
 }
+.stat-small {
+	@extend .stat;
+	width: 70px;
+	margin: 5px;
+}
 .tag {
 	display: block;
 	width: 100%;
@@ -14,6 +19,10 @@
 	font-size: 1.2em;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
+}
+.tag-small {
+	@extend .tag;
+	font-size: .9em; 
 }
 .tagBlue {
 	@extend .tag;
@@ -31,6 +40,10 @@
 	padding: 5px;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
+}
+.value-small {
+	@extend .value;
+	font-size: 2em; 
 }
 .section {
 	width: 100%;

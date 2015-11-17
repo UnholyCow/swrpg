@@ -27,7 +27,12 @@ h3 {
 	color: $eoteyellow;
 	margin: 5px 0;
 }
-p {
+div,
+p,
+li,
+span,
+tr,
+td {
 	font-family: $body-font;
 }
 .aurebesh {
@@ -225,6 +230,10 @@ p {
 		margin: 10px 0;
 		text-align: justify;
 	}
+  strong {
+    font-weight: 600;
+    color: $eoteyellow; 
+  }
 }
 .pcBase {
 	align-self: center;
@@ -257,7 +266,7 @@ p {
 	}
 	@media screen and (min-width: $secondbreak) {
 		display: inline-block;
-		width: auto;
+		width: 98%;
 	}
 	a img {
 		width: 75px;
