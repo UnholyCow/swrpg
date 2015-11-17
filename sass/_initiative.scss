@@ -1,4 +1,4 @@
-.active {
+.active-slot {
   box-shadow: 0 0 5px 5px $eoteblue;
 }
 .add-combatant {
@@ -130,14 +130,14 @@
   button {
     cursor: pointer;
   }
-  #end-turn {
+  #end-round {
     position: absolute;
     top: 25px;
     right: 120px;
     height: 40px;
-    width: 100px;
+    width: 120px;
     border: none;
-    border-radius: 15px;
+    border-radius: 5px;
     font-weight: 600;
     font-size: 1.2em;
     color: #FFF;

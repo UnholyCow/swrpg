@@ -230,6 +230,10 @@ td {
 		margin: 10px 0;
 		text-align: justify;
 	}
+  strong {
+    font-weight: 600;
+    color: $eoteyellow; 
+  }
 }
 .pcBase {
 	align-self: center;
@@ -262,7 +266,7 @@ td {
 	}
 	@media screen and (min-width: $secondbreak) {
 		display: inline-block;
-		width: auto;
+		width: 98%;
 	}
 	a img {
 		width: 75px;

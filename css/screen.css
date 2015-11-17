@@ -10,7 +10,7 @@
 /* Tools */
 /* Media Queries */
 /* Site styling. */
-/* line 5, ../../../Apps/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../Applications/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -32,45 +32,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../Apps/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../Applications/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../Apps/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../Applications/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../Apps/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../Applications/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../Apps/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../Applications/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../Apps/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../Applications/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../Apps/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../Applications/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../Apps/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../Applications/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../Apps/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../Applications/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -692,18 +692,23 @@ td {
   margin: 10px 0;
   text-align: justify;
 }
+/* line 233, ../sass/_styles.scss */
+.info strong {
+  font-weight: 600;
+  color: #DFC663;
+}
 
-/* line 234, ../sass/_styles.scss */
+/* line 238, ../sass/_styles.scss */
 .pcBase {
   align-self: center;
 }
 
-/* line 237, ../sass/_styles.scss */
+/* line 241, ../sass/_styles.scss */
 .right {
   float: right;
 }
 
-/* line 240, ../sass/_styles.scss */
+/* line 244, ../sass/_styles.scss */
 .ruleDie {
   background-color: #222;
   border-radius: 15px;
@@ -712,7 +717,7 @@ td {
   padding: 15px;
 }
 
-/* line 247, ../sass/_styles.scss */
+/* line 251, ../sass/_styles.scss */
 .ruleSymbol {
   background-color: #222;
   border-radius: 15px;
@@ -721,7 +726,7 @@ td {
   padding: 15px;
 }
 
-/* line 254, ../sass/_styles.scss */
+/* line 258, ../sass/_styles.scss */
 .session {
   border-radius: 15px;
   background-color: #222;
@@ -729,20 +734,20 @@ td {
   position: relative;
 }
 @media screen and (min-width: 51em) {
-  /* line 254, ../sass/_styles.scss */
+  /* line 258, ../sass/_styles.scss */
   .session {
     display: inline-block;
     width: 45%;
   }
 }
 @media screen and (min-width: 91em) {
-  /* line 254, ../sass/_styles.scss */
+  /* line 258, ../sass/_styles.scss */
   .session {
     display: inline-block;
-    width: auto;
+    width: 98%;
   }
 }
-/* line 267, ../sass/_styles.scss */
+/* line 271, ../sass/_styles.scss */
 .session a img {
   width: 75px;
   position: absolute;
@@ -750,37 +755,37 @@ td {
   top: 45%;
 }
 @media screen and (min-width: 51em) {
-  /* line 267, ../sass/_styles.scss */
+  /* line 271, ../sass/_styles.scss */
   .session a img {
     width: 120px;
     top: 15%;
   }
 }
 @media screen and (min-width: 91em) {
-  /* line 267, ../sass/_styles.scss */
+  /* line 271, ../sass/_styles.scss */
   .session a img {
     width: 240px;
     top: 15%;
   }
 }
-/* line 281, ../sass/_styles.scss */
+/* line 285, ../sass/_styles.scss */
 .session .sessionText {
   display: none;
   padding-bottom: 15px;
 }
 @media screen and (min-width: 91em) {
-  /* line 281, ../sass/_styles.scss */
+  /* line 285, ../sass/_styles.scss */
   .session .sessionText {
     display: inline-block;
     width: 75%;
   }
 }
-/* line 289, ../sass/_styles.scss */
+/* line 293, ../sass/_styles.scss */
 .session:not(:first-child) {
   margin-top: 10px;
 }
 
-/* line 293, ../sass/_styles.scss */
+/* line 297, ../sass/_styles.scss */
 .sessionMonth {
   margin: 15px 0 0 0;
   padding: 3px 0 3px 10px;
@@ -788,12 +793,12 @@ td {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-/* line 299, ../sass/_styles.scss */
+/* line 303, ../sass/_styles.scss */
 .sessionMonth h1 {
   margin: 0;
 }
 
-/* line 303, ../sass/_styles.scss */
+/* line 307, ../sass/_styles.scss */
 .sessionMonthContainer {
   margin: 0;
   padding: 15px;
@@ -802,39 +807,39 @@ td {
   border-bottom-right-radius: 15px;
 }
 
-/* line 310, ../sass/_styles.scss */
+/* line 314, ../sass/_styles.scss */
 .splitLeft {
   width: 100%;
 }
-/* line 312, ../sass/_styles.scss */
+/* line 316, ../sass/_styles.scss */
 .splitLeft h1 {
   text-align: center;
 }
 @media screen and (min-width: 51em) {
-  /* line 310, ../sass/_styles.scss */
+  /* line 314, ../sass/_styles.scss */
   .splitLeft {
     width: 45%;
     float: left;
   }
 }
 
-/* line 320, ../sass/_styles.scss */
+/* line 324, ../sass/_styles.scss */
 .splitRight {
   width: 100%;
 }
-/* line 322, ../sass/_styles.scss */
+/* line 326, ../sass/_styles.scss */
 .splitRight h1 {
   text-align: center;
 }
 @media screen and (min-width: 51em) {
-  /* line 320, ../sass/_styles.scss */
+  /* line 324, ../sass/_styles.scss */
   .splitRight {
     width: 45%;
     float: right;
   }
 }
 
-/* line 330, ../sass/_styles.scss */
+/* line 334, ../sass/_styles.scss */
 .starship {
   display: inline-block;
   text-align: center;
@@ -843,13 +848,13 @@ td {
   padding: 5px;
   transition: background .3s;
 }
-/* line 337, ../sass/_styles.scss */
+/* line 341, ../sass/_styles.scss */
 .starship h3 {
   padding: 3px;
   transition: color .5s, font-family 1s;
   margin: 0;
 }
-/* line 342, ../sass/_styles.scss */
+/* line 346, ../sass/_styles.scss */
 .starship img {
   height: 100px;
   width: 90%;
@@ -857,34 +862,34 @@ td {
   background-color: #761213;
   transition: border 1s;
 }
-/* line 349, ../sass/_styles.scss */
+/* line 353, ../sass/_styles.scss */
 .starship:hover {
   background-color: #DFC663;
 }
-/* line 351, ../sass/_styles.scss */
+/* line 355, ../sass/_styles.scss */
 .starship:hover h3 {
   color: #222;
   font-family: "Aurebesh Bold";
 }
-/* line 355, ../sass/_styles.scss */
+/* line 359, ../sass/_styles.scss */
 .starship:hover img {
   border: solid 3px #222;
 }
 @media screen and (min-width: 51em) {
-  /* line 330, ../sass/_styles.scss */
+  /* line 334, ../sass/_styles.scss */
   .starship {
     width: 40%;
   }
 }
 
-/* line 363, ../sass/_styles.scss */
+/* line 367, ../sass/_styles.scss */
 .updates {
   width: 40%;
   float: right;
 }
 
 /* line 1, ../sass/_charsheet.scss */
-.stat {
+.stat, .stat-small {
   display: inline-block;
   width: 130px;
   text-align: center;
@@ -892,7 +897,13 @@ td {
 }
 
 /* line 7, ../sass/_charsheet.scss */
-.tag, .tagBlue, .tagRed {
+.stat-small {
+  width: 70px;
+  margin: 5px;
+}
+
+/* line 12, ../sass/_charsheet.scss */
+.tag, .tag-small, .tagBlue, .tagRed {
   display: block;
   width: 100%;
   height: 15%;
@@ -904,18 +915,23 @@ td {
   border-top-right-radius: 10px;
 }
 
-/* line 18, ../sass/_charsheet.scss */
+/* line 23, ../sass/_charsheet.scss */
+.tag-small {
+  font-size: .9em;
+}
+
+/* line 27, ../sass/_charsheet.scss */
 .tagBlue {
   background: #284666;
 }
 
-/* line 22, ../sass/_charsheet.scss */
+/* line 31, ../sass/_charsheet.scss */
 .tagRed {
   background: #761213;
 }
 
-/* line 26, ../sass/_charsheet.scss */
-.value {
+/* line 35, ../sass/_charsheet.scss */
+.value, .value-small {
   width: 100%;
   background: #F4F4F2;
   color: #222;
@@ -925,21 +941,26 @@ td {
   border-bottom-right-radius: 10px;
 }
 
-/* line 35, ../sass/_charsheet.scss */
+/* line 44, ../sass/_charsheet.scss */
+.value-small {
+  font-size: 2em;
+}
+
+/* line 48, ../sass/_charsheet.scss */
 .section {
   width: 100%;
   text-align: center;
   display: inline-block;
 }
 
-/* line 40, ../sass/_charsheet.scss */
+/* line 53, ../sass/_charsheet.scss */
 .pill {
   display: inline-block;
   margin: 10px;
   font-size: 1.1em;
 }
 
-/* line 45, ../sass/_charsheet.scss */
+/* line 58, ../sass/_charsheet.scss */
 .pillLeft {
   display: inline;
   padding: 5px 10px;
@@ -949,7 +970,7 @@ td {
   border-bottom-left-radius: 10px;
 }
 
-/* line 53, ../sass/_charsheet.scss */
+/* line 66, ../sass/_charsheet.scss */
 .pillRight {
   display: inline;
   padding: 5px 10px;
@@ -959,7 +980,7 @@ td {
   border-bottom-right-radius: 10px;
 }
 
-/* line 61, ../sass/_charsheet.scss */
+/* line 74, ../sass/_charsheet.scss */
 .pcPic, .nysroPic, .hayynqPic, .ruskuPic, .monarchPic, .trooperPic {
   height: 300px;
   background: url(../img/rebel_bkg.jpg);
@@ -970,7 +991,7 @@ td {
   margin-bottom: 15px;
   margin-top: 15px;
 }
-/* line 70, ../sass/_charsheet.scss */
+/* line 83, ../sass/_charsheet.scss */
 .pcPic h1, .nysroPic h1, .hayynqPic h1, .ruskuPic h1, .monarchPic h1, .trooperPic h1 {
   position: absolute;
   display: block;
@@ -982,35 +1003,35 @@ td {
   margin: 0;
 }
 
-/* line 81, ../sass/_charsheet.scss */
+/* line 94, ../sass/_charsheet.scss */
 .nysroPic {
   background: url(../img/nysro.jpg);
   background-size: cover;
   background-position: 0 -80px;
 }
 
-/* line 87, ../sass/_charsheet.scss */
+/* line 100, ../sass/_charsheet.scss */
 .hayynqPic {
   background: url(../img/hayynq.jpg);
   background-size: cover;
   background-position: 0 -40px;
 }
 
-/* line 93, ../sass/_charsheet.scss */
+/* line 106, ../sass/_charsheet.scss */
 .ruskuPic {
   background: url(../img/rusku.jpg);
   background-size: cover;
   background-position: 0 -70px;
 }
 
-/* line 99, ../sass/_charsheet.scss */
+/* line 112, ../sass/_charsheet.scss */
 .monarchPic {
   background: url(../img/yt1300_long.jpg);
   background-size: cover;
   background-position: 0 -40px;
 }
 
-/* line 105, ../sass/_charsheet.scss */
+/* line 118, ../sass/_charsheet.scss */
 .trooperPic {
   background: url(../img/trooper.jpg);
   background-size: cover;
@@ -1023,7 +1044,8 @@ td {
 .boost,
 .difficulty,
 .challenge,
-.setback {
+.setback,
+.force {
   background: url(../img/dice.png) no-repeat;
   width: 20px;
   height: 20px;
@@ -1031,34 +1053,39 @@ td {
   vertical-align: middle;
 }
 
-/* line 13, ../sass/_dice.scss */
+/* line 14, ../sass/_dice.scss */
 .ability {
   background-position: 0 0;
 }
 
-/* line 16, ../sass/_dice.scss */
+/* line 17, ../sass/_dice.scss */
 .proficiency {
   background-position: -21px 0;
 }
 
-/* line 19, ../sass/_dice.scss */
+/* line 20, ../sass/_dice.scss */
 .boost {
   background-position: -42px 0;
 }
 
-/* line 22, ../sass/_dice.scss */
+/* line 23, ../sass/_dice.scss */
 .difficulty {
   background-position: -63px 0;
 }
 
-/* line 25, ../sass/_dice.scss */
+/* line 26, ../sass/_dice.scss */
 .challenge {
   background-position: -106px 0;
 }
 
-/* line 28, ../sass/_dice.scss */
+/* line 29, ../sass/_dice.scss */
 .setback {
   background-position: -84px 0;
+}
+
+/* line 32, ../sass/_dice.scss */
+.force {
+  background-position: -128px 0;
 }
 
 /* line 1, ../sass/_symbols.scss */
@@ -1067,7 +1094,9 @@ td {
 .triumph, .triumphAlt,
 .failure, .failureAlt,
 .threat, .threatAlt,
-.despair, .despairAlt {
+.despair, .despairAlt,
+.lightSide, .darkSide,
+.eitherSide {
   background: url(../img/symbols.png) no-repeat;
   width: 20px;
   height: 20px;
@@ -1075,67 +1104,82 @@ td {
   vertical-align: middle;
 }
 
-/* line 13, ../sass/_symbols.scss */
+/* line 15, ../sass/_symbols.scss */
 .success {
   background-position: 0 0;
 }
 
-/* line 16, ../sass/_symbols.scss */
+/* line 18, ../sass/_symbols.scss */
 .advantage {
   background-position: -18px 0;
 }
 
-/* line 19, ../sass/_symbols.scss */
+/* line 21, ../sass/_symbols.scss */
 .triumph {
   background-position: -40px 0;
 }
 
-/* line 22, ../sass/_symbols.scss */
+/* line 24, ../sass/_symbols.scss */
 .failure {
   background-position: -60px 0;
 }
 
-/* line 25, ../sass/_symbols.scss */
+/* line 27, ../sass/_symbols.scss */
 .threat {
   background-position: -78px 0;
 }
 
-/* line 28, ../sass/_symbols.scss */
+/* line 30, ../sass/_symbols.scss */
 .despair {
   background-position: -98px 0;
 }
 
-/* line 31, ../sass/_symbols.scss */
+/* line 33, ../sass/_symbols.scss */
+.lightSide {
+  background-position: -118px 0;
+}
+
+/* line 36, ../sass/_symbols.scss */
+.darkSide {
+  background-position: -138px 0;
+}
+
+/* line 39, ../sass/_symbols.scss */
+.eitherSide {
+  background-position: -158px 0;
+}
+
+/* line 42, ../sass/_symbols.scss */
 .successAlt {
   background-position: 0 -20px;
 }
 
-/* line 34, ../sass/_symbols.scss */
+/* line 45, ../sass/_symbols.scss */
 .advantageAlt {
   background-position: -18px -20px;
 }
 
-/* line 37, ../sass/_symbols.scss */
+/* line 48, ../sass/_symbols.scss */
 .triumphAlt {
   background-position: -40px -20px;
 }
 
-/* line 40, ../sass/_symbols.scss */
+/* line 51, ../sass/_symbols.scss */
 .failureAlt {
   background-position: -60px -20px;
 }
 
-/* line 43, ../sass/_symbols.scss */
+/* line 54, ../sass/_symbols.scss */
 .threatAlt {
   background-position: -78px -20px;
 }
 
-/* line 46, ../sass/_symbols.scss */
+/* line 57, ../sass/_symbols.scss */
 .despairAlt {
   background-position: -98px -20px;
 }
 
-/* line 49, ../sass/_symbols.scss */
+/* line 60, ../sass/_symbols.scss */
 .successBig,
 .advantageBig,
 .triumphBig,
@@ -1149,38 +1193,38 @@ td {
   vertical-align: middle;
 }
 
-/* line 61, ../sass/_symbols.scss */
+/* line 72, ../sass/_symbols.scss */
 .successBig {
   background-position: 1px -40px;
 }
 
-/* line 64, ../sass/_symbols.scss */
+/* line 75, ../sass/_symbols.scss */
 .advantageBig {
   background-position: -35px -40px;
 }
 
-/* line 67, ../sass/_symbols.scss */
+/* line 78, ../sass/_symbols.scss */
 .triumphBig {
   background-position: -70px -40px;
 }
 
-/* line 70, ../sass/_symbols.scss */
+/* line 81, ../sass/_symbols.scss */
 .failureBig {
   background-position: -105px -40px;
 }
 
-/* line 73, ../sass/_symbols.scss */
+/* line 84, ../sass/_symbols.scss */
 .threatBig {
   background-position: -140px -40px;
 }
 
-/* line 76, ../sass/_symbols.scss */
+/* line 87, ../sass/_symbols.scss */
 .despairBig {
   background-position: -175px -40px;
 }
 
 /* line 1, ../sass/_initiative.scss */
-.active {
+.active-slot {
   box-shadow: 0 0 5px 5px #76CDDA;
 }
 
@@ -1337,14 +1381,14 @@ td {
   cursor: pointer;
 }
 /* line 133, ../sass/_initiative.scss */
-.tracker #end-turn {
+.tracker #end-round {
   position: absolute;
   top: 25px;
   right: 120px;
   height: 40px;
-  width: 100px;
+  width: 120px;
   border: none;
-  border-radius: 15px;
+  border-radius: 5px;
   font-weight: 600;
   font-size: 1.2em;
   color: #FFF;
@@ -1352,11 +1396,11 @@ td {
   transition: color .3s, background-color .5s;
 }
 /* line 146, ../sass/_initiative.scss */
-.tracker #end-turn:focus {
+.tracker #end-round:focus {
   outline: none;
 }
 /* line 149, ../sass/_initiative.scss */
-.tracker #end-turn:hover {
+.tracker #end-round:hover {
   color: #FFF;
   background-color: #761213;
 }

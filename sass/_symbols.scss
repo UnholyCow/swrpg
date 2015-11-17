@@ -3,7 +3,9 @@
 .triumph, .triumphAlt,
 .failure, .failureAlt,
 .threat, .threatAlt,
-.despair, .despairAlt {
+.despair, .despairAlt,
+.lightSide, .darkSide,
+.eitherSide {
 	background: url(../img/symbols.png) no-repeat;
 	width: 20px;
 	height: 20px;
@@ -27,6 +29,15 @@
 }
 .despair {
 	background-position: -98px 0;
+}
+.lightSide {
+	background-position: -118px 0;
+}
+.darkSide {
+	background-position: -138px 0;
+}
+.eitherSide {
+	background-position: -158px 0;
 }
 .successAlt {
 	background-position: 0 -20px;

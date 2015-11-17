@@ -3,7 +3,8 @@
 .boost,
 .difficulty,
 .challenge,
-.setback {
+.setback,
+.force {
 	background: url(../img/dice.png) no-repeat;
 	width: 20px;
 	height: 20px;
@@ -27,4 +28,7 @@
 }
 .setback {
 	background-position: -84px 0; 
+}
+.force {
+	background-position: -128px 0; 
 }
