@@ -1,7 +1,8 @@
 .active-slot {
   box-shadow: 0 0 5px 5px $eoteblue;
 }
-.add-combatant {
+.add-combatant,
+.controls {
   width: 500px;
   border-radius: 15px;
   padding: 20px;
@@ -35,19 +36,16 @@
   }
   button {
     display: inline-block;
-    height: 60px;
-    width: 80px;
-    border-radius: 15px;
-    border: none;
-    margin: 5px;
-    vertical-align: middle;
-    font-size: 1em;
-    font-weight: 600;
-    color: $eotecream;
-    background-color: #222;
     cursor: pointer;
-    // border: 2px solid $eoteyellow;
-    transition: background-color .5s;
+    border: none;
+    background: #FFF;
+    color: #222;
+    font-family: $body-font;
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 5px;
+    transition: background .5s, color .3s, box-shadow .2s;
+    cursor: pointer;
   }
   .add-ally,
   .add-enemy,
@@ -59,16 +57,19 @@
   .add-ally {
     &:hover {
       background-color: $eotedarkblue;
+      color: #FFF;
     }
   }
   .add-pc {
     &:hover {
       background-color: $eotegreen;
+      color: #FFF;
     }
   }
   .add-enemy {
     &:hover {
       background-color: $eotered;
+      color: #FFF;
     }
   }
 }
@@ -122,33 +123,28 @@
   background-color: $eoteslate;
 }
 .tracker {
-  width: 450px;
+  width: 550px;
   border-radius: 15px;
   padding: 20px;
   background-color: #222;
   position: relative;
   button {
     cursor: pointer;
-  }
-  #end-round {
-    position: absolute;
-    top: 25px;
-    right: 120px;
-    height: 40px;
-    width: 120px;
     border: none;
-    border-radius: 5px;
-    font-weight: 600;
+    background: #FFF;
+    color: #222;
+    font-family: $body-font;
     font-size: 1.2em;
-    color: #FFF;
-    background-color: #222;
-    transition: color .3s, background-color .5s;
+    padding: 10px;
+    margin: 5px;
+    transition: background .5s, color .3s, box-shadow .2s;
+    &:hover { 
+      box-shadow: inset 0 0 0 3px $eoteyellow;
+      background: none;
+      color: #FFF;
+    }
     &:focus {
       outline: none;
-    }
-    &:hover {
-      color: #FFF;
-      background-color: $eotered;
     }
   }
   .round-counter {
