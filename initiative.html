@@ -6,6 +6,8 @@
 	<link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<link rel="icon" href="img/icon.png">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -49,23 +51,15 @@
 		</div>
 		<div class="tracker right">
 			<h2>Tracker</h2>
-			<div class="round-counter"><h2>Round <span id="round-count">1</span></h2></div>
+			<button type="button" name="end-round" id="begin-combat">Begin Combat</button>
+			<button type="button" name="end-round" id="end-turn">End Turn</button>
 			<button type="button" name="end-round" id="end-round">End Round</button>
-			<div class="tracker-list">
-				<div class="slot finished">
-					<div class="field player">
-						<span>PC</span>
-					</div>
-					<div class="field success-roll">
-						<span>3</span><div class="successBig"></div>
-					</div>
-					<div class="field advantage-roll">
-						<span>1</span><div class="advantageBig"></div>
-					</div>
-					<div class="field">
-						<div class="remove">X</div>
-					</div>
-				</div>
+			<button type="button" name="end-round" id="end-combat">End Combat</button>
+			<button type="button" name="end-round" id="clear">Clear All</button>
+			<div class="round-counter"><h2>Round <span id="round-count" class="aurebesh">1</span></h2></div>
+			<div>
+				<ul id="sortable" class="tracker-list">
+				</ul>
 			</div>
 		</div>
 		<div class="section footer">
