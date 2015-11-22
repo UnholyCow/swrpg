@@ -51,6 +51,10 @@ td {
 	width: 90%;
 	display: inline-block;
 	vertical-align: top;
+  text-align: left;
+  h2 {
+    text-align: center;
+  }
 	@media screen and (min-width: $firstbreak) {
 		width: 40%;
 	}
@@ -193,6 +197,7 @@ td {
 	td:last-child, th:last-child {
 		text-align: justify;
 		padding-left: 20px;
+		max-width: 700px; 
 	}
 	td:first-child {
 		min-width: 80px;
@@ -234,6 +239,11 @@ td {
     font-weight: 600;
     color: $eoteyellow; 
   }
+}
+.block {
+  width: 45%;
+  display: inline-block;
+  margin: 0 10px; 
 }
 .pcBase {
 	align-self: center;

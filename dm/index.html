@@ -24,6 +24,850 @@
 		</ul>
 	</nav>
   <div class="container">
+    <div class="section">
+      <h2>Difficulty Levels</h2>
+      <table class="eoteTable justifyLast">
+        <tr>
+          <th>Difficulty Level</th>
+          <th>Dice</th>
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td>Simple</td>
+          <td>-</td>
+          <td>Dead simple tasks.</td>
+        </tr>
+        <tr>
+          <td>Easy</td>
+          <td><div class="difficulty"></div></td>
+          <td>Picking a primitive lock, tending to minor cuts and bruises, finding food and shelter on a lush planet, shooting target at close range.</td>
+        </tr>
+        <tr>
+          <td>Average</td>
+          <td><div class="difficulty"></div>
+          <div class="difficulty"></div></td>
+          <td>Picking a typical lock, stitching up a small wound, finding food and shelter on a temperate planet, shooting target at medium range or trying to strike an engaged target.</td>
+        </tr>
+        <tr>
+          <td>Hard</td>
+          <td><div class="difficulty"></div>
+          <div class="difficulty"></div><div class="difficulty"></div></td>
+          <td>Picking a complicated lock, setting broken bones or suturing large wounds, finding food and shelter on a rugged planet, shooting target at long range.</td>
+        </tr>
+        <tr>
+          <td>Daunting</td>
+          <td><div class="difficulty"></div>
+          <div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div></td>
+          <td>Picking an exceptionally sophistacated lock, performing surgery or grafting implants, finding food and shelter on a barren planet, shooting target at extreme range.</td>
+        </tr>
+        <tr>
+          <td>Formidable</td>
+          <td><div class="difficulty"></div>
+          <div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div></td>
+          <td>Picking a lock with no comprehiensible mechinism, cloning a new body, finding food and shelter on a planet without breathable atmosphere.</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <div class="splitLeft">
+        <h2>Attack Difficulties</h2>
+        <table class="eoteTable justifyLast">
+          <tr>
+            <th>Range Band</th>
+            <th>Difficulty</th>
+          </tr>
+          <tr>
+            <td>Engaged</td>
+            <td><span>Easy (<div class="difficulty"></div>)</span> plus modifiers depending on weapon used.</td>
+          </tr>
+          <tr>
+            <td>Short</td>
+            <td><span>Easy (<div class="difficulty"></div>)</span></td>
+          </tr>
+          <tr>
+            <td>Medium</td>
+            <td><span>Average (<div class="difficulty"></div>
+            <div class="difficulty"></div>)</span></td>
+          </tr>
+          <tr>
+            <td>Long</td>
+            <td><span>Hard (<div class="difficulty"></div>
+            <div class="difficulty"></div>
+            <div class="difficulty"></div>)</span></td>
+          </tr>
+          <tr>
+            <td>Extreme</td>
+            <td><span>Daunting (<div class="difficulty"></div>
+            <div class="difficulty"></div>
+            <div class="difficulty"></div>
+            <div class="difficulty"></div>)</span></td>
+          </tr>
+          <tr>
+            <td colspan="2">Melee attacks (Brawl or Melee checks) are always <span>Average (<div class="difficulty"></div>
+            <div class="difficulty"></div>).</span></td>
+          </tr>
+        </table>
+      </div>
+      <div class="splitRight">
+        <h2>Ranged Difficulty Modifiers</h2>
+        <table class="eoteTable justifyLast">
+          <tr>
+            <th>Condition</th>
+            <th>Modifier</th>
+          </tr>
+          <tr>
+            <td>Engaged w/ Ranged (Light)</td>
+            <td>+1 difficulty</td>
+          </tr>
+          <tr>
+            <td>Engaged w/ Ranged (Heavy)</td>
+            <td>+2 difficulty</td>
+          </tr>
+          <tr>
+            <td>Engaged w/ Gunnery</td>
+            <td>No Gunnery checks when engaged with an opponent.</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="section">
+      <div class="splitLeft">
+        <h2>Medical Check Difficulty</h2>
+        <table class="eoteTable justifyLast">
+          <tr>
+            <th>Current Wounds</th>
+            <th>Medical Check</th>
+          </tr>
+          <tr>
+            <td>Half or less of wound threshold</td>
+            <td><span>Easy (<div class="difficulty"></div>)</span></td>
+          </tr>
+          <tr>
+            <td>More than half of wound threshold</td>
+            <td><span>Average (<div class="difficulty"></div>
+            <div class="difficulty"></div>)</span></td>
+          </tr>
+          <tr>
+            <td>Exceeding wound threshold</td>
+            <td><span>Hard (<div class="difficulty"></div>
+            <div class="difficulty"></div>
+            <div class="difficulty"></div>)</span></td>
+          </tr>
+          <tr>
+            <td>Recover Critical Injury</td>
+            <td>Critical Injury Severity Rating</td>
+          </tr>
+        </table>
+      </div>
+      <div class="splitRight">
+        <h2>Damage Control Difficulty</h2>
+        <table class="eoteTable justifyLast">
+          <tr>
+            <th>Total System Strain / Hull Trauma</th>
+            <th>Difficulty</th>
+          </tr>
+          <tr>
+            <td>Less then half threshold</td>
+            <td><span>Easy (<div class="difficulty"></div>)</span></td>
+          </tr>
+          <tr>
+            <td>Equal to or more than half threshold</td>
+            <td><span>Average (<div class="difficulty"></div>
+            <div class="difficulty"></div>)</span></td>
+          </tr>
+          <tr>
+            <td>Exceeds threshold</td>
+            <td><span>Hard (<div class="difficulty"></div>
+            <div class="difficulty"></div>
+            <div class="difficulty"></div>)</span></td>
+          </tr>
+          <tr>
+            <td>Repair Critical Hit</td>
+            <td>Critical Hit Severity Rating</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="section">
+      <div class="splitLeft">
+        <h2>Social Skill Interactions</h2>
+        <table class="eoteTable">
+          <tr>
+            <th>Acting Skill</th>
+            <th>Opposing Skill</th>
+          </tr>
+          <tr>
+            <td>Coercion, Deception, Leadership</td>
+            <td>Discipline</td>
+          </tr>
+          <tr>
+            <td>Charm</td>
+            <td>Cool</td>
+          </tr>
+          <tr>
+            <td>Negotiation</td>
+            <td>Negotiation or Cool</td>
+          </tr>
+        </table>
+      </div>
+      <div class="splitRight">
+        <h2>Repairing Gear</h2>
+        <table class="eoteTable">
+          <tr>
+            <th>Repair Required</th>
+            <th>Difficulty Rating</th>
+            <th>Cost</th>
+            <th>Penalty for Use</th>
+          </tr>
+          <tr>
+            <td>Minor</td>
+            <td><div class="difficulty"></div></td>
+            <td>25% Total</td>
+            <td><span>+ <div class="setback"></div></span></td>
+          </tr>
+          <tr>
+            <td>Moderate</td>
+            <td><div class="difficulty"></div>
+            <div class="difficulty"></div></td>
+            <td>50% Total</td>
+            <td><span>+ <div class="difficulty"></div></span></td>
+          </tr>
+          <tr>
+            <td>Major</td>
+            <td><div class="difficulty"></div>
+            <div class="difficulty"></div>
+            <div class="difficulty"></div></td>
+            <td>100% Total</td>
+            <td>Unusable</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Silhouette Comparison</h2>
+      <table class="eoteTable justifyLast">
+        <tr>
+          <th>Difference in Silhouette</th>
+          <th>Difficulty</th>
+        </tr>
+        <tr>
+          <td>Firing vessel has the same silhouette as target, or one larger than the target.</td>
+          <td><span>Average (<div class="difficulty"></div>
+          <div class="difficulty"></div>)</span></td>
+        </tr>
+        <tr>
+          <td>Firing vessel has a silhouette two or more points smaller than the target vessel.</td>
+          <td><span>Easy (<div class="difficulty"></div>)</span></td>
+        </tr>
+        <tr>
+          <td>Firing vessel has a silhouette two points larger than the target ship.</td>
+          <td><span>Hard (<div class="difficulty"></div>
+          <div class="difficulty"></div>
+          <div class="difficulty"></div>)</span></td>
+        </tr>
+        <tr>
+          <td>Firing vessel has a silhouette three points larger than the target ship.</td>
+          <td><span>Daunting (<div class="difficulty"></div>
+          <div class="difficulty"></div>
+          <div class="difficulty"></div>
+          <div class="difficulty"></div>)</span></td>
+        </tr>
+        <tr>
+          <td>Firing vessel has a silhouette four points larger than the target ship.</td>
+          <td><span>Formidable (<div class="difficulty"></div>
+          <div class="difficulty"></div>
+          <div class="difficulty"></div>
+          <div class="difficulty"></div>
+          <div class="difficulty"></div>)</span></td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Speed Advantage Difficulty</h2>
+      <table class="eoteTable justifyLast">
+        <tr>
+          <th>Difference in Speed</th>
+          <th>Difficulty</th>
+        </tr>
+        <tr>
+          <td>Initiating ship is traveling at the same speed as the target ship.</td>
+          <td><span>Average (<div class="difficulty"></div>
+          <div class="difficulty"></div>)</span></td>
+        </tr>
+        <tr>
+          <td>Initiating ship's speed is one or more higher than the target ship.</td>
+          <td><span>Easy (<div class="difficulty"></div>)</span></td>
+        </tr>
+        <tr>
+          <td>Initiating ship's speed is one lower than the target ship.</td>
+          <td><span>Hard (<div class="difficulty"></div>
+          <div class="difficulty"></div><div class="difficulty"></div>)</span></td>
+        </tr>
+        <tr>
+          <td>Initiating ship's speed is two or more lower than the target ship.</td>
+          <td><span>Daunting (<div class="difficulty"></div>
+          <div class="difficulty"></div><div class="difficulty"></div>
+          <div class="difficulty"></div>)</span></td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Navigation Hazard Setback Dice</h2>
+      <table class="eoteTable justifyLast">
+        <tr>
+          <th>Setback Dice</th>
+          <th>Planetary &amp; Space Description</th>
+        </tr>
+        <tr>
+          <td rowspan="2">-</td>
+          <td>Flat, clear terrain. Roads, firm fields, grassy plains, or (if flying) clear skies and good weather.</td>
+        </tr>
+        <tr>
+          <td>An easy, relatively unchallenging navigation situation. A broad, loosely packed asteroid field, for example, or a thin, calm nebula.</td>
+        </tr>
+        <tr>
+          <td rowspan="2"><div class="setback"></div></td>
+          <td>Somewhat trickier terrain. Scattered trees, dense undergrowth, rolling hills, sand dunes, or windy weather.</td>
+        </tr>
+        <tr>
+          <td>A tricky but not seriously daunting set of obstacles. Flying over high mountains on a moon, or a thicker asteroid field or nebula.</td>
+        </tr>
+        <tr>
+          <td rowspan="2"><div class="setback"></div>
+          <div class="setback"></div></td>
+          <td>Dagnerous terrain. A thick forest, steep, rock-covered hills, or flying in atmosphere during a violent storm.</td>
+        </tr>
+        <tr>
+          <td>A dangerous astronomical feature. Flying around or through a fracturing comet, or navigating through a particularly dense and turbulent asteroid field.</td>
+        </tr>
+        <tr>
+          <td rowspan="2"><div class="setback"></div>
+          <div class="setback"></div>
+          <div class="setback"></div></td>
+          <td>Very risky terrain. Sheer cliff faces, deep swamps, lava with only a thin crust of hardened rock, or speeding through a canyon only just wide enough for a vehicle to fit through. All are examples of flying or driving terrain.</td>
+        </tr>
+        <tr>
+          <td>An extremely dangerous situation calling on every ounce of a pilot's skill and coolness. Navigating the Maw, flying close to a deadly pulsar, flying through asteroid tunnels, or other dangerous and foolhardy pursuits.</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <div class="splitLeft">
+        <h2>Sublight Travel Times</h2>
+        <table class="eoteTable justifyLast">
+          <tr>
+            <th>Trip Time</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <td>5-15 minutes</td>
+            <td>Time needed to travel from a planet's orbit to a safe hyperspace jump distance.</td>
+          </tr>
+          <tr>
+            <td>30-90 minutes</td>
+            <td>Time needed to travel from a planet's surface to one of its moons.</td>
+          </tr>
+          <tr>
+            <td>6-12 hours</td>
+            <td>Time needed to fly from one planet to another within the same star system. This time varies a great deal depending on the relative position of the planets in question, and any steller phenomena between them.</td>
+          </tr>
+          <tr>
+            <td>12-72 hours</td>
+            <td>Time needed to fly from the center of a star system to its further limits. Again, this time can vary greatly depending on the stellar bodies and obsticles in the way.</td>
+          </tr>
+        </table>
+      </div>
+      <div class="splitRight">
+        <h2>Astrogation Modifiers</h2>
+        <table class="eoteTable justifyLast">
+          <tr>
+            <th>+ <div class="difficulty"></div></th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>+ <div class="difficulty"></div>
+            <div class="difficulty"></div>
+            <div class="difficulty"></div></td>
+            <td>Damaged or missing astromech droid or navicomputer.</td>
+          </tr>
+          <tr>
+            <td>+ <div class="difficulty"></div></td>
+            <td>Quick calculations or entry into hyperspace under duress, typically while escaping from pursuit.</td>
+          </tr>
+          <tr>
+            <td>+ <div class="difficulty"></div></td>
+            <td>Ship is lightly damaged.</td>
+          </tr>
+          <tr>
+            <td>+ <div class="difficulty"></div>
+            <div class="difficulty"></div></td>
+            <td>Ship is heavily damaged.</td>
+          </tr>
+          <tr>
+            <td>+ <div class="difficulty"></div></td>
+            <td>Outdated, corrupt, or counterfeit navigation charts or navicomputer data.</td>
+          </tr>
+        </table>
+        <h2>Hyperspace Travel Times</h2>
+        <table class="eoteTable justifyLast">
+          <tr>
+            <th>Distance Traveled</th>
+            <th>Average Duration</th>
+          </tr>
+          <tr>
+            <td>Within a sector</td>
+            <td>Ten to twenty-four hours</td>
+          </tr>
+          <tr>
+            <td>Within a region</td>
+            <td>Ten to seventy-two hours</td>
+          </tr>
+          <tr>
+            <td>Between regions</td>
+            <td>Three days to one week</td>
+          </tr>
+          <tr>
+            <td>Across the galaxy</td>
+            <td>One to three weeks</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="info">
+     <div class="section">
+        <h2>Weapon Qualities</h2>
+       <i>Active qualities require <div class="advantageAlt"></div><div class="advantageAlt"></div> to trigger unless listed otherwise.</i>
+     </div>
+      <div class="block">
+        <ul>
+          <li><strong>Accurate (Passive): </strong>Add <div class="boost"></div> per rating to attack checks.</li>
+          <li><strong>Auto-Fire (Passive): </strong>Increase difficulty of attack checks by <div class="difficulty"></div>. May trigger multiple times to generate additional hits.</li>
+          <li><strong>Breach (Passive): </strong>Ignore 1 point of armor (10 points of soak) per rating.</li>
+          <li><strong>Burn (Active): </strong>When triggered, target suffers weapon's base damage for a number of rounds equal to</li>
+          <li><strong>Blast (Active): </strong>When triggered, targets engaged with target suffer wounds equal to rating.</li>
+          <li><strong>Concussive (Active): </strong>When triggered, target is staggered a number of rounds equal to rating.</li>
+          <li><strong>Cortosis (Passive): </strong>Weapons are immune to Sunder, armor is immune to Pierce and Breach.</li>
+          <li><strong>Cumbersome (Passive): </strong>Must have Brawn equal to rating or increase difficulty by difference to all checks.</li>
+          <li><strong>Defensive (Passive): </strong>Increase melee defense by rating.</li>
+          <li><strong>Deflection (Passive): </strong>Increase ranged defense by rating.</li>
+          <li><strong>Disorient (Active): </strong>When triggered, target is disoriented a number of rounds equal to rating.</li>
+          <li><strong>Ensnare (Active): </strong>When triggered, target is immobilized a nubmer of rounds equal to rating.</li>
+          <li><strong>Guided (Active): </strong>Requires <div class="advantageAlt"></div>
+          <div class="advantageAlt"></div>
+          <div class="advantageAlt"></div> to trigger. If triggered and attack misses, make additional attack with ability equail to Guided rating.</li>
+          <li><strong>Knockdown (Active): </strong>Requires additional <div class="advantageAlt"></div> per silhouette beyond 1 to trigger. When triggered, target is knocked prone.</li>
+        </ul>
+      </div>
+      <div class="block" style="vertical-align: top">
+        <ul>
+          <li><strong>Inaccurate (Passive): </strong>Adds <div class="setback"></div> to attack checks equal to rating.</li>
+          <li><strong>Inferior (Passive): </strong>Adds <div class="threatAlt"></div> to all check results, decreases base damage or defense by 1. If no defense then decrease soak by 1.</li>
+          <li><strong>Ion (Passive): </strong>Deal damage to system strain threshold.</li>
+          <li><strong>Limited Ammo (Passive): </strong>May make number of attacks equal to rating, then must be reloaded.</li>
+          <li><strong>Linked (Active): </strong>When triggered, may generate additional hit on same target. May trigger number of times equal to rating.</li>
+          <li><strong>Pierce (Passive): </strong>Ignores number of points of soak equal to rating.</li>
+          <li><strong>Prepare (Passive): </strong>Must perform a number of preparation maneuvers equal to rating before using weapon.</li>
+          <li><strong>Slow-Firing (Passive): </strong>After using, must wait number of rounds equal to rating before using again.</li>
+          <li><strong>Stun (Active): </strong>When triggered, inflicts strain equal to rating.</li>
+          <li><strong>Stun Damage (Passive): </strong>Attacks deal damage as strain instead of wounds. This is still reduced by soak.</li>
+          <li><strong>Sunder (Active): </strong>Trigger to damage weapon or item.</li>
+          <li><strong>Superior (Active): </strong>Adds <div class="advantageAlt"></div> to all check results, increases base damage by 1 or defense by 1.</li>
+          <li><strong>Tractor (Passive): </strong>On hit, target may not move unless it passes a check to break free.</li>
+          <li><strong>Vicious (Passive): </strong>When scoring a critical injury or hit, add 10 times rating to the result.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Improvised Weapons</h2>
+      <table class="eoteTable">
+        <tr>
+          <th>Size</th>
+          <th>Dam</th>
+          <th>Crit</th>
+          <th>Range</th>
+          <th>Enc</th>
+          <th>Special</th>
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td>Small</td>
+          <td>+1</td>
+          <td>5</td>
+          <td>Engaged</td>
+          <td>1</td>
+          <td>-</td>
+          <td>Bottle, fist-sized rock, htydrospanner</td>
+        </tr>
+        <tr>
+          <td>Medium</td>
+          <td>+2</td>
+          <td>5</td>
+          <td>Engaged</td>
+          <td>3</td>
+          <td>Cumbersome 2</td>
+          <td>Two-handed rock, chair, holovid screen</td>
+        </tr>
+        <tr>
+          <td>Large</td>
+          <td>+3</td>
+          <td>5</td>
+          <td>Engaged</td>
+          <td>4</td>
+          <td>Cumbersome 4</td>
+          <td>Shovel, large tree branch, table, crate</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <div class="splitLeft">
+        <h2>Silhouettes &amp; Characters</h2>
+        <table class="eoteTable justifyLast">
+          <tr>
+            <th>Silhouette</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>Jawas, Ewoks, astromech droid, any smaller creatures.</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Humans, Wookies, Gand, Rodians, Trandoshans, Twi'leks, humanoid droids, Bothans, and most humanoid species.</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Dewbacks, wompas, tauntauns, banthas, most riding animals.</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Rancors, krayt dragons, other large and dangerous creatures.</td>
+          </tr>
+          <tr>
+            <td>4+</td>
+            <td>There are some creatures in the galaxy even larger than those listed.</td>
+          </tr>
+        </table>
+      </div>
+      <div class="splitRight">
+        <h2>Concealment</h2>
+        <table class="eoteTable justifyLast">
+          <tr>
+            <th>Setback</th>
+            <th>Examples</th>
+          </tr>
+          <tr>
+            <td>+1</td>
+            <td>Mist, shadow, waist-high grass.</td>
+          </tr>
+          <tr>
+            <td>+2</td>
+            <td>Fog, dawn or dusk, thick shoulder-high grass.</td>
+          </tr>
+          <tr>
+            <td>+3</td>
+            <td>Heavy fog, thick and choking smoke, the darkness of night, dense head-high underbrush and thick grass.</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="section">
+      <div class="splitLeft">
+        <h2>Falling Damage</h2>
+        <table class="eoteTable">
+          <tr>
+            <th>Range</th>
+            <th>Damage</th>
+            <th>Strain</th>
+          </tr>
+          <tr>
+            <td>Short</td>
+            <td>10</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Medium</td>
+            <td>30</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>Long</td>
+            <td>Incapacitated, Critical Injury at +50</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>Extreme</td>
+            <td>Incapacitated, Critical Injury at +75 (or death at GMs discretion)</td>
+            <td>40</td>
+          </tr>
+        </table>
+      </div>
+      <div class="splitRight">
+        <h2>Fire, Acid, and Corrosive Atmospheres</h2>
+        <table class="eoteTable justifyLast">
+          <tr>
+            <th>Rating</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <td>1-2</td>
+            <td>Campfires, mildly caustic substances such as concentrated industrial cleansers, air filled wish ash and fumes from heavy fire.</td>
+          </tr>
+          <tr>
+            <td>3-5</td>
+            <td>Flammable liquids and flame projectors, dangerous substances such as industrial acids, air contaminated by chemical leaks.</td>
+          </tr>
+          <tr>
+            <td>6-9</td>
+            <td>Welding torches, weaponized acids, atmospheres with substantial parts dangerous gasses such as ammonia.</td>
+          </tr>
+          <tr>
+            <td>10+</td>
+            <td>Lava, blast furnaces, atmospheres completely made of unbreathable and hazardous gasses such as ammonia methane mixes with acid vapors.</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Gear Rarity</h2>
+      <table class="eoteTable">
+        <tr>
+          <th>Rarity</th>
+          <th>Check</th>
+          <th>Examples</th>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td rowspan="2"><span>Simple (-)</span></td>
+          <td>Glow Rod</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Long-range Commlink</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td rowspan="2"><span>Easy (<div class="difficulty"></div>)</span></td>
+          <td>Medpac</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Scanner Goggles</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td rowspan="2"><span>Average (<div class="difficulty"></div>
+          <div class="difficulty"></div>)</span></td>
+          <td>Blaster Pistol</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Blaster Rifle</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td rowspan="2"><span>Hard (<div class="difficulty"></div>
+          <div class="difficulty"></div>
+          <div class="difficulty"></div>)</span></td>
+          <td>Cybernetic Limb</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Bowcaster</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td rowspan="2"><span>Daunting (<div class="difficulty"></div>
+          <div class="difficulty"></div>
+          <div class="difficulty"></div>
+          <div class="difficulty"></div>)</span></td>
+          <td>Thermal Detonator</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Personal Stealth Field</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td><span>Formidable (<div class="difficulty"></div>
+          <div class="difficulty"></div>
+          <div class="difficulty"></div>
+          <div class="difficulty"></div>
+          <div class="difficulty"></div>)</span></td>
+          <td>Package of Lesai</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <div class="splitLeft">
+        <h2>Rarity Modifiers</h2>
+        <table class="eoteTable justifyLast">
+          <tr>
+            <th>Rarity Modifier</th>
+            <th>Circumstances</th>
+          </tr>
+          <tr>
+            <td>-2</td>
+            <td>Primary Core World such as Coruscant, Duro, or Corellia</td>
+          </tr>
+          <tr>
+            <td>-1</td>
+            <td>Other Core World or world on primary trade lane</td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>Colony or Inner Rim world. Civilized world</td>
+          </tr>
+          <tr>
+            <td>+1</td>
+            <td>Mid Rim world. Recently settled or out of the way world</td>
+          </tr>
+          <tr>
+            <td>+2</td>
+            <td>Outer Rim or frontier world</td>
+          </tr>
+          <tr>
+            <td>+3</td>
+            <td>Wild Space world</td>
+          </tr>
+          <tr>
+            <td>+4</td>
+            <td>Uncivilized world</td>
+          </tr>
+        </table>
+      </div>
+      <div class="splitRight">
+        <h2>Increased Costs When Trading</h2>
+        <table class="eoteTable">
+          <tr>
+            <th>Rarity Increase</th>
+            <th>Cost Increase</th>
+          </tr>
+          <tr>
+            <td>+0-1</td>
+            <td>X1</td>
+          </tr>
+          <tr>
+            <td>+2</td>
+            <td>X2</td>
+          </tr>
+          <tr>
+            <td>+3</td>
+            <td>X3</td>
+          </tr>
+          <tr>
+            <td>+4 or higher</td>
+            <td>X4</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="section">
+      <div class="splitLeft">
+        <h2>Droid Prices</h2>
+        <table class="eoteTable">
+          <tr>
+            <th>Droid Type</th>
+            <th>Cost</th>
+            <th>Rarity</th>
+          </tr>
+          <tr>
+            <td>Antiquated Battle Droids</td>
+            <td>6,500<span class="aurebesh">$</span></td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Assassin Droid</td>
+            <td>(R) 65,000<span class="aurebesh">$</span></td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>Astromech Droid</td>
+            <td>8,250<span class="aurebesh">$</span></td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Maintenance Droid</td>
+            <td>7.500<span class="aurebesh">$</span></td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Medical Droid</td>
+            <td>12,000<span class="aurebesh">$</span></td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Protocol Droid</td>
+            <td>8,000<span class="aurebesh">$</span></td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Security Droid</td>
+            <td>9,600<span class="aurebesh">$</span></td>
+            <td>5</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Fear Guidelines</h2>
+      <table class="eoteTable justifyLast">
+        <tr>
+          <th>State of Fear</th>
+          <th>Difficulty</th>
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td>Minimally Afraid</td>
+          <td><span>Easy (<div class="difficulty"></div>)</span></td>
+          <td>Somewhat overmatched in combat; a minimally dangerous creature; a minor threat to one's safety.</td>
+        </tr>
+        <tr>
+          <td>Moderately Afraid</td>
+          <td><span>Average (<div class="difficulty"></div>
+          <div class="difficulty"></div>)</span></td>
+          <td>Obviously overmatched in combat; a dangerously aggressive creature; a credible threat to one's safety and minimal threat to one's life.</td>
+        </tr>
+        <tr>
+          <td>Very Afraid</td>
+          <td><span>Hard (<div class="difficulty"></div>
+          <div class="difficulty"></div>
+          <div class="difficulty"></div>)</span></td>
+          <td>Battlefield combat; a pack of aggressive creatures; a major threat to one's safety and moderate threat to one's life.</td>
+        </tr>
+        <tr>
+          <td>Mortally Afraid</td>
+          <td><span>Daunting (<div class="difficulty"></div>
+          <div class="difficulty"></div>
+          <div class="difficulty"></div>
+          <div class="difficulty"></div>)</span></td>
+          <td>Terrifyingly intense combat; confronting a large and dangerous creature such as a rancor; overwhelming fear for one's life.</td>
+        </tr>
+        <tr>
+          <td>Utterly Afraid</td>
+          <td><span>Formidable (<div class="difficulty"></div>
+          <div class="difficulty"></div>
+          <div class="difficulty"></div>
+          <div class="difficulty"></div>
+          <div class="difficulty"></div>)</span></td>
+          <td>A hopeless and utterly terrifying situation; combat against things incomprehensible to one's mind; being chased by a pack of rancors; fear so crippling that sanity cracks.</td>
+        </tr>
+        <tr>
+          <td>Confronting something reputed to be dangerous.</td>
+          <td>1 <div class="difficulty"></div> upgrade</td>
+          <td>Confronting a Sith warrior, or an Imperial Intelligence agent; Negotiating with Jabba the Hutt.</td>
+        </tr>
+        <tr>
+          <td>Confronting something known to be dangerous and very rare.</td>
+          <td>2 <div class="difficulty"></div> upgrade</td>
+          <td>Being trapped in the gullet of a Sarlacc.</td>
+        </tr>
+        <tr>
+          <td>Confronting something known to be extremely dangerous and unique.</td>
+          <td>3 <div class="difficulty"></div> upgrade</td>
+          <td>Fighting Darth Vader.</td>
+        </tr>
+      </table>
+    </div>
     <div class="section footer">
 			<p class="aurebesh-bold">This Star Wars site is created solely to enjoy the Fantasy Flight Games tabletop game. It is in no way official.</p>
 		</div>
