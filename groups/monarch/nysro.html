@@ -66,6 +66,14 @@
 			</div>
 			<div class="pill">
 				<div class="pillLeft">
+					<span>Encumbrance</span>
+				</div>
+				<div class="pillRight">
+					<span>8</span>
+				</div>
+			</div>
+			<div class="pill">
+				<div class="pillLeft">
 					<span>Earned XP</span>
 				</div>
 				<div class="pillRight">
@@ -169,7 +177,7 @@
 		</div>
 		<div class="section">
 			<h2>Skills</h2>
-			<table class="eoteTable splitLeft">
+			<table class="eoteTable splitLeft justifyFirst">
 				<tr>
 					<th>General Skills</th>
 					<th>Career?</th>
@@ -225,10 +233,10 @@
 				<tr>
 					<td>Cool (Pr)</td>
 					<td></td>
-					<td>0</td>
+					<td>1</td>
 					<td>
 						<div class="ability"></div>
-						<div class="ability"></div>
+						<div class="proficiency"></div>
 					</td>
 				</tr>
 				<tr>
@@ -379,7 +387,7 @@
 					</td>
 				</tr>
 			</table>
-			<table class="eoteTable splitRight">
+			<table class="eoteTable splitRight justifyFirst">
 				<tr>
 					<th>Combat Skills</th>
 					<th>Career?</th>
@@ -408,10 +416,10 @@
 				<tr>
 					<td>Melee (Br)</td>
 					<td></td>
-					<td>1</td>
+					<td>3</td>
 					<td>
-						<div class="ability"></div>
-						<div class="ability"></div>
+						<div class="proficiency"></div>
+						<div class="proficiency"></div>
 						<div class="proficiency"></div>
 					</td>
 				</tr>
@@ -434,7 +442,7 @@
 					</td>
 				</tr>
 			</table>
-			<table class="eoteTable splitRight">
+			<table class="eoteTable splitRight justifyFirst">
 				<tr>
 					<th>Knowledge Skills</th>
 					<th>Career?</th>
@@ -492,7 +500,7 @@
 					<td>0</td>
 					<td>
 						<div class="ability"></div>
-						<div class="proficiency"></div>
+						<div class="ability"></div>
 					</td>
 				</tr>
 				<tr>
@@ -508,31 +516,37 @@
 		</div>
 		<div class="section">
 			<h2>Weapons</h2>
-			<table class="eoteTable">
+			<table class="eoteTable justifyLast justifyFirst">
 				<tr>
 					<th>Weapon</th>
 					<th>Skill</th>
 					<th>Damage</th>
 					<th>Range</th>
 					<th>Crit</th>
+					<th>Pool</th>
 					<th>Special</th>
 				</tr>
 				<tr>
 					<td>Vibro-ax</td>
 					<td>Melee</td>
-					<td>3+3</td>
+					<td>4+3</td>
 					<td>Engaged</td>
-					<td>1</td>
-					<td>Pierce 2<br>
-					Sunder (<div class="advantage"></div>)<br>
-					Vicious 3</td>
+					<td><div class="advantage"></div></td>
+					<td><div class="proficiency"></div>
+					<div class="proficiency"></div>
+					<div class="proficiency"></div></td>
+					<td>Pierce 2,	Sunder (<div class="advantage"></div>), Vicious 3</td>
 				</tr>
 				<tr>
 					<td>Blaster Pistol</td>
 					<td>Ranged - Light</td>
 					<td>6</td>
 					<td>Medium</td>
-					<td>3</td>
+					<td><div class="advantage"></div>
+					<div class="advantage"></div>
+					<div class="advantage"></div></td>
+					<td><div class="ability"></div>
+					<div class="ability"></div></td>
 					<td>Stun Setting</td>
 				</tr>
 				<tr>
@@ -540,68 +554,183 @@
 					<td>Melee</td>
 					<td>3+1</td>
 					<td>Engaged</td>
-					<td>3</td>
+					<td><div class="advantage"></div>
+					<div class="advantage"></div>
+					<div class="advantage"></div></td>
+					<td><div class="proficiency"></div>
+					<div class="proficiency"></div>
+					<div class="proficiency"></div></td>
 					<td></td>
+				</tr>
+				<tr>
+					<td>Stun Grenade</td>
+					<td>Ranged - Light</td>
+					<td>8</td>
+					<td>Short</td>
+					<td>NA</td>
+					<td><div class="ability"></div>
+					<div class="ability"></div></td>
+					<td>Disorient 3, Stun Damage, Blast 8, Limited Ammo 1</td>
 				</tr>
 				<tr>
 					<td>Claws</td>
 					<td>Brawl</td>
 					<td>3+1</td>
 					<td>Engaged</td>
-					<td>3</td>
+					<td>
+						<div class="advantage"></div>
+						<div class="advantage"></div>
+						<div class="advantage"></div>
+					</td>
+					<td>
+						<div class="ability"></div>
+						<div class="proficiency"></div>
+						<div class="proficiency"></div>
+					</td>
 					<td></td>
 				</tr>
 			</table>
 		</div>
 		<div class="section">
 			<h2>Gear</h2>
-			<table class="eoteTable">
-				<tr>
+			<table class="eoteTable justifyLast justifyFirst">
+				<caption>Weapons</caption>
+				<tr class="flush">
 					<th>Item</th>
-					<th>Quantity</th>
-					<th>Encumbrance</th>
+					<th>Qty</th>
+					<th>Enc</th>
+					<th>Carry</th>
+					<th>Equip</th>
+					<th>Dam</th>
+					<th>Crit</th>
+					<th>Range</th>
+					<th>HP</th>
+					<th>Notes</th>
+				</tr>
+				<tr>
+					<td>Blaster Pistol</td>
+					<td>1</td>
+					<td>1</td>
+					<td>&#10004;</td>
+					<td></td>
+					<td>6</td>
+					<td>3</td>
+					<td>Medium</td>
+					<td>3</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Vibro-ax</td>
+					<td>1</td>
+					<td>4</td>
+					<td>&#10004;</td>
+					<td>&#10004;</td>
+					<td>7</td>
+					<td>1</td>
+					<td>Engaged</td>
+					<td>3</td>
+					<td><span>Attachments: </span>Mono-molecular Edge (Crit -1), Jury Rigged: +1 damage.</td>
+				</tr>
+				<tr>
+					<td>Combat Knife</td>
+					<td>1</td>
+					<td>1</td>
+					<td>&#10004;</td>
+					<td></td>
+					<td>4</td>
+					<td>3</td>
+					<td>Engaged</td>
+					<td>0</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Disruptor Rifle</td>
+					<td>1</td>
+					<td>5</td>
+					<td></td>
+					<td></td>
+					<td>10</td>
+					<td>2</td>
+					<td>Long</td>
+					<td>4</td>
+					<td>In bunk. <span>Qualities: </span>Cumbersome 2, Vicious 5</td>
+				</tr>
+				<tr>
+					<td>Stun Grenade</td>
+					<td>2</td>
+					<td>1</td>
+					<td>&#10004;</td>
+					<td></td>
+					<td>8</td>
+					<td>NA</td>
+					<td>Short</td>
+					<td>0</td>
+					<td><span>Qualities: </span>Disorient 3, Stun Damage, Blast 8, Limited Ammo 1</td>
+				</tr>
+			</table><br>
+			<table class="eoteTable justifyLast justifyFirst">
+				<caption>Armor</caption>
+				<tr class="flush">
+					<th>Item</th>
+					<th>Qty</th>
+					<th>Enc</th>
+					<th>Carry</th>
+					<th>Equip</th>
+					<th>Soak</th>
+					<th>MDef</th>
+					<th>RDef</th>
+					<th>HP</th>
+					<th>Notes</th>
+				</tr>
+				<tr>
+					<td>Heavy Clothing</td>
+					<td>1</td>
+					<td>1</td>
+					<td></td>
+					<td></td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Laminate Armor</td>
+					<td>1</td>
+					<td>4</td>
+					<td></td>
+					<td>&#10004;</td>
+					<td>2</td>
+					<td>0</td>
+					<td>0</td>
+					<td>3</td>
+					<td></td>
+				</tr>
+			</table><br>
+			<table class="eoteTable justifyLast justifyFirst">
+				<caption>Gear</caption>
+				<tr class="flush">
+					<th>Item</th>
+					<th>Qty</th>
+					<th>Enc</th>
+					<th>Carry</th>
+					<th>Equip</th>
 					<th>Notes</th>
 				</tr>
 				<tr>
 					<td>Commlink (handheld)</td>
 					<td>1</td>
 					<td>0</td>
-					<td>Comms up to low orbit.</td>
-				</tr>
-				<tr>
-					<td>Blaster Pistol</td>
-					<td>1</td>
-					<td>1</td>
-					<td>3 Hard Points</td>
-				</tr>
-				<tr>
-					<td>Vibro-ax</td>
-					<td>1</td>
-					<td>4</td>
-					<td>1/3 Hard Points; Mono-molecular Edge (Crit -1)</td>
-				</tr>
-				<tr>
-					<td>Combat Knife</td>
-					<td>1</td>
-					<td>1</td>
+					<td>&#10004;</td>
 					<td></td>
-				</tr>
-				<tr>
-					<td>Heavy Clothing</td>
-					<td>1</td>
-					<td>1 (-3)</td>
-					<td>Soak +1</td>
-				</tr>
-				<tr>
-					<td>Laminate Armor (Worn)</td>
-					<td>1</td>
-					<td>4 (-3)</td>
-					<td>Soak +2</td>
+					<td>Comms up to low orbit.</td>
 				</tr>
 				<tr>
 					<td>Credits</td>
 					<td>310 <span class="aurebesh">$</span></td>
 					<td>0</td>
+					<td>&#10004;</td>
+					<td></td>
 					<td>Credstick</td>
 				</tr>
 			</table>
@@ -612,36 +741,50 @@
 				<tr>
 					<th>Name</th>
 					<th>Rank</th>
+					<th>Activation</th>
+					<th>Acquisition</th>
 					<th>Description</th>
 				</tr>
 				<tr>
-					<td>Defensive Stance</td>
+					<td class="active">Defensive Stance</td>
 					<td>1</td>
+					<td>Maneuver</td>
+					<td>Outlaw Tech</td>
 					<td>Once per round, may perform a Defensive Stance maneuver and suffer a number of strain to upgrade <div class="difficulty"></div> of all incoming melee attacks by an equal number for the next round. Strain suffered this way cannot exceed talent ranks.</td>
 				</tr>
 				<tr>
-					<td>Jury Rigged</td>
+					<td class="passive">Jury Rigged</td>
 					<td>1</td>
+					<td>Passive</td>
+					<td>Outlaw Tech</td>
 					<td>Choose 1 weapon, armor, or other item and give it a permanent improvement while it remains in use.</td>
 				</tr>
 				<tr>
 					<td>Regeneration</td>
+					<td>NA</td>
+					<td>NA</td>
 					<td>Trandoshan</td>
 					<td>Recover 1 additional wound from natural healing. Can also regrow lost limbs, usually taking a month before the limb is functional again.</td>
 				</tr>
 				<tr>
-					<td>Tinkerer</td>
+					<td class="passive">Tinkerer</td>
 					<td>1</td>
+					<td>Passive</td>
+					<td>Outlaw Tech</td>
 					<td>May add 1 additional hard point to a number of items equal to ranks in Tinkerer. Each item may only be modified once.</td>
 				</tr>
 				<tr>
-					<td>Toughened</td>
+					<td class="passive">Toughened</td>
 					<td>1</td>
+					<td>Passive</td>
+					<td>Outlaw Tech</td>
 					<td>Gain +2 wound threshold.</td>
 				</tr>
 				<tr>
-					<td>Utinni!</td>
+					<td class="passive">Utinni!</td>
 					<td>1</td>
+					<td>Passive</td>
+					<td>Outlaw Tech</td>
 					<td>Remove <div class="setback"></div> per rank of Utinni! from checks to find or scavenge items or gear. Such checks take half the time.</td>
 				</tr>
 			</table>
