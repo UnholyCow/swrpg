@@ -66,6 +66,14 @@
 			</div>
 			<div class="pill">
 				<div class="pillLeft">
+					<span>Encumbrance</span>
+				</div>
+				<div class="pillRight">
+					<span>7</span>
+				</div>
+			</div>
+			<div class="pill">
+				<div class="pillLeft">
 					<span>Earned XP</span>
 				</div>
 				<div class="pillRight">
@@ -84,7 +92,7 @@
 		<div class="section">
 			<h2>Vitals</h2>
 			<div class="stat">
-				<div class="tagBlue">
+				<div class="tagRed">
 					<span>Soak Value</span>
 				</div>
 				<div class="value">
@@ -92,7 +100,7 @@
 				</div>
 			</div>
 			<div class="stat">
-				<div class="tagBlue">
+				<div class="tagRed">
 					<span>Wound Threshold</span>
 				</div>
 				<div class="value">
@@ -100,7 +108,7 @@
 				</div>
 			</div>
 			<div class="stat">
-				<div class="tagBlue">
+				<div class="tagRed">
 					<span>Strain Threshold</span>
 				</div>
 				<div class="value">
@@ -108,7 +116,7 @@
 				</div>
 			</div>
 			<div class="stat">
-				<div class="tagBlue">
+				<div class="tagRed">
 					<span>M/R Defense</span>
 				</div>
 				<div class="value">
@@ -119,7 +127,7 @@
 		<div class="section">
 			<h2>Characteristics</h2>
 			<div class="stat">
-				<div class="tagRed">
+				<div class="tagOrange">
 					<span>Brawn</span>
 				</div>
 				<div class="value">
@@ -127,7 +135,7 @@
 				</div>
 			</div>
 			<div class="stat">
-				<div class="tagRed">
+				<div class="tagOrange">
 					<span>Agility</span>
 				</div>
 				<div class="value">
@@ -135,7 +143,7 @@
 				</div>
 			</div>
 			<div class="stat">
-				<div class="tagRed">
+				<div class="tagOrange">
 					<span>Intellect</span>
 				</div>
 				<div class="value">
@@ -143,7 +151,7 @@
 				</div>
 			</div>
 			<div class="stat">
-				<div class="tagRed">
+				<div class="tagOrange">
 					<span>Cunning</span>
 				</div>
 				<div class="value">
@@ -151,7 +159,7 @@
 				</div>
 			</div>
 			<div class="stat">
-				<div class="tagRed">
+				<div class="tagOrange">
 					<span>Willpower</span>
 				</div>
 				<div class="value">
@@ -159,7 +167,7 @@
 				</div>
 			</div>
 			<div class="stat">
-				<div class="tagRed">
+				<div class="tagOrange">
 					<span>Presence</span>
 				</div>
 				<div class="value">
@@ -169,7 +177,7 @@
 		</div>
 		<div class="section">
 			<h2>Skills</h2>
-			<table class="eoteTable splitLeft">
+			<table class="eoteTable splitLeft justifyFirst">
 				<tr>
 					<th>General Skills</th>
 					<th>Career?</th>
@@ -378,7 +386,7 @@
 					</td>
 				</tr>
 			</table>
-			<table class="eoteTable splitRight">
+			<table class="eoteTable splitRight justifyFirst">
 				<tr>
 					<th>Combat Skills</th>
 					<th>Career?</th>
@@ -436,7 +444,7 @@
 					</td>
 				</tr>
 			</table>
-			<table class="eoteTable splitRight">
+			<table class="eoteTable splitRight justifyFirst">
 				<tr>
 					<th>Knowledge Skills</th>
 					<th>Career?</th>
@@ -510,13 +518,14 @@
 		</div>
 		<div class="section">
 			<h2>Weapons</h2>
-			<table class="eoteTable">
+			<table class="eoteTable justifyFirst justifyLast">
 				<tr>
 					<th>Weapon</th>
 					<th>Skill</th>
 					<th>Damage</th>
 					<th>Range</th>
 					<th>Crit</th>
+					<th>Pool</th>
 					<th>Special</th>
 				</tr>
 				<tr>
@@ -524,7 +533,14 @@
 					<td>Ranged - Heavy</td>
 					<td>10</td>
 					<td>Long</td>
-					<td>3</td>
+					<td><div class="advantage"></div>
+					<div class="advantage"></div>
+					<div class="advantage"></div></td>
+					<td><div class="proficiency"></div>
+					<div class="proficiency"></div>
+					<div class="proficiency"></div>
+					<div class="proficiency"></div>
+					<div class="boost"></div></td>
 					<td>Accurate 1 (Add <div class="boost"></div> to attacks.); Stun Setting</td>
 				</tr>
 				<tr>
@@ -532,7 +548,12 @@
 					<td>Ranged - Heavy</td>
 					<td>12</td>
 					<td>Long</td>
-					<td>2</td>
+					<td><div class="advantage"></div>
+					<div class="advantage"></div></td>
+					<td><div class="proficiency"></div>
+					<div class="proficiency"></div>
+					<div class="proficiency"></div>
+					<div class="proficiency"></div></td>
 					<td>Cumbersome 2, Vicious 5, Prepare 3</td>
 				</tr>
 				<tr>
@@ -540,140 +561,236 @@
 					<td>Ranged - Light</td>
 					<td>9</td>
 					<td>Short</td>
-					<td>2</td>
+					<td><div class="advantage"></div>
+					<div class="advantage"></div></td>
+					<td><div class="ability"></div>
+					<div class="ability"></div>
+					<div class="proficiency"></div>
+					<div class="proficiency"></div></td>
 					<td>Blast 9, Limited Ammo 1</td>
 				</tr>
 				<tr>
 					<td>Shock Gloves</td>
 					<td>Brawl</td>
-					<td>2+0</td>
+					<td>2</td>
 					<td>Engaged</td>
-					<td>5</td>
+					<td><div class="advantage"></div>
+					<div class="advantage"></div>
+					<div class="advantage"></div>
+					<div class="advantage"></div>
+					<div class="advantage"></div></td>
+					<td><div class="ability"></div>
+					<div class="proficiency"></div></td>
 					<td>Stun 3 (<div class="advantage"></div> <div class="advantage"></div>)</td>
 				</tr>
 			</table>
 		</div>
 		<div class="section">
 			<h2>Gear</h2>
-			<table class="eoteTable">
-				<tr>
+			<table class="eoteTable justifyFirst justifyLast">
+				<caption>Weapons</caption>
+				<tr class="flush">
 					<th>Item</th>
-					<th>Quantity</th>
-					<th>Encumbrance</th>
+					<th>Qty</th>
+					<th>Enc</th>
+					<th>Carry</th>
+					<th>Equip</th>
+					<th>Dam</th>
+					<th>Crit</th>
+					<th>Range</th>
+					<th>HP</th>
+					<th>Notes</th>
+				</tr>
+				<tr>
+					<td>Blaster Rifle</td>
+					<td>1</td>
+					<td>4</td>
+					<td>&#10004;</td>
+					<td>&#10004;</td>
+					<td>10</td>
+					<td>3</td>
+					<td>Long</td>
+					<td>4</td>
+					<td><span>Attachments: </span>Telescopic Optical Sight (Remove <div class="setback"></div> at Long &amp; Extreme range); Sling (Quick Draw Mod); Augmented Spin Barrel (Add <div class="setback"></div> to maintenance checks) (Accurate 1 Mod) Dam+1. <span>Qualities: </span>Accurate 1, Stun Setting.</td>
+				</tr>
+				<tr>
+					<td>Disruptor Rifle</td>
+					<td>1</td>
+					<td>4</td>
+					<td>&#10004;</td>
+					<td></td>
+					<td>12</td>
+					<td>2</td>
+					<td>Long</td>
+					<td>4</td>
+					<td><span>Attachments: </span>Breakdown: 2HP, gives weapon the Prepare 3 quality.</td>
+				</tr>
+				<tr>
+					<td>Shock Gloves</td>
+					<td>1</td>
+					<td>0</td>
+					<td>&#10004;</td>
+					<td>&#10004;</td>
+					<td>0</td>
+					<td>5</td>
+					<td></td>
+					<td>1</td>
+					<td><span>Qualities: </span>Stun 3</td>
+				</tr>
+				<tr>
+					<td>Light Explosives</td>
+					<td>2</td>
+					<td>1</td>
+					<td>&#10004;</td>
+					<td></td>
+					<td>9</td>
+					<td>2</td>
+					<td>Short</td>
+					<td>0</td>
+					<td><span>Qualities: </span>Blast 9, Limited Ammo 1, Linked to remote deteonator.</td>
+				</tr>
+			</table><br>
+			<table class="eoteTable justifyFirst justifyLast">
+				<caption>Armor</caption>
+				<tr class="flush">
+					<th>Item</th>
+					<th>Qty</th>
+					<th>Enc</th>
+					<th>Carry</th>
+					<th>Equip</th>
+					<th>Soak</th>
+					<th>MDef</th>
+					<th>RDef</th>
+					<th>HP</th>
+					<th>Notes</th>
+				</tr>
+				<tr>
+					<td>Laminate Armor (integrated)</td>
+					<td>1</td>
+					<td>4 (-3)</td>
+					<td></td>
+					<td>&#10004;</td>
+					<td>2</td>
+					<td>0</td>
+					<td>0</td>
+					<td>3</td>
+					<td></td>
+				</tr>
+			</table><br>
+			<table class="eoteTable justifyFirst justifyLast">
+				<caption>Gear</caption>
+				<tr class="flush">
+					<th>Item</th>
+					<th>Qty</th>
+					<th>Enc</th>
+					<th>Carry</th>
+					<th>Equip</th>
 					<th>Notes</th>
 				</tr>
 				<tr>
 					<td>Commlink (internal)</td>
 					<td>1</td>
 					<td>0</td>
+					<td>&#10004;</td>
+					<td></td>
 					<td>Comms up to low orbit.</td>
 				</tr>
 				<tr>
 					<td>Backpack</td>
 					<td>1</td>
 					<td>0</td>
-					<td>Increase encumbrance threshold by 4.</td>
+					<td></td>
+					<td>&#10004;</td>
+					<td>+4 encumbrance threshold.</td>
 				</tr>
-				<tr>
-					<td>Blaster Rifle</td>
-					<td>1</td>
-					<td>4</td>
-					<td>0/4 Hard Points<br>
-					Telescopic Optical Sight<br>
-					   (Remove <div class="setback"></div> at Long &amp; Extreme range)<br>
-					Sling [Mods: Quick Draw]<br>
-					Augmented Spin Barrel (Add <div class="setback"></div> to maintenance checks. Damage +1) [Mods: Accurate 1]</td>
-				</tr>
-				<tr>
-					<td>Disruptor Rifle</td>
-					<td>1</td>
-					<td>4</td>
-					<td>2/4 Hard Points<br>
-						Breakdown: 2HP, gives weapon the Prepare 3 quality.</td>
-				</tr>
-				<tr>
-					<td>Shock Gloves</td>
-					<td>1</td>
-					<td>0</td>
-					<td>1 Hard Point, Stun 3</td>
-				</tr>
-				<tr>
-					<td>Light Explosives</td>
-					<td>2</td>
-					<td>1</td>
-					<td>Blast 9, Limited Ammo 1, Linked to remote deteonator.</td>
-				</tr>
-				<tr>
-					<td>Laminate Armor</td>
-					<td>1</td>
-					<td>4 (-3)</td>
-					<td>Soak +2, 3 Hard Points</td>
-				</tr>
-				<tr>
 					<td>Electrogoggles (Integrated)</td>
 					<td>1</td>
 					<td>0</td>
+					<td>&#10004;</td>
+					<td>&#10004;</td>
 					<td>Remove <div class="setback"></div> due to long range or low light.</td>
 				</tr>
 				<tr>
 					<td>Emergency Repair Patch</td>
 					<td>6</td>
 					<td>0</td>
+					<td>&#10004;</td>
+					<td></td>
 					<td>Heal 3 wounds, 5 times per each 24 hour period.</td>
 				</tr>
 			</table>
 		</div>
 		<div class="section">
 			<h2>Talents and Special Abilities</h2>
-			<table class="eoteTable justifyLast">
+			<table class="eoteTable justifyFirst justifyLast">
 				<tr>
 					<th>Name</th>
 					<th>Rank</th>
+					<th>Activation</th>
+					<th>Acquisition</th>
 					<th>Description</th>
 				</tr>
 				<tr>
 					<td>Dedication</td>
 					<td>1</td>
+					<td>NA</td>
+					<td>Sharpshooter</td>
 					<td>Agility +1</td>
 				</tr>
 				<tr>
-					<td>Deadly Accuracy (Ranged - Heavy)</td>
-					<td>-</td>
+					<td class="passive">Deadly Accuracy (Ranged - Heavy)</td>
+					<td>NA</td>
+					<td>Passive</td>
+					<td>Sharpshooter</td>
 					<td>Add damage equal to ranks in that skill to one hit per successful attack using that skill.</td>
 				</tr>
 				<tr>
 					<td>Droid</td>
-					<td>-</td>
+					<td>NA</td>
+					<td>NA</td>
+					<td>Species</td>
 					<td>Does not need to eat, sleep, or breathe, and is unaffected by toxins and poisons. Cybernetic implant cap of 6. Healing through the Mechanic skill. Can never be Force sensitive or affected by mind-altering Force powers. Begins with one rank in the Enduring talent.</td>
 				</tr>
 				<tr>
-					<td>Enduring</td>
+					<td class="passive">Enduring</td>
 					<td>1</td>
+					<td>Passive</td>
+					<td>Sharpshooter</td>
 					<td>Gain +1 Soak per rank.</td>
 				</tr>
 				<tr>
-					<td>Grit</td>
+					<td class="passive">Grit</td>
 					<td>1</td>
+					<td>Passive</td>
+					<td>Sharpshooter</td>
 					<td>+1 Strain threshold.</td>
 				</tr>
 				<tr>
-					<td>Lethal Blows</td>
+					<td class="passive">Lethal Blows</td>
 					<td>2</td>
+					<td>Passive</td>
+					<td>Sharpshooter</td>
 					<td>Add +10 per rank to any Critical Injury results inflicted on opponents.</td>
 				</tr>
 				<tr>
-					<td>Sniper Shot</td>
+					<td class="active">Sniper Shot</td>
 					<td>1</td>
+					<td>Maneuver</td>
+					<td>Sharpshooter</td>
 					<td>Before making a non-thrown ranged attack, may perform a Sniper Shot maneuver to increase the weapon's range by 1 per rank. Upgrade the difficulty of the attack by 1 per range band increase.</td>
 				</tr>
 				<tr>
-					<td>Toughened</td>
+					<td class="passive">Toughened</td>
 					<td>1</td>
+					<td>Passive</td>
+					<td>Sharpshooter</td>
 					<td>Gain +2 wound threshold.</td>
 				</tr>
 				<tr>
-					<td>True Aim</td>
+					<td class="active">True Aim</td>
 					<td>2</td>
+					<td>Maneuver</td>
+					<td>Sharpshooter</td>
 					<td>Once per round, before making a ranged attack, may perform a True Aim maneuver. Gain all the benefits of aiming and also upgrades the attack roll once per rank.</td>
 				</tr>
 			</table>
