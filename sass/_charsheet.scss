@@ -54,6 +54,10 @@
 	@extend .tag;
 	background: $eotedarkblue; 
 }
+.tagOrange {
+	@extend .tag;
+	background: $aororange; 
+}
 .tagRed {
 	@extend .tag;
 	background: $eotered; 
