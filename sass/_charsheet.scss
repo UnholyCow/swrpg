@@ -1,3 +1,29 @@
+.pill {
+	display: inline-block;
+	margin: 10px;
+	font-size: 1.1em;
+}
+.pillLeft {
+	display: inline;
+	padding: 5px 10px;
+	color: #FFF;
+	background: $eoteslate; 
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.pillRight {
+	display: inline;
+	padding: 5px 10px;
+	color: #222;
+	background: $eotecream;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.section {
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+}
 .stat {
 	display: inline-block;
 	width: 130px;
@@ -45,32 +71,7 @@
 	@extend .value;
 	font-size: 2em; 
 }
-.section {
-	width: 100%;
-	text-align: center;
-	display: inline-block;
-}
-.pill {
-	display: inline-block;
-	margin: 10px;
-	font-size: 1.1em;
-}
-.pillLeft {
-	display: inline;
-	padding: 5px 10px;
-	color: #FFF;
-	background: $eoteslate; 
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
-}
-.pillRight {
-	display: inline;
-	padding: 5px 10px;
-	color: #222;
-	background: $eotecream;
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-}
+
 .pcPic {
 	height: 300px;
 	background: url(../img/rebel_bkg.jpg);

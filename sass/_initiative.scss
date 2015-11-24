@@ -83,10 +83,10 @@
   display: inline-block;
   margin: 0;
   padding: 0 10px;
-  height: 60px;
+  height: 40px;
   width: 70px;
-  line-height: 60px;
-  font-size: 50px;
+  line-height: 40px;
+  font-size: 40px;
   text-align: center;
   &:first-child {
     border-top-left-radius: 15px;
@@ -117,7 +117,7 @@
 .slot {
   display: inline-block;
   width: 390px;
-  margin: 8px;
+  margin: 6px;
   border-radius: 15px;
   transition: box-shadow .5s;
   background-color: $eoteslate;
