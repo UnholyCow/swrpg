@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Star Wars Roleplaying [DM]</title>
+	<link href="../css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link rel="icon" href="../img/icon.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+		<div id="hamburger">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="logo"></div>
+	</header>
+	<nav>
+		<ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="adversaries.html">Adversaries</a></li>
+      <li><a href="hyperspace.html" class="active">Travel</a></li>
+      <li><a href="trade.html">Trade</a></li>
+		</ul>
+	</nav>
+  <div class="container">
+    <div class="section">
+      <h2>Navigation Hazard Setback Dice</h2>
+      <table class="eoteTable justifyLast">
+        <tr>
+          <th>Setback Dice</th>
+          <th>Planetary &amp; Space Description</th>
+        </tr>
+        <tr>
+          <td rowspan="2">-</td>
+          <td>Flat, clear terrain. Roads, firm fields, grassy plains, or (if flying) clear skies and good weather.</td>
+        </tr>
+        <tr>
+          <td>An easy, relatively unchallenging navigation situation. A broad, loosely packed asteroid field, for example, or a thin, calm nebula.</td>
+        </tr>
+        <tr>
+          <td rowspan="2"><div class="setback"></div></td>
+          <td>Somewhat trickier terrain. Scattered trees, dense undergrowth, rolling hills, sand dunes, or windy weather.</td>
+        </tr>
+        <tr>
+          <td>A tricky but not seriously daunting set of obstacles. Flying over high mountains on a moon, or a thicker asteroid field or nebula.</td>
+        </tr>
+        <tr>
+          <td rowspan="2"><div class="setback"></div>
+          <div class="setback"></div></td>
+          <td>Dagnerous terrain. A thick forest, steep, rock-covered hills, or flying in atmosphere during a violent storm.</td>
+        </tr>
+        <tr>
+          <td>A dangerous astronomical feature. Flying around or through a fracturing comet, or navigating through a particularly dense and turbulent asteroid field.</td>
+        </tr>
+        <tr>
+          <td rowspan="2"><div class="setback"></div>
+          <div class="setback"></div>
+          <div class="setback"></div></td>
+          <td>Very risky terrain. Sheer cliff faces, deep swamps, lava with only a thin crust of hardened rock, or speeding through a canyon only just wide enough for a vehicle to fit through. All are examples of flying or driving terrain.</td>
+        </tr>
+        <tr>
+          <td>An extremely dangerous situation calling on every ounce of a pilot's skill and coolness. Navigating the Maw, flying close to a deadly pulsar, flying through asteroid tunnels, or other dangerous and foolhardy pursuits.</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <div class="splitLeft">
+        <h2>Sublight Travel Times</h2>
+        <table class="eoteTable justifyLast">
+          <tr>
+            <th>Trip Time</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <td>5-15 minutes</td>
+            <td>Time needed to travel from a planet's orbit to a safe hyperspace jump distance.</td>
+          </tr>
+          <tr>
+            <td>30-90 minutes</td>
+            <td>Time needed to travel from a planet's surface to one of its moons.</td>
+          </tr>
+          <tr>
+            <td>6-12 hours</td>
+            <td>Time needed to fly from one planet to another within the same star system. This time varies a great deal depending on the relative position of the planets in question, and any steller phenomena between them.</td>
+          </tr>
+          <tr>
+            <td>12-72 hours</td>
+            <td>Time needed to fly from the center of a star system to its further limits. Again, this time can vary greatly depending on the stellar bodies and obsticles in the way.</td>
+          </tr>
+        </table>
+        <h2>Hyperspace Travel Times</h2>
+        <table class="eoteTable justifyLast">
+          <tr>
+            <th>Distance Traveled</th>
+            <th>Average Duration</th>
+          </tr>
+          <tr>
+            <td>Within a sector</td>
+            <td>Ten to twenty-four hours</td>
+          </tr>
+          <tr>
+            <td>Within a region</td>
+            <td>Ten to seventy-two hours</td>
+          </tr>
+          <tr>
+            <td>Between regions</td>
+            <td>Three days to one week</td>
+          </tr>
+          <tr>
+            <td>Across the galaxy</td>
+            <td>One to three weeks</td>
+          </tr>
+        </table>
+      </div>
+      <div class="splitRight">
+        <h2>Astrogation Modifiers</h2>
+        <table class="eoteTable justifyLast">
+          <tr>
+            <th>Modifier</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>+ <div class="difficulty"></div>
+            <div class="difficulty"></div>
+            <div class="difficulty"></div></td>
+            <td>Damaged or missing astromech droid or navicomputer.</td>
+          </tr>
+          <tr>
+            <td>+ <div class="difficulty"></div></td>
+            <td>Quick calculations or entry into hyperspace under duress, typically while escaping from pursuit.</td>
+          </tr>
+          <tr>
+            <td>+ <div class="difficulty"></div></td>
+            <td>Ship is lightly damaged.</td>
+          </tr>
+          <tr>
+            <td>+ <div class="difficulty"></div>
+            <div class="difficulty"></div></td>
+            <td>Ship is heavily damaged.</td>
+          </tr>
+          <tr>
+            <td>+ <div class="difficulty"></div></td>
+            <td>Outdated, corrupt, or counterfeit navigation charts or navicomputer data.</td>
+          </tr>
+          <tr>
+            <td>+ <div class="advantage"></div></td>
+            <td>Astrogator has done extra research on charts of the route.</td>
+          </tr>
+          <tr>
+            <td>+ <div class="advantage"></div>
+            <div class="advantage"></div></td>
+            <td>Astrogator has personally run the route recently.</td>
+          </tr>
+          <tr>
+            <td>+ <div class="threat"></div></td>
+            <td>Real-space debris is casting uncharted mass shadows in the route.</td>
+          </tr>
+          <tr>
+            <td>+ <div class="threat"></div>
+            <div class="threat"></div></td>
+            <td>A major celestial event impacted the route since the last charting.</td>
+          </tr>
+          <tr>
+            <td><div class="difficulty"></div><span style="font-size: 1.15em">&#8631;</span><div class="challenge"></div></td>
+            <td>Vessel has faulty a hyperdrive or entered hyperspace too close to a gravity well.</td>
+          </tr>
+        </table>
+      </div>
+      <div class="section">
+        <h2>Lesser Routes and Smuggling Runs</h2>
+        <table class="eoteTable justifyFirst justifyLast">
+          <tr>
+            <th>Route Name</th>
+            <th>Travel Time</th>
+            <th>Notable Locations</th>
+          </tr>
+          <tr>
+            <td>Kessel Run</td>
+            <td>0.75 hours</td>
+            <td>Kessel, Oba Diah</td>
+          </tr>
+          <tr>
+            <td>Kessel Trade Corridor</td>
+            <td>1.5 hours</td>
+            <td>Kessel, Zerm</td>
+          </tr>
+          <tr>
+            <td>Llanic Spice Run</td>
+            <td>4.25 hours</td>
+            <td>Jermac, Llanic, Mon Gazza</td>
+          </tr>
+          <tr>
+            <td>Ootmian Pabol</td>
+            <td>1.5 hours</td>
+            <td>Nal Hutta, Nar Bo Sholla, Keldooine</td>
+          </tr>
+          <tr>
+            <td>Pabol Hutta</td>
+            <td>2 hours</td>
+            <td>Nal Hutta, Sleheyron</td>
+          </tr>
+        </table>
+      </div>
+      <div class="section">
+        <h2>Spending <div class="advantageBig"></div>, <div class="triumphBig"></div>, <div class="threatBig"></div>, and <div class="despairBig"></div> During Astrogation Checks</h2>
+        <table class="eoteTable justifyLast">
+          <tr>
+            <th>Cost</th>
+            <th>Result Options</th>
+          </tr>
+          <tr>
+            <td><div class="advantage"></div></td>
+            <td>The character adds <div class="boost"></div> to his next Astrogation check when travelling on this route.</td>
+          </tr>
+          <tr>
+            <td><div class="advantage"></div>
+            <div class="advantage"></div></td>
+            <td>The trip is particularly smooth. Each character aboard the vessel recovers 2 strain.</td>
+          </tr>
+          <tr>
+            <td><div class="triumph"></div> or <div class="advantage"></div>
+            <div class="advantage"></div>
+            <div class="advantage"></div></td>
+            <td>The ship reaches its destination 25% faster. (This option may only be selected once per check).</td>
+          </tr>
+          <tr>
+            <td><div class="triumph"></div></td>
+            <td>The discovery of a new shortcut grants <div class="boost"></div> on all future Astrogation checks to use this hyperspace route. Additionally, many organizations and people would be willing to pay for such a shortcut, especially if it is on a busy hyperlane.</td>
+          </tr>
+          <tr>
+            <td><div class="threat"></div></td>
+            <td>An energy surge from the hyperdrive inflicts 1 system strain on the ship.<br>The character adds <div class="setback"></div> to their next Astrogation check when travelling on this route.</td>
+          </tr>
+          <tr>
+            <td><div class="threat"></div>
+            <div class="threat"></div></td>
+            <td>The trip is particularly rough. Each character board the vessel suffers 2 strain.<br>A piece of debris strikes the ship upon reentry and inflicts 1 hull trauma on the ship.<br>
+            Mynocks attached themselves to the ship befor the jump or during a hyperspace stopover. The ship suffers 3 system strain. Additionally, the PCs might need to remove the mynocks themselves.</td>
+          </tr>
+          <tr>
+            <td><div class="threat"></div>
+            <div class="threat"></div>
+            <div class="threat"></div> or <div class="despair"></div></td>
+            <td>On a failed check, miscalculations send the ship wildly off course, and it emerges from hyperspace in a system of the GM's choosing or in deep space.<br>
+            On a successful check, the presence of a gravity shadow forces the ship out of hyperspace prematurely. The vessel drops out of hyperspace somewhere along the way, and the characters must attempt another Astrogation check to reach their final destonation.<br>
+            The ship reaches its destonation 25% slower. (This option can only be selected once per check).</td>
+          </tr>
+          <tr>
+            <td><div class="despair"></div></td>
+            <td>The hyperdrive cuts out to avoid a gravity shadow, but it is damaged in the process. Once the vessel exits hyperspace, the hyperdrive is rendered inoperable until repaired.</td>
+          </tr>
+          <tr>
+            <td><div class="despair"></div>
+            <div class="despair"></div></td>
+            <td>The ship collides with a planet's gravity shadow or similar phenomenon. This forces the ship out of hyperspace (probably at a very inconvenient location). Further, the ship immediately suffers a Critical Hit with a +30 to the result.</td>
+          </tr>
+        </table>
+      </div>
+      <div class="section">
+        <h2>Major Galactic Routes (Days Using a Class 1 Hyperdrive)</h2>
+        <table class="eoteTable">
+          <tr>
+            <th colspan="2"></th>
+            <th colspan="15">Departure</th>
+          </tr>
+          <tr class="flush">
+            <th rowspan="2" colspan="2">Destination</th>
+            <th colspan="3">Perlemian Trade Route</th>
+            <th colspan="3">Corellian Run</th>
+            <th colspan="3">Corellian Trade Spine</th>
+            <th colspan="3">Rimma Route</th>
+            <th colspan="3">Hydian Way</th>
+          </tr>
+          <tr class="row-alternate">
+            <td><span>Ossus</span></td>
+            <td><span>Roche</span></td>
+            <td><span>Taanab</span></td>
+            <td><span>Coruscant</span></td>
+            <td><span>Corellia</span></td>
+            <td><span>Tatooine</span></td>
+            <td><span>Duro</span></td>
+            <td><span>Bestine</span></td>
+            <td><span>Bespin</span></td>
+            <td><span>Thyferra</span></td>
+            <td><span>Sullust</span></td>
+            <td><span>Kal'sebbol</span></td>
+            <td><span>Bonadon</span></td>
+            <td><span>Brentaal</span></td>
+            <td><span>Eriadu</span></td>
+          </tr>
+          <tr class="flush">
+            <th rowspan="3">Perlemian Trade Route</th>
+            <td><span>Ossus</span></td>
+            <td>-</td>
+            <td>1</td>
+            <td>2.5</td>
+            <td>4.5</td>
+            <td>5.5</td>
+            <td>9</td>
+            <td>6</td>
+            <td>6.5</td>
+            <td>9</td>
+            <td>6</td>
+            <td>9</td>
+            <td>10.5</td>
+            <td>7.5</td>
+            <td>4</td>
+            <td>9</td>
+          </tr>
+          <tr class="flush">
+            <td><span>Roche</span></td>
+            <td>1</td>
+            <td>-</td>
+            <td>1.5</td>
+            <td>3.5</td>
+            <td>4.5</td>
+            <td>8.5</td>
+            <td>5</td>
+            <td>5.5</td>
+            <td>8</td>
+            <td>5.5</td>
+            <td>8</td>
+            <td>9.5</td>
+            <td>6.5</td>
+            <td>3</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td><span>Taanab</span></td>
+            <td>2</td>
+            <td>1</td>
+            <td>-</td>
+            <td>2</td>
+            <td>3.5</td>
+            <td>7.5</td>
+            <td>3.5</td>
+            <td>5</td>
+            <td>7.5</td>
+            <td>4.5</td>
+            <td>7.5</td>
+            <td>8</td>
+            <td>6</td>
+            <td>2</td>
+            <td>7</td>
+          </tr>
+          <tr class="flush">
+            <th rowspan="3">Corellian Run</th>
+            <td><span>Coruscant</span></td>
+            <td>4</td>
+            <td>3</td>
+            <td>2</td>
+            <td>-</td>
+            <td>1.5</td>
+            <td>5.5</td>
+            <td>2</td>
+            <td>2.5</td>
+            <td>5.5</td>
+            <td>2.5</td>
+            <td>5</td>
+            <td>6</td>
+            <td>5</td>
+            <td>0.5</td>
+            <td>4.5</td>
+          </tr>
+          <tr>
+            <td><span>Corellia</span></td>
+            <td>5.5</td>
+            <td>4.5</td>
+            <td>3.5</td>
+            <td>1.5</td>
+            <td>-</td>
+            <td>4</td>
+            <td>0.5</td>
+            <td>1</td>
+            <td>4</td>
+            <td>1.5</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6.5</td>
+            <td>2</td>
+            <td>3.5</td>
+          </tr>
+          <tr>
+            <td><span>Tatooine</span></td>
+            <td>9</td>
+            <td>8</td>
+            <td>7</td>
+            <td>5</td>
+            <td>4</td>
+            <td>-</td>
+            <td>4</td>
+            <td>6</td>
+            <td>8</td>
+            <td>6</td>
+            <td>6.5</td>
+            <td>7.5</td>
+            <td>11</td>
+            <td>5.5</td>
+            <td>6</td>
+          </tr>
+          <tr class="flush">
+            <th rowspan="3">Corellian Trade Spine</th>
+            <td><span>Duro</span></td>
+            <td>5.5</td>
+            <td>4.5</td>
+            <td>3.5</td>
+            <td>1.5</td>
+            <td>0.5</td>
+            <td>4</td>
+            <td>-</td>
+            <td>3</td>
+            <td>4</td>
+            <td>2</td>
+            <td>4</td>
+            <td>5.5</td>
+            <td>6.5</td>
+            <td>2</td>
+            <td>3.5</td>
+          </tr>
+          <tr>
+            <td><span>Bestine</span></td>
+            <td>6</td>
+            <td>5.5</td>
+            <td>4.5</td>
+            <td>2.5</td>
+            <td>1.5</td>
+            <td>5.5</td>
+            <td>1.5</td>
+            <td>-</td>
+            <td>3</td>
+            <td>1</td>
+            <td>2</td>
+            <td>4</td>
+            <td>8</td>
+            <td>3.5</td>
+            <td>2.5</td>
+          </tr>
+          <tr>
+            <td><span>Bespin</span></td>
+            <td>8.5</td>
+            <td>8</td>
+            <td>7</td>
+            <td>5</td>
+            <td>4</td>
+            <td>8</td>
+            <td>4</td>
+            <td>2.5</td>
+            <td>-</td>
+            <td>3</td>
+            <td>3.5</td>
+            <td>5</td>
+            <td>11</td>
+            <td>6.5</td>
+            <td>3.5</td>
+          </tr>
+          <tr class="flush">
+            <th rowspan="3">Rimma Route</th>
+            <td><span>Thyferra</span></td>
+            <td>6.5</td>
+            <td>6</td>
+            <td>5</td>
+            <td>3</td>
+            <td>2</td>
+            <td>6</td>
+            <td>2</td>
+            <td>0.5</td>
+            <td>2.5</td>
+            <td>-</td>
+            <td>2</td>
+            <td>3.5</td>
+            <td>8.5</td>
+            <td>3.5</td>
+            <td>2.5</td>
+          </tr>
+          <tr>
+            <td><span>Sullust</span></td>
+            <td>9</td>
+            <td>8</td>
+            <td>7</td>
+            <td>5</td>
+            <td>3.5</td>
+            <td>6</td>
+            <td>4</td>
+            <td>2</td>
+            <td>3.5</td>
+            <td>2</td>
+            <td>-</td>
+            <td>2</td>
+            <td>11</td>
+            <td>5.5</td>
+            <td>0.5</td>
+          </tr>
+          <tr>
+            <td><span>Kal'sebbol</span></td>
+            <td>10</td>
+            <td>9</td>
+            <td>8</td>
+            <td>6</td>
+            <td>5</td>
+            <td>7.5</td>
+            <td>5</td>
+            <td>4</td>
+            <td>4.5</td>
+            <td>3.5</td>
+            <td>2</td>
+            <td>-</td>
+            <td>11</td>
+            <td>6.5</td>
+            <td>1.5</td>
+          </tr>
+          <tr class="flush">
+            <th rowspan="3" style="border-bottom-left-radius: 15px">Hydian Way</th>
+            <td><span>Bonadon</span></td>
+            <td>8</td>
+            <td>7</td>
+            <td>6</td>
+            <td>5.5</td>
+            <td>6.5</td>
+            <td>11</td>
+            <td>7</td>
+            <td>7.5</td>
+            <td>10.5</td>
+            <td>8</td>
+            <td>10.5</td>
+            <td>11.5</td>
+            <td>-</td>
+            <td>4.5</td>
+            <td>9.5</td>
+          </tr>
+          <tr>
+            <td><span>Brentaal</span></td>
+            <td>3.5</td>
+            <td>2.5</td>
+            <td>1.5</td>
+            <td>1</td>
+            <td>2</td>
+            <td>5</td>
+            <td>2.5</td>
+            <td>3</td>
+            <td>6</td>
+            <td>3.5</td>
+            <td>5.5</td>
+            <td>6</td>
+            <td>5</td>
+            <td>-</td>
+            <td>5</td>
+          </tr>
+          <td style="border-radius: 0"><span>Eriadu</span></td>
+          <td>8.5</td>
+          <td>7.5</td>
+          <td>6.5</td>
+          <td>4.5</td>
+          <td>3.5</td>
+          <td>6</td>
+          <td>3.5</td>
+          <td>2.5</td>
+          <td>3</td>
+          <td>2</td>
+          <td>0.5</td>
+          <td>1.5</td>
+          <td>9.5</td>
+          <td>4.5</td>
+          <td>-</td>
+        </table>
+      </div>
+    </div>
+    <div class="section footer">
+      <p class="aurebesh-bold">This Star Wars site is created solely to enjoy the Fantasy Flight Games tabletop game. It is in no way official.</p>
+    </div>
+  </div>
+  <div class="back-to-top"><a href="#">TOP</a></div>
+	<script src="../js/main.js"></script>
+</body>
+</html>

@@ -3,29 +3,34 @@ body {
 	color: #DDD;
 	overflow-x: hidden;
 	p, li {
-		font-size: 1.15em;
-		line-height: 1.15em;
+		font-size: 1.1em;
+		line-height: 1.15em; 
 	}
 }
 h1 {
 	font-family: $header-font;
-	font-size: 2.75em;
+	font-size: 2.5em;
 	color: $eoteblue;
 	text-transform: uppercase;
 	margin: 10px 0;
 }
 h2 {
 	font-family: $header-font;
-	font-size: 2.2em;
+	font-size: 1.8em;
 	color: $eoteyellow;
 	text-transform: uppercase;
 	margin: 8px 0;
 }
 h3 {
 	font-family: $header-font;
-	font-size: 1.8em;
+	font-size: 1.3em;
 	color: $eoteyellow;
 	margin: 5px 0;
+}
+h4 {
+	font-family: $header-font;
+	font-size: 1em;
+	color: $eoteblue;
 }
 div,
 p,
@@ -111,8 +116,14 @@ td {
 		width: 40%;
 	}
 }
+.divider {
+	width: 100%;
+	padding: 5px 0; 
+	text-align: center;
+	border-bottom: 2px solid $eoteyellow;  
+}
 .eoteTable {
-	font-size: 1.15em;
+	font-size: 1em;
 	width: 100%;
 	caption {
 		text-align: center;
@@ -129,7 +140,7 @@ td {
 		border-bottom: 1px solid $eotecream;    
 	}
 	span {
-		font-weight: 600;
+		font-weight: 700;
 	}
 	th {
 		background-color: #222;
@@ -140,6 +151,7 @@ td {
 		padding: 5px;
 		text-align: center;
 		text-transform: uppercase;
+		font-family: $special-font; 
 		&:first-child {
 			border-top-left-radius: 15px;
 		}
@@ -177,13 +189,13 @@ td {
 		color: #FFF;
 	}
 	.flush {
-		th {
+		th, td {
 			&:first-child {
-			border-top-left-radius: 0px;
-		}
-		&:last-child {
-			border-top-right-radius: 0px;
-		}
+				border-top-left-radius: 0px;
+			}
+			&:last-child {
+				border-top-right-radius: 0px;
+			}
 		}
 	}
 }
@@ -199,6 +211,10 @@ td {
 	p {
 		padding: 15px 10px;
 	}
+}
+.glow {
+	-webkit-box-shadow: 0 0 0 0.25px #FFF;
+	box-shadow: 0 0 0 0.25px #FFF; 
 }
 .group {
 	text-align: center;
@@ -242,6 +258,12 @@ td {
 	}
 	td:first-child {
 		min-width: 80px;
+	}
+}
+.justifyLastRight {
+	@extend .justifyLast;
+	td:last-child, th:last-child {
+		text-align: right;
 	}
 }
 .left {
@@ -291,6 +313,14 @@ td {
 }
 .right {
 	float: right;
+}
+.row-alternate {
+	td{
+		padding: 0 5px;
+		&:nth-child(even) {
+			background-color: $eotecream; 
+		}
+	}
 }
 .ruleDie {
 	background-color: #222;
@@ -413,6 +443,9 @@ td {
 	@media screen and (min-width: $firstbreak) {
 		width: 40%;
 	}
+}
+.teuton {
+	font-family: 'Teuton', sans-serif;
 }
 .updates {
 	width: 40%;

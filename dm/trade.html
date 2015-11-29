@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Star Wars Roleplaying [DM]</title>
+	<link href="../css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link rel="icon" href="../img/icon.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+		<div id="hamburger">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="logo"></div>
+	</header>
+	<nav>
+		<ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="adversaries.html">Adversaries</a></li>
+      <li><a href="hyperspace.html">Travel</a></li>
+      <li><a href="trade.html" class="active">Trade</a></li>
+		</ul>
+	</nav>
+  <div class="container">
+    <div class="section">
+      <h2>Gear Rarity</h2>
+      <table class="eoteTable">
+        <tr>
+          <th>Rarity</th>
+          <th>Check</th>
+          <th>Examples</th>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td rowspan="2"><span>Simple (-)</span></td>
+          <td>Glow Rod</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Long-range Commlink</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td rowspan="2"><span>Easy (<div class="difficulty"></div>)</span></td>
+          <td>Medpac</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Scanner Goggles</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td rowspan="2"><span>Average (<div class="difficulty"></div>
+          <div class="difficulty"></div>)</span></td>
+          <td>Blaster Pistol</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Blaster Rifle</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td rowspan="2"><span>Hard (<div class="difficulty"></div>
+          <div class="difficulty"></div>
+          <div class="difficulty"></div>)</span></td>
+          <td>Cybernetic Limb</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Bowcaster</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td rowspan="2"><span>Daunting (<div class="difficulty"></div>
+          <div class="difficulty"></div>
+          <div class="difficulty"></div>
+          <div class="difficulty"></div>)</span></td>
+          <td>Thermal Detonator</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Personal Stealth Field</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td><span>Formidable (<div class="difficulty"></div>
+          <div class="difficulty"></div>
+          <div class="difficulty"></div>
+          <div class="difficulty"></div>
+          <div class="difficulty"></div>)</span></td>
+          <td>Package of Lesai</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <div class="splitLeft">
+        <h2>Rarity Modifiers</h2>
+        <table class="eoteTable justifyLast">
+          <tr>
+            <th>Rarity Modifier</th>
+            <th>Circumstances</th>
+          </tr>
+          <tr>
+            <td>-2</td>
+            <td>Primary Core World such as Coruscant, Duro, or Corellia</td>
+          </tr>
+          <tr>
+            <td>-1</td>
+            <td>Other Core World or world on primary trade lane</td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>Colony or Inner Rim world. Civilized world</td>
+          </tr>
+          <tr>
+            <td>+1</td>
+            <td>Mid Rim world. Recently settled or out of the way world</td>
+          </tr>
+          <tr>
+            <td>+2</td>
+            <td>Outer Rim or frontier world</td>
+          </tr>
+          <tr>
+            <td>+3</td>
+            <td>Wild Space world</td>
+          </tr>
+          <tr>
+            <td>+4</td>
+            <td>Uncivilized world</td>
+          </tr>
+        </table>
+      </div>
+      <div class="splitRight">
+        <h2>Increased Costs When Trading</h2>
+        <table class="eoteTable">
+          <tr>
+            <th>Rarity Increase</th>
+            <th>Cost Increase</th>
+          </tr>
+          <tr>
+            <td>+0-1</td>
+            <td>X1</td>
+          </tr>
+          <tr>
+            <td>+2</td>
+            <td>X2</td>
+          </tr>
+          <tr>
+            <td>+3</td>
+            <td>X3</td>
+          </tr>
+          <tr>
+            <td>+4 or higher</td>
+            <td>X4</td>
+          </tr>
+        </table>
+        <h2>Cargo Payout</h2>
+        <table class="eoteTable">
+          <tr>
+            <th>Rarity</th>
+            <th>Restricted</th>
+            <th>Unrestricted</th>
+          </tr>
+          <tr>
+            <td>4-5</td>
+            <td>10%</td>
+            <td>5%</td>
+          </tr>
+          <tr>
+            <td>6-7</td>
+            <td>25%</td>
+            <td>10%</td>
+          </tr>
+          <tr>
+            <td>8-9</td>
+            <td>30%</td>
+            <td>25%</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>50%</td>
+            <td>30%</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Payout Modifiers</h2>
+        <table class="eoteTable">
+          <tr>
+            <th>Circumstance</th>
+            <th>Modifier</th>
+          </tr>
+          <tr>
+            <td>Each <div class="triumph"></div> or <div class="advantage"></div>
+            <div class="advantage"></div>
+            <div class="advantage"></div> on Negotiation check (or other skill at GM's discretion).</td>
+            <td>+10%</td>
+          </tr>
+          <tr>
+            <td>Each <div class="success"></div> on Negotiation check (or other skill at GM's discretion).</td>
+            <td>+5%</td>
+          </tr>
+          <tr>
+            <td>Each <div class="despair"></div> or <div class="threat"></div>
+            <div class="threat"></div>
+            <div class="threat"></div> on Negotiation check (or other skill at GM's discretion).</td>
+            <td>-10%</td>
+          </tr>
+          <tr>
+            <td>Each <div class="failure"></div> on Negotiation check (or other skill at GM's discretion).</td>
+            <td>-5%</td>
+          </tr>
+          <tr>
+            <td>The destination is under Imperial blockade.</td>
+            <td>+20%</td>
+          </tr>
+          <tr>
+            <td>The destination is under criminal or other blockade.</td>
+            <td>+10%</td>
+          </tr>
+          <tr>
+            <td>The PCs arrive earlier than contracted.</td>
+            <td>+10% per day early</td>
+          </tr>
+          <tr>
+            <td>The PCs arrive later than contracted.</td>
+            <td>-10% per day late</td>
+          </tr>
+          <tr>
+            <td>The PCs lose a portion of the cargo.</td>
+            <td>-10% or more (based on losses)</td>
+          </tr>
+        </table>
+    </div>
+    <div class="section">
+      <div class="splitLeft">
+        <h2>Droid Prices</h2>
+        <table class="eoteTable">
+          <tr>
+            <th>Droid Type</th>
+            <th>Cost</th>
+            <th>Rarity</th>
+          </tr>
+          <tr>
+            <td>Antiquated Battle Droids</td>
+            <td>6,500<span class="aurebesh">$</span></td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Assassin Droid</td>
+            <td>(R) 65,000<span class="aurebesh">$</span></td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>Astromech Droid</td>
+            <td>8,250<span class="aurebesh">$</span></td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Maintenance Droid</td>
+            <td>7.500<span class="aurebesh">$</span></td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Medical Droid</td>
+            <td>12,000<span class="aurebesh">$</span></td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Protocol Droid</td>
+            <td>8,000<span class="aurebesh">$</span></td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Security Droid</td>
+            <td>9,600<span class="aurebesh">$</span></td>
+            <td>5</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="section footer">
+			<p class="aurebesh-bold">This Star Wars site is created solely to enjoy the Fantasy Flight Games tabletop game. It is in no way official.</p>
+		</div>
+  </div>
+  <div class="back-to-top"><a href="#">TOP</a></div>
+	<script src="../js/main.js"></script>
+</body>
+</html>

@@ -6,7 +6,7 @@ body {
   height: 100%;
   font: 700 1em "News Cycle", sans-serif;
   letter-spacing: .15em;
-  color: #ff6;
+  color: #DFC663;
   background: #000;
   overflow: hidden;
   margin: 0;
@@ -50,8 +50,9 @@ body {
 /* line 55, ../sass/crawl.scss */
 .starwars .logo svg {
   width: inherit;
+  fill: #DFC663;
 }
-/* line 60, ../sass/crawl.scss */
+/* line 61, ../sass/crawl.scss */
 .starwars .titles {
   width: 95%;
   margin: 0 0 0 -47.5%;
@@ -67,13 +68,13 @@ body {
   -webkit-transform: perspective(300px) rotateX(15deg);
   transform: perspective(300px) rotateX(15deg);
 }
-/* line 73, ../sass/crawl.scss */
+/* line 74, ../sass/crawl.scss */
 .starwars .titles > div {
   position: absolute;
   top: 100%;
   animation: titles 70s linear 13s;
 }
-/* line 78, ../sass/crawl.scss */
+/* line 79, ../sass/crawl.scss */
 .starwars .titles > div > p {
   margin: 1.35em 0 1.85em 0;
   line-height: 1.50em;
@@ -134,7 +135,7 @@ body {
     opacity: 0;
   }
 }
-/* line 143, ../sass/crawl.scss */
+/* line 144, ../sass/crawl.scss */
 .crawl_episode, .crawl_title {
   text-align: center;
 }
