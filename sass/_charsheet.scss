@@ -1,7 +1,7 @@
 .pill {
 	display: inline-block;
 	margin: 10px;
-	font-size: 1.1em;
+	font-size: 1em;
 }
 .pillLeft {
 	display: inline;
@@ -34,6 +34,10 @@
 	@extend .stat;
 	width: 70px;
 	margin: 5px;
+}
+.stat-small-wide {
+	@extend .stat-small;
+	width: 150px;
 }
 .tag {
 	display: block;

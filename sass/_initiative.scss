@@ -24,7 +24,7 @@
     background-color: $eoteslate;
     color: #FFF;
     line-height: 30px;
-    font-size: 1.2em;
+    font-size: 1.15em;
     padding: 0;
     &:first-child {
       margin-left: 0;
@@ -40,7 +40,7 @@
     border: none;
     background: #FFF;
     color: #222;
-    font-family: $body-font;
+    font-family: $special-font;
     font-size: 1.2em;
     padding: 10px;
     margin: 5px;
@@ -120,7 +120,7 @@
   margin: 6px;
   border-radius: 15px;
   transition: box-shadow .5s;
-  background-color: $eoteslate;
+  background-color: $eoteslate; 
 }
 .tracker {
   width: 550px;
@@ -133,8 +133,8 @@
     border: none;
     background: #FFF;
     color: #222;
-    font-family: $body-font;
-    font-size: 1.2em;
+    font-family: $special-font;
+    font-size: 1.15em;
     padding: 10px;
     margin: 5px;
     transition: background .5s, color .3s, box-shadow .2s;
