@@ -20,18 +20,26 @@
 	<nav>
 		<ul>
 			<li><a href="index.html">Home</a></li>
-			<li><a href="groups.html" id="groups-nav">Groups</a></li>
-			<li><a href="rules.html" id="rules-nav" class="active">Rules</a></li>
-			<li><a href="sessions.html" id="sessions-nav">Sessions</a></li>
+			<li><a href="groups.html" class="toggle-groups-nav">Players</a>
+				<ul id="groups-nav">
+					<li><a href="groups/monarch/francis.html">FR4NC15</a></li>
+					<li><a href="groups/monarch/hayynq.html">Hayynq</a></li>
+					<li><a href="groups/monarch/nysro.html">Nysro</a></li>
+					<li><a href="groups/monarch/rusku.html">Rusku</a></li>
+					<li><a href="groups/monarch/trooper.html">TK</a></li>
+					<li><a href="groups/monarch/themonarch.html">Grey Nexu</a></li>
+				</ul>
+			</li>
+			<li><a href="rules.html" class="toggle-rules-nav active">Rules</a>
+				<ul id="rules-nav">
+					<li><a href="results.html">Results</a></li>
+					<li><a href="crits.html">Criticals</a></li>
+					<li><a href="initiative.html">Tracker</a></li>
+				</ul>
+			</li>
+			<li><a href="sessions.html">Sessions</a></li>
 		</ul>
 	</nav>
-	<section class="sub-menu">
-		<ul>
-			<li><a href="results.html">Results</a></li>
-			<li><a href="crits.html">Criticals</a></li>
-			<li><a href="initiative.html">Initiative Tracker</a></li>
-		</ul>
-	</section>
 	<div class="container">
 		<div class="section">
 			<h1>The Basics</h1>
@@ -39,54 +47,54 @@
 		<div class="section">
 			<h2>Dice</h2>
 			<div class="ruleDie">
-				<div class="ability"></div>
+				<h2 class="eote ab2"></h2>
 				<h3>Ability</h3>
 			</div>
 			<div class="ruleDie">
-				<div class="proficiency"></div>
+				<h2 class="eote pr2"></h2>
 				<h3>Proficiency</h3>
 			</div>
 			<div class="ruleDie">
-				<div class="boost"></div>
+				<h2 class="eote bo2"></h2>
 				<h3>Boost</h3>
 			</div>
 			<div class="ruleDie">
-				<div class="difficulty"></div>
+				<h2 class="eote di2"></h2>
 				<h3>Difficulty</h3>
 			</div>
 			<div class="ruleDie">
-				<div class="challenge"></div>
+				<h2 class="eote ch2"></h2>
 				<h3>Challenge</h3>
 			</div>
 			<div class="ruleDie">
-				<div class="setback"></div>
+				<h2 class="eote se2"></h2>
 				<h3>Setback</h3>
 			</div>
 		</div>
 		<div class="section">
 			<h2>Symbols</h2>
 			<div class="ruleSymbol">
-				<div class="successBig"></div>
+				<h2 class="eote su"></h2>
 				<h3>Success</h3>
 			</div>
 			<div class="ruleSymbol">
-				<div class="advantageBig"></div>
+				<h2 class="eote ad"></h2>
 				<h3>Advantage</h3>
 			</div>
 			<div class="ruleSymbol">
-				<div class="triumphBig"></div>
+				<h2 class="eote tr"></h2>
 				<h3>Triumph</h3>
 			</div>
 			<div class="ruleSymbol">
-				<div class="failureBig"></div>
+				<h2 class="eote fa"></h2>
 				<h3>Failure</h3>
 			</div>
 			<div class="ruleSymbol">
-				<div class="threatBig"></div>
+				<h2 class="eote th"></h2>
 				<h3>Threat</h3>
 			</div>
 			<div class="ruleSymbol">
-				<div class="despairBig"></div>
+				<h2 class="eote de"></h2>
 				<h3>Despair</h3>
 			</div>
 		</div>
@@ -135,76 +143,63 @@
 				</tr>
         <tr>
           <td>Plot Course</td>
-          <td><span>Average (<div class="difficulty"></div>
-          <div class="difficulty"></div>) Astrogation check<br>
-          Hard (<div class="difficulty"></div>
-          <div class="difficulty"></div>
-          <div class="difficulty"></div>) Perception check</span></td>
-          <td>The crewmember studies the terrain ahead and plots a course that should take the vehicle safetly through it. On a successful check, each <div class="success"></div> reduces the <div class="setback"></div> suffered for difficult terrain by 1.</td>
+          <td><span>Average (<span class="eote di2"></span><span class="eote di2"></span>) Astrogation check<br>
+          Hard (<span class="eote di2"></span><span class="eote di2"></span>) Perception check</span></td>
+          <td>The crewmember studies the terrain ahead and plots a course that should take the vehicle safetly through it. On a successful check, each <span class="eote su"></span> reduces the <span class="eote se2"></span> suffered for difficult terrain by 1.</td>
         </tr>
         <tr>
           <td>Copilot</td>
-          <td><span>Average (<div class="difficulty"></div>
-          <div class="difficulty"></div>) Piloting check</span></td>
+          <td><span>Average (<span class="eote di2"></span><span class="eote di2"></span>) Piloting check</span></td>
           <td>The crewmember serves as the vehicle's copilot, managing systems and auxillary equipment to allow the pilot to focus on flying or driving. On a successful check, each success downgrades the difficulty of the pilot's next piloting check by 1.</td>
         </tr>
         <tr>
           <td>Jamming</td>
-          <td><span>Average (<div class="difficulty"></div>
-          <div class="difficulty"></div>) Computers check</span></td>
-          <td>The crewmember uses the vehicle's systems to jam the communications of enemy vehicles. On a successful check, the enemy must make an <span>Average (<div class="difficulty"></div>
-          <div class="difficulty"></div>) Computers check</span> to use their communications systems. The difficulty increases by 1 for each additional <div class="success"></div>
-          <div class="success"></div>, and the jamming affects an additional target for each <div class="advantage"></div> spent.</td>
+          <td><span>Average (<span class="eote di2"></span><span class="eote di2"></span>) Computers check</span></td>
+          <td>The crewmember uses the vehicle's systems to jam the communications of enemy vehicles. On a successful check, the enemy must make an <span>Average (<span class="eote di2"></span><span class="eote di2"></span>) Computers check</span> to use their communications systems. The difficulty increases by 1 for each additional <span class="eote su"></span><span class="eote su"></span>, and the jamming affects an additional target for each <span class="eote ad"></span> spent.</td>
         </tr>
         <tr>
           <td>Boost Shields</td>
-          <td><span>Hard (<div class="difficulty"></div>
-          <div class="difficulty"></div>
-          <div class="difficulty"></div>) Mechanics check</span></td>
-          <td>The crewmember re-routes power from other systems to boost the defensive systems of a vehicle. This only works if a vehicle already has a defense rating. On a successful check, the vehicle suffers 1 system strain, and increases the defense of one defense zone by one until the beginning of their next turn. Additional <div class="success"></div> increase the duration by one round per.</td>
+          <td><span>Hard (<span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span>) Mechanics check</span></td>
+          <td>The crewmember re-routes power from other systems to boost the defensive systems of a vehicle. This only works if a vehicle already has a defense rating. On a successful check, the vehicle suffers 1 system strain, and increases the defense of one defense zone by one until the beginning of their next turn. Additional <span class="eote su"></span> increase the duration by one round per.</td>
         </tr>
         <tr>
           <td>Manual Repairs</td>
-          <td><span>Hard (<div class="difficulty"></div>
-          <div class="difficulty"></div>
-          <div class="difficulty"></div>) Athletics check</span></td>
-          <td>In some cases, repairs can be as simple as a sturdy metal plate welded over a damaged system. If the GM allows and the crewmember has the proper tools for the job, they can attempt to use the Damage Control action with Athletics rather than Mechanics. If successful, they may remove one point of hull trauma from the ship, plus one additional point for each additional <div class="success"></div>
-          <div class="success"></div>. Remember, this follows the limitations to Damage Control, and this may only be attempted once per encounter.</td>
+          <td><span>Hard (<span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span>) Athletics check</span></td>
+          <td>In some cases, repairs can be as simple as a sturdy metal plate welded over a damaged system. If the GM allows and the crewmember has the proper tools for the job, they can attempt to use the Damage Control action with Athletics rather than Mechanics. If successful, they may remove one point of hull trauma from the ship, plus one additional point for each additional <span class="eote su"></span><span class="eote su"></span>. Remember, this follows the limitations to Damage Control, and this may only be attempted once per encounter.</td>
         </tr>
         <tr>
           <td>Fire Discipline</td>
-          <td><span>Hard (<div class="difficulty"></div>
-          <div class="difficulty"></div>
-          <div class="difficulty"></div>) Leadership<br>or Discipline check</span></td>
-          <td>The crewmember forgoes fighting to analyze the opponent's tactics and direct his fellows to greater accuracy with their weapons fire. If successful, the next crewmember firing a weapon aboard the ship can add <div class="boost"></div> to their check. Each additional <div class="success"></div>
-          <div class="success"></div> grants this to an additional crewmember. In addition, the crewmember may spend <div class="advantage"></div>
-          <div class="advantage"></div>
-          <div class="advantage"></div> to allow every hit from shipboard weapons to inflict 1 system strain on their target as well as regular damage until the beginning of their next turn as the carefully timed shots pummel shields and overload systems.</td>
+          <td><span>Hard (<span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span>) Leadership<br>or Discipline check</span></td>
+          <td>The crewmember forgoes fighting to analyze the opponent's tactics and direct his fellows to greater accuracy with their weapons fire. If successful, the next crewmember firing a weapon aboard the ship can add <span class="eote bo2"></span> to their check. Each additional <span class="eote su"></span><span class="eote su"></span> grants this to an additional crewmember. In addition, the crewmember may spend <span class="eote ad"></span>
+          <span class="eote ad"></span>
+          <span class="eote ad"></span> to allow every hit from shipboard weapons to inflict 1 system strain on their target as well as regular damage until the beginning of their next turn as the carefully timed shots pummel shields and overload systems.</td>
         </tr>
         <tr>
           <td>Scan the Enemy</td>
-          <td><span>Hard (<div class="difficulty"></div>
-          <div class="difficulty"></div>
-          <div class="difficulty"></div>) Perception check</span></td>
-          <td>The crewmember uses the ship's scanners to study the enemy. If successful, they learn what weapons the ship has, any modifications, and the system strain and hull trauma thresholds. If they spend <div class="advantage"></div>
-          <div class="advantage"></div> you can also learn their current system strain and hull trauma levels.</td>
+          <td><span>Hard (<span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span>) Perception check</span></td>
+          <td>The crewmember uses the ship's scanners to study the enemy. If successful, they learn what weapons the ship has, any modifications, and the system strain and hull trauma thresholds. If they spend <span class="eote ad"></span><span class="eote ad"></span> you can also learn their current system strain and hull trauma levels.</td>
         </tr>
         <tr>
           <td>Slice Enemy Systems</td>
-          <td><span>Hard (<div class="difficulty"></div>
-          <div class="difficulty"></div>
-          <div class="difficulty"></div>) Computers check</span></td>
-          <td>The crewmember uses powerful shipboard computers to attempt to disrupt the systems of an enemy vehicle. If successful, he reduces the defense of one zone on the target vehicle for one round per <div class="success"></div>. A <div class="triumph"></div> may be spent to disable a weapon system for one round, and <div class="advantage"></div>
-          <div class="advantage"></div> may be spent to inflict 1 system strain on the target vehicle.</td>
+          <td><span>Hard (<span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span>) Computers check</span></td>
+          <td>The crewmember uses powerful shipboard computers to attempt to disrupt the systems of an enemy vehicle. If successful, he reduces the defense of one zone on the target vehicle for one round per <span class="eote su"></span>. A <span class="eote tr"></span> may be spent to disable a weapon system for one round, and <span class="eote ad"></span><span class="eote ad"></span> may be spent to inflict 1 system strain on the target vehicle.</td>
         </tr>
         <tr>
           <td>"Spoofing" Missiles</td>
-          <td><span>Average (<div class="difficulty"></div>
-          <div class="difficulty"></div>) Computers or<br>Hard (<div class="difficulty"></div>
-          <div class="difficulty"></div>
-          <div class="difficulty"></div>) Vigilance check</span></td>
-          <td>The crewmember tracks incoming attacks and uses vehicle systems to disrupt their tracking systems, or even times incoming missiles and drops flares and chaff at the opportune moment. If successful, any attack against the crewmember's ship or vehicle using weapons with the Guided quality upgrade their difficulty by one (plus an additional upgrade for every additional <div class="success"></div>
-          <div class="success"></div>) until the start of the crewmember's next turn.</td>
+          <td><span>Average (<span class="eote di2"></span><span class="eote di2"></span>) Computers or<br>Hard (<span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span>) Vigilance check</span></td>
+          <td>The crewmember tracks incoming attacks and uses vehicle systems to disrupt their tracking systems, or even times incoming missiles and drops flares and chaff at the opportune moment. If successful, any attack against the crewmember's ship or vehicle using weapons with the Guided quality upgrade their difficulty by one (plus an additional upgrade for every additional <span class="eote su"></span><span class="eote su"></span>) until the start of the crewmember's next turn.</td>
         </tr>
 			</table>
 		</div>

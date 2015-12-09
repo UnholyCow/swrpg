@@ -122,6 +122,10 @@ td {
 	text-align: center;
 	border-bottom: 2px solid $eoteyellow;  
 }
+.downgrade:before {
+	font-size: 1.15em;
+	content: "\21B6";
+}
 .eoteTable {
 	font-size: 1em;
 	width: 100%;
@@ -238,7 +242,10 @@ td {
 	display: none;
 }
 .justifyFirst {
-	th, td {
+	th {
+		padding: 5px 10px;
+	}
+	td {
 		padding: 0 10px;
 	}
 	td:first-child, th:first-child {
@@ -248,7 +255,10 @@ td {
 	}
 }
 .justifyLast {
-	th, td {
+	th {
+		padding: 5px 10px;
+	}
+	td {
 		padding: 0 10px;
 	}
 	td:last-child, th:last-child {
@@ -444,10 +454,21 @@ td {
 		width: 40%;
 	}
 }
+.table-divider {
+	text-align: center;
+	font-family: $special-font;
+	background-color: $eoteslate;
+	color: #FFF;
+	text-transform: uppercase;
+}
 .teuton {
 	font-family: 'Teuton', sans-serif;
 }
 .updates {
 	width: 40%;
 	float: right;
+}
+.upgrade:before {
+	font-size: 1.15em;
+	content: "\21B7";
 }

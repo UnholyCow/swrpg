@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Star Wars Roleplaying</title>
+	<title>SWRPG - Grey Nexu</title>
 	<link href="../../css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-	<link rel="icon" href="img/icon.png">
+	<link rel="icon" href="../../img/icon.png">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -20,25 +20,29 @@
 	<nav>
 		<ul>
 			<li><a href="../../index.html">Home</a></li>
-			<li><a href="../../groups.html" id="groups-nav" class="active">Groups</a></li>
-			<li><a href="../../rules.html" id="rules-nav">Rules</a></li>
-			<li><a href="../../sessions.html" id="sessions-nav">Sessions</a></li>
+			<li><a href="../../groups.html" class="toggle-groups-nav active">Players</a>
+				<ul id="groups-nav">
+					<li><a href="francis.html">FR4NC15</a></li>
+					<li><a href="hayynq.html">Hayynq</a></li>
+					<li><a href="nysro.html">Nysro</a></li>
+					<li><a href="rusku.html">Rusku</a></li>
+					<li><a href="trooper.html">TK</a></li>
+					<li><a href="themonarch.html" class="active">Grey Nexu</a></li>
+				</ul>
+			</li>
+			<li><a href="../../rules.html" class="toggle-rules-nav">Rules</a>
+				<ul id="rules-nav">
+					<li><a href="../../results.html">Results</a></li>
+					<li><a href="../../crits.html">Criticals</a></li>
+					<li><a href="../../initiative.html">Tracker</a></li>
+				</ul>
+			</li>
+			<li><a href="../../sessions.html">Sessions</a></li>
 		</ul>
 	</nav>
-	<section class="sub-menu">
-		<ul>
-			<li><a href="overview.html">Overview</a></li>
-			<li><a href="francis.html">Francis</a></li>
-			<li><a href="hayynq.html">Hayynq</a></li>
-			<li><a href="rusku.html">Rusku</a></li>
-			<li><a href="nysro.html">Nysro</a></li>
-			<li><a href="trooper.html">TK</a></li>
-			<li><a href="themonarch.html" class="active">The Monarch</a></li>
-		</ul>
-	</section>
 	<div class="container">
 		<div class="monarchPic">
-			<h1>The Monarch</h1>
+			<h1>Grey Nexu</h1>
 		</div>
 		<div class="section">
 			<h2>Info</h2>
@@ -127,7 +131,7 @@
 					<span>Customization Hard Points</span>
 				</div>
 				<div class="pillRight">
-					<span>1/6</span>
+					<span>3/6</span>
 				</div>
 			</div>
 		</div>
@@ -143,7 +147,7 @@
 			</div>
 			<div class="stat">
 				<div class="tagBlue">
-					<span>SS Threshold</span>
+					<span>System Strain</span>
 				</div>
 				<div class="value">
 					<span>15</span>
@@ -151,7 +155,7 @@
 			</div>
 			<div class="stat">
 				<div class="tagBlue">
-					<span>HT Threshold</span>
+					<span>Hull Trauma</span>
 				</div>
 				<div class="value">
 					<span>22</span>
@@ -223,7 +227,7 @@
 					<td><div class="advantage"></div>
 					<div class="advantage"></div>
 					<div class="advantage"></div></td>
-					<td>Accurate (Add <div class="boost"></div> to attacks), Linked 3</td>
+					<td>Accurate (Add <span class="eote bo2"></span> to attacks), Linked 3</td>
 				</tr>
 				<tr>
 					<td>Ventral Quad Laser Cannon Turret</td>
@@ -233,7 +237,7 @@
 					<td><div class="advantage"></div>
 					<div class="advantage"></div>
 					<div class="advantage"></div></td>
-					<td>Accurate (Add <div class="boost"></div> to attacks), Linked 3</td>
+					<td>Accurate (Add <span class="eote bo2"></span> to attacks), Linked 3</td>
 				</tr>
 			</table>
 		</div>
@@ -247,9 +251,9 @@
 					<th>Modifications</th>
 				</tr>
 				<tr>
-					<td>3 Smuggling Compartments</td>
-					<td>3</td>
-					<td>25 Encumbrance. <div class="difficulty"></div> +2 to find items stored in them.</td>
+					<td>Smuggling Compartments</td>
+					<td>1</td>
+					<td>25 Encumbrance. + <span class="eote di2"></span><span class="eote di2"></span> to find items stored in them.</td>
 					<td>1/6 Additional 25 Encumbrance storage mods.</td>
 				</tr>
 				<tr>
@@ -266,10 +270,12 @@
 				<tr>
 					<th>Cargo Hold</th>
 					<th>Encumbrance</th>
+					<th>Notes</th>
 				</tr>
 				<tr>
-					<td>3 Crates of "Lightly Used" Blasters</td>
-					<td>30</td>
+					<td>2 Smuggling Compartment 'Kits'</td>
+					<td>2</td>
+					<td>Uninstalled but saved for later use.</td>
 				</tr>
 			</table>
 		</div>

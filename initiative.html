@@ -22,18 +22,26 @@
 	<nav>
 		<ul>
 			<li><a href="index.html">Home</a></li>
-			<li><a href="groups.html" id="groups-nav">Groups</a></li>
-			<li><a href="rules.html" id="rules-nav" class="active">Rules</a></li>
-			<li><a href="sessions.html" id="sessions-nav">Sessions</a></li>
+			<li><a href="groups.html" class="toggle-groups-nav">Players</a>
+				<ul id="groups-nav">
+					<li><a href="groups/monarch/francis.html">FR4NC15</a></li>
+					<li><a href="groups/monarch/hayynq.html">Hayynq</a></li>
+					<li><a href="groups/monarch/nysro.html">Nysro</a></li>
+					<li><a href="groups/monarch/rusku.html">Rusku</a></li>
+					<li><a href="groups/monarch/trooper.html">TK</a></li>
+					<li><a href="groups/monarch/themonarch.html">Grey Nexu</a></li>
+				</ul>
+			</li>
+			<li><a href="rules.html" class="toggle-rules-nav active">Rules</a>
+				<ul id="rules-nav">
+					<li><a href="results.html">Results</a></li>
+					<li><a href="crits.html">Criticals</a></li>
+					<li><a href="initiative.html" class="active">Tracker</a></li>
+				</ul>
+			</li>
+			<li><a href="sessions.html">Sessions</a></li>
 		</ul>
 	</nav>
-	<section class="sub-menu">
-		<ul>
-			<li><a href="results.html">Results</a></li>
-			<li><a href="crits.html">Criticals</a></li>
-			<li><a href="initiative.html" class="active">Initiative Tracker</a></li>
-		</ul>
-	</section>
 	<div class="container">
 		<div class="section">
 			<h1>Initiative Tracker</h1>
@@ -44,7 +52,8 @@
 			<form action="" method="post">
 				<input id="success-roll" type="text" name="success" value="" placeholder="Success">
 				<input id="advantage-roll" type="text" name="advantage" value="" placeholder="Advantage">
-			</form>
+				<input id="triumph-roll" type="text" name="advantage" value="" placeholder="Triumph">
+			</form><br>
 			<button type="button" name="pc" class="add-pc">+PC</button>
 			<button type="button" name="ally" class="add-ally">+Ally</button>
 			<button type="button" name="npc" class="add-enemy">+Enemy</button>

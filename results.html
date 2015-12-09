@@ -20,18 +20,26 @@
 	<nav>
 		<ul>
 			<li><a href="index.html">Home</a></li>
-			<li><a href="groups.html" id="groups-nav">Groups</a></li>
-			<li><a href="rules.html" id="rules-nav" class="active">Rules</a></li>
-			<li><a href="sessions.html" id="sessions-nav">Sessions</a></li>
+			<li><a href="groups.html" class="toggle-groups-nav">Players</a>
+				<ul id="groups-nav">
+					<li><a href="groups/monarch/francis.html">FR4NC15</a></li>
+					<li><a href="groups/monarch/hayynq.html">Hayynq</a></li>
+					<li><a href="groups/monarch/nysro.html">Nysro</a></li>
+					<li><a href="groups/monarch/rusku.html">Rusku</a></li>
+					<li><a href="groups/monarch/trooper.html">TK</a></li>
+					<li><a href="groups/monarch/themonarch.html">Grey Nexu</a></li>
+				</ul>
+			</li>
+			<li><a href="rules.html" class="toggle-rules-nav active">Rules</a>
+				<ul id="rules-nav">
+					<li><a href="results.html" class="active">Results</a></li>
+					<li><a href="crits.html">Criticals</a></li>
+					<li><a href="initiative.html">Tracker</a></li>
+				</ul>
+			</li>
+			<li><a href="sessions.html">Sessions</a></li>
 		</ul>
 	</nav>
-	<section class="sub-menu">
-		<ul>
-			<li><a href="results.html" class="active">Results</a></li>
-			<li><a href="crits.html">Criticals</a></li>
-			<li><a href="initiative.html">Initiative Tracker</a></li>
-		</ul>
-	</section>
 	<div class="container">
 		<div class="section">
 			<div class="resultsSwitch">
@@ -42,7 +50,7 @@
 			</div>
 		</div>
 		<div class="section" id="die-results">
-			<h2>Spending <div class="advantageBig"></div> and <div class="triumphBig"></div> in combat</h2>
+			<h2>Spending <span class="eote ad"></span> and <span class="eote tr"></span> in combat</h2>
 			<table class="eoteTable justifyLast">
 				<tr>
 					<th>Cost</th>
@@ -50,35 +58,35 @@
 				</tr>
 				<tr>
 					<td>
-						<div class="advantage"></div> or
-						<div class="triumph"></div>
+						<span class="eote ad"></span> or
+						<span class="eote tr"></span>
 					</td>
 					<td>
 						Recover 1 strain (this option may be selected more than once.)<br>
-						Add <div class="boost"></div> to the next allied active character's check.<br>
+						Add <span class="eote bo2"></span> to the next allied active character's check.<br>
 						Notice a single important point in the ongoing conflict, such as the location of a blast door's control panel or a weak point on an attack speeder.<br>
-						Inflict a Critical Injury with a successful attack that deals damage past soak (<div class="advantage"></div> cost may vary).<br>
-						Activate a weapon quality (<div class="advantage"></div> cost may vary).
+						Inflict a Critical Injury with a successful attack that deals damage past soak (<span class="eote ad"></span> cost may vary).<br>
+						Activate a weapon quality (<span class="eote ad"></span> cost may vary).
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<div class="advantage"></div>
-						<div class="advantage"></div> or
-						<div class="triumph"></div>
+						<span class="eote ad"></span>
+						<span class="eote ad"></span> or
+						<span class="eote tr"></span>
 						</td>
 					<td>
 						Perform an immediate free maneuver that does not exceed the two maneuver per turn limit.<br>
-						Add <div class="setback"></div> to the targeted character's next check.<br>
-						Add <div class="boost"></div> to any allied character's next check, including the active character.
+						Add <span class="eote se2"></span> to the targeted character's next check.<br>
+						Add <span class="eote bo2"></span> to any allied character's next check, including the active character.
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<div class="advantage"></div>
-						<div class="advantage"></div>
-						<div class="advantage"></div> or
-						<div class="triumph"></div>
+						<span class="eote ad"></span>
+						<span class="eote ad"></span>
+						<span class="eote ad"></span> or
+						<span class="eote tr"></span>
 					</td>
 					<td>
 						Negate the targeted enemy's defensive bonuses until the end of the current round.<br>
@@ -90,7 +98,7 @@
 				</tr>
 				<tr>
 					<td>
-						<div class="triumph"></div>
+						<span class="eote tr"></span>
 					</td>
 					<td>
 						Upgrade the difficulty of the targeted character's next check.<br>
@@ -100,15 +108,15 @@
 				</tr>
 				<tr>
 					<td>
-						<div class="triumph"></div>
-						<div class="triumph"></div>
+						<span class="eote tr"></span>
+						<span class="eote tr"></span>
 					</td>
 					<td>
 						When dealing damage to a target, have the attack destroy a piece of equipment the target is using.
 					</td>
 				</tr>
 			</table>
-			<h2>Spending <div class="threatBig"></div> and <div class="despairBig"></div> in Combat</h2>
+			<h2>Spending <span class="eote th"></span> and <span class="eote de"></span> in Combat</h2>
 			<table class="eoteTable justifyLast">
 				<tr>
 					<th>Cost</th>
@@ -116,8 +124,8 @@
 				</tr>
 				<tr>
 					<td>
-						<div class="threat"></div> or
-						<div class="despair"></div>
+						<span class="eote th"></span> or
+						<span class="eote de"></span>
 					</td>
 					<td>
 						The active character suffers 1 strain (this option may be selected more than once).<br>
@@ -126,22 +134,22 @@
 				</tr>
 				<tr>
 					<td>
-						<div class="threat"></div>
-						<div class="threat"></div> or
-						<div class="despair"></div>
+						<span class="eote th"></span>
+						<span class="eote th"></span> or
+						<span class="eote de"></span>
 					</td>
 					<td>
 						An opponent may immediately perform one free maneuver in response to the active character's check.<br>
-						Add <div class="boost"></div> to the targeted character's next check.<br>
-						The active character or an allied character suffers <div class="setback"></div> on his next action.
+						Add <span class="eote bo2"></span> to the targeted character's next check.<br>
+						The active character or an allied character suffers <span class="eote se2"></span> on his next action.
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<div class="threat"></div>
-						<div class="threat"></div>
-						<div class="threat"></div> or
-						<div class="despair"></div>
+						<span class="eote th"></span>
+						<span class="eote th"></span>
+						<span class="eote th"></span> or
+						<span class="eote de"></span>
 					</td>
 					<td>
 						The active character falls prone.<br>
@@ -150,7 +158,7 @@
 				</tr>
 				<tr>
 					<td>
-						<div class="despair"></div>
+						<span class="eote de"></span>
 					</td>
 					<td>
 						The character's ranged weapon immediately runs out of ammunition and may not be used for the remainder of the encounter.<br>
@@ -161,7 +169,7 @@
 			</table>
 		</div>
 		<div class="section hidden" id="vehicle-die-results">
-			<h2>Spending <div class="advantageBig"></div> and <div class="triumphBig"></div> in combat</h2>
+			<h2>Spending <span class="eote ad"></span> and <span class="eote tr"></span> in combat</h2>
 			<table class="eoteTable justifyLast">
 				<tr>
 					<th>Cost</th>
@@ -169,34 +177,34 @@
 				</tr>
 				<tr>
 					<td>
-						<div class="advantage"></div> or
-						<div class="triumph"></div>
+						<span class="eote ad"></span> or
+						<span class="eote tr"></span>
 					</td>
 					<td>
-						Add <div class="boost"></div> to the next allied active character's Piloting, Gunnery, Computers, or mechanics check.<br>
+						Add <span class="eote bo2"></span> to the next allied active character's Piloting, Gunnery, Computers, or mechanics check.<br>
 						Notice a single important point in the ongoing conflict, such as a flaw in an enemy ship's course or a weak point on an attack speeder.<br>
-						Inflict a Critical Injury with a successful attack that deals damage past soak (<div class="advantage"></div> cost may vary).<br>
-						Activate a weapon quality (<div class="advantage"></div> cost may vary).
+						Inflict a Critical Injury with a successful attack that deals damage past soak (<span class="eote ad"></span> cost may vary).<br>
+						Activate a weapon quality (<span class="eote ad"></span> cost may vary).
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<div class="advantage"></div>
-						<div class="advantage"></div> or
-						<div class="triumph"></div>
+						<span class="eote ad"></span>
+						<span class="eote ad"></span> or
+						<span class="eote tr"></span>
 						</td>
 					<td>
 						Perform an immediate free maneuver, provided the active character has not already performed two maneuvers in that turn.<br>
-						Add <div class="setback"></div> to the targeted character's next Piloting or Gunnery check.<br>
-						Add <div class="boost"></div> to any allied character's next Piloting, Gunner, Computers, or Mechanics check, including the active character.
+						Add <span class="eote se2"></span> to the targeted character's next Piloting or Gunnery check.<br>
+						Add <span class="eote bo2"></span> to any allied character's next Piloting, Gunner, Computers, or Mechanics check, including the active character.
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<div class="advantage"></div>
-						<div class="advantage"></div>
-						<div class="advantage"></div> or
-						<div class="triumph"></div>
+						<span class="eote ad"></span>
+						<span class="eote ad"></span>
+						<span class="eote ad"></span> or
+						<span class="eote tr"></span>
 					</td>
 					<td>
 						When dealing damage to an opposing vehicle or ship, have the shot temporarily damage a component of the attacker's choice<br>rather than deal hull damage or system strain. The effects are up to the attacker and the GM and should make logical sense.<br>
@@ -207,7 +215,7 @@
 				</tr>
 				<tr>
 					<td>
-						<div class="triumph"></div>
+						<span class="eote tr"></span>
 					</td>
 					<td>
 						Upgrade the difficulty of the targeted character's next Piloting or Gunnery check.<br>
@@ -217,15 +225,15 @@
 				</tr>
 				<tr>
 					<td>
-						<div class="triumph"></div>
-						<div class="triumph"></div>
+						<span class="eote tr"></span>
+						<span class="eote tr"></span>
 					</td>
 					<td>
 						When dealing damage to an opposing vehicle or ship, have the shot destroy some important component of the attacker's choice rather<br>than deal hull damage or system strain, leaving it completely inoperable until fully repaired.
 					</td>
 				</tr>
 			</table>
-			<h2>Spending <div class="threatBig"></div> and <div class="despairBig"></div> in Combat</h2>
+			<h2>Spending <span class="eote th"></span> and <span class="eote de"></span> in Combat</h2>
 			<table class="eoteTable justifyLast">
 				<tr>
 					<th>Cost</th>
@@ -233,8 +241,8 @@
 				</tr>
 				<tr>
 					<td>
-						<div class="threat"></div> or
-						<div class="despair"></div>
+						<span class="eote th"></span> or
+						<span class="eote de"></span>
 					</td>
 					<td>
 						If piloting a ship, sudden maneuvers force the ship to slow down by one speed.<br>
@@ -244,22 +252,22 @@
 				</tr>
 				<tr>
 					<td>
-						<div class="threat"></div>
-						<div class="threat"></div> or
-						<div class="despair"></div>
+						<span class="eote th"></span>
+						<span class="eote th"></span> or
+						<span class="eote de"></span>
 					</td>
 					<td>
 						An opponent may immediately perform one free maneuver in response to the active character's check.<br>
-						Add <div class="boost"></div> to the targeted character's next Piloting or Gunnery check.<br>
-						The active character or an allied character suffers <div class="setback"></div> on his next action.
+						Add <span class="eote bo2"></span> to the targeted character's next Piloting or Gunnery check.<br>
+						The active character or an allied character suffers <span class="eote se2"></span> on his next action.
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<div class="threat"></div>
-						<div class="threat"></div>
-						<div class="threat"></div> or
-						<div class="despair"></div>
+						<span class="eote th"></span>
+						<span class="eote th"></span>
+						<span class="eote th"></span> or
+						<span class="eote de"></span>
 					</td>
 					<td>
 						The initiative slot being used by the active player drops to last in the initiative order.<br>
@@ -268,7 +276,7 @@
 				</tr>
 				<tr>
 					<td>
-						<div class="despair"></div>
+						<span class="eote de"></span>
 					</td>
 					<td>
 						The primary weapon system of the active character's ship (or weapon system being manned) suffers the effects of the Component Hit Critical. This does not count toward the ship's accumulated Critical Hits.<br>
@@ -278,7 +286,7 @@
 				</tr>
 				<tr>
 					<td>
-						<div class="despair"></div><br>
+						<span class="eote de"></span><br>
 						(plus failed check)
 					</td>
 					<td>

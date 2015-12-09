@@ -1,0 +1,114 @@
+@font-face {
+	font-family: 'EotE';
+	src: url('../fonts/eote.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+.contrast:before {
+	-webkit-text-stroke: 1px #FFF !important; 
+}
+.eote {
+	font-family: 'EotE';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+/* Dice ========= */
+.ab:before {
+	content: "\0044";
+	color: 51A44B;
+}
+.ab2:before {
+	content: "\0064";
+	color: #51A44B;
+	-webkit-text-stroke: 1px #000;
+}
+.bo:before {
+	content: "\0042";
+	color: #76CDDA;
+}
+.bo2:before {
+	content: "\0062";
+	color: #76CDDA;
+	-webkit-text-stroke: 1px #000;
+}
+.ch:before {
+	content: "\0043";
+	color: #B51213;
+}
+.ch2:before {
+	content: "\0063";
+	color: #B51213;
+	-webkit-text-stroke: 1px #000;
+}
+.di:before {
+	content: "\0044";
+	color: #662D91;
+}
+.di2:before {
+	content: "\0064";
+	color: #662D91;
+	-webkit-text-stroke: 1px #000;
+}
+.fo:before {
+	content: "\0043";
+	color: #FFF;
+}
+.fo2:before {
+	content: "\0063";
+	color: #FFF;
+	-webkit-text-stroke: 1px #000;
+}
+.pr:before {
+	content: "\0043";
+	color: #DFC663;
+}
+.pr2:before {
+	content: "\0063";
+	color: #DFC663;
+	-webkit-text-stroke: 1px #000;
+}
+.se:before {
+	content: "\0042";
+	color: #000;
+}
+.se2:before {
+	content: "\0062";
+	color: #000;
+	-webkit-text-stroke: 1px #000;
+}
+
+/* Symbols */
+.su:before {
+	content: "\0073";
+}
+.ad:before {
+	content: '\0061';
+}
+.tr:before {
+	content: '\0078';
+}
+.fa:before {
+	content: '\0066';
+}
+.th:before {
+	content: '\0074';
+}
+.de:before {
+	content: '\0079';
+}
+.li:before {
+	content: '\007A';
+	color: #FFF; 
+}
+.da:before {
+	content: '\007A';
+	color: #000; 
+}

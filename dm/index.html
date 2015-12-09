@@ -15,14 +15,27 @@
 			<div></div>
 			<div></div>
 		</div>
-		<div class="logo"></div>
+		<a href="../index.html"><div class="logo"></div></a>
 	</header>
 	<nav>
 		<ul>
       <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="adversaries.html">Adversaries</a></li>
+      <li><a href="adversaries.html" class="toggle-adv-nav">Adversaries</a>
+				<ul id="adv-nav">
+	        <li><a href="adversaries/bountyhunters.html">Hunters</a></li>
+	        <li><a href="adversaries/droids.html">Droids</a></li>
+	        <li><a href="adversaries/imperial.html">Imperial</a></li>
+	        <li><a href="adversaries/spaceport.html">Spaceport</a></li>
+	        <li><a href="adversaries/underworld.html">Underworld</a></li>
+	        <li><a href="adversaries/patronclient.html">Patrons</a></li>
+	        <li><a href="adversaries/core.html">Core</a></li>
+	        <li><a href="adversaries/oddities.html">Oddities</a></li>
+	      </ul>
+      </li>
       <li><a href="hyperspace.html">Travel</a></li>
       <li><a href="trade.html">Trade</a></li>
+      <li><a href="payment.html">Payment</a></li>
+      <li><a href="gear.html">Gear</a></li>
 		</ul>
 	</nav>
   <div class="container">
@@ -41,31 +54,37 @@
         </tr>
         <tr>
           <td>Easy</td>
-          <td><div class="difficulty"></div></td>
+          <td><span class="eote di2"></span></td>
           <td>Picking a primitive lock, tending to minor cuts and bruises, finding food and shelter on a lush planet, shooting target at close range.</td>
         </tr>
         <tr>
           <td>Average</td>
-          <td><div class="difficulty"></div>
-          <div class="difficulty"></div></td>
+          <td><span class="eote di2"></span>
+          <span class="eote di2"></span></td>
           <td>Picking a typical lock, stitching up a small wound, finding food and shelter on a temperate planet, shooting target at medium range or trying to strike an engaged target.</td>
         </tr>
         <tr>
           <td>Hard</td>
-          <td><div class="difficulty"></div>
-          <div class="difficulty"></div><div class="difficulty"></div></td>
+          <td><span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span></td>
           <td>Picking a complicated lock, setting broken bones or suturing large wounds, finding food and shelter on a rugged planet, shooting target at long range.</td>
         </tr>
         <tr>
           <td>Daunting</td>
-          <td><div class="difficulty"></div>
-          <div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div></td>
+          <td><span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span></td>
           <td>Picking an exceptionally sophistacated lock, performing surgery or grafting implants, finding food and shelter on a barren planet, shooting target at extreme range.</td>
         </tr>
         <tr>
           <td>Formidable</td>
-          <td><div class="difficulty"></div>
-          <div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div></td>
+          <td><span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span></td>
           <td>Picking a lock with no comprehiensible mechinism, cloning a new body, finding food and shelter on a planet without breathable atmosphere.</td>
         </tr>
       </table>
@@ -80,33 +99,33 @@
           </tr>
           <tr>
             <td>Engaged</td>
-            <td><span>Easy (<div class="difficulty"></div>)</span> plus modifiers depending on weapon used.</td>
+            <td><span>Easy (<span class="eote di2"></span>)</span> plus modifiers depending on weapon used.</td>
           </tr>
           <tr>
             <td>Short</td>
-            <td><span>Easy (<div class="difficulty"></div>)</span></td>
+            <td><span>Easy (<span class="eote di2"></span>)</span></td>
           </tr>
           <tr>
             <td>Medium</td>
-            <td><span>Average (<div class="difficulty"></div>
-            <div class="difficulty"></div>)</span></td>
+            <td><span>Average (<span class="eote di2"></span>
+            <span class="eote di2"></span>)</span></td>
           </tr>
           <tr>
             <td>Long</td>
-            <td><span>Hard (<div class="difficulty"></div>
-            <div class="difficulty"></div>
-            <div class="difficulty"></div>)</span></td>
+            <td><span>Hard (<span class="eote di2"></span>
+            <span class="eote di2"></span>
+            <span class="eote di2"></span>)</span></td>
           </tr>
           <tr>
             <td>Extreme</td>
-            <td><span>Daunting (<div class="difficulty"></div>
-            <div class="difficulty"></div>
-            <div class="difficulty"></div>
-            <div class="difficulty"></div>)</span></td>
+            <td><span>Daunting (<span class="eote di2"></span>
+            <span class="eote di2"></span>
+            <span class="eote di2"></span>
+            <span class="eote di2"></span>)</span></td>
           </tr>
           <tr>
-            <td colspan="2">Melee attacks (Brawl or Melee checks) are always <span>Average (<div class="difficulty"></div>
-            <div class="difficulty"></div>).</span></td>
+            <td colspan="2">Melee attacks (Brawl or Melee checks) are always <span>Average (<span class="eote di2"></span>
+            <span class="eote di2"></span>).</span></td>
           </tr>
         </table>
       </div>
@@ -119,11 +138,11 @@
           </tr>
           <tr>
             <td>Engaged w/ Ranged (Light)</td>
-            <td>+1 difficulty</td>
+            <td>+ <span class="eote di2"></span></td>
           </tr>
           <tr>
             <td>Engaged w/ Ranged (Heavy)</td>
-            <td>+2 difficulty</td>
+            <td>+ <span class="eote di2"></span><span class="eote di2"></span></td>
           </tr>
           <tr>
             <td>Engaged w/ Gunnery</td>
@@ -142,18 +161,18 @@
           </tr>
           <tr>
             <td>Half or less of wound threshold</td>
-            <td><span>Easy (<div class="difficulty"></div>)</span></td>
+            <td><span>Easy (<span class="eote di2"></span>)</span></td>
           </tr>
           <tr>
             <td>More than half of wound threshold</td>
-            <td><span>Average (<div class="difficulty"></div>
-            <div class="difficulty"></div>)</span></td>
+            <td><span>Average (<span class="eote di2"></span>
+            <span class="eote di2"></span>)</span></td>
           </tr>
           <tr>
             <td>Exceeding wound threshold</td>
-            <td><span>Hard (<div class="difficulty"></div>
-            <div class="difficulty"></div>
-            <div class="difficulty"></div>)</span></td>
+            <td><span>Hard (<span class="eote di2"></span>
+            <span class="eote di2"></span>
+            <span class="eote di2"></span>)</span></td>
           </tr>
           <tr>
             <td>Recover Critical Injury</td>
@@ -170,18 +189,18 @@
           </tr>
           <tr>
             <td>Less then half threshold</td>
-            <td><span>Easy (<div class="difficulty"></div>)</span></td>
+            <td><span>Easy (<span class="eote di2"></span>)</span></td>
           </tr>
           <tr>
             <td>Equal to or more than half threshold</td>
-            <td><span>Average (<div class="difficulty"></div>
-            <div class="difficulty"></div>)</span></td>
+            <td><span>Average (<span class="eote di2"></span>
+            <span class="eote di2"></span>)</span></td>
           </tr>
           <tr>
             <td>Exceeds threshold</td>
-            <td><span>Hard (<div class="difficulty"></div>
-            <div class="difficulty"></div>
-            <div class="difficulty"></div>)</span></td>
+            <td><span>Hard (<span class="eote di2"></span>
+            <span class="eote di2"></span>
+            <span class="eote di2"></span>)</span></td>
           </tr>
           <tr>
             <td>Repair Critical Hit</td>
@@ -223,22 +242,22 @@
           </tr>
           <tr>
             <td>Minor</td>
-            <td><div class="difficulty"></div></td>
+            <td><span class="eote di2"></span></td>
             <td>25% Total</td>
-            <td><span>+ <div class="setback"></div></span></td>
+            <td><span>+ <span class="eote se2"></span></span></td>
           </tr>
           <tr>
             <td>Moderate</td>
-            <td><div class="difficulty"></div>
-            <div class="difficulty"></div></td>
+            <td><span class="eote di2"></span>
+            <span class="eote di2"></span></td>
             <td>50% Total</td>
-            <td><span>+ <div class="difficulty"></div></span></td>
+            <td><span>+ <span class="eote di2"></span></span></td>
           </tr>
           <tr>
             <td>Major</td>
-            <td><div class="difficulty"></div>
-            <div class="difficulty"></div>
-            <div class="difficulty"></div></td>
+            <td><span class="eote di2"></span>
+            <span class="eote di2"></span>
+            <span class="eote di2"></span></td>
             <td>100% Total</td>
             <td>Unusable</td>
           </tr>
@@ -254,33 +273,33 @@
         </tr>
         <tr>
           <td>Firing vessel has the same silhouette as target, or one larger than the target.</td>
-          <td><span>Average (<div class="difficulty"></div>
-          <div class="difficulty"></div>)</span></td>
+          <td><span>Average (<span class="eote di2"></span>
+          <span class="eote di2"></span>)</span></td>
         </tr>
         <tr>
           <td>Firing vessel has a silhouette two or more points smaller than the target vessel.</td>
-          <td><span>Easy (<div class="difficulty"></div>)</span></td>
+          <td><span>Easy (<span class="eote di2"></span>)</span></td>
         </tr>
         <tr>
           <td>Firing vessel has a silhouette two points larger than the target ship.</td>
-          <td><span>Hard (<div class="difficulty"></div>
-          <div class="difficulty"></div>
-          <div class="difficulty"></div>)</span></td>
+          <td><span>Hard (<span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span>)</span></td>
         </tr>
         <tr>
           <td>Firing vessel has a silhouette three points larger than the target ship.</td>
-          <td><span>Daunting (<div class="difficulty"></div>
-          <div class="difficulty"></div>
-          <div class="difficulty"></div>
-          <div class="difficulty"></div>)</span></td>
+          <td><span>Daunting (<span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span>)</span></td>
         </tr>
         <tr>
           <td>Firing vessel has a silhouette four points larger than the target ship.</td>
-          <td><span>Formidable (<div class="difficulty"></div>
-          <div class="difficulty"></div>
-          <div class="difficulty"></div>
-          <div class="difficulty"></div>
-          <div class="difficulty"></div>)</span></td>
+          <td><span>Formidable (<span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span>)</span></td>
         </tr>
       </table>
     </div>
@@ -293,35 +312,35 @@
         </tr>
         <tr>
           <td>Initiating ship is traveling at the same speed as the target ship.</td>
-          <td><span>Average (<div class="difficulty"></div>
-          <div class="difficulty"></div>)</span></td>
+          <td><span>Average (<span class="eote di2"></span>
+          <span class="eote di2"></span>)</span></td>
         </tr>
         <tr>
           <td>Initiating ship's speed is one or more higher than the target ship.</td>
-          <td><span>Easy (<div class="difficulty"></div>)</span></td>
+          <td><span>Easy (<span class="eote di2"></span>)</span></td>
         </tr>
         <tr>
           <td>Initiating ship's speed is one lower than the target ship.</td>
-          <td><span>Hard (<div class="difficulty"></div>
-          <div class="difficulty"></div><div class="difficulty"></div>)</span></td>
+          <td><span>Hard (<span class="eote di2"></span>
+          <span class="eote di2span eote di2"></span>)</span></td>
         </tr>
         <tr>
           <td>Initiating ship's speed is two or more lower than the target ship.</td>
-          <td><span>Daunting (<div class="difficulty"></div>
-          <div class="difficulty"></div><div class="difficulty"></div>
-          <div class="difficulty"></div>)</span></td>
+          <td><span>Daunting (<span class="eote di2"></span>
+          <span class="eote di2span eote di2"></span>
+          <span class="eote di2"></span>)</span></td>
         </tr>
       </table>
     </div>
     <div class="info">
      <div class="section">
         <h2>Weapon Qualities</h2>
-       <i>Active qualities require <div class="advantageAlt"></div><div class="advantageAlt"></div> to trigger unless listed otherwise.</i>
+       <i>Active qualities require <span class="eote ad"></span> <span class="eote ad"></span> to trigger unless listed otherwise.</i>
      </div>
       <div class="block">
         <ul>
-          <li><strong>Accurate (Passive): </strong>Add <div class="boost"></div> per rating to attack checks.</li>
-          <li><strong>Auto-Fire (Passive): </strong>Increase difficulty of attack checks by <div class="difficulty"></div>. May trigger multiple times to generate additional hits.</li>
+          <li><strong>Accurate (Passive): </strong>Add <span class="eote bo2"></span> per rating to attack checks.</li>
+          <li><strong>Auto-Fire (Passive): </strong>Increase difficulty of attack checks by <span class="eote di2 contrast"></span>. May trigger multiple times to generate additional hits.</li>
           <li><strong>Breach (Passive): </strong>Ignore 1 point of armor (10 points of soak) per rating.</li>
           <li><strong>Burn (Active): </strong>When triggered, target suffers weapon's base damage for a number of rounds equal to</li>
           <li><strong>Blast (Active): </strong>When triggered, targets engaged with target suffer wounds equal to rating.</li>
@@ -332,16 +351,16 @@
           <li><strong>Deflection (Passive): </strong>Increase ranged defense by rating.</li>
           <li><strong>Disorient (Active): </strong>When triggered, target is disoriented a number of rounds equal to rating.</li>
           <li><strong>Ensnare (Active): </strong>When triggered, target is immobilized a nubmer of rounds equal to rating.</li>
-          <li><strong>Guided (Active): </strong>Requires <div class="advantageAlt"></div>
-          <div class="advantageAlt"></div>
-          <div class="advantageAlt"></div> to trigger. If triggered and attack misses, make additional attack with ability equail to Guided rating.</li>
-          <li><strong>Knockdown (Active): </strong>Requires additional <div class="advantageAlt"></div> per silhouette beyond 1 to trigger. When triggered, target is knocked prone.</li>
+          <li><strong>Guided (Active): </strong>Requires <span class="eote ad"></span>
+          <span class="eote ad"></span>
+          <span class="eote ad"></span> to trigger. If triggered and attack misses, make additional attack with ability equail to Guided rating.</li>
+          <li><strong>Knockdown (Active): </strong>Requires additional <span class="eote ad"></span> per silhouette beyond 1 to trigger. When triggered, target is knocked prone.</li>
         </ul>
       </div>
       <div class="block" style="vertical-align: top">
         <ul>
-          <li><strong>Inaccurate (Passive): </strong>Adds <div class="setback"></div> to attack checks equal to rating.</li>
-          <li><strong>Inferior (Passive): </strong>Adds <div class="threatAlt"></div> to all check results, decreases base damage or defense by 1. If no defense then decrease soak by 1.</li>
+          <li><strong>Inaccurate (Passive): </strong>Adds <span class="eote se2 contrast"></span> to attack checks equal to rating.</li>
+          <li><strong>Inferior (Passive): </strong>Adds <span class="eote th"></span> to all check results, decreases base damage or defense by 1. If no defense then decrease soak by 1.</li>
           <li><strong>Ion (Passive): </strong>Deal damage to system strain threshold.</li>
           <li><strong>Limited Ammo (Passive): </strong>May make number of attacks equal to rating, then must be reloaded.</li>
           <li><strong>Linked (Active): </strong>When triggered, may generate additional hit on same target. May trigger number of times equal to rating.</li>
@@ -351,7 +370,7 @@
           <li><strong>Stun (Active): </strong>When triggered, inflicts strain equal to rating.</li>
           <li><strong>Stun Damage (Passive): </strong>Attacks deal damage as strain instead of wounds. This is still reduced by soak.</li>
           <li><strong>Sunder (Active): </strong>Trigger to damage weapon or item.</li>
-          <li><strong>Superior (Active): </strong>Adds <div class="advantageAlt"></div> to all check results, increases base damage by 1 or defense by 1.</li>
+          <li><strong>Superior (Active): </strong>Adds <span class="eote ad"></span> to all check results, increases base damage by 1 or defense by 1.</li>
           <li><strong>Tractor (Passive): </strong>On hit, target may not move unless it passes a check to break free.</li>
           <li><strong>Vicious (Passive): </strong>When scoring a critical injury or hit, add 10 times rating to the result.</li>
         </ul>
@@ -453,7 +472,7 @@
     <div class="section">
       <div class="splitLeft">
         <h2>Falling Damage</h2>
-        <table class="eoteTable">
+        <table class="eoteTable justifyFirst">
           <tr>
             <th>Range</th>
             <th>Damage</th>
@@ -517,52 +536,52 @@
         </tr>
         <tr>
           <td>Minimally Afraid</td>
-          <td><span>Easy (<div class="difficulty"></div>)</span></td>
+          <td><span>Easy (<span class="eote di2"></span>)</span></td>
           <td>Somewhat overmatched in combat; a minimally dangerous creature; a minor threat to one's safety.</td>
         </tr>
         <tr>
           <td>Moderately Afraid</td>
-          <td><span>Average (<div class="difficulty"></div>
-          <div class="difficulty"></div>)</span></td>
+          <td><span>Average (<span class="eote di2"></span>
+          <span class="eote di2"></span>)</span></td>
           <td>Obviously overmatched in combat; a dangerously aggressive creature; a credible threat to one's safety and minimal threat to one's life.</td>
         </tr>
         <tr>
           <td>Very Afraid</td>
-          <td><span>Hard (<div class="difficulty"></div>
-          <div class="difficulty"></div>
-          <div class="difficulty"></div>)</span></td>
+          <td><span>Hard (<span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span>)</span></td>
           <td>Battlefield combat; a pack of aggressive creatures; a major threat to one's safety and moderate threat to one's life.</td>
         </tr>
         <tr>
           <td>Mortally Afraid</td>
-          <td><span>Daunting (<div class="difficulty"></div>
-          <div class="difficulty"></div>
-          <div class="difficulty"></div>
-          <div class="difficulty"></div>)</span></td>
+          <td><span>Daunting (<span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span>)</span></td>
           <td>Terrifyingly intense combat; confronting a large and dangerous creature such as a rancor; overwhelming fear for one's life.</td>
         </tr>
         <tr>
           <td>Utterly Afraid</td>
-          <td><span>Formidable (<div class="difficulty"></div>
-          <div class="difficulty"></div>
-          <div class="difficulty"></div>
-          <div class="difficulty"></div>
-          <div class="difficulty"></div>)</span></td>
+          <td><span>Formidable (<span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span>)</span></td>
           <td>A hopeless and utterly terrifying situation; combat against things incomprehensible to one's mind; being chased by a pack of rancors; fear so crippling that sanity cracks.</td>
         </tr>
         <tr>
           <td>Confronting something reputed to be dangerous.</td>
-          <td><div class="difficulty"></div><span style="font-size: 1.15em">&#8631;</span><div class="challenge"></div></td>
+          <td><span class="eote di2"></span><span class="upgrade"></span><span class="eote ch2"></span></td>
           <td>Confronting a Sith warrior, or an Imperial Intelligence agent; Negotiating with Jabba the Hutt.</td>
         </tr>
         <tr>
           <td>Confronting something known to be dangerous and very rare.</td>
-          <td><div class="difficulty"></div><div class="difficulty"></div><span style="font-size: 1.15em">&#8631;</span><div class="challenge"></div><div class="challenge"></div></td>
+          <td><span class="eote di2"></span><span class="eote di2"></span><span class="upgrade"></span><span class="eote ch2"></span><span class="eote ch2"></span></td>
           <td>Being trapped in the gullet of a Sarlacc.</td>
         </tr>
         <tr>
           <td>Confronting something known to be extremely dangerous and unique.</td>
-          <td><div class="difficulty"></div><div class="difficulty"></div><div class="difficulty"></div><span style="font-size: 1.15em">&#8631;</span><div class="challenge"></div><div class="challenge"></div><div class="challenge"></div></td>
+          <td><span class="eote di2"><span class="eote di2"><span class="eote di2"></span><span class="upgrade"></span><span class="eote ch2"></span><span class="eote ch2"></span><span class="eote ch2"></span></td>
           <td>Fighting Darth Vader.</td>
         </tr>
       </table>

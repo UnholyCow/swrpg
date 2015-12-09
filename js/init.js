@@ -53,45 +53,54 @@ $(document).ready(function(){
 
     var success = $('#success-roll').val();
     var advantage = $('#advantage-roll').val();
+    var triumph = $('#triumph-roll').val();
 
     $('.tracker-list').append('<li class="slot"></div>');
     $('.slot:last-child').append('<div class="field player"><span>PC</span></div>');
-    $('.slot:last-child').append('<div class="field success-roll"><span>'+ success +'</span><div class="successBig"></div></div>');
-    $('.slot:last-child').append('<div class="field advantage-roll"><span>'+ advantage +'</span><div class="advantageBig"></div></div>');
+    $('.slot:last-child').append('<div class="field success-roll"><span>'+ success +'</span><span class="eote su init"></span></div>');
+    $('.slot:last-child').append('<div class="field advantage-roll"><span>'+ advantage +'</span><span class="eote ad init"></span></div>');
+    $('.slot:last-child').append('<div class="field triumph-roll"><span>'+ triumph +'</span><span class="eote tr init"></span></div>');
     $('.slot:last-child').append('<div class="field"><div class="remove">X</div></div>');
 
     $('#success-roll').val("");
     $('#advantage-roll').val("");
+    $('#triumph-roll').val("");
 
   });
   $('.add-ally').click(function(){
 
     var success = $('#success-roll').val();
     var advantage = $('#advantage-roll').val();
+    var triumph = $('#triumph-roll').val();
 
     $('.tracker-list').append('<li class="slot"></div>');
     $('.slot:last-child').append('<div class="field ally"><span>NPC</span></div>');
-    $('.slot:last-child').append('<div class="field success-roll"><span>'+ success +'</span><div class="successBig"></div></div>');
-    $('.slot:last-child').append('<div class="field advantage-roll"><span>'+ advantage +'</span><div class="advantageBig"></div></div>');
+    $('.slot:last-child').append('<div class="field success-roll"><span>'+ success +'</span><span class="eote su init"></span></div>');
+    $('.slot:last-child').append('<div class="field advantage-roll"><span>'+ advantage +'</span><span class="eote ad init"></span></div>');
+    $('.slot:last-child').append('<div class="field triumph-roll"><span>'+ triumph +'</span><span class="eote tr init"></span></div>');
     $('.slot:last-child').append('<div class="field"><div class="remove">X</div></div>');
 
     $('#success-roll').val("");
     $('#advantage-roll').val("");
+    $('#triumph-roll').val("");
 
   });
   $('.add-enemy').click(function(){
 
     var success = $('#success-roll').val();
     var advantage = $('#advantage-roll').val();
+    var triumph = $('#triumph-roll').val();
 
     $('.tracker-list').append('<li class="slot"></div>');
     $('.slot:last-child').append('<div class="field enemy"><span>NPC</span></div>');
-    $('.slot:last-child').append('<div class="field success-roll"><span>'+ success +'</span><div class="successBig"></div></div>');
-    $('.slot:last-child').append('<div class="field advantage-roll"><span>'+ advantage +'</span><div class="advantageBig"></div></div>');
+    $('.slot:last-child').append('<div class="field success-roll"><span>'+ success +'</span><span class="eote su init"></span></div>');
+    $('.slot:last-child').append('<div class="field advantage-roll"><span>'+ advantage +'</span><span class="eote ad init"></span></div>');
+    $('.slot:last-child').append('<div class="field triumph-roll"><span>'+ triumph +'</span><span class="eote tr init"></span></div>');
     $('.slot:last-child').append('<div class="field"><div class="remove">X</div></div>');
 
     $('#success-roll').val("");
     $('#advantage-roll').val("");
+    $('#triumph-roll').val("");
 
   });
 

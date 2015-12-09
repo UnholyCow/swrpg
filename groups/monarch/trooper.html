@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Star Wars Roleplaying</title>
+	<title>SWRPG - TK</title>
 	<link href="../../css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<link rel="icon" href="../../img/icon.png">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -20,22 +20,26 @@
 	<nav>
 		<ul>
 			<li><a href="../../index.html">Home</a></li>
-			<li><a href="../../groups.html" id="groups-nav" class="active">Groups</a></li>
-			<li><a href="../../rules.html" id="rules-nav">Rules</a></li>
-			<li><a href="../../sessions.html" id="sessions-nav">Sessions</a></li>
+			<li><a href="../../groups.html" class="toggle-groups-nav active">Players</a>
+				<ul id="groups-nav">
+					<li><a href="francis.html">FR4NC15</a></li>
+					<li><a href="hayynq.html">Hayynq</a></li>
+					<li><a href="nysro.html">Nysro</a></li>
+					<li><a href="rusku.html">Rusku</a></li>
+					<li><a href="trooper.html" class="active">TK</a></li>
+					<li><a href="themonarch.html">Grey Nexu</a></li>
+				</ul>
+			</li>
+			<li><a href="../../rules.html" class="toggle-rules-nav">Rules</a>
+				<ul id="rules-nav">
+					<li><a href="../../results.html">Results</a></li>
+					<li><a href="../../crits.html">Criticals</a></li>
+					<li><a href="../../initiative.html">Tracker</a></li>
+				</ul>
+			</li>
+			<li><a href="../../sessions.html">Sessions</a></li>
 		</ul>
 	</nav>
-	<section class="sub-menu">
-		<ul>
-			<li><a href="overview.html">Overview</a></li>
-			<li><a href="francis.html">Francis</a></li>
-			<li><a href="hayynq.html">Hayynq</a></li>
-			<li><a href="rusku.html">Rusku</a></li>
-			<li><a href="nysro.html">Nysro</a></li>
-			<li><a href="trooper.html" class="active">TK</a></li>
-			<li><a href="themonarch.html">The Monarch</a></li>
-		</ul>
-	</section>
 	<div class="container">
 			<div class="trooperPic">
 				<h1>TK</h1>
@@ -77,7 +81,7 @@
 						<span>Spent/Total XP</span>
 					</div>
 					<div class="pillRight">
-						<span>250/260</span>
+						<span>290/290</span>
 					</div>
 				</div>
 				<div class="pill">
@@ -85,7 +89,7 @@
 						<span>Available XP</span>
 					</div>
 					<div class="pillRight">
-						<span>10</span>
+						<span>0</span>
 					</div>
 				</div>
 			</div>
@@ -120,7 +124,7 @@
 						<span>M/R Defense</span>
 					</div>
 					<div class="value">
-						<span>1</span>
+						<span>1/1</span>
 					</div>
 				</div>
 			</div>
@@ -186,21 +190,21 @@
 					</tr>
 					<tr>
 						<td>Astrogation (Int)</td>
-						<td>&#10004;</td>
+						<td><div class="icon icon-tick"></div></td>
 						<td>2</td>
 						<td>
-							<div class="ability"></div>
-							<div class="proficiency"></div>
-							<div class="proficiency"></div>
+							<span class="eote ab2"></span>
+							<span class="eote pr2"></span>
+							<span class="eote pr2"></span>
 						</td>
 					</tr>
 					<tr>
 						<td>Athletics (Br)</td>
-						<td>&#10004;</td>
+						<td><div class="icon icon-tick"></div></td>
 						<td>0</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
 						</td>
 					</tr>
 					<tr>
@@ -208,8 +212,8 @@
 						<td></td>
 						<td>0</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
 						</td>
 					</tr>
 					<tr>
@@ -217,8 +221,8 @@
 						<td></td>
 						<td>0</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
 						</td>
 					</tr>
 					<tr>
@@ -226,18 +230,18 @@
 						<td></td>
 						<td>0</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
-							<div class="ability"></div>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
 						</td>
 					</tr>
 					<tr>
 						<td>Cool (Pr)</td>
-						<td>&#10004;</td>
+						<td><div class="icon icon-tick"></div></td>
 						<td>2</td>
 						<td>
-							<div class="proficiency"></div>
-							<div class="proficiency"></div>
+							<span class="eote pr2"></span>
+							<span class="eote pr2"></span>
 						</td>
 					</tr>
 					<tr>
@@ -245,10 +249,10 @@
 						<td></td>
 						<td>0</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
-							<div class="ability"></div>
-							<div class="ability"></div>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
 						</td>
 					</tr>
 					<tr>
@@ -256,8 +260,8 @@
 						<td></td>
 						<td>0</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
 						</td>
 					</tr>
 					<tr>
@@ -265,8 +269,8 @@
 						<td></td>
 						<td>0</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
 						</td>
 					</tr>
 					<tr>
@@ -274,28 +278,28 @@
 						<td></td>
 						<td>0</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
 						</td>
 					</tr>
 					<tr>
 						<td>Mechanics (Int)</td>
-						<td>&#10004;</td>
+						<td><div class="icon icon-tick"></div></td>
 						<td>0</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
-							<div class="ability"></div>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
 						</td>
 					</tr>
 					<tr>
 						<td>Medicine (Int)</td>
-						<td>&#10004;</td>
+						<td><div class="icon icon-tick"></div></td>
 						<td>2</td>
 						<td>
-							<div class="ability"></div>
-							<div class="proficiency"></div>
-							<div class="proficiency"></div>
+							<span class="eote ab2"></span>
+							<span class="eote pr2"></span>
+							<span class="eote pr2"></span>
 						</td>
 					</tr>
 					<tr>
@@ -303,48 +307,48 @@
 						<td></td>
 						<td>0</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
 						</td>
 					</tr>
 					<tr>
 						<td>Perception (Cun)</td>
-						<td>&#10004;</td>
+						<td><div class="icon icon-tick"></div></td>
 						<td>0</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
 						</td>
 					</tr>
 					<tr>
 						<td>Piloting - Planetary (Ag)</td>
-						<td>&#10004;</td>
+						<td><div class="icon icon-tick"></div></td>
 						<td>0</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
-							<div class="ability"></div>
-							<div class="ability"></div>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
 						</td>
 					</tr>
 					<tr>
 						<td>Piloting - Space (Ag)</td>
-						<td>&#10004;</td>
+						<td><div class="icon icon-tick"></div></td>
 						<td>3</td>
 						<td>
-							<div class="ability"></div>
-							<div class="proficiency"></div>
-							<div class="proficiency"></div>
-							<div class="proficiency"></div>
+							<span class="eote ab2"></span>
+							<span class="eote pr2"></span>
+							<span class="eote pr2"></span>
+							<span class="eote pr2"></span>
 						</td>
 					</tr>
 					<tr>
 						<td>Resilience (Br)</td>
-						<td>&#10004;</td>
+						<td><div class="icon icon-tick"></div></td>
 						<td>0</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
 						</td>
 					</tr>
 					<tr>
@@ -352,8 +356,8 @@
 						<td></td>
 						<td>0</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
 						</td>
 					</tr>
 					<tr>
@@ -361,10 +365,10 @@
 						<td></td>
 						<td>0</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
-							<div class="ability"></div>
-							<div class="ability"></div>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
 						</td>
 					</tr>
 					<tr>
@@ -372,26 +376,26 @@
 						<td></td>
 						<td>0</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
 						</td>
 					</tr>
 					<tr>
 						<td>Survival (Cun)</td>
-						<td>&#10004;</td>
+						<td><div class="icon icon-tick"></div></td>
 						<td>0</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
 						</td>
 					</tr>
 					<tr>
 						<td>Vigilance (Will)</td>
-						<td>&#10004;</td>
-						<td>0</td>
+						<td><div class="icon icon-tick"></div></td>
+						<td>2</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
+							<span class="eote pr2"></span>
+							<span class="eote pr2"></span>
 						</td>
 					</tr>
 				</table>
@@ -404,53 +408,53 @@
 					</tr>
 					<tr>
 						<td>Brawl (Br)</td>
-						<td>&#10004;</td>
+						<td><div class="icon icon-tick"></div></td>
 						<td>0</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
 						</td>
 					</tr>
 					<tr>
 						<td>Gunnery (Ag)</td>
-						<td>&#10004;</td>
+						<td><div class="icon icon-tick"></div></td>
 						<td>1</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
-							<div class="ability"></div>
-							<div class="proficiency"></div>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
+							<span class="eote pr2"></span>
 						</td>
 					</tr>
 					<tr>
 						<td>Melee (Br)</td>
-						<td>&#10004;</td>
+						<td><div class="icon icon-tick"></div></td>
 						<td>0</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
 						</td>
 					</tr>
 					<tr>
-						<td>Ranged - Light (Ag)</td>
-						<td>&#10004;</td>
+						<td>Ranged (Light) (Ag)</td>
+						<td><div class="icon icon-tick"></div></td>
 						<td>0</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
-							<div class="ability"></div>
-							<div class="ability"></div>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
 						</td>
 					</tr>
 					<tr>
-						<td>Ranged - Heavy (Ag)</td>
-						<td>&#10004;</td>
+						<td>Ranged (Heavy) (Ag)</td>
+						<td><div class="icon icon-tick"></div></td>
 						<td>2</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
-							<div class="proficiency"></div>
-							<div class="proficiency"></div>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
+							<span class="eote pr2"></span>
+							<span class="eote pr2"></span>
 						</td>
 					</tr>
 				</table>
@@ -466,9 +470,9 @@
 						<td></td>
 						<td>0</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
-							<div class="ability"></div>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
 						</td>
 					</tr>
 					<tr>
@@ -476,9 +480,9 @@
 						<td></td>
 						<td>0</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
-							<div class="ability"></div>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
 						</td>
 					</tr>
 					<tr>
@@ -486,9 +490,9 @@
 						<td></td>
 						<td>0</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
-							<div class="ability"></div>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
 						</td>
 					</tr>
 					<tr>
@@ -496,9 +500,9 @@
 						<td></td>
 						<td>0</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
-							<div class="ability"></div>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
 						</td>
 					</tr>
 					<tr>
@@ -506,29 +510,29 @@
 						<td></td>
 						<td>0</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
-							<div class="ability"></div>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
 						</td>
 					</tr>
 					<tr>
 						<td>Warfare (Int)</td>
-						<td>&#10004;</td>
+						<td><div class="icon icon-tick"></div></td>
 						<td>0</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
-							<div class="ability"></div>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
 						</td>
 					</tr>
 					<tr>
 						<td>Xenology (Int)</td>
-						<td>&#10004;</td>
+						<td><div class="icon icon-tick"></div></td>
 						<td>0</td>
 						<td>
-							<div class="ability"></div>
-							<div class="ability"></div>
-							<div class="ability"></div>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
+							<span class="eote ab2"></span>
 						</td>
 					</tr>
 				</table>
@@ -547,33 +551,45 @@
 					</tr>
 					<tr>
 						<td>BlasTech E-11</td>
-						<td>Ranged - Heavy</td>
+						<td>Ranged (Heavy)</td>
 						<td>10</td>
 						<td>Long</td>
-						<td><div class="advantage"></div>
-						<div class="advantage"></div>
-						<div class="advantage"></div>
-						<div class="advantage"></div></td>
-						<td><div class="ability"></div>
-						<div class="ability"></div>
-						<div class="proficiency"></div>
-						<div class="proficiency"></div>
-						<div class="boost"></div></td>
-						<td>Accurate 1 (Add <div class="boost"></div> to attacks), Stun Setting</td>
+						<td><span class="eote ad"></span>
+						<span class="eote ad"></span>
+						<span class="eote ad"></span>
+						<span class="eote ad"></span></td>
+						<td><span class="eote ab2"></span>
+						<span class="eote ab2"></span>
+						<span class="eote pr2"></span>
+						<span class="eote pr2"></span>
+						<span class="eote bo2"></span></td>
+						<td>Accurate 1 (Add <span class="eote bo2"></span> to attacks), Stun Setting</td>
 					</tr>
 					<tr>
 						<td>Blaster Pistol</td>
-						<td>Ranged - Light</td>
+						<td>Ranged (Light)</td>
 						<td>6</td>
 						<td>Medium</td>
-						<td><div class="advantage"></div>
-						<div class="advantage"></div>
-						<div class="advantage"></div></td>
-						<td><div class="ability"></div>
-						<div class="ability"></div>
-						<div class="ability"></div>
-						<div class="ability"></div></td>
+						<td><span class="eote ad"></span>
+						<span class="eote ad"></span>
+						<span class="eote ad"></span></td>
+						<td><span class="eote ab2"></span>
+						<span class="eote ab2"></span>
+						<span class="eote ab2"></span>
+						<span class="eote ab2"></span></td>
 						<td>Stun Setting</td>
+					</tr>
+					<tr>
+						<td>Stun Grenade</td>
+						<td>Ranged (Light)</td>
+						<td>8</td>
+						<td>Short</td>
+						<td>NA</td>
+						<td><span class="eote ab2"></span>
+						<span class="eote ab2"></span>
+						<span class="eote ab2"></span>
+						<span class="eote ab2"></span></td>
+						<td>Disorient 3, Stun Damage, Blast 8, Limited Ammo 1</td>
 					</tr>
 				</table>
 			</div>
@@ -597,25 +613,37 @@
 						<td>BlasTech E-11</td>
 						<td>1</td>
 						<td>4</td>
-						<td>&#10004;</td>
-						<td>&#10004;</td>
+						<td><div class="icon icon-tick"></div></td>
+						<td><div class="icon icon-tick"></div></td>
 						<td>10</td>
 						<td>4</td>
 						<td>Long</td>
 						<td>4</td>
-						<td><span>Attachments: </span>Augmented Spin Barrel (Add <div class="setback"></div> to maintenance checks. Dam+1.) (Accurate 1 Mod) Dam+1. <span>Qualities: </span>Accurate 1, Stun Setting</td>
+						<td><span>Attachments: </span>Augmented Spin Barrel (Add <span class="eote se2"></span> to maintenance checks. Dam+1.) (Accurate 1 Mod) Dam+1. <span>Qualities: </span>Accurate 1, Stun Setting</td>
 					</tr>
 					<tr>
 						<td>Blaster Pistol</td>
 						<td>1</td>
 						<td>1</td>
-						<td>&#10004;</td>
+						<td><div class="icon icon-tick"></div></td>
 						<td></td>
 						<td>6</td>
 						<td>3</td>
 						<td>Medium</td>
 						<td>3</td>
 						<td><span>Qualities: </span>Stun Setting</td>
+					</tr>
+					<tr>
+						<td>Stun Grenade</td>
+						<td>1</td>
+						<td>1</td>
+						<td><div class="icon icon-tick"></div></td>
+						<td></td>
+						<td>8</td>
+						<td>NA</td>
+						<td>Short</td>
+						<td>0</td>
+						<td><span>Qualities: </span>Disorient 3, Stun Damage, Blast 8, Limited Ammo 1</td>
 					</tr>
 				</table><br>
 				<table class="eoteTable justifyFirst justifyLast">
@@ -637,7 +665,7 @@
 						<td>1</td>
 						<td>4 (-3)</td>
 						<td></td>
-						<td>&#10004;</td>
+						<td><div class="icon icon-tick"></div></td>
 						<td>1</td>
 						<td>1</td>
 						<td>1</td>
@@ -671,7 +699,7 @@
 						<td>9 Stimpacks</td>
 						<td>1</td>
 						<td>0</td>
-						<td>&#10004;</td>
+						<td><div class="icon icon-tick"></div></td>
 						<td></td>
 						<td>First use restores 5 wounds. -1 wound recovery per use until the target gets 24 hours of rest.</td>
 					</tr>
@@ -679,7 +707,7 @@
 						<td>Emergency Medpack</td>
 						<td>1</td>
 						<td>1</td>
-						<td>&#10004;</td>
+						<td><div class="icon icon-tick"></div></td>
 						<td></td>
 						<td>Make Medicine checks without penalty.</td>
 					</tr>
@@ -687,17 +715,17 @@
 						<td>Binders</td>
 						<td>1</td>
 						<td>0</td>
-						<td>&#10004;</td>
+						<td><div class="icon icon-tick"></div></td>
 						<td></td>
-						<td><span>Daunting (<div class="difficulty"></div> <div class="difficulty"></div> <div class="difficulty"></div>
-							 <div class="difficulty"></div>) Athletics or Coordination check</span> to escape.</td>
+						<td><span>Daunting (<span class="eote di2"></span> <span class="eote di2"></span> <span class="eote di2"></span>
+							 <span class="eote di2"></span>) Athletics or Coordination check</span> to escape.</td>
 					</tr>
 					<tr>
 						<td>Utility Belt</td>
 						<td>1</td>
 						<td>-</td>
 						<td></td>
-						<td>&#10004;</td>
+						<td><div class="icon icon-tick"></div></td>
 						<td>+1 encumbrance threshold.</td>
 					</tr>
 				</table>
@@ -724,14 +752,14 @@
 						<td>1</td>
 						<td>Action</td>
 						<td>Pilot</td>
-						<td>Take a Full Throttle action. Make a <span>Hard (<div class="difficulty"></div> <div class="difficulty"></div> <div class="difficulty"></div>) Piloting check</span> to increase a vehicle's top speed by 1 for a number of rounds equal to Cunning.</td>
+						<td>Take a Full Throttle action. Make a <span>Hard (<span class="eote di2"></span> <span class="eote di2"></span> <span class="eote di2"></span>) Piloting check</span> to increase a vehicle's top speed by 1 for a number of rounds equal to Cunning.</td>
 					</tr>
 					<tr>
 						<td class="passive">Galaxy Mapper</td>
 						<td>1</td>
 						<td>Passive</td>
 						<td>Pilot</td>
-						<td>Remove <div class="setback"></div> per rank from Astrogation checks. Checks also take half normal time.</td>
+						<td>Remove <span class="eote se2"></span> per rank from Astrogation checks. Checks also take half normal time.</td>
 					</tr>
 					<tr>
 						<td>Grit</td>
@@ -745,7 +773,15 @@
 						<td>2</td>
 						<td>Passive</td>
 						<td>Pilot x2</td>
-						<td>Remove <div class="setback"></div> per rank from Space and Planetary Piloting checks.</td>
+						<td>Remove <span class="eote se2"></span> per rank from Space and Planetary Piloting checks.</td>
+					</tr>
+					<tr>
+						<td class="active">Stim Application</td>
+						<td>1</td>
+						<td>Action</td>
+						<td>Medic</td>
+						<td>Take the Stim Application action; make an <span>Average (<span class="eote di2"></span>
+						<span class="eote di2"></span>) Medicine check.</span> If successful, 1 engaged ally increases 1 characteristic by 1 for the remainder of the encounter and suffers 4 strain.</td>
 					</tr>
 					<tr>
 						<td class="passive">Stimpack Specialization</td>
