@@ -9,34 +9,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <header>
-        <div id="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <div class="logo"></div>
-    </header>
-    <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../adversaries.html" class="active">Adversaries</a></li>
-          <li><a href="../hyperspace.html">Travel</a></li>
-          <li><a href="../trade.html">Trade</a></li>
-        </ul>
-    </nav>
-    <section class="sub-menu">
-      <ul>
-        <li><a href="bountyhunters.html" class="active">Bounty Hunters</a></li>
-        <li><a href="droids.html">Droids</a></li>
-        <li><a href="imperial.html">Imperial</a></li>
-        <li><a href="spaceport.html">Spaceport Personnel</a></li>
-        <li><a href="underworld.html">Underworld</a></li>
-        <li><a href="patronclient.html">Patrons &amp; Clients</a></li>
-        <li><a href="core.html">Core</a></li>
-        <li><a href="oddities.html">Oddities</a></li>
-      </ul>
-    </section>
+  <header>
+    <div id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="logo"></div>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../adversaries.html" class="toggle-adv-nav active">Adversaries</a>
+				<ul id="adv-nav">
+	        <li><a href="bountyhunters.html" class="active">Hunters</a></li>
+	        <li><a href="droids.html">Droids</a></li>
+	        <li><a href="imperial.html">Imperial</a></li>
+	        <li><a href="spaceport.html">Spaceport</a></li>
+	        <li><a href="underworld.html">Underworld</a></li>
+	        <li><a href="patronclient.html">Patrons</a></li>
+	        <li><a href="core.html">Core</a></li>
+	        <li><a href="oddities.html">Oddities</a></li>
+	      </ul>
+      </li>
+      <li><a href="../hyperspace.html">Travel</a></li>
+      <li><a href="../trade.html">Trade</a></li>
+      <li><a href="../payment.html">Payment</a></li>
+      <li><a href="../gear.html">Gear</a></li>
+		</ul>
+  </nav>
   <div class="container">
       <div class="splitLeft">
         <h1>Characters</h1>
@@ -381,7 +382,7 @@
             <li><strong>Encumbrance Cap: </strong> 40.</li>
             <li><strong>Passenger Capacity: </strong>6 (prisoners).</li>
             <li><strong>Consumables: </strong>One month.</li>
-            <li><strong>Cost/Rarity: </strong>80,000 <span class="aurebesh">$</span>/4.</li>
+            <li><strong>Cost/Rarity: </strong>80,000 <span class="aurebesh cr"></span>/4.</li>
             <li><strong>Customization Hard Points: </strong>4</li>
             <li><strong>Weapons:</strong>
               <li>Forward Mounted Auto-Blasters: Fire Arc Forward; Damage 3; Crit 5; Close; Auto-Fire.</li>

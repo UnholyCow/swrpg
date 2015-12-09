@@ -20,15 +20,28 @@
 	<nav>
 		<ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="adversaries.html">Adversaries</a></li>
+      <li><a href="adversaries.html" class="toggle-adv-nav">Adversaries</a>
+				<ul id="adv-nav">
+	        <li><a href="adversaries/bountyhunters.html">Hunters</a></li>
+	        <li><a href="adversaries/droids.html">Droids</a></li>
+	        <li><a href="adversaries/imperial.html">Imperial</a></li>
+	        <li><a href="adversaries/spaceport.html">Spaceport</a></li>
+	        <li><a href="adversaries/underworld.html">Underworld</a></li>
+	        <li><a href="adversaries/patronclient.html">Patrons</a></li>
+	        <li><a href="adversaries/core.html">Core</a></li>
+	        <li><a href="adversaries/oddities.html">Oddities</a></li>
+	      </ul>
+      </li>
       <li><a href="hyperspace.html">Travel</a></li>
       <li><a href="trade.html" class="active">Trade</a></li>
+      <li><a href="payment.html">Payment</a></li>
+      <li><a href="gear.html">Gear</a></li>
 		</ul>
 	</nav>
   <div class="container">
     <div class="section">
       <h2>Gear Rarity</h2>
-      <table class="eoteTable">
+      <table class="eoteTable justifyLast">
         <tr>
           <th>Rarity</th>
           <th>Check</th>
@@ -45,7 +58,7 @@
         </tr>
         <tr>
           <td>2</td>
-          <td rowspan="2"><span>Easy (<div class="difficulty"></div>)</span></td>
+          <td rowspan="2"><span>Easy (<span class="eote di2"></span>)</span></td>
           <td>Medpac</td>
         </tr>
         <tr>
@@ -54,8 +67,8 @@
         </tr>
         <tr>
           <td>4</td>
-          <td rowspan="2"><span>Average (<div class="difficulty"></div>
-          <div class="difficulty"></div>)</span></td>
+          <td rowspan="2"><span>Average (<span class="eote di2"></span>
+          <span class="eote di2"></span>)</span></td>
           <td>Blaster Pistol</td>
         </tr>
         <tr>
@@ -64,9 +77,9 @@
         </tr>
         <tr>
           <td>6</td>
-          <td rowspan="2"><span>Hard (<div class="difficulty"></div>
-          <div class="difficulty"></div>
-          <div class="difficulty"></div>)</span></td>
+          <td rowspan="2"><span>Hard (<span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span>)</span></td>
           <td>Cybernetic Limb</td>
         </tr>
         <tr>
@@ -75,10 +88,10 @@
         </tr>
         <tr>
           <td>8</td>
-          <td rowspan="2"><span>Daunting (<div class="difficulty"></div>
-          <div class="difficulty"></div>
-          <div class="difficulty"></div>
-          <div class="difficulty"></div>)</span></td>
+          <td rowspan="2"><span>Daunting (<span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span>)</span></td>
           <td>Thermal Detonator</td>
         </tr>
         <tr>
@@ -87,11 +100,11 @@
         </tr>
         <tr>
           <td>0</td>
-          <td><span>Formidable (<div class="difficulty"></div>
-          <div class="difficulty"></div>
-          <div class="difficulty"></div>
-          <div class="difficulty"></div>
-          <div class="difficulty"></div>)</span></td>
+          <td><span>Formidable (<span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span>
+          <span class="eote di2"></span>)</span></td>
           <td>Package of Lesai</td>
         </tr>
       </table>
@@ -196,23 +209,23 @@
             <th>Modifier</th>
           </tr>
           <tr>
-            <td>Each <div class="triumph"></div> or <div class="advantage"></div>
-            <div class="advantage"></div>
-            <div class="advantage"></div> on Negotiation check (or other skill at GM's discretion).</td>
+            <td>Each <span class="eote tr"></span> or <span class="eote ad"></span>
+            <span class="eote ad"></span>
+            <span class="eote ad"></span> on Negotiation check (or other skill at GM's discretion).</td>
             <td>+10%</td>
           </tr>
           <tr>
-            <td>Each <div class="success"></div> on Negotiation check (or other skill at GM's discretion).</td>
+            <td>Each <span class="eote su"></span> on Negotiation check (or other skill at GM's discretion).</td>
             <td>+5%</td>
           </tr>
           <tr>
-            <td>Each <div class="despair"></div> or <div class="threat"></div>
-            <div class="threat"></div>
-            <div class="threat"></div> on Negotiation check (or other skill at GM's discretion).</td>
+            <td>Each <span class="eote de"></span> or <span class="eote th"></span>
+            <span class="eote th"></span>
+            <span class="eote th"></span> on Negotiation check (or other skill at GM's discretion).</td>
             <td>-10%</td>
           </tr>
           <tr>
-            <td>Each <div class="failure"></div> on Negotiation check (or other skill at GM's discretion).</td>
+            <td>Each <span class="eote fa"></span> on Negotiation check (or other skill at GM's discretion).</td>
             <td>-5%</td>
           </tr>
           <tr>
@@ -248,37 +261,37 @@
           </tr>
           <tr>
             <td>Antiquated Battle Droids</td>
-            <td>6,500<span class="aurebesh">$</span></td>
+            <td>6,500 <span class="aurebesh cr"></span></td>
             <td>5</td>
           </tr>
           <tr>
             <td>Assassin Droid</td>
-            <td>(R) 65,000<span class="aurebesh">$</span></td>
+            <td>(R) 65,000 <span class="aurebesh cr"></span></td>
             <td>8</td>
           </tr>
           <tr>
             <td>Astromech Droid</td>
-            <td>8,250<span class="aurebesh">$</span></td>
+            <td>8,250 <span class="aurebesh cr"></span></td>
             <td>3</td>
           </tr>
           <tr>
             <td>Maintenance Droid</td>
-            <td>7.500<span class="aurebesh">$</span></td>
+            <td>7.500 <span class="aurebesh cr"></span></td>
             <td>3</td>
           </tr>
           <tr>
             <td>Medical Droid</td>
-            <td>12,000<span class="aurebesh">$</span></td>
+            <td>12,000 <span class="aurebesh cr"></span></td>
             <td>4</td>
           </tr>
           <tr>
             <td>Protocol Droid</td>
-            <td>8,000<span class="aurebesh">$</span></td>
+            <td>8,000 <span class="aurebesh cr"></span></td>
             <td>4</td>
           </tr>
           <tr>
             <td>Security Droid</td>
-            <td>9,600<span class="aurebesh">$</span></td>
+            <td>9,601 <span class="aurebesh cr"></span></td>
             <td>5</td>
           </tr>
         </table>

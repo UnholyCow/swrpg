@@ -20,9 +20,22 @@
 	<nav>
 		<ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="adversaries.html">Adversaries</a></li>
+      <li><a href="adversaries.html" class="toggle-adv-nav">Adversaries</a>
+				<ul id="adv-nav">
+	        <li><a href="adversaries/bountyhunters.html">Hunters</a></li>
+	        <li><a href="adversaries/droids.html">Droids</a></li>
+	        <li><a href="adversaries/imperial.html">Imperial</a></li>
+	        <li><a href="adversaries/spaceport.html">Spaceport</a></li>
+	        <li><a href="adversaries/underworld.html">Underworld</a></li>
+	        <li><a href="adversaries/patronclient.html">Patrons</a></li>
+	        <li><a href="adversaries/core.html">Core</a></li>
+	        <li><a href="adversaries/oddities.html">Oddities</a></li>
+	      </ul>
+      </li>
       <li><a href="hyperspace.html" class="active">Travel</a></li>
       <li><a href="trade.html">Trade</a></li>
+      <li><a href="payment.html">Payment</a></li>
+      <li><a href="gear.html">Gear</a></li>
 		</ul>
 	</nav>
   <div class="container">
@@ -41,24 +54,21 @@
           <td>An easy, relatively unchallenging navigation situation. A broad, loosely packed asteroid field, for example, or a thin, calm nebula.</td>
         </tr>
         <tr>
-          <td rowspan="2"><div class="setback"></div></td>
+          <td rowspan="2"><span class="eote se2"></span></td>
           <td>Somewhat trickier terrain. Scattered trees, dense undergrowth, rolling hills, sand dunes, or windy weather.</td>
         </tr>
         <tr>
           <td>A tricky but not seriously daunting set of obstacles. Flying over high mountains on a moon, or a thicker asteroid field or nebula.</td>
         </tr>
         <tr>
-          <td rowspan="2"><div class="setback"></div>
-          <div class="setback"></div></td>
+          <td rowspan="2"><span class="eote se2"></span> <span class="eote se2"></span></td>
           <td>Dagnerous terrain. A thick forest, steep, rock-covered hills, or flying in atmosphere during a violent storm.</td>
         </tr>
         <tr>
           <td>A dangerous astronomical feature. Flying around or through a fracturing comet, or navigating through a particularly dense and turbulent asteroid field.</td>
         </tr>
         <tr>
-          <td rowspan="2"><div class="setback"></div>
-          <div class="setback"></div>
-          <div class="setback"></div></td>
+          <td rowspan="2"><span class="eote se2"></span> <span class="eote se2"></span> <span class="eote se2"></span></td>
           <td>Very risky terrain. Sheer cliff faces, deep swamps, lava with only a thin crust of hardened rock, or speeding through a canyon only just wide enough for a vehicle to fit through. All are examples of flying or driving terrain.</td>
         </tr>
         <tr>
@@ -123,48 +133,43 @@
             <th>Description</th>
           </tr>
           <tr>
-            <td>+ <div class="difficulty"></div>
-            <div class="difficulty"></div>
-            <div class="difficulty"></div></td>
+            <td>+ <span class="eote di2"></span><span class="eote di2"></span><span class="eote di2"></span></td>
             <td>Damaged or missing astromech droid or navicomputer.</td>
           </tr>
           <tr>
-            <td>+ <div class="difficulty"></div></td>
+            <td>+ <span class="eote di2"></span></td>
             <td>Quick calculations or entry into hyperspace under duress, typically while escaping from pursuit.</td>
           </tr>
           <tr>
-            <td>+ <div class="difficulty"></div></td>
+            <td>+ <span class="eote di2"></span></td>
             <td>Ship is lightly damaged.</td>
           </tr>
           <tr>
-            <td>+ <div class="difficulty"></div>
-            <div class="difficulty"></div></td>
+            <td>+ <span class="eote di2"></span><span class="eote di2"></span></td>
             <td>Ship is heavily damaged.</td>
           </tr>
           <tr>
-            <td>+ <div class="difficulty"></div></td>
+            <td>+ <span class="eote di2"></span></td>
             <td>Outdated, corrupt, or counterfeit navigation charts or navicomputer data.</td>
           </tr>
           <tr>
-            <td>+ <div class="advantage"></div></td>
+            <td>+ <span class="eote ad"></span></td>
             <td>Astrogator has done extra research on charts of the route.</td>
           </tr>
           <tr>
-            <td>+ <div class="advantage"></div>
-            <div class="advantage"></div></td>
+            <td>+ <span class="eote ad"></span><span class="eote ad"></span></td>
             <td>Astrogator has personally run the route recently.</td>
           </tr>
           <tr>
-            <td>+ <div class="threat"></div></td>
+            <td>+ <span class="eote th"></span></td>
             <td>Real-space debris is casting uncharted mass shadows in the route.</td>
           </tr>
           <tr>
-            <td>+ <div class="threat"></div>
-            <div class="threat"></div></td>
+            <td>+ <span class="eote th"></span><span class="eote th"></span></td>
             <td>A major celestial event impacted the route since the last charting.</td>
           </tr>
           <tr>
-            <td><div class="difficulty"></div><span style="font-size: 1.15em">&#8631;</span><div class="challenge"></div></td>
+            <td><span class="eote di2"></span><span class="upgrade"></span><span class="eote ch2"></span></td>
             <td>Vessel has faulty a hyperdrive or entered hyperspace too close to a gravity well.</td>
           </tr>
         </table>
@@ -205,56 +210,56 @@
         </table>
       </div>
       <div class="section">
-        <h2>Spending <div class="advantageBig"></div>, <div class="triumphBig"></div>, <div class="threatBig"></div>, and <div class="despairBig"></div> During Astrogation Checks</h2>
+        <h2>Spending <span class="eote ad"></span>, <span class="eote tr"></span>, <span class="eote th"></span>, and <span class="eote de"></span> During Astrogation Checks</h2>
         <table class="eoteTable justifyLast">
           <tr>
             <th>Cost</th>
             <th>Result Options</th>
           </tr>
           <tr>
-            <td><div class="advantage"></div></td>
+            <td><span class="eote ad"></span></td>
             <td>The character adds <div class="boost"></div> to his next Astrogation check when travelling on this route.</td>
           </tr>
           <tr>
-            <td><div class="advantage"></div>
-            <div class="advantage"></div></td>
+            <td><span class="eote ad"></span>
+            <span class="eote ad"></span></td>
             <td>The trip is particularly smooth. Each character aboard the vessel recovers 2 strain.</td>
           </tr>
           <tr>
-            <td><div class="triumph"></div> or <div class="advantage"></div>
-            <div class="advantage"></div>
-            <div class="advantage"></div></td>
+            <td><span class="eote tr"></span> or <span class="eote ad"></span>
+            <span class="eote ad"></span>
+            <span class="eote ad"></span></td>
             <td>The ship reaches its destination 25% faster. (This option may only be selected once per check).</td>
           </tr>
           <tr>
-            <td><div class="triumph"></div></td>
+            <td><span class="eote tr"></span></td>
             <td>The discovery of a new shortcut grants <div class="boost"></div> on all future Astrogation checks to use this hyperspace route. Additionally, many organizations and people would be willing to pay for such a shortcut, especially if it is on a busy hyperlane.</td>
           </tr>
           <tr>
-            <td><div class="threat"></div></td>
+            <td><span class="eote th"></span></td>
             <td>An energy surge from the hyperdrive inflicts 1 system strain on the ship.<br>The character adds <div class="setback"></div> to their next Astrogation check when travelling on this route.</td>
           </tr>
           <tr>
-            <td><div class="threat"></div>
-            <div class="threat"></div></td>
+            <td><span class="eote th"></span>
+            <span class="eote th"></span></td>
             <td>The trip is particularly rough. Each character board the vessel suffers 2 strain.<br>A piece of debris strikes the ship upon reentry and inflicts 1 hull trauma on the ship.<br>
             Mynocks attached themselves to the ship befor the jump or during a hyperspace stopover. The ship suffers 3 system strain. Additionally, the PCs might need to remove the mynocks themselves.</td>
           </tr>
           <tr>
-            <td><div class="threat"></div>
-            <div class="threat"></div>
-            <div class="threat"></div> or <div class="despair"></div></td>
+            <td><span class="eote th"></span>
+            <span class="eote th"></span>
+            <span class="eote th"></span> or <span class="eote de"></span></td>
             <td>On a failed check, miscalculations send the ship wildly off course, and it emerges from hyperspace in a system of the GM's choosing or in deep space.<br>
             On a successful check, the presence of a gravity shadow forces the ship out of hyperspace prematurely. The vessel drops out of hyperspace somewhere along the way, and the characters must attempt another Astrogation check to reach their final destonation.<br>
             The ship reaches its destonation 25% slower. (This option can only be selected once per check).</td>
           </tr>
           <tr>
-            <td><div class="despair"></div></td>
+            <td><span class="eote de"></span></td>
             <td>The hyperdrive cuts out to avoid a gravity shadow, but it is damaged in the process. Once the vessel exits hyperspace, the hyperdrive is rendered inoperable until repaired.</td>
           </tr>
           <tr>
-            <td><div class="despair"></div>
-            <div class="despair"></div></td>
+            <td><span class="eote de"></span>
+            <span class="eote de"></span></td>
             <td>The ship collides with a planet's gravity shadow or similar phenomenon. This forces the ship out of hyperspace (probably at a very inconvenient location). Further, the ship immediately suffers a Critical Hit with a +30 to the result.</td>
           </tr>
         </table>

@@ -14,6 +14,10 @@
   font-family: "Aurebesh Italic";
   src: url('../fonts/Aurebesh Italic.ttf?1293487475') format('truetype');
 }
+.cr:before {
+	font-family: 'Aurebesh';
+	content: "$";
+}
 @font-face {
   font-family: "Elektra";
   src: url('../fonts/Elektra Medium Pro.otf') format('opentype');
@@ -21,4 +25,37 @@
 @font-face {
   font-family: "Teuton";
   src: url('../fonts/TeutonMager.otf') format('opentype');
+}
+@font-face {
+	font-family: 'Icomoon';
+	src: url('../fonts/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+.icon {
+	font-family: 'IcoMoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	
+	/* Enable Ligatures ================ */
+	-webkit-font-feature-settings: "liga";
+	-moz-font-feature-settings: "liga=1";
+	-moz-font-feature-settings: "liga";
+	-ms-font-feature-settings: "liga" 1;
+	-o-font-feature-settings: "liga";
+	font-feature-settings: "liga";
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.icon-tick:before {
+	content: "\e900";
+}
+.icon-tick2:before {
+	content: "\e901";
 }

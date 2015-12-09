@@ -3,7 +3,7 @@
 }
 .add-combatant,
 .controls {
-  width: 500px;
+  width: 40%;
   border-radius: 15px;
   padding: 20px;
   background-color: #222;
@@ -102,6 +102,11 @@
 .finished {
   box-shadow: 0 0 5px 5px $eotered;
 }
+.init {
+	color: $eoteyellow;
+	font-size: 30px;
+	padding-bottom: 5px; 
+}
 .player {
   background-color: $eotegreen;
 }
@@ -116,14 +121,14 @@
 }
 .slot {
   display: inline-block;
-  width: 390px;
+  width: 480px;
   margin: 6px;
   border-radius: 15px;
   transition: box-shadow .5s;
   background-color: $eoteslate; 
 }
 .tracker {
-  width: 550px;
+  width: 50%;
   border-radius: 15px;
   padding: 20px;
   background-color: #222;

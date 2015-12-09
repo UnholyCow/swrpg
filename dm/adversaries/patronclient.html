@@ -9,36 +9,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <header>
-        <div id="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <div class="logo"></div>
-    </header>
-    <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../adversaries.html" class="active">Adversaries</a></li>
-          <li><a href="../hyperspace.html">Travel</a></li>
-          <li><a href="../trade.html">Trade</a></li>
-        </ul>
-    </nav>
-    <section class="sub-menu">
-      <ul>
-        <ul>
-          <li><a href="bountyhunters.html">Bounty Hunters</a></li>
-          <li><a href="droids.html">Droids</a></li>
-          <li><a href="imperial.html">Imperial</a></li>
-          <li><a href="spaceport.html">Spaceport Personnel</a></li>
-          <li><a href="underworld.html">Underworld</a></li>
-          <li><a href="patronclient.html" class="active">Patrons &amp; Clients</a></li>
-          <li><a href="core.html">Core</a></li>
-          <li><a href="oddities.html">Oddities</a></li>
-        </ul>
-      </ul>
-    </section>
+  <header>
+    <div id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="logo"></div>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../adversaries.html" class="toggle-adv-nav active">Adversaries</a>
+				<ul id="adv-nav">
+	        <li><a href="bountyhunters.html">Hunters</a></li>
+	        <li><a href="droids.html">Droids</a></li>
+	        <li><a href="imperial.html">Imperial</a></li>
+	        <li><a href="spaceport.html">Spaceport</a></li>
+	        <li><a href="underworld.html">Underworld</a></li>
+	        <li><a href="patronclient.html" class="active">Patrons</a></li>
+	        <li><a href="core.html">Core</a></li>
+	        <li><a href="oddities.html">Oddities</a></li>
+	      </ul>
+      </li>
+      <li><a href="../hyperspace.html">Travel</a></li>
+      <li><a href="../trade.html">Trade</a></li>
+      <li><a href="../payment.html">Payment</a></li>
+      <li><a href="../gear.html">Gear</a></li>
+		</ul>
+  </nav>
   <div class="container">
       <div class="splitLeft">
         <h1>Characters</h1>
@@ -129,7 +128,7 @@
               <li><strong>Talents: </strong>Adversary 3.</li>
               <li>Crippling Blow: May increase difficult of check by 1. If successful, target suffers 1 strain when he moves for remainder of the encounter.</li>
               <li>Nobody's Fool 2: Upgrade difficulty of all Charm, Coercion, and Deception checks targeting Vigo twice.</li>
-              <li><strong>Abilities: </strong>Leader: All subordintes within medium range add <div class="boost"></div> to all Discipline checks.</li>
+              <li><strong>Abilities: </strong>Leader: All subordintes within medium range add <span class="eote bo2"></span> to all Discipline checks.</li>
               <li><strong>Equipment:</strong>
                 <li>Heavy Blaster Pistol: Ranged (Light); Damage 7; Crit 3; Medium; Stun Setting.</li>
                 <li>Force Pike: Melee; Damage 6; Crit 2; Engaged; Pierce 2, Stun Setting.</li>
@@ -220,13 +219,11 @@
             </div>
             <ul>
                 <li><strong>Skills: </strong>Athletics 1, Charm 2, Coercion 4, Cool 5, Deception 5, Discipline 5, Knowledge (Outer Rim) 3, Knowledge (Underworld) 3, Leadership 1, Melee 2, Negotiation 5, Ranged (Light) 2, Resilience 8.</li>
-                <li><strong>Talents: </strong>Convincing Demeanor 2: Remove up to <div class="setback glow"></div>
-                <div class="setback glow"></div> from any Deception or Skulduggery check.</li>
+                <li><strong>Talents: </strong>Convincing Demeanor 2: Remove up to <span class="eote se2 contrast"></span><span class="eote se2 contrast"></span> from any Deception or Skulduggery check.</li>
                 <li>Durable 3: Subtract 30 from Critical Injury rolls made against the Hutt.</li>
                 <li>Nobody's Fool 3: Upgrade difficulty of all Charm, Coercion, and Deception checks targeting the Hutt by 3.</li>
                 <li>Resolve 2: When suffering strain, reduce the amount suffered by 2 to a minimum of 1.</li>
-                <li><strong>Abilities: </strong>Awkward: Hutts have great physical strength but their bulk imposes severe limitations in flexibility and agility. They add <div class="setback glow"></div>
-                <div class="setback glow"></div> <div class="setback glow"></div> to all Brawl, Melee, and Coordination checks they're required to make.</li>
+                <li><strong>Abilities: </strong>Awkward: Hutts have great physical strength but their bulk imposes severe limitations in flexibility and agility. They add <span class="eote se2 contrast"></span><span class="eote se2 contrast"></span><span class="eote se2 contrast"></span> to all Brawl, Melee, and Coordination checks they're required to make.</li>
                 <li>Ponderous: Hutts can never spend more than one maneuver moving per turn.</li>
                 <li><strong>Equipment:</strong>
                   <li>Generally none! BUT...</li>
@@ -311,7 +308,7 @@
             </div>
             <ul>
               <li><strong>Skills: </strong>Charm 2, Coercion 1, Cool 2, Deception 3, Negotiation 4.</li>
-              <li><strong>Talents: </strong>Plausible Deniability 1: When making a Coercion or Deception check, remove <div class="setback glow"></div> from the check.</li>
+              <li><strong>Talents: </strong>Plausible Deniability 1: When making a Coercion or Deception check, remove <span class="eote se2 contrast"></span> from the check.</li>
               <li>Nobody's Fool 2: When targetd by a Coercion or Deception check, upgrade the difficulty by 2.</li>
               <li><strong>Abilities: </strong>None.</li>
               <li><strong>Equipment:</strong>

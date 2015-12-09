@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Star Wars Roleplaying [DM]</title>
+	<link href="../css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link rel="icon" href="../img/icon.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+		<div id="hamburger">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="logo"></div>
+	</header>
+	<nav>
+		<ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="adversaries.html" class="toggle-adv-nav">Adversaries</a>
+				<ul id="adv-nav">
+	        <li><a href="adversaries/bountyhunters.html">Hunters</a></li>
+	        <li><a href="adversaries/droids.html">Droids</a></li>
+	        <li><a href="adversaries/imperial.html">Imperial</a></li>
+	        <li><a href="adversaries/spaceport.html">Spaceport</a></li>
+	        <li><a href="adversaries/underworld.html">Underworld</a></li>
+	        <li><a href="adversaries/patronclient.html">Patrons</a></li>
+	        <li><a href="adversaries/core.html">Core</a></li>
+	        <li><a href="adversaries/oddities.html">Oddities</a></li>
+	      </ul>
+      </li>
+      <li><a href="hyperspace.html">Travel</a></li>
+      <li><a href="trade.html">Trade</a></li>
+      <li><a href="payment.html">Payment</a></li>
+      <li><a href="gear.html" class="active">Gear</a></li>
+		</ul>
+	</nav>
+  <div class="container">
+    <div class="section">
+    	<h2>Armor</h2>
+    	<table class="eoteTable justifyFirst justifyLast">
+    		<tr>
+    			<th>Type</th>
+    			<th>Defense</th>
+    			<th>Soak</th>
+    			<th>Price</th>
+    			<th>Encum</th>
+    			<th>HP</th>
+    			<th>Rarity</th>
+    			<th>Notes</th>
+    		</tr>
+    		<tr>
+    			<td>A/KT Shockrider Crash Suit</td>
+    			<td>0</td>
+    			<td>2</td>
+    			<td>3,000 <span class="cr"></span></td>
+    			<td>2</td>
+    			<td>1</td>
+    			<td>3</td>
+    			<td>Reduce strain recieved from Critical Hits dealt to the wearer's vehicle by 1 and reduce damage dealt by fire or the Burn quality by 1.</td>
+    		</tr>
+    		<tr>
+    			<td>A/KT Wing Commander Armored Flight Suit</td>
+    			<td>1</td>
+    			<td>1</td>
+    			<td>1,500 <span class="cr"></span></td>
+    			<td>3</td>
+    			<td>1</td>
+    			<td>6</td>
+    			<td>Reduce strain recieved from Critical Hits dealt to the wearer's vehicle by 1 and reduce damage dealt by fire or the Burn quality by 1.</td>
+    		</tr>
+    		<tr>
+    			<td>Adverse Environment Gear</td>
+    			<td>0</td>
+    			<td>1</td>
+    			<td>500 <span class="cr"></span></td>
+    			<td>2</td>
+    			<td>1</td>
+    			<td>1</td>
+    			<td>Ignore <span class="eote se2"></span> imposed by the environment the gear is made for.</td>
+    		</tr>
+    		<tr>
+    			<td>Armored Clothing</td>
+    			<td>1</td>
+    			<td>1</td>
+    			<td>1,000 <span class="cr"></span></td>
+    			<td>3</td>
+    			<td>1</td>
+    			<td>6</td>
+    			<td><span>Average (<span class="eote di2"></span><span class="eote di2"></span>) Perception check</span> to notice the clothing is plated.</td>
+    		</tr>
+    		<tr>
+    			<td>Banal Apparel</td>
+    			<td>0</td>
+    			<td>0</td>
+    			<td>25 <span class="cr"></span></td>
+    			<td>0</td>
+    			<td>0</td>
+    			<td>0</td>
+    			<td><span class="eote di2"></span><span class="upgrade"></span><span class="eote ch2"></span> to identify the wearer.</td>
+    		</tr>
+    		<tr>
+    			<td>Beast-hide Armor</td>
+    			<td>0</td>
+    			<td>1</td>
+    			<td>300 <span class="cr"></span></td>
+    			<td>3</td>
+    			<td>0</td>
+    			<td>2</td>
+    			<td>Automatically generate <span class="eote ad"></span> on Coercion checks and <span class="eote th"></span> on Charm checks. Can have other effects on social situations.</td>
+    		</tr>
+    		<tr>
+    			<td>Blast Vest</td>
+    			<td>0</td>
+    			<td>1</td>
+    			<td>200 <span class="cr"></span></td>
+    			<td>3</td>
+    			<td>1</td>
+    			<td>3</td>
+    			<td>Gains +2 soak when the wearer suffers damage from a slugthrower or other physical projectile.</td>
+    		</tr>
+    		<tr>
+    			<td>Caballerin-Series Riding Tack</td>
+    			<td>0</td>
+    			<td>0</td>
+    			<td>250 <span class="cr"></span></td>
+    			<td>2</td>
+    			<td>0</td>
+    			<td>4</td>
+    			<td>Allows riding an animal without the bareback penalties.</td>
+    		</tr>
+    		<tr>
+    			<td>Capari-Series Padded Beast Armor</td>
+    			<td>0</td>
+    			<td>2</td>
+    			<td>2,500 <span class="cr"></span></td>
+    			<td>4</td>
+    			<td>0</td>
+    			<td>5</td>
+    			<td>Allows riding an animal without the bareback penalties.</td>
+    		</tr>
+    		<tr>
+    			<td>Cargo Clothing</td>
+    			<td>0</td>
+    			<td>0</td>
+    			<td>30 <span class="cr"></span></td>
+    			<td>1</td>
+    			<td>0</td>
+    			<td>0</td>
+    			<td>Carry up to three items of encumbrance 1 or lower without them counting towards their encumbrance value.</td>
+    		</tr>
+    		<tr>
+    			<td>Catch Vest</td>
+    			<td>0</td>
+    			<td>2</td>
+    			<td>300 <span class="cr"></span></td>
+    			<td>1</td>
+    			<td>0</td>
+    			<td>3</td>
+    			<td>Provides soak 2 against energy damage only. Provides soak 1 against all other forms of damage.</td>
+    		</tr>
+    		<tr>
+    			<td>Charge Suit</td>
+    			<td>0</td>
+    			<td>2</td>
+    			<td>2,000 <span class="cr"></span></td>
+    			<td>3</td>
+    			<td>0</td>
+    			<td>6</td>
+    			<td>When hit by a melee attack that generates <span class="eote de"></span>, the attacker is automatically hit by an attack that dealing 8 stun damage. If the attack generates <span class="eote th"></span><span class="eote th"></span>, the attacker is disoriented for one round. Wearing this armor counts as being equipped with shock gloves.</td>
+    		</tr>
+    		<tr>
+    			<td>Combat Flight Suit</td>
+    			<td>1</td>
+    			<td>0</td>
+    			<td>(R) 3,000 <span class="cr"></span></td>
+    			<td>4</td>
+    			<td>2</td>
+    			<td>6</td>
+    			<td>Without an external oxygen source, the wearer can survive in hard vacuum for 24 hours.</td>
+    		</tr>
+    		<tr>
+    			<td>Creshaldyne Riot Armor</td>
+    			<td>1</td>
+    			<td>1</td>
+    			<td>(R) 1,850 <span class="cr"></span></td>
+    			<td>3</td>
+    			<td>1</td>
+    			<td>6</td>
+    			<td>Filters out airborne toxins and gases. When staggered or disoriented, reduce the duration by 1.</td>
+    		</tr>
+    		<tr>
+    			<td>Destri-Series Laminate Beast Armor</td>
+    			<td>0</td>
+    			<td>4</td>
+    			<td>8,500 <span class="cr"></span></td>
+    			<td>7</td>
+    			<td>1</td>
+    			<td>7</td>
+    			<td>Beasts wearing the armor have their Agility reduced by 1, to a minimum of 1. Allows riding an animal without the bareback penalties.</td>
+    		</tr>
+    		<tr>
+    			<td>Diplomat's Robes</td>
+    			<td>0</td>
+    			<td>0</td>
+    			<td>400 <span class="cr"></span></td>
+    			<td>2</td>
+    			<td>0</td>
+    			<td>6</td>
+    			<td>Adds <span class="eote bo2"></span> to social checks related to claiming diplomatic authority, accessing classified data, or using organizational status to bypass normal protocol.</td>
+    		</tr>
+    		<tr>
+    			<td>Enviro-suit</td>
+    			<td>0</td>
+    			<td>2</td>
+    			<td>750 <span class="cr"></span></td>
+    			<td>2</td>
+    			<td>1</td>
+    			<td>2</td>
+    			<td>Tailored to an environment, allowing anyone to operate in it. Suffer <span class="eote se2"></span> to Agility- or Perception- based checks.</td>
+    		</tr>
+    		<tr>
+    			<td>Flak Vest</td>
+    			<td>0</td>
+    			<td>1</td>
+    			<td>300 <span class="cr"></span></td>
+    			<td>3</td>
+    			<td>1</td>
+    			<td>2</td>
+    			<td>Gains +1 soak when taking damage from the Blast quality.</td>
+    		</tr>
+    		<tr>
+    			<td>Flare Jacket</td>
+    			<td>0</td>
+    			<td>1</td>
+    			<td>1,500 <span class="cr"></span></td>
+    			<td>3</td>
+    			<td>0</td>
+    			<td>8</td>
+    			<td>Once per encounter as a maneuver; each character other than the wearer in short range must make a <span>Hard (<span class="eote di2"></span><span class="eote di2"></span><span class="eote di2"></span>) Vigilance check</span>. Failure staggers for 1 round, plus 1 additional round per <span class="eote th"></span><span class="eote th"></span><span class="eote th"></span>.</td>
+    		</tr>
+    		<tr>
+    			<td>Hauling Harness</td>
+    			<td>1</td>
+    			<td>1</td>
+    			<td>1,000 <span class="cr"></span></td>
+    			<td>3</td>
+    			<td>2</td>
+    			<td>6</td>
+    			<td>Increase encumbrance capacity by 6 and all combat checks <span class="eote di2"></span><span class="eote di2"></span><span class="upgrade"></span><span class="eote ch2"></span><span class="eote ch2"></span>.</td>
+    		</tr>
+    		<tr>
+    			<td>Heavy Battle Armor</td>
+    			<td>1</td>
+    			<td>2</td>
+    			<td>(R) 5,000 <span class="cr"></span></td>
+    			<td>6</td>
+    			<td>4</td>
+    			<td>7</td>
+    			<td>Can be sealed like full-body laminate or take the form of a heavy vest and blast helmet.</td>
+    		</tr>
+    		<tr>
+    			<td>Heavy Clothing</td>
+    			<td>0</td>
+    			<td>1</td>
+    			<td>50</td>
+    			<td>1</td>
+    			<td>0</td>
+    			<td>0</td>
+    			<td></td>
+    		</tr>
+    		<tr>
+    			<td>Holographic Costume</td>
+    			<td>1</td>
+    			<td>0</td>
+    			<td>750 <span class="cr"></span></td>
+    			<td>2</td>
+    			<td>0</td>
+    			<td>8</td>
+    			<td>To record a new outfit make an <span>Easy (<span class="eote di2"></span>) Computers checks</span> if you have access to the item or a <span>Daunting (<span class="eote di2"></span><span class="eote di2"></span><span class="eote di2"></span><span class="eote di2"></span>) Computers check</span> to create a facsimile.</td>
+    		</tr>
+    		<tr>
+    			<td>Howdah-Series Megafauna Carriage</td>
+    			<td>1</td>
+    			<td>0</td>
+    			<td>5,500 <span class="cr"></span></td>
+    			<td>5</td>
+    			<td>2</td>
+    			<td>7</td>
+    			<td>Must have a silhouette of 3 and Brawn of 5 to use. Fitted for 4 legged beasts but can be modified for ~500 <span class="cr"></span>. Can mount up to 2 Gunnery vehicle scale weapons. Allows riding an animal without the bareback penalties.</td>
+    		</tr>
+    		<tr>
+    			<td>Hutt Shell Armor</td>
+    			<td>2</td>
+    			<td>2</td>
+    			<td>(R) 25,000 <span class="cr"></span></td>
+    			<td>6</td>
+    			<td>4</td>
+    			<td>9</td>
+    			<td>Hovers the wearer up to 5 meters above the ground. Wearer ignores Awkward and Ponderous abilities and does not need to spend additional maneuvers when crossing difficult terrain.</td>
+    		</tr>
+    		<tr>
+    			<td>Kamperdine Armored Jackets</td>
+    			<td>0</td>
+    			<td>2</td>
+    			<td>6,200 <span class="cr"></span></td>
+    			<td>1</td>
+    			<td>0</td>
+    			<td>7</td>
+    			<td>When worn by the person it is specifically tailored for, add <span class="eote ad"></span> to any successful Charm, Deception, or Negotiation checks made when the target can see them.</td>
+    		</tr>
+    		<tr>
+    			<td>Laminate</td>
+    			<td>0</td>
+    			<td>2</td>
+    			<td>2.500 <span class="cr"></span></td>
+    			<td>4</td>
+    			<td>3</td>
+    			<td>5</td>
+    			<td>Worn over a tight fitting body glove. Can be sealed.</td>
+    		</tr>
+    		<tr>
+    			<td>Lector's Outfit</td>
+    			<td>0</td>
+    			<td>1</td>
+    			<td>525 <span class="cr"></span></td>
+    			<td>2</td>
+    			<td>1</td>
+    			<td>6</td>
+    			<td>Adds <span class="eote bo2"></span> to any social check involving a large group of listeners, and can be heard even at considerable distances.</td>
+    		</tr>
+    		<tr>
+    			<td>Mimetic Suit</td>
+    			<td>1</td>
+    			<td>1</td>
+    			<td>(R) 8,000 <span class="cr"></span></td>
+    			<td>2</td>
+    			<td>2</td>
+    			<td>8</td>
+    			<td><span class="eote ab2"></span><span class="eote ab2"></span><span class="upgrade"></span><span class="eote pr2"></span><span class="eote pr2"></span> Stealth checks while active. <span class="eote th"></span><span class="eote th"></span><span class="eote th"></span> or <span class="eote de"></span> generated cause the suit to lose power. Carries ~1 hour of power.</td>
+    		</tr>
+    		<tr>
+    			<td>Noble Regalia</td>
+    			<td>0</td>
+    			<td>0</td>
+    			<td>750 <span class="cr"></span></td>
+    			<td>1</td>
+    			<td>3</td>
+    			<td>7</td>
+    			<td><span class="eote di2"></span><span class="downgrade"></span><span class="eote ch2"></span> social checks to interact with other nobility and their subordinates.</td>
+    		</tr>
+    		<tr>
+    			<td>Nomad Greatcoat</td>
+    			<td>0</td>
+    			<td>1</td>
+    			<td>100 <span class="cr"></span></td>
+    			<td>1</td>
+    			<td>0</td>
+    			<td>4</td>
+    			<td>Reduces <span class="eote di2"></span> of Resilience checks to resist the effects of extreme cold by one. Removes <span class="eote se2"></span> suffered due to extreme cold.</td>
+    		</tr>
+    		<tr>
+    			<td>Performer's Attire</td>
+    			<td>0</td>
+    			<td>0</td>
+    			<td>50 <span class="cr"></span></td>
+    			<td>0</td>
+    			<td>0</td>
+    			<td>4</td>
+    			<td>Adds <span class="eote bo2"></span> to perform or otherwise attract attention.</td>
+    		</tr>
+    		<tr>
+    			<td>Personal Deflector Shield</td>
+    			<td>2</td>
+    			<td>0</td>
+    			<td>10,000 <span class="cr"></span></td>
+    			<td>3</td>
+    			<td>0</td>
+    			<td>8</td>
+    			<td>Power may run out with a <span class="eote de"></span>. Carries ~10 minutes of power.</td>
+    		</tr>
+    		<tr>
+    			<td>Padded Armor</td>
+    			<td>0</td>
+    			<td>2</td>
+    			<td>500 <span class="cr"></span></td>
+    			<td>2</td>
+    			<td>0</td>
+    			<td>1</td>
+    			<td></td>
+    		</tr>
+    		<tr>
+    			<td>Powered Armor</td>
+    			<td>1</td>
+    			<td>3</td>
+    			<td>(R) 9,000 <span class="cr"></span></td>
+    			<td>3</td>
+    			<td>3</td>
+    			<td>9</td>
+    			<td>Integrated commlink and sensor suite remove <span class="eote se2"></span><span class="eote se2"></span> from all Perception, Surveillance, Vigilance, and combat skill checks due to visual effects. Carries ~12 hours of power. Increase Brawn by 1, and +1 rank of Athletics while wearing the armor. Without power the armor encumbrance becomes 12 and it loses all defense and bonuses. Without assistance it takes 5 minutes to equip the armor. Half time with assistance.</td>
+    		</tr>
+    		<tr>
+    			<td>Powered Capacitive Armor</td>
+    			<td>1</td>
+    			<td>1</td>
+    			<td>(R) 3,000 <span class="cr"></span></td>
+    			<td>4</td>
+    			<td>2</td>
+    			<td>8</td>
+    			<td>As a maneuver may power up or power down the armor. While powered the plates lock in place and grant +1 soak and +1 defense while giving up your 1 free maneuver per turn.</td>
+    		</tr>
+    		<tr>
+    			<td>Protector 1 Combat Armor</td>
+    			<td>1</td>
+    			<td>2</td>
+    			<td>(R) 5,500 <span class="cr"></span></td>
+    			<td>4</td>
+    			<td>3</td>
+    			<td>7</td>
+    			<td>A lighter class of battle armor.</td>
+    		</tr>
+    		<tr>
+    			<td>Reinforced Environment Gear</td>
+    			<td>0</td>
+    			<td>1</td>
+    			<td>850 <span class="cr"></span></td>
+    			<td>2</td>
+    			<td>2</td>
+    			<td>4</td>
+    			<td>Ignore <span class="eote se2"></span> imposed by the environment, reduces Critical Injuries suffered by falling by 20, and grants <span class="eote bo2"></span> to Resilience checks to resist toxic atmospheres or airborne toxins.</td>
+    		</tr>
+    		<tr>
+    			<td>Resplendent Robess</td>
+    			<td>0</td>
+    			<td>1</td>
+    			<td>500 <span class="cr"></span></td>
+    			<td>2</td>
+    			<td>0</td>
+    			<td>5</td>
+    			<td>When the wearer draws attention to themselves, allies in medium range add <span class="eote bo2"></span> to Perception, Skulduggery, and Stealth checks.</td>
+    		</tr>
+    		<tr>
+    			<td>Sakiyan Shadowsuit</td>
+    			<td>0</td>
+    			<td>1</td>
+    			<td>2,500 <span class="cr"></span></td>
+    			<td>1</td>
+    			<td>1</td>
+    			<td>8</td>
+    			<td>Grants <span class="eote bo2"></span><span class="eote bo2"></span> to Stealth checks.</td>
+    		</tr>
+    		<tr>
+    			<td>Second Skin Armor</td>
+    			<td>1</td>
+    			<td>1</td>
+    			<td>2,000 <span class="cr"></span></td>
+    			<td>2</td>
+    			<td>0</td>
+    			<td>7</td>
+    			<td>Add <span class="eote se2"></span><span class="eote se2"></span> to Perception checks to notice the armor.</td>
+    		</tr>
+    		<tr>
+    			<td>Shockrider Crash Suit</td>
+    			<td>0</td>
+    			<td>2</td>
+    			<td>3,000 <span class="cr"></span></td>
+    			<td>2</td>
+    			<td>1</td>
+    			<td>3</td>
+    			<td>Reduce strain received from Critical Hits dealt to the wearer's vehicle by 1 (to a minimum of 1) and reduce damage dealt by fires to the wearer by 1.</td>
+    		</tr>
+    		<tr>
+    			<td>Smuggler's Trenchcoat</td>
+    			<td>1</td>
+    			<td>1</td>
+    			<td>1,650 <span class="cr"></span></td>
+    			<td>3</td>
+    			<td>0</td>
+    			<td>7</td>
+    			<td>Checks made to find items hidden in the coat are opposed by Skulduggery. The coat can carry 2 encumbrance worth of items.</td>
+    		</tr>
+    		<tr>
+    			<td>Steelskin Armor</td>
+    			<td>0</td>
+    			<td>3</td>
+    			<td>(R) 6,500 <span class="cr"></span></td>
+    			<td>8</td>
+    			<td>1</td>
+    			<td>7</td>
+    			<td>All Brawn- and Agility- based checks gain <span class="eote se2"></span>. Whenever wearer is disoriented or staggered, reduce the duration by 1.</td>
+    		</tr>
+    		<tr>
+    			<td>Tracker Utility Vest</td>
+    			<td>0</td>
+    			<td>0</td>
+    			<td>100 <span class="cr"></span></td>
+    			<td>-</td>
+    			<td>1</td>
+    			<td>2</td>
+    			<td>Encumbrance threshold +2.</td>
+    		</tr>
+    		<tr>
+    			<td>Type III "Berethron" Armor</td>
+    			<td>1</td>
+    			<td>1</td>
+    			<td>(R) 1,250 <span class="cr"></span></td>
+    			<td>3</td>
+    			<td>3</td>
+    			<td>6</td>
+    			<td></td>
+    		</tr>
+    		<tr>
+    			<td>Mountaineer Armor</td>
+    			<td>1</td>
+    			<td>1</td>
+    			<td>1,800 <span class="cr"></span></td>
+    			<td>3</td>
+    			<td>2</td>
+    			<td>6</td>
+    			<td>Gain <span class="eote bo2"></span><span class="eote bo2"></span> to all Athletics skill checks made to climb or rappel. Oxygen tanks for high-altitude use can be added for a small fee.</td>
+    		</tr>
+    	</table>
+    	<h2>Explosives</h2>
+    	<table class="eoteTable">
+    		<tr>
+    			<th>Name</th>
+    			<th>Base Damage</th>
+    			<th>Additional Damage</th>
+    			<th>Encum</th>
+    			<th>Price</th>
+    			<th>Rarity</th>
+    			<th>Blast Radius</th>
+    		</tr>
+    		<tr>
+    			<td>Baradium</td>
+    			<td>3</td>
+    			<td>+1</td>
+    			<td>2</td>
+    			<td>(R) 750 <span class="aurebesh cr"></span></td>
+    			<td>5</td>
+    			<td>Long</td>
+    		</tr>
+    		<tr>
+    			<td>Detonite</td>
+    			<td>15</td>
+    			<td>+10</td>
+    			<td>2</td>
+    			<td>50 <span class="aurebesh cr"></span></td>
+    			<td>2</td>
+    			<td>Short</td>
+    		</tr>
+    		<tr>
+    			<td>Plasma</td>
+    			<td>9</td>
+    			<td>+6</td>
+    			<td>2</td>
+    			<td>(R) 200 <span class="aurebesh cr"></span></td>
+    			<td>5</td>
+    			<td>Medium</td>
+    		</tr>
+    		<tr>
+    			<td>Proton Grenade</td>
+    			<td>10</td>
+    			<td>varies</td>
+    			<td>1</td>
+    			<td>60 <span class="aurebesh cr"></span></td>
+    			<td>4</td>
+    			<td>Short</td>
+    		</tr>
+    	</table>
+    </div>
+    <div class="section footer">
+			<p class="aurebesh-bold">This Star Wars site is created solely to enjoy the Fantasy Flight Games tabletop game. It is in no way official.</p>
+		</div>
+  </div>
+  <div class="back-to-top"><a href="#">TOP</a></div>
+	<script src="../js/main.js"></script>
+</body>
+</html>

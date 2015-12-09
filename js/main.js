@@ -52,5 +52,63 @@ $(document).ready(function(){
 		$menu.off( transitionEnd );
 		} );
 	} );
+
+	/* PC site navigation =======================  */
+	//Open the dropdown menus.
+	$('.toggle-groups-nav').mouseenter(function(e) {
+		e.preventDefault();
+		$(this).next('ul').show();
+		if ($('#rules-nav').is(':visible')) {
+			$('#rules-nav').hide();
+		}
+	});
+
+	$('.toggle-rules-nav').mouseenter(function(e) {
+		e.preventDefault();
+		$(this).next('ul').show();
+		if ($('#groups-nav').is(':visible')) {
+			$('#groups-nav').hide();
+		}
+	});
+
+	//Close the dropdown menus.
+	$('#groups-nav').mouseleave(function(e) {
+		$('#groups-nav').hide();
+	});
+
+	$('#rules-nav').mouseleave(function(e) {
+		$('#rules-nav').hide();
+	});
 	
+	/* DM site navigation ====================  */
+	//Open the dropdown menus.
+	$('.toggle-adv-nav').mouseenter(function(e) {
+		e.preventDefault();
+		$(this).next('ul').show();
+	});
+
+	//Close the dropdown menus.
+	$('#adv-nav').mouseleave(function(e) {
+		$('#adv-nav').hide();
+	});
+
+	//Mobile nav including prepending landing pages for players and rules.
+	$('.toggle-groups-nav').bind('touchstart', function(e) {
+		e.preventDefault();
+		if ($('#groups-nav li').length == 6) {
+			$('#groups-nav').prepend('<li><a href="http://www.unholycow.com/swrpg/groups/monarch/overview.html">Overview</a></li>');
+		}
+		$('#rules-nav').hide();
+		$('#groups-nav').toggle();
+	});
+
+	$('.toggle-rules-nav').bind('touchstart', function(e) {
+		e.preventDefault();
+		if ($('#rules-nav li').length == 3) {
+			$('#rules-nav').prepend('<li><a href="http://www.unholycow.com/swrpg/rules.html">Basics</a></li>');
+		}
+		$('#groups-nav').hide();
+		$('#rules-nav').toggle();
+	});
+
 });

@@ -56,11 +56,17 @@ nav {
 	left: 0;
 	width: 190px;
 	height: 100%;
-	padding: 10px;
+	// padding: 10px;
 	margin: 0;
 	list-style: none;
 	background: $eoteslate;
 	z-index: 0;
+	ul ul {
+		display: none;
+	}
+	ul li:active > ul {
+		display: inherit;
+	}
 	li {
 		padding: 0;
 		margin: 0;
@@ -71,11 +77,14 @@ nav {
 		padding: 15px 0;
 		width: 100%;
 		color: #fff;
-		height: 60px;
-		line-height: 60px;
-		font-size: 1.3em;
+		height: 30px;
+		line-height: 30px;
+		font-size: 1.1em;
 		text-decoration: none;
+		background-color: $eoteslate; 
 		border-bottom: 1px solid $eoteyellow;
+		&:after { content:  ' \25BC'; }
+		&:only-child:after { content: ''; }
 	}
 	@media screen and (min-width: $firstbreak) {
 		position: absolute;
@@ -85,6 +94,16 @@ nav {
 		padding: 0;
 		left: 140px;
 		z-index: 201;
+		ul ul {
+			position: absolute; 
+			top: 60px;
+		}
+		ul ul li {
+			width:170px;
+			float:none;
+			display:list-item;
+			position: relative;
+		}
 		li {
 			display: inline-block;
 		}
@@ -94,6 +113,10 @@ nav {
 			padding: 0;
 			margin: 0 -2px;
 			width: 150px;
+			height: 60px;
+			line-height: 60px;
+			font-size: 1.3em;
+			background-color: #222; 
 			transition: background-color .5s, color .3s;
 			&:hover {
 				color: #222;
@@ -214,19 +237,19 @@ nav {
 
 //Shift the page to hide nav
 .close-nav {
-  transform: translate3d( -210px, 0, 0 );
-  -webkit-transform: translate3d( -210px, 0, 0 );
+  transform: translate3d( -190px, 0, 0 );
+  -webkit-transform: translate3d( -190px, 0, 0 );
 }
 
 //Shift the page to display the nav
 .open-nav {
-  transform: translate3d( 210px, 0, 0 );
-  -webkit-transform: translate3d( 210px, 0, 0 );
+  transform: translate3d( 190px, 0, 0 );
+  -webkit-transform: translate3d( 190px, 0, 0 );
 }
 
 //When the nav is displayed, keep the page shifted after the anim
 .nav-visible {
-  left: 210px;
+  left: 190px;
 }
 header, nav {
   -webkit-backface-visibility: hidden;

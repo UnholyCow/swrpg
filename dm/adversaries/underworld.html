@@ -9,34 +9,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-		<header>
-			<div id="hamburger">
-					<div></div>
-					<div></div>
-					<div></div>
-			</div>
-			<div class="logo"></div>
-		</header>
-		<nav>
-			<ul>
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="../adversaries.html" class="active">Adversaries</a></li>
-				<li><a href="../hyperspace.html">Travel</a></li>
-				<li><a href="../trade.html">Trade</a></li>
-			</ul>
-		</nav>
-		<section class="sub-menu">
-			<ul>
-				<li><a href="bountyhunters.html">Bounty Hunters</a></li>
-				<li><a href="droids.html">Droids</a></li>
-				<li><a href="imperial.html">Imperial</a></li>
-				<li><a href="spaceport.html">Spaceport Personnel</a></li>
-				<li><a href="underworld.html" class="active">Underworld</a></li>
-				<li><a href="patronclient.html">Patrons &amp; Clients</a></li>
-				<li><a href="core.html">Core</a></li>
-				<li><a href="oddities.html">Oddities</a></li>
-			</ul>
-		</section>
+	<header>
+		<div id="hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+		</div>
+		<div class="logo"></div>
+	</header>
+	<nav>
+		<ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../adversaries.html" class="toggle-adv-nav active">Adversaries</a>
+				<ul id="adv-nav">
+	        <li><a href="bountyhunters.html">Hunters</a></li>
+	        <li><a href="droids.html">Droids</a></li>
+	        <li><a href="imperial.html">Imperial</a></li>
+	        <li><a href="spaceport.html">Spaceport</a></li>
+	        <li><a href="underworld.html" class="active">Underworld</a></li>
+	        <li><a href="patronclient.html">Patrons</a></li>
+	        <li><a href="core.html">Core</a></li>
+	        <li><a href="oddities.html">Oddities</a></li>
+	      </ul>
+      </li>
+      <li><a href="../hyperspace.html">Travel</a></li>
+      <li><a href="../trade.html">Trade</a></li>
+      <li><a href="../payment.html">Payment</a></li>
+      <li><a href="../gear.html">Gear</a></li>
+		</ul>
+	</nav>
 	<div class="container">
 			<div class="splitLeft">
 				<h1>Characters</h1>
@@ -380,10 +381,8 @@
 								<li>Deadly Accuracy: Add ranks in Brawl to all claw damage.</li>
 								<li>Lethal Blows 2: +20% to Crit rolls.</li>
 								<li><strong>Abilities: </strong></li>
-								<li>Light-Sensitive: Defel are vulnerable to bright lights. <div class="setback glow"></div>
-								<div class="setback glow"></div> to all checks.</li>
-								<li>Shadowed: Defel possess the ability to absorb certain wavelengths of light. <div class="boost"></div>
-								<div class="boost"></div> to Stealth checks in shadows.</li>
+								<li>Light-Sensitive: Defel are vulnerable to bright lights. <span class="eote se2 contrast"></span><span class="eote se2 contrast"></span> to all checks.</li>
+								<li>Shadowed: Defel possess the ability to absorb certain wavelengths of light. <span class="eote bo2"></span><span class="eote bo2"></span> to Stealth checks in shadows.</li>
 								<li><strong>Equipment:</strong>
 									<li>Blaster Pistol: Ranged (Light); Damage 6; Crit 3; Medium; Stun Setting.</li>
 									<li>Claws: Brawl; Damage 7; Crit 3; Engaged.</li>
@@ -645,7 +644,7 @@
 								<li><strong>Skills: </strong>Charm 2, Coercion 2, Cool 2, Deception 4, Ranged (Light) 2, Perception 2, Vigilance 2.</li>
 								<li><strong>Talents: </strong>Adversary 1.</li>
 								<li>Natural Negotiator: Once per sessions, reroll any Cool or Negotiation check.</li>
-								<li>Spare Clip: Does not run out of ammo on a <div class="despairAlt"></div>.</li>
+								<li>Spare Clip: Does not run out of ammo on a <span class="eote de"></span>.</li>
 								<li><strong>Abilities: </strong>None.</li>
 								<li><strong>Equipment:</strong>
 									<li>Disruptor Pistol: Ranged (Light); Damage 10; Crit 2; Short; Vicious 4.</li>
@@ -826,8 +825,8 @@
 								<li><strong>Skills: </strong>Coercion 3, Cool 3, Coordination 2, Deception 3, Gunnery 2, Leadership 2, Ranged (Heavy) 3, Melee 4, Resilience 2, Skulduggery 3.</li>
 								<li><strong>Talents: </strong>Adversary 2.</li>
 								<li>Feral Strength 2: +2 damage on all Brawl and Melee attacks.</li>
-								<li>Knockdown: May spend <div class="triumphAlt"></div> to knock target prone with successful melee attack..</li>
-								<li><strong>Abilities: </strong>Pirate Leader: Spend a maneuver giving orders to pirate allies in medium range, granting them <div class="boost"></div> on next checks.</li>
+								<li>Knockdown: May spend <span class="eote tr"></span> to knock target prone with successful melee attack..</li>
+								<li><strong>Abilities: </strong>Pirate Leader: Spend a maneuver giving orders to pirate allies in medium range, granting them <span class="eote bo2"></span> on next checks.</li>
 								<li><strong>Equipment:</strong>
 									<li>Heavy Blaster Rifle: Ranged (Heavy); Damage 10; Crit 3; Long; Auto-fire, Cumbersome 3.</li>
 									<li>Vibro-ax: Melee; Damage 9; Crit 2; Engaged; Pierce 2, Sunder, Vicious 3.</li>
@@ -1081,7 +1080,7 @@
 						</div>
 						<ul>
 							<li><strong>Skills: </strong>Computers 2, Cool 2, Skulduggery 1.</li>
-							<li><strong>Talents: </strong>Bypass Security: Remove <div class="setback"></div> from Computers or Skulduggery checks to bypass security.</li>
+							<li><strong>Talents: </strong>Bypass Security: Remove <span class="eote se2 contrast"></span> from Computers or Skulduggery checks to bypass security.</li>
 							<li><strong>Abilities: </strong>None.</li>
 							<li><strong>Equipment:</strong>
 								<li>Stun Blaster: Ranged (Light); Damage 6; Crit -; Short; Stun Damage.</li>
@@ -1175,8 +1174,7 @@
 							<li><strong>Skills: </strong>Astrogation 3, Charm 2, Cool 3, Gunnery 3, Knowledge (Underworld) 3, Ranged (Light) 3, Piloting (Planetary) 3, Piloting (Space) 4, Skulduggery 2, Streetwise 4, Vigilance 2.</li>
 							<li><strong>Talents: </strong>Adversary 1.</li>
 							<li>Master Pilot: Once per round, suffer 2 strain to perform one Pilot action as a maneuver.</li>
-							<li>Skilled Jockey 2: Remove <div class="setback"></div>
-							<div class="setback"></div> from all Pilot checks.</li>
+							<li>Skilled Jockey 2: Remove <span class="eote se2 contrast"></span><span class="eote se2 contrast"></span> from all Pilot checks.</li>
 							<li><strong>Abilities: </strong>None.</li>
 							<li><strong>Equipment:</strong>
 								<li>Heavy Blaster Pistol: Ranged (Light); Damage 7; Crit 3; Medium; Stun Setting.</li>
@@ -1262,8 +1260,7 @@
 						<ul>
 								<li><strong>Skills: </strong>Charm 2, Cool 1, Ranged (Light) 2, piloting (Space) 3, Skulduggery 2, Streetwise 2, Vigilance 1.</li>
 								<li><strong>Talents: </strong>Adversary 1.</li>
-								<li>Skilled Jockey 2: Remove up to <div class="setback"></div>
-								<div class="setback"></div> from any Piloting check.</li>
+								<li>Skilled Jockey 2: Remove up to <span class="eote se2 contrast"></span><span class="eote se2 contrast"></span> from any Piloting check.</li>
 								<li><strong>Abilities: </strong>None.</li>
 								<li><strong>Equipment:</strong>
 									<li>Blaster Pistol: Ranged (Light); Damage 6; Crit 3; Medium; Stun Setting.</li>
@@ -1680,7 +1677,7 @@
 							<li><strong>Encumbrance Cap: </strong> 140.</li>
 							<li><strong>Passenger Capacity: </strong>6.</li>
 							<li><strong>Consumables: </strong>Two months.</li>
-							<li><strong>Cost/Rarity: </strong>130,000 <span class="aurebesh">$</span>/5.</li>
+							<li><strong>Cost/Rarity: </strong>130,000 <span class="aurebesh cr"></span>/5.</li>
 							<li><strong>Customization Hard Points: </strong>5</li>
 							<li><strong>Weapons:</strong>
 								<li>Dorsal &amp; Ventral Turret Mounted Twin Medium Laser Cannons: Fire Arc All; Damage 6; Crit 3; Close; Linked 1.</li>
@@ -1753,7 +1750,7 @@
 							<li><strong>Crew: </strong>One pilot.</li>
 							<li><strong>Encumbrance Cap: </strong> 4.</li>
 							<li><strong>Passenger Capacity: </strong>1.</li>
-							<li><strong>Cost/Rarity: </strong>6,000 <span class="aurebesh">$</span>/3.</li>
+							<li><strong>Cost/Rarity: </strong>6,000 <span class="aurebesh cr"></span>/3.</li>
 							<li><strong>Customization Hard Points: </strong>2</li>
 							<li><strong>Weapons: </strong>None:</li>
 						</ul>
