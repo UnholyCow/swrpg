@@ -65,7 +65,7 @@
 					<span>Specializations</span>
 				</div>
 				<div class="pillRight">
-					<span>Sharpshooter</span>
+					<span>Sharpshooter, Gunner</span>
 				</div>
 			</div>
 			<div class="pill">
@@ -81,7 +81,7 @@
 					<span>Spent/Total XP</span>
 				</div>
 				<div class="pillRight">
-					<span>325/325</span>
+					<span>390/390</span>
 				</div>
 			</div>
 			<div class="pill">
@@ -263,7 +263,7 @@
 				</tr>
 				<tr>
 					<td>Discipline (Will)</td>
-					<td></td>
+					<td><span class="icon icon-tick"></span></td>
 					<td>0</td>
 					<td>
 						<span class="eote ab2"></span>
@@ -336,7 +336,7 @@
 				</tr>
 				<tr>
 					<td>Resilience (Br)</td>
-					<td></td>
+					<td><span class="icon icon-tick"></span></td>
 					<td>0</td>
 					<td>
 						<span class="eote ab2"></span>
@@ -386,7 +386,7 @@
 					<td></td>
 					<td>0</td>
 					<td>
-						<div class="ability"></div>
+						<span class="eote ab2"></span>
 					</td>
 				</tr>
 			</table>
@@ -408,13 +408,13 @@
 				</tr>
 				<tr>
 					<td>Gunnery (Ag)</td>
-					<td></td>
-					<td>0</td>
+					<td><span class="icon icon-tick"></span></td>
+					<td>2</td>
 					<td>
 						<span class="eote ab2"></span>
 						<span class="eote ab2"></span>
-						<span class="eote ab2"></span>
-						<span class="eote ab2"></span>
+						<span class="eote pr2"></span>
+						<span class="eote pr2"></span>
 					</td>
 				</tr>
 				<tr>
@@ -737,9 +737,9 @@
 					<th>Description</th>
 				</tr>
 				<tr>
-					<td>Dedication</td>
+					<td class="passive">Dedication</td>
 					<td>1</td>
-					<td>NA</td>
+					<td>Passive</td>
 					<td>Sharpshooter</td>
 					<td>Agility +1</td>
 				</tr>
@@ -749,6 +749,13 @@
 					<td>Passive</td>
 					<td>Sharpshooter</td>
 					<td>Add damage equal to ranks in that skill to one hit per successful attack using that skill.</td>
+				</tr>
+				<tr>
+					<td class="active">Debilitating Shot</td>
+					<td>NA</td>
+					<td>Incidental</td>
+					<td>Gunner</td>
+					<td>Upon successful attack with a starship or vehicle weapon, may spend <span class="eote ad"></span><span class="eote ad"></span> to reduce the maximum speed of the target by 1 until the end of the next round.</td>
 				</tr>
 				<tr>
 					<td>Droid</td>
@@ -761,7 +768,7 @@
 					<td class="passive">Enduring</td>
 					<td>1</td>
 					<td>Passive</td>
-					<td>Sharpshooter</td>
+					<td>Droid</td>
 					<td>Gain +1 Soak per rank.</td>
 				</tr>
 				<tr>
@@ -779,6 +786,13 @@
 					<td>Add +10 per rank to any Critical Injury results inflicted on opponents.</td>
 				</tr>
 				<tr>
+					<td class="active">Overwhelm Defenses</td>
+					<td>1</td>
+					<td>Incidental</td>
+					<td>Gunner</td>
+					<td>Upon successful attack with a starship or vehicle weapon, may spend <span class="eote ad"></span><span class="eote ad"></span> per rank to reduce the defense in the targeted zone by 1.</td>
+				</tr>
+				<tr>
 					<td class="active">Sniper Shot</td>
 					<td>1</td>
 					<td>Maneuver</td>
@@ -794,9 +808,9 @@
 				</tr>
 				<tr>
 					<td class="active">True Aim</td>
-					<td>2</td>
+					<td>3</td>
 					<td>Maneuver</td>
-					<td>Sharpshooter</td>
+					<td>Sharpshooter x2, Gunner</td>
 					<td>Once per round, before making a ranged attack, may perform a True Aim maneuver. Gain all the benefits of aiming and also upgrades the attack roll once per rank.</td>
 				</tr>
 			</table>
