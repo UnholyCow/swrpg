@@ -44,32 +44,77 @@
 	</nav>
 	<div class="container">
 		<div class="section">
-			<h1>Initiative Tracker</h1>
+			<h1>Combat Tracker</h1>
 		</div>
-		<div class="add-combatant left">
+		<div class="add-combatant section">
 			<h2>Add Combatant</h2>
-			<p>Enter Successes and Advantages rolled and select the slot type to add.</p>
+			<p>Enter the results of the initiative roll and select the slot type to add. Entering a name and wound or strain thresholds will create a monitor entry.</p>
 			<form action="" method="post">
+				<input id="char-name" type="text" name="name" value="" placeholder="Name">
 				<input id="success-roll" type="text" name="success" value="" placeholder="Success">
 				<input id="advantage-roll" type="text" name="advantage" value="" placeholder="Advantage">
 				<input id="triumph-roll" type="text" name="advantage" value="" placeholder="Triumph">
-			</form><br>
+				<input id="wound-thr" type="text" name="wounds" value="" placeholder="Wounds">
+				<input id="strain-thr" type="text" name="strain" value="" placeholder="Strain">
+			</form>
 			<button type="button" name="pc" class="add-pc">+PC</button>
 			<button type="button" name="ally" class="add-ally">+Ally</button>
 			<button type="button" name="npc" class="add-enemy">+Enemy</button>
 		</div>
-		<div class="tracker right">
+		<div class="tracker">
 			<h2>Tracker</h2>
 			<p>Drag and slide initiative slots to order them.</p>
-			<button type="button" name="end-round" id="begin-combat">Begin Combat</button>
-			<button type="button" name="end-round" id="end-turn">End Turn</button>
-			<button type="button" name="end-round" id="end-round">End Round</button>
-			<button type="button" name="end-round" id="end-combat">End Combat</button>
-			<button type="button" name="end-round" id="clear">Clear All</button>
+			<div class="section">
+				<button type="button" name="begin-combat" id="begin-combat">Begin Combat</button>
+				<button type="button" name="end-turn" id="end-turn">End Turn</button>
+				<button type="button" name="end-round" id="end-round">End Round</button>
+				<button type="button" name="end-combat" id="end-combat">End Combat</button>
+				<button type="button" name="clear-all" id="clear">Clear All</button>
+			</div>
 			<div class="round-counter"><h2>Round <span id="round-count" class="aurebesh">1</span></h2></div>
 			<div>
 				<ul id="sortable" class="tracker-list">
 				</ul>
+			</div>
+		</div>
+		<div class="monitor">
+			<h2>Character Monitor</h2>
+			<p>Track wounds, strain, bonuses, and penalties to specific characters. Click a value to modify it or click the header to reset the current value.</p>
+			<div id="monitor-container">
+				<div class="char-block">
+					<h3>Sample Dudebro</h3>
+					<div class="stat-small-wide">
+						<div class="tag-small">Wounds / Threshold</div>
+						<div class="value-small"><span class="wounds">4</span> / <span class="wound-thr">15</span></div>
+					</div>
+					<div class="stat-small-wide">
+						<div class="tag-small">Strain / Threshold</div>
+						<div class="value-small"><span class="strain">0</span> / <span class="wound-thr">12</span></div>
+					</div>
+					<div class="stat-small">
+						<div class="tag-small"><span class="eote bo2"></span></div>
+						<div class="value-small">0</div>
+					</div>
+					<div class="stat-small">
+						<div class="tag-small"><span class="eote se2"></span></div>
+						<div class="value-small">0</div>
+					</div>
+				</div>
+				<div class="char-block">
+					<h3>Example Dudette</h3>
+					<div class="stat-small-wide">
+						<div class="tag-small">Wounds / Threshold</div>
+						<div class="value-small"><span class="wounds">4</span> / <span class="wound-thr">15</span></div>
+					</div>
+					<div class="stat-small">
+						<div class="tag-small"><span class="eote bo2"></span></div>
+						<div class="value-small">0</div>
+					</div>
+					<div class="stat-small">
+						<div class="tag-small"><span class="eote se2"></span></div>
+						<div class="value-small">0</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="section footer">
