@@ -67,9 +67,9 @@ body {
 	height: 50em;
 	font-size: 450%;
 	text-align: justify;
-	  overflow: hidden;
+	overflow: hidden;
 	transform-origin: 50% 100%;
-	@include transform(perspective(300px) rotateX(15deg));
+	@include transform(perspective(800px) rotateX(25deg));
   
 	> div {
 		position: absolute;
@@ -78,7 +78,7 @@ body {
 	
 	  > p {
 		  margin: 1.35em 0 1.85em 0;
-		line-height: 1.50em;
+		  line-height: 1.50em;
 		
 		@include backface-visibility(hidden);
 	  }
