@@ -1,1251 +1,1532 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Star Wars Roleplaying [DM]</title>
-	<link href="../../css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-	<link rel="icon" href="../../img/icon.png">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../../css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="../../img/icon.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
-	<header>
-		<div id="hamburger">
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
-		<div class="logo"></div>
-	</header>
-	<nav>
-		<ul>
+  <header>
+    <div id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="logo"></div>
+  </header>
+  <nav>
+    <ul>
       <li><a href="../index.html">Home</a></li>
       <li><a href="../adversaries.html" class="toggle-adv-nav active">Adversaries</a>
-				<ul id="adv-nav">
-	        <li><a href="bountyhunters.html">Hunters</a></li>
-	        <li><a href="droids.html">Droids</a></li>
-	        <li><a href="imperial.html" class="active">Imperial</a></li>
-	        <li><a href="spaceport.html">Spaceport</a></li>
-	        <li><a href="underworld.html">Underworld</a></li>
-	        <li><a href="patronclient.html">Patrons</a></li>
-	        <li><a href="core.html">Core</a></li>
-	        <li><a href="oddities.html">Oddities</a></li>
-	      </ul>
+        <ul id="adv-nav">
+          <li><a href="bountyhunters.html">Hunters</a></li>
+          <li><a href="droids.html">Droids</a></li>
+          <li><a href="imperial.html" class="active">Imperial</a></li>
+          <li><a href="spaceport.html">Spaceport</a></li>
+          <li><a href="underworld.html">Underworld</a></li>
+          <li><a href="patronclient.html">Patrons</a></li>
+          <li><a href="core.html">Core</a></li>
+          <li><a href="oddities.html">Oddities</a></li>
+        </ul>
       </li>
       <li><a href="../hyperspace.html">Travel</a></li>
       <li><a href="../trade.html">Trade</a></li>
       <li><a href="../payment.html">Payment</a></li>
       <li><a href="../gear.html">Gear</a></li>
-		</ul>
-	</nav>
+    </ul>
+  </nav>
   <div class="container">
-      <div class="splitLeft">
-        <h1>Characters</h1>
-         <div class="info">
-            <h2>Emperor's Hand</h2><h2 class="corner">[Nemesis]</h2>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Brawn</span>
-              </div>
-              <div class="value-small">
-                <span>4</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Agility</span>
-              </div>
-              <div class="value-small">
-                <span>4</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Intellect</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Cunning</span>
-              </div>
-              <div class="value-small">
-                <span>5</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Willpower</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Presence</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Soak</span>
-              </div>
-              <div class="value-small">
-                <span>4</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Wound Th.</span>
-              </div>
-              <div class="value-small">
-                <span>18</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Strain Th.</span>
-              </div>
-              <div class="value-small">
-                <span>20</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Defense</span>
-              </div>
-              <div class="value-small">
-                <span>2/3</span>
-              </div>
-            </div>
-            <ul>
-              <li><strong>Skills: </strong>Athletics 2, Brawl 2, Charm 3, Cool 3, Deception 3, Knowledge (Core Worlds) 3, Melee 3, Perception 2, Ranged (Heavy) 2, Ranged (Light) 3, Stealth 3, Vigilance 4.</li>
-              <li><strong>Talents: </strong>Adversary 3.</li>
-              <li>Intense Focus: Suffer one strain to upgrade any skill check once.</li>
-              <li>Stalker 2: Add <span class="eote bo2"></span><span class="eote bo2"></span> to any Coordination and Stealth checks.</li>
-              <li>Force Rating 2.</li>
-              <li><strong>Abilities: </strong>Force Power: Influence (<span class="eote da contrast"></span>: Inflict 2 strain on target in short range. <span class="eote da contrast"></span>: Force one target in short range to adopt an emotional state or believe something even if it is untrue for 4 minutes or 4 rounds in combat.)</li>
-              <li>Dark Side Force User: Uses Dark Side points.</li>
-              <li><strong>Equipment:</strong>
-                <li>Disruptor Pistol: Ranged (Light); Damage 10; Crit 2; Short; Vicious 4.</li>
-                <li>Vibrosword: Melee; Damage 6; Crit 2; Engaged; Defensive 1, Pierce 2, Vicious 1.</li>
-                <li>Frag Grenade: Ranged (Light); Damage 8; Crit 4; Short; Blast 6, Limited Ammo 1.</li>
-              </li>
-            </ul>
+    <div class="splitLeft">
+      <h1>Characters</h1>
+      <div class="info">
+        <h2>Emperor's Hand</h2>
+        <h2 class="corner">[Nemesis]</h2>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Brawn</span>
+          </div>
+          <div class="value-small">
+            <span>4</span>
+          </div>
         </div>
-         <div class="info">
-            <h2>Imperial<br>Intelligence Agent</h2><h2 class="corner">[Rival]</h2>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Brawn</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Agility</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Intellect</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Cunning</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Willpower</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Presence</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Soak</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Wound Th.</span>
-              </div>
-              <div class="value-small">
-                <span>14</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Defense</span>
-              </div>
-              <div class="value-small">
-                <span>0/0</span>
-              </div>
-            </div>
-            <ul>
-              <li><strong>Skills: </strong>Brawl 2, Charm 2, Coercion 2, Deception 2, Ranged (Light) 2, Streetwise 2, Vigilance 2.</li>
-              <li><strong>Talents: </strong>Adversary 1.</li>
-              <li><strong>Abilities: </strong>None.</li>
-              <li><strong>Equipment:</strong>
-                <li>Light Blaster Pistol: Ranged (Light); Damage 5; Crit 4; Medium; Stun Setting.</li>
-                <li>Scanner.</li>
-              </li>
-            </ul>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Agility</span>
+          </div>
+          <div class="value-small">
+            <span>4</span>
+          </div>
         </div>
-         <div class="info">
-            <h2>Imperial Moff</h2><h2 class="corner">[Nemesis]</h2>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Brawn</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Agility</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Intellect</span>
-              </div>
-              <div class="value-small">
-                <span>4</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Cunning</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Willpower</span>
-              </div>
-              <div class="value-small">
-                <span>4</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Presence</span>
-              </div>
-              <div class="value-small">
-                <span>5</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Soak</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Wound Th.</span>
-              </div>
-              <div class="value-small">
-                <span>13</span>
-              </div>
-            </div>
-             <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Strain Th.</span>
-              </div>
-              <div class="value-small">
-                <span>16</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Defense</span>
-              </div>
-              <div class="value-small">
-                <span>0/0</span>
-              </div>
-            </div>
-            <ul>
-              <li><strong>Skills: </strong>Charm 3, Coercion 4, Cool 3, Deception 4, Discipline 3, Knowledge (Core Worlds) 4, Leadership 4, Ranged (Light) 2, Streetwise 2, Vigilance 2.</li>
-              <li><strong>Talents: </strong>Adversary 1.</li>
-              <li>Plausible Deniability 4: Remove <span class="eote se2 contrast"></span><span class="eote se2 contrast"></span><span class="eote se2 contrast"></span><span class="eote se2 contrast"></span> from any Coercion or Deception checks.</li>
-              <li>Supreme Inspiring Rhetoric: As a maneuver, may make an Average (<span class="eote di2 contrast"></span><span class="eote di2 contrast"></span>) Leadership check. Each <span class="eote su"></span> removes one strain or wound from one ally in short range. Each <span class="eote ad"></span> removes an additional strain or wound from an affected ally. All allies add <span class="eote bo2"></span> to all checks for 4 rounds.</li>
-              <li><strong>Abilities: </strong>Imperial Valor: May perform a maneuver to cause all ranged attacks targeting the Moff to instead hit one ally or helpless enemy he is engaged with until the beginning of his next turn.</li>
-              <li><strong>Equipment:</strong>
-                <li>Blaster Pistol: Ranged (Light); Damage 6; Crit 3; Medium; Stun Setting.</li>
-              </li>
-            </ul>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Intellect</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
         </div>
-        <div class="info">
-            <h2>Imperial Naval Trooper</h2><h2 class="corner">[Minion]</h2>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Brawn</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Agility</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Intellect</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Cunning</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Willpower</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Presence</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Soak</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Wound Th.</span>
-              </div>
-              <div class="value-small">
-                <span>5</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Defense</span>
-              </div>
-              <div class="value-small">
-                <span>0/0</span>
-              </div>
-            </div>
-            <ul>
-              <li><strong>Skills (group only): </strong>Perception, Ranged (Light).</li>
-              <li><strong>Talents: </strong>None.</li>
-              <li><strong>Abilities: </strong>None.</li>
-              <li><strong>Equipment:</strong>
-                <li>Blaster Pistol: Ranged (Light); Damage 6; Crit 3; Medium; Stun Setting.</li>
-                <li>Blast Vest and Helmet: +1 soak.</li>
-              </li>
-            </ul>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Cunning</span>
+          </div>
+          <div class="value-small">
+            <span>5</span>
+          </div>
         </div>
-        <div class="info">
-            <h2>Imperial Naval Officer</h2><h2 class="corner">[Rival]</h2>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Brawn</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Agility</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Intellect</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Cunning</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Willpower</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Presence</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Soak</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Wound Th.</span>
-              </div>
-              <div class="value-small">
-                <span>11</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Defense</span>
-              </div>
-              <div class="value-small">
-                <span>0/0</span>
-              </div>
-            </div>
-            <ul>
-              <li><strong>Skills: </strong>Discipline 3, Ranged (Light) 2, Vigilance 2.</li>
-              <li><strong>Talents: </strong>Adversary 1.</li>
-              <li><strong>Abilities: </strong>Tactical Direction: May spend a maneuver to direct one Imperial Navy minion group within medium range. The group may perform an immediate free maneuver or add <span class="eote bo2"></span> to their next check.</li>
-              <li><strong>Equipment:</strong>
-                <li>Blaster Pistol: Ranged (Light); Damage 6; Crit 3; Medium; Stun Setting.</li>
-                <li>Heavy Uniform Clothing: +1 soak.</li>
-              </li>
-            </ul>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Willpower</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
         </div>
-        <div class="info">
-            <h2>Imperial Stormtrooper</h2><h2 class="corner">[Minion]</h2>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Brawn</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Agility</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Intellect</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Cunning</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Willpower</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Presence</span>
-              </div>
-              <div class="value-small">
-                <span>1</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Soak</span>
-              </div>
-              <div class="value-small">
-                <span>5</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Wound Th.</span>
-              </div>
-              <div class="value-small">
-                <span>5</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Defense</span>
-              </div>
-              <div class="value-small">
-                <span>0/0</span>
-              </div>
-            </div>
-            <ul>
-              <li><strong>Skills (group only): </strong>Athletics, Discipline, melee, Ranged (Heavy).</li>
-              <li><strong>Talents: </strong>None.</li>
-              <li><strong>Abilities: </strong>None.</li>
-              <li><strong>Equipment:</strong>
-                <li>Blaster Rifle: Ranged (Heavy); Damage 9; Crit 3; Range Long; Stun Setting.</li>
-                <li>Vibroknife: Melee; Damage 4; Crit 2; Engaged; Pierce 2, Vicious 1.</li>
-                <li>2 Frag Grenades: Ranged (Light); Damage 8; Crit 4; Range Short; Blast 6, Limited Ammo 1.</li>
-                <li>Stormtrooper Armor: Soak +2.</li>
-                <li>Utility Belt</li>
-                <li>Extra Reloads</li>
-                <li><strong>Groups Only: </strong>Light Repeating Blaster w/ Sling: Ranged (Heavy); Damage 11; Crit 3; Range Long; Auto-fire, Cumbersome 3, Pierce 1.</li>
-              </li>
-            </ul>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Presence</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
         </div>
-        <div class="info">
-            <h2>Imperial<br>Stormtrooper Sergeant</h2><h2 class="corner">[Rival]</h2>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Brawn</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Agility</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Intellect</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Cunning</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Willpower</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Presence</span>
-              </div>
-              <div class="value-small">
-                <span>1</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Soak</span>
-              </div>
-              <div class="value-small">
-                <span>5</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Wound Th.</span>
-              </div>
-              <div class="value-small">
-                <span>15</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Defense</span>
-              </div>
-              <div class="value-small">
-                <span>0/0</span>
-              </div>
-            </div>
-            <ul>
-              <li><strong>Skills: </strong>Athletics 2, Discipline 2, Leadership 3, Melee 2, Ranged (Heavy) 2, Ranged (Light) 2, Resilience 2, Vigilance 2.</li>
-              <li><strong>Talents: </strong>Adversary 1.</li>
-              <li><strong>Abilities: </strong>Tactical Direction (Maneuver to direct 1 Stormtrooper minion group within medium range. Group may take an immediate free maneuver or add <span class="eote bo2"></span> to their next check).</li>
-              <li><strong>Equipment:</strong>
-                <li>Heavy Blaster Rifle: Ranged (Heavy); Damage 10; Crit 3; Range Long; Auto-fire, Cumbersome 3.</li>
-                <li>Vibroknife: Melee; Damage 4; Crit 2; Engaged; Pierce 2, Vicious 1.</li>
-                <li>2 Frag Grenades: Ranged (Light); Damage 8; Crit 4; Range Short; Blast 6, Limited Ammo 1.</li>
-                <li>Stormtrooper Armor: Soak +2.</li>
-                <li>Utility Belt</li>
-                <li>Extra Reloads</li>
-              </li>
-            </ul>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Soak</span>
+          </div>
+          <div class="value-small">
+            <span>4</span>
+          </div>
         </div>
-        <div class="info">
-            <h2>Military Starfighter<br>Pilot</h2><h2 class="corner">[Minion]</h2>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Brawn</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Agility</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Intellect</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Cunning</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Willpower</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Presence</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Soak</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Wound Th.</span>
-              </div>
-              <div class="value-small">
-                <span>5</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Defense</span>
-              </div>
-              <div class="value-small">
-                <span>0/0</span>
-              </div>
-            </div>
-            <ul>
-              <li><strong>Skills (group only): </strong>Gunnery, Piloting (Space).</li>
-              <li><strong>Talents: </strong>None.</li>
-              <li><strong>Abilities: </strong>None.</li>
-              <li><strong>Equipment:</strong>
-                <li>Light Blaster Pistol: Ranged (Light); Damage 5; Crit 4; Range Medium; Stun Setting.</li>
-                <li>Vacuum Sealed Flight Suit.</li>
-              </li>
-            </ul>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Wound Th.</span>
+          </div>
+          <div class="value-small">
+            <span>18</span>
+          </div>
         </div>
-        <div class="info">
-            <h2>Planetary Defense Force<br>Trooper</h2><h2 class="corner">[Minion]</h2>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Brawn</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Agility</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Intellect</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Cunning</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Willpower</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Presence</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Soak</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Wound Th.</span>
-              </div>
-              <div class="value-small">
-                <span>5</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Defense</span>
-              </div>
-              <div class="value-small">
-                <span>0/0</span>
-              </div>
-            </div>
-            <ul>
-              <li><strong>Skills (group only): </strong>Brawl, Discipline, Ranged (Light), Ranged (Heavy).</li>
-              <li><strong>Talents: </strong>None.</li>
-              <li><strong>Abilities: </strong>None.</li>
-              <li><strong>Equipment:</strong>
-                <li>Blaster Carbine: Ranged (Heavy); Damage 9; Crit 3; Range Medium; Stun Setting.</li>
-                <li>2 Frag Grenades: Ranged (Light); Damage 8; Crit 4; Range Short; Blast 6, Limited Ammo 1.</li>
-                <li>Blast Vest: Soak +1.</li>
-              </li>
-            </ul>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Strain Th.</span>
+          </div>
+          <div class="value-small">
+            <span>20</span>
+          </div>
         </div>
-        <div class="info">
-            <h2>Planetary Governor</h2><h2 class="corner">[Nemesis]</h2>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Brawn</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Agility</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Intellect</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Cunning</span>
-              </div>
-              <div class="value-small">
-                <span>4</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Willpower</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Presence</span>
-              </div>
-              <div class="value-small">
-                <span>4</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Soak</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Wound Th.</span>
-              </div>
-              <div class="value-small">
-                <span>14</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Strain Th.</span>
-              </div>
-              <div class="value-small">
-                <span>14</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Defense</span>
-              </div>
-              <div class="value-small">
-                <span>0/0</span>
-              </div>
-            </div>
-            <ul>
-              <li><strong>Skills: </strong>Charm 3, Coercion 4, Cool 2, Deception 3, Perception 4, Knowledge (Education) 4, Leadership 3, Ranged (Light) 3, Piloting (Planetary) 2, Resiliance 2, Streetwise 2, Skulduggery 3, Vigilance 2.</li>
-              <li><strong>Talents: </strong>Improved Insipring Rhetoric: As an action, may make an Average (<span class="eote di2 contrast"></span><span class="eote di2 contrast"></span>) Leadership check. Each <span class="eote su"></span> removes one strain or wound from one ally in short range. Each <span class="eote ad"></span> removes an additional strain or wound from an affected ally. All affected allies add <span class="eote bo2"></span> to all checks for three rounds.</li>
-              <li>Kill with Kindness 2: Remove <span class="eote se2 contrast"></span><span class="eote se2 contrast"></span> from all Charm and Leadership checks.</li>
-              <li>Nobody's Fool 2: Upgrade difficulty of all Charm, Coercion, and Deception checks targeting the Governor twice.</li>
-              <li><strong>Abilities: </strong>Leader: All subordinates within medium range add <span class="eote bo2"></span> to all Discipline checks.</li>
-              <li><strong>Equipment:</strong>
-                <li>Light Blaster Pistol: Ranged (Light); Damage 5; Crit 4; Medium; Stun Setting.</li>
-              </li>
-            </ul>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Defense</span>
+          </div>
+          <div class="value-small">
+            <span>2/3</span>
+          </div>
         </div>
-        <div class="info">
-            <h2>Sector Ranger</h2><h2 class="corner">[Rival]</h2>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Brawn</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Agility</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Intellect</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Cunning</span>
-              </div>
-              <div class="value-small">
-                <span>4</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Willpower</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Presence</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Soak</span>
-              </div>
-              <div class="value-small">
-                <span>4</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Wound Th.</span>
-              </div>
-              <div class="value-small">
-                <span>14</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Defense</span>
-              </div>
-              <div class="value-small">
-                <span>0/0</span>
-              </div>
-            </div>
-            <ul>
-              <li><strong>Skills: </strong>Athletics 2, Brawl 1, Cool 2, Coordination 2, Ranged (Heavy) 3, Ranged (Light) 3, Streetwise 3, Survival 3, Vigilance 2.</li>
-              <li><strong>Talents: </strong>Adversary 1.</li>
-              <li><strong>Abilities: </strong>None.</li>
-              <li><strong>Equipment:</strong>
-                <li>Blaster Pistol: Ranged (Light); Damage 6; Crit 3; Medium; Stun Setting.</li>
-                <li>Scoped Blaster Rifle: Ranged (Heavy); Damage 9; Crit 3; Long; Stun Setting, Long range <span class="eote di2 contrast"></span> -1.</li>
-                <li>Heavy Clothing: +1 soak.</li>
-              </li>
-            </ul>
-        </div>
+        <ul>
+          <li><strong>Skills: </strong>Athletics 2, Brawl 2, Charm 3, Cool 3, Deception 3, Knowledge (Core Worlds) 3, Melee 3,
+            Perception 2, Ranged (Heavy) 2, Ranged (Light) 3, Stealth 3, Vigilance 4.</li>
+          <li><strong>Talents: </strong>Adversary 3.</li>
+          <li>Intense Focus: Suffer one strain to upgrade any skill check once.</li>
+          <li>Stalker 2: Add <span class="eote bo2"></span><span class="eote bo2"></span> to any Coordination and Stealth checks.</li>
+          <li>Force Rating 2.</li>
+          <li><strong>Abilities: </strong>Force Power: Influence (<span class="eote da contrast"></span>: Inflict 2 strain on
+            target in short range. <span class="eote da contrast"></span>: Force one target in short range to adopt an emotional
+            state or believe something even if it is untrue for 4 minutes or 4 rounds in combat.)</li>
+          <li>Dark Side Force User: Uses Dark Side points.</li>
+          <li><strong>Equipment:</strong>
+            <li>Disruptor Pistol: Ranged (Light); Damage 10; Crit 2; Short; Vicious 4.</li>
+            <li>Vibrosword: Melee; Damage 6; Crit 2; Engaged; Defensive 1, Pierce 2, Vicious 1.</li>
+            <li>Frag Grenade: Ranged (Light); Damage 8; Crit 4; Short; Blast 6, Limited Ammo 1.</li>
+          </li>
+        </ul>
       </div>
-      <div class="splitRight">
-        <h1>Vehicles</h1>
-        <div class="info">
-            <h2>Lambda-Class T-4A Long Range Shuttle</h2>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Silhouette</span>
-              </div>
-              <div class="value-small">
-                <span>4</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Speed</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Handling</span>
-              </div>
-              <div class="value-small">
-                <span>+0</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Armor</span>
-              </div>
-              <div class="value-small">
-                <span>4</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Hull</span>
-              </div>
-              <div class="value-small">
-                <span>25</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>System</span>
-              </div>
-              <div class="value-small">
-                <span>15</span>
-              </div>
-            </div>
-            <div class="stat-small-wide">
-              <div class="tagBlue tag-small">
-                <span>Defense</span>
-              </div>
-              <div class="value-small">
-                <span>2/-/-/1</span>
-              </div>
-            </div>
-            <ul>
-              <li><strong>Hull Type/Class: </strong>Shuttle/Lambda.</li>
-              <li><strong>Manufacturer: </strong>Sienar Fleet Systems &amp; Cygnus Spaceworks.</li>
-              <li><strong>Hyperdrive: </strong>Class 1; Backup Class 10.</li>
-              <li><strong>Navicomputer: </strong>Yes.</li>
-              <li><strong>Sensor Range: </strong>Short.</li>
-              <li><strong>Ship's Complement: </strong>One pilot, one co-pilot, one navigator, one gunner, one comms operator, one engineer.</li>
-              <li><strong>Encumbrance Cap: </strong> 200 (without passengers).</li>
-              <li><strong>Passenger Capacity: </strong>20.</li>
-              <li><strong>Consumables: </strong>Two months.</li>
-              <li><strong>Cost/Rarity: </strong>140,000 <span class="aurebesh cr"></span>(R)/5.</li>
-              <li><strong>Customization Hard Points: </strong>2</li>
-              <li><strong>Weapons:</strong>
-                <li>Foward Light Blaster Cannons (2): Fire Arc Foward; Damage 4; Crit 4; Close; Linked 1.</li>
-                <li>Forward Twin Light Laser Cannons (2): Fire Arc Forward; Damage 5; Crit 3; Close; Linked 1.</li>
-                <li>Aft Retractable Twin Light Blaster Cannon: Fire Arc Aft; Damage 4; Crit 4; Close; Linked 1.</li>
-              </li>
-            </ul>
+      <div class="info">
+        <h2>Imperial<br>Intelligence Agent</h2>
+        <h2 class="corner">[Rival]</h2>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Brawn</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
         </div>
-        <div class="info">
-            <h2>TIE/LN Starfighter</h2>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Silhouette</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Speed</span>
-              </div>
-              <div class="value-small">
-                <span>5</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Handling</span>
-              </div>
-              <div class="value-small">
-                <span>+3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Armor</span>
-              </div>
-              <div class="value-small">
-                <span>2</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Hull</span>
-              </div>
-              <div class="value-small">
-                <span>6</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>System</span>
-              </div>
-              <div class="value-small">
-                <span>8</span>
-              </div>
-            </div>
-            <div class="stat-small-wide">
-              <div class="tagBlue tag-small">
-                <span>Defense</span>
-              </div>
-              <div class="value-small">
-                <span>0/-/-/0</span>
-              </div>
-            </div>
-            <ul>
-              <li><strong>Hull Type/Class: </strong>Starfighter/TIE Series.</li>
-              <li><strong>Manufacturer: </strong>Sienar Fleet Systems.</li>
-              <li><strong>Hyperdrive: </strong>None.</li>
-              <li><strong>Navicomputer: </strong>None.</li>
-              <li><strong>Sensor Range: </strong>Close.</li>
-              <li><strong>Ship's Complement: </strong>One pilot.</li>
-              <li><strong>Encumbrance Cap: </strong> 4.</li>
-              <li><strong>Passenger Capacity: </strong>0.</li>
-              <li><strong>Consumables: </strong>Two days.</li>
-              <li><strong>Cost/Rarity: </strong>50,000 <span class="aurebesh cr"></span>(R)/4.</li>
-              <li><strong>Customization Hard Points: </strong>0</li>
-              <li><strong>Weapons:</strong>
-                <li>Foward Mounted Medium Laser Cannons: Fire Arc Forward; Damage 6; Crit 3; Close; Linked 1.</li>
-              </li>
-            </ul>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Agility</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
         </div>
-        <div class="info">
-            <h2>EF76 nebulon-B Escort Frigate</h2>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Silhouette</span>
-              </div>
-              <div class="value-small">
-                <span>6</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Speed</span>
-              </div>
-              <div class="value-small">
-                <span>3</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tag-small">
-                <span>Handling</span>
-              </div>
-              <div class="value-small">
-                <span>-1</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Armor</span>
-              </div>
-              <div class="value-small">
-                <span>6</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>Hull</span>
-              </div>
-              <div class="value-small">
-                <span>71</span>
-              </div>
-            </div>
-            <div class="stat-small">
-              <div class="tagBlue tag-small">
-                <span>System</span>
-              </div>
-              <div class="value-small">
-                <span>40</span>
-              </div>
-            </div>
-            <div class="stat-small-wide">
-              <div class="tagBlue tag-small">
-                <span>Defense</span>
-              </div>
-              <div class="value-small">
-                <span>2/2/2/2</span>
-              </div>
-            </div>
-            <ul>
-              <li><strong>Hull Type/Class: </strong>Frigate/Nebulon-B.</li>
-              <li><strong>Manufacturer: </strong>Kuat Drive Yards.</li>
-              <li><strong>Hyperdrive: </strong>Class 2; Backup Class 12.</li>
-              <li><strong>Navicomputer: </strong>Yes.</li>
-              <li><strong>Sensor Range: </strong>Long.</li>
-              <li><strong>Ship's Complement: </strong>920 officers, pilots, and enlisted crew.</li>
-              <li><strong>Starfighter Complement: </strong>Twenty-four starfighters.</li>
-              <li><strong>Encumbrance Cap: </strong> 4,000 depending on configuration.</li>
-              <li><strong>Passenger Capacity: </strong>75 troops.</li>
-              <li><strong>Consumables: </strong>Two years.</li>
-              <li><strong>Cost/Rarity: </strong>8,500,000 <span class="aurebesh cr"></span>(R)/7.</li>
-              <li><strong>Customization Hard Points: </strong>2</li>
-              <li><strong>Weapons:</strong>
-                <li>Six Port and Six Starboard Turret Mounted Retractable Medium Turbolasers: Fire Arc Forward, Aft, and Port OR Forward, Aft, and Starboard; Damage 10; Crit 3; Long; Breach 3, Slow-Firing 1.</li>
-                <li>Three Port, Starboard, Forward, and Aft Turret Mounted Retractable Light Laser Cannons: Fire Arc Any 1; Damage 5; Crit 3; Close.</li>
-                <li>Three Forward Mounted Heavy Tractor Beam Emitters: Fire Arc Forward; Damage -; Crit -; Medium; Tractor 6.</li>
-              </li>
-            </ul>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Intellect</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
         </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Cunning</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Willpower</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Presence</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Soak</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Wound Th.</span>
+          </div>
+          <div class="value-small">
+            <span>14</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Defense</span>
+          </div>
+          <div class="value-small">
+            <span>0/0</span>
+          </div>
+        </div>
+        <ul>
+          <li><strong>Skills: </strong>Brawl 2, Charm 2, Coercion 2, Deception 2, Ranged (Light) 2, Streetwise 2, Vigilance 2.</li>
+          <li><strong>Talents: </strong>Adversary 1.</li>
+          <li><strong>Abilities: </strong>None.</li>
+          <li><strong>Equipment:</strong>
+            <li>Light Blaster Pistol: Ranged (Light); Damage 5; Crit 4; Medium; Stun Setting.</li>
+            <li>Scanner.</li>
+          </li>
+        </ul>
       </div>
+      <div class="info">
+        <h2>Imperial Moff</h2>
+        <h2 class="corner">[Nemesis]</h2>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Brawn</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Agility</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Intellect</span>
+          </div>
+          <div class="value-small">
+            <span>4</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Cunning</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Willpower</span>
+          </div>
+          <div class="value-small">
+            <span>4</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Presence</span>
+          </div>
+          <div class="value-small">
+            <span>5</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Soak</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Wound Th.</span>
+          </div>
+          <div class="value-small">
+            <span>13</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Strain Th.</span>
+          </div>
+          <div class="value-small">
+            <span>16</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Defense</span>
+          </div>
+          <div class="value-small">
+            <span>0/0</span>
+          </div>
+        </div>
+        <ul>
+          <li><strong>Skills: </strong>Charm 3, Coercion 4, Cool 3, Deception 4, Discipline 3, Knowledge (Core Worlds) 4, Leadership
+            4, Ranged (Light) 2, Streetwise 2, Vigilance 2.</li>
+          <li><strong>Talents: </strong>Adversary 1.</li>
+          <li>Plausible Deniability 4: Remove <span class="eote se2 contrast"></span><span class="eote se2 contrast"></span>
+            <span
+            class="eote se2 contrast"></span><span class="eote se2 contrast"></span> from any Coercion or Deception checks.</li>
+          <li>Supreme Inspiring Rhetoric: As a maneuver, may make an Average (<span class="eote di2 contrast"></span><span class="eote di2 contrast"></span>)
+            Leadership check. Each <span class="eote su"></span> removes one strain or wound from one ally in short range.
+            Each <span class="eote ad"></span> removes an additional strain or wound from an affected ally. All allies add
+            <span class="eote bo2"></span> to all checks for 4 rounds.</li>
+          <li><strong>Abilities: </strong>Imperial Valor: May perform a maneuver to cause all ranged attacks targeting the Moff
+            to instead hit one ally or helpless enemy he is engaged with until the beginning of his next turn.</li>
+          <li><strong>Equipment:</strong>
+            <li>Blaster Pistol: Ranged (Light); Damage 6; Crit 3; Medium; Stun Setting.</li>
+          </li>
+        </ul>
+      </div>
+      <div class="info">
+        <h2>Imperial Naval Trooper</h2>
+        <h2 class="corner">[Minion]</h2>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Brawn</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Agility</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Intellect</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Cunning</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Willpower</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Presence</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Soak</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Wound Th.</span>
+          </div>
+          <div class="value-small">
+            <span>5</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Defense</span>
+          </div>
+          <div class="value-small">
+            <span>0/0</span>
+          </div>
+        </div>
+        <ul>
+          <li><strong>Skills (group only): </strong>Perception, Ranged (Light).</li>
+          <li><strong>Talents: </strong>None.</li>
+          <li><strong>Abilities: </strong>None.</li>
+          <li><strong>Equipment:</strong>
+            <li>Blaster Pistol: Ranged (Light); Damage 6; Crit 3; Medium; Stun Setting.</li>
+            <li>Blast Vest and Helmet: +1 soak.</li>
+          </li>
+        </ul>
+      </div>
+      <div class="info">
+        <h2>Imperial Naval Officer</h2>
+        <h2 class="corner">[Rival]</h2>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Brawn</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Agility</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Intellect</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Cunning</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Willpower</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Presence</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Soak</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Wound Th.</span>
+          </div>
+          <div class="value-small">
+            <span>11</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Defense</span>
+          </div>
+          <div class="value-small">
+            <span>0/0</span>
+          </div>
+        </div>
+        <ul>
+          <li><strong>Skills: </strong>Discipline 3, Ranged (Light) 2, Vigilance 2.</li>
+          <li><strong>Talents: </strong>Adversary 1.</li>
+          <li><strong>Abilities: </strong>Tactical Direction: May spend a maneuver to direct one Imperial Navy minion group within
+            medium range. The group may perform an immediate free maneuver or add <span class="eote bo2"></span> to their
+            next check.</li>
+          <li><strong>Equipment:</strong>
+            <li>Blaster Pistol: Ranged (Light); Damage 6; Crit 3; Medium; Stun Setting.</li>
+            <li>Heavy Uniform Clothing: +1 soak.</li>
+          </li>
+        </ul>
+      </div>
+      <div class="info">
+        <h2>Imperial Stormtrooper</h2>
+        <h2 class="corner">[Minion]</h2>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Brawn</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Agility</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Intellect</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Cunning</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Willpower</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Presence</span>
+          </div>
+          <div class="value-small">
+            <span>1</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Soak</span>
+          </div>
+          <div class="value-small">
+            <span>5</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Wound Th.</span>
+          </div>
+          <div class="value-small">
+            <span>5</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Defense</span>
+          </div>
+          <div class="value-small">
+            <span>0/0</span>
+          </div>
+        </div>
+        <ul>
+          <li><strong>Skills (group only): </strong>Athletics, Discipline, melee, Ranged (Heavy).</li>
+          <li><strong>Talents: </strong>None.</li>
+          <li><strong>Abilities: </strong>None.</li>
+          <li><strong>Equipment:</strong>
+            <li>Blaster Rifle: Ranged (Heavy); Damage 9; Crit 3; Range Long; Stun Setting.</li>
+            <li>Vibroknife: Melee; Damage 4; Crit 2; Engaged; Pierce 2, Vicious 1.</li>
+            <li>2 Frag Grenades: Ranged (Light); Damage 8; Crit 4; Range Short; Blast 6, Limited Ammo 1.</li>
+            <li>Stormtrooper Armor: Soak +2.</li>
+            <li>Utility Belt</li>
+            <li>Extra Reloads</li>
+            <li><strong>Groups Only: </strong>Light Repeating Blaster w/ Sling: Ranged (Heavy); Damage 11; Crit 3; Range Long;
+              Auto-fire, Cumbersome 3, Pierce 1.</li>
+          </li>
+        </ul>
+      </div>
+      <div class="info">
+        <h2>Imperial<br>Stormtrooper Sergeant</h2>
+        <h2 class="corner">[Rival]</h2>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Brawn</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Agility</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Intellect</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Cunning</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Willpower</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Presence</span>
+          </div>
+          <div class="value-small">
+            <span>1</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Soak</span>
+          </div>
+          <div class="value-small">
+            <span>5</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Wound Th.</span>
+          </div>
+          <div class="value-small">
+            <span>15</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Defense</span>
+          </div>
+          <div class="value-small">
+            <span>0/0</span>
+          </div>
+        </div>
+        <ul>
+          <li><strong>Skills: </strong>Athletics 2, Discipline 2, Leadership 3, Melee 2, Ranged (Heavy) 2, Ranged (Light) 2,
+            Resilience 2, Vigilance 2.</li>
+          <li><strong>Talents: </strong>Adversary 1.</li>
+          <li><strong>Abilities: </strong>Tactical Direction (Maneuver to direct 1 Stormtrooper minion group within medium range.
+            Group may take an immediate free maneuver or add <span class="eote bo2"></span> to their next check).</li>
+          <li><strong>Equipment:</strong>
+            <li>Heavy Blaster Rifle: Ranged (Heavy); Damage 10; Crit 3; Range Long; Auto-fire, Cumbersome 3.</li>
+            <li>Vibroknife: Melee; Damage 4; Crit 2; Engaged; Pierce 2, Vicious 1.</li>
+            <li>2 Frag Grenades: Ranged (Light); Damage 8; Crit 4; Range Short; Blast 6, Limited Ammo 1.</li>
+            <li>Stormtrooper Armor: Soak +2.</li>
+            <li>Utility Belt</li>
+            <li>Extra Reloads</li>
+          </li>
+        </ul>
+      </div>
+      <div class="info">
+        <h2>Military Starfighter<br>Pilot</h2>
+        <h2 class="corner">[Minion]</h2>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Brawn</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Agility</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Intellect</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Cunning</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Willpower</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Presence</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Soak</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Wound Th.</span>
+          </div>
+          <div class="value-small">
+            <span>5</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Defense</span>
+          </div>
+          <div class="value-small">
+            <span>0/0</span>
+          </div>
+        </div>
+        <ul>
+          <li><strong>Skills (group only): </strong>Gunnery, Piloting (Space).</li>
+          <li><strong>Talents: </strong>None.</li>
+          <li><strong>Abilities: </strong>None.</li>
+          <li><strong>Equipment:</strong>
+            <li>Light Blaster Pistol: Ranged (Light); Damage 5; Crit 4; Range Medium; Stun Setting.</li>
+            <li>Vacuum Sealed Flight Suit.</li>
+          </li>
+        </ul>
+      </div>
+      <div class="info">
+        <h2>Planetary Defense Force<br>Trooper</h2>
+        <h2 class="corner">[Minion]</h2>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Brawn</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Agility</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Intellect</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Cunning</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Willpower</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Presence</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Soak</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Wound Th.</span>
+          </div>
+          <div class="value-small">
+            <span>5</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Defense</span>
+          </div>
+          <div class="value-small">
+            <span>0/0</span>
+          </div>
+        </div>
+        <ul>
+          <li><strong>Skills (group only): </strong>Brawl, Discipline, Ranged (Light), Ranged (Heavy).</li>
+          <li><strong>Talents: </strong>None.</li>
+          <li><strong>Abilities: </strong>None.</li>
+          <li><strong>Equipment:</strong>
+            <li>Blaster Carbine: Ranged (Heavy); Damage 9; Crit 3; Range Medium; Stun Setting.</li>
+            <li>2 Frag Grenades: Ranged (Light); Damage 8; Crit 4; Range Short; Blast 6, Limited Ammo 1.</li>
+            <li>Blast Vest: Soak +1.</li>
+          </li>
+        </ul>
+      </div>
+      <div class="info">
+        <h2>Planetary Governor</h2>
+        <h2 class="corner">[Nemesis]</h2>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Brawn</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Agility</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Intellect</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Cunning</span>
+          </div>
+          <div class="value-small">
+            <span>4</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Willpower</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Presence</span>
+          </div>
+          <div class="value-small">
+            <span>4</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Soak</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Wound Th.</span>
+          </div>
+          <div class="value-small">
+            <span>14</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Strain Th.</span>
+          </div>
+          <div class="value-small">
+            <span>14</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Defense</span>
+          </div>
+          <div class="value-small">
+            <span>0/0</span>
+          </div>
+        </div>
+        <ul>
+          <li><strong>Skills: </strong>Charm 3, Coercion 4, Cool 2, Deception 3, Perception 4, Knowledge (Education) 4, Leadership
+            3, Ranged (Light) 3, Piloting (Planetary) 2, Resiliance 2, Streetwise 2, Skulduggery 3, Vigilance 2.</li>
+          <li><strong>Talents: </strong>Improved Insipring Rhetoric: As an action, may make an Average (<span class="eote di2 contrast"></span>
+            <span
+            class="eote di2 contrast"></span>) Leadership check. Each <span class="eote su"></span> removes one strain or wound from one ally in short
+              range. Each <span class="eote ad"></span> removes an additional strain or wound from an affected ally. All
+              affected allies add <span class="eote bo2"></span> to all checks for three rounds.</li>
+          <li>Kill with Kindness 2: Remove <span class="eote se2 contrast"></span><span class="eote se2 contrast"></span> from
+            all Charm and Leadership checks.</li>
+          <li>Nobody's Fool 2: Upgrade difficulty of all Charm, Coercion, and Deception checks targeting the Governor twice.</li>
+          <li><strong>Abilities: </strong>Leader: All subordinates within medium range add <span class="eote bo2"></span> to
+            all Discipline checks.</li>
+          <li><strong>Equipment:</strong>
+            <li>Light Blaster Pistol: Ranged (Light); Damage 5; Crit 4; Medium; Stun Setting.</li>
+          </li>
+        </ul>
+      </div>
+      <div class="info">
+        <h2>Sector Ranger</h2>
+        <h2 class="corner">[Rival]</h2>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Brawn</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Agility</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Intellect</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Cunning</span>
+          </div>
+          <div class="value-small">
+            <span>4</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Willpower</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Presence</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Soak</span>
+          </div>
+          <div class="value-small">
+            <span>4</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Wound Th.</span>
+          </div>
+          <div class="value-small">
+            <span>14</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Defense</span>
+          </div>
+          <div class="value-small">
+            <span>0/0</span>
+          </div>
+        </div>
+        <ul>
+          <li><strong>Skills: </strong>Athletics 2, Brawl 1, Cool 2, Coordination 2, Ranged (Heavy) 3, Ranged (Light) 3, Streetwise
+            3, Survival 3, Vigilance 2.</li>
+          <li><strong>Talents: </strong>Adversary 1.</li>
+          <li><strong>Abilities: </strong>None.</li>
+          <li><strong>Equipment:</strong>
+            <li>Blaster Pistol: Ranged (Light); Damage 6; Crit 3; Medium; Stun Setting.</li>
+            <li>Scoped Blaster Rifle: Ranged (Heavy); Damage 9; Crit 3; Long; Stun Setting, Long range <span class="eote di2 contrast"></span>              -1.</li>
+            <li>Heavy Clothing: +1 soak.</li>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="splitRight">
+      <h1>Vehicles</h1>
+       <div class="info">
+        <h2>Imperial-I Class Star Destroyer</h2>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Silhouette</span>
+          </div>
+          <div class="value-small">
+            <span>8</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Speed</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Handling</span>
+          </div>
+          <div class="value-small">
+            <span>-3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Armor</span>
+          </div>
+          <div class="value-small">
+            <span>10</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Hull</span>
+          </div>
+          <div class="value-small">
+            <span>145</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>System</span>
+          </div>
+          <div class="value-small">
+            <span>60</span>
+          </div>
+        </div>
+        <div class="stat-small-wide">
+          <div class="tagBlue tag-small">
+            <span>Defense</span>
+          </div>
+          <div class="value-small">
+            <span>3/3/3/2</span>
+          </div>
+        </div>
+        <ul>
+          <li><strong>Hull Type/Class: </strong>Star Destroyer/Imperial I.</li>
+          <li><strong>Manufacturer: </strong>Kuat Drive Yards.</li>
+          <li><strong>Hyperdrive: </strong>Class 2; Backup Class 8.</li>
+          <li><strong>Navicomputer: </strong>Yes.</li>
+          <li><strong>Sensor Range: </strong>Long.</li>
+          <li><strong>Ship's Complement: </strong>37.805 officers, pilots, and enlisted crew.</li>
+          <li><strong>Starfighter Complement: </strong>72 starfighters.</li>
+          <li><strong>Vehicle Complement: </strong>Numerous shuttles, landing craft, utility vehicles, landing barges, and AT-series walkers.</li>
+          <li><strong>Encumbrance Cap: </strong> 15,000.</li>
+          <li><strong>Passenger Capacity: </strong>9,700 troops.</li>
+          <li><strong>Consumables: </strong>Two years.</li>
+          <li><strong>Cost/Rarity: </strong>150,000,000 <span class="aurebesh cr"></span>(R)/7.</li>
+          <li><strong>Customization Hard Points: </strong>2</li>
+          <li><strong>Weapons:</strong>
+            <li><span class="em">Ten Port &amp; Starboard Heavy Turbolaser Batteries:</span> Fire Arc Port &amp; Forward or Starboard &amp; Forward; Damage 11; Crit 3; Long; Breach 4, Linked 1, Slow-Firing 2.</li>
+            <li><span class="em">Ten Dorsal Heavy Turbolaser Batteries:</span> Fire Arc Forward, Port, &amp; Starboard; Damage 11; Crit 3; Long; Breach 4, Linked 1, Slow-Firing 2.</li>
+            <li><span class="em">Ten Port, Ten Starboard, and Ten Forward Light Turbolasers:</span> Fire Arc Forward, Port, or Starboard; Damage 9; Crit 3; Medium; Breach 2, Slow-Firing 2.</li>
+            <li><span class="em">Ten Port and Ten Starboard Battleship Ion Cannon Turrets:</span> Fire Arc Port &amp; Forward or Starboard &amp; Forward: Damage 9; Crit 4; Medium; Breach 3, Ion, Slow-Firing 2.</li>
+            <li><span class="em">Ten Ventral Battleship Ion Cannon Batteries:</span> Fire Arc Forward, Port, &amp; Starboard; Damage 9; Crit 4; Medium; Breach 3, Ion, Linked 1, Slow-Firing 2.</li>
+            <li><span class="em">Fifteen Port &amp; Fifteen Starboard Medium Ion Cannons:</span> Fire Arc Port or Starboard; Damage 6; Crit 4; Short; Ion.</li>
+            <li><span class="em">Ten Heavy Tractor Beam Emitters:</span> Fire Arc Forward, Port, &amp; Starboard; Damage -; Crit -; Short; Tractor 6.</li>
+          </li>
+          <li><strong>Additional Rules:</strong>
+            <li><span class="em">Massive 2:</span> When making an attack targeting this starship, the Critical rating of any weapons used counts as 2 higher.</li>
+          </li>
+        </ul>
+      </div>
+      <div class="info">
+        <h2>Lambda-Class T-4A Long Range Shuttle</h2>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Silhouette</span>
+          </div>
+          <div class="value-small">
+            <span>4</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Speed</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Handling</span>
+          </div>
+          <div class="value-small">
+            <span>+0</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Armor</span>
+          </div>
+          <div class="value-small">
+            <span>4</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Hull</span>
+          </div>
+          <div class="value-small">
+            <span>25</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>System</span>
+          </div>
+          <div class="value-small">
+            <span>15</span>
+          </div>
+        </div>
+        <div class="stat-small-wide">
+          <div class="tagBlue tag-small">
+            <span>Defense</span>
+          </div>
+          <div class="value-small">
+            <span>2/-/-/1</span>
+          </div>
+        </div>
+        <ul>
+          <li><strong>Hull Type/Class: </strong>Shuttle/Lambda.</li>
+          <li><strong>Manufacturer: </strong>Sienar Fleet Systems &amp; Cygnus Spaceworks.</li>
+          <li><strong>Hyperdrive: </strong>Class 1; Backup Class 10.</li>
+          <li><strong>Navicomputer: </strong>Yes.</li>
+          <li><strong>Sensor Range: </strong>Short.</li>
+          <li><strong>Ship's Complement: </strong>One pilot, one co-pilot, one navigator, one gunner, one comms operator, one
+            engineer.</li>
+          <li><strong>Encumbrance Cap: </strong> 200 (without passengers).</li>
+          <li><strong>Passenger Capacity: </strong>20.</li>
+          <li><strong>Consumables: </strong>Two months.</li>
+          <li><strong>Cost/Rarity: </strong>140,000 <span class="aurebesh cr"></span>(R)/5.</li>
+          <li><strong>Customization Hard Points: </strong>2</li>
+          <li><strong>Weapons:</strong>
+            <li><span class="em">Foward Light Blaster Cannons (2):</span> Fire Arc Foward; Damage 4; Crit 4; Close; Linked 1.</li>
+            <li><span class="em">Forward Twin Light Laser Cannons (2):</span> Fire Arc Forward; Damage 5; Crit 3; Close; Linked 1.</li>
+            <li><span class="em">Aft Retractable Twin Light Blaster Cannon:</span> Fire Arc Aft; Damage 4; Crit 4; Close; Linked 1.</li>
+          </li>
+        </ul>
+      </div>
+      <div class="info">
+        <h2>TIE/LN Starfighter</h2>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Silhouette</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Speed</span>
+          </div>
+          <div class="value-small">
+            <span>5</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Handling</span>
+          </div>
+          <div class="value-small">
+            <span>+3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Armor</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Hull</span>
+          </div>
+          <div class="value-small">
+            <span>6</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>System</span>
+          </div>
+          <div class="value-small">
+            <span>8</span>
+          </div>
+        </div>
+        <div class="stat-small-wide">
+          <div class="tagBlue tag-small">
+            <span>Defense</span>
+          </div>
+          <div class="value-small">
+            <span>0/-/-/0</span>
+          </div>
+        </div>
+        <ul>
+          <li><strong>Hull Type/Class: </strong>Starfighter/TIE Series.</li>
+          <li><strong>Manufacturer: </strong>Sienar Fleet Systems.</li>
+          <li><strong>Hyperdrive: </strong>None.</li>
+          <li><strong>Navicomputer: </strong>None.</li>
+          <li><strong>Sensor Range: </strong>Close.</li>
+          <li><strong>Ship's Complement: </strong>One pilot.</li>
+          <li><strong>Encumbrance Cap: </strong> 4.</li>
+          <li><strong>Passenger Capacity: </strong>0.</li>
+          <li><strong>Consumables: </strong>Two days.</li>
+          <li><strong>Cost/Rarity: </strong>50,000 <span class="aurebesh cr"></span>(R)/4.</li>
+          <li><strong>Customization Hard Points: </strong>0</li>
+          <li><strong>Weapons:</strong>
+            <li><span class="em">Foward Mounted Medium Laser Cannons:</span> Fire Arc Forward; Damage 6; Crit 3; Close; Linked 1.</li>
+          </li>
+        </ul>
+      </div>
+      <div class="info">
+        <h2>TIE/IN Starfighter</h2>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Silhouette</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Speed</span>
+          </div>
+          <div class="value-small">
+            <span>6</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Handling</span>
+          </div>
+          <div class="value-small">
+            <span>+3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Armor</span>
+          </div>
+          <div class="value-small">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Hull</span>
+          </div>
+          <div class="value-small">
+            <span>6</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>System</span>
+          </div>
+          <div class="value-small">
+            <span>10</span>
+          </div>
+        </div>
+        <div class="stat-small-wide">
+          <div class="tagBlue tag-small">
+            <span>Defense</span>
+          </div>
+          <div class="value-small">
+            <span>0/-/-/0</span>
+          </div>
+        </div>
+        <ul>
+          <li><strong>Hull Type/Class: </strong>Starfighter/TIE Series.</li>
+          <li><strong>Manufacturer: </strong>Sienar Fleet Systems.</li>
+          <li><strong>Hyperdrive: </strong>None.</li>
+          <li><strong>Navicomputer: </strong>None.</li>
+          <li><strong>Sensor Range: </strong>Close.</li>
+          <li><strong>Ship's Complement: </strong>One pilot.</li>
+          <li><strong>Encumbrance Cap: </strong> 4.</li>
+          <li><strong>Passenger Capacity: </strong>0.</li>
+          <li><strong>Consumables: </strong>Two days.</li>
+          <li><strong>Cost/Rarity: </strong>75,000 <span class="aurebesh cr"></span>(R)/5.</li>
+          <li><strong>Customization Hard Points: </strong>0</li>
+          <li><strong>Weapons:</strong>
+            <li><span class="em">Wingtip-mounted Medium Laser Cannons:</span> Fire Arc Forward; Damage 6; Crit 3; Close; Linked 3.</li>
+          </li>
+        </ul>
+      </div>
+      <div class="info">
+        <h2>TIE/D Starfighter</h2>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Silhouette</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Speed</span>
+          </div>
+          <div class="value-small">
+            <span>4</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Handling</span>
+          </div>
+          <div class="value-small">
+            <span>+2</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Armor</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Hull</span>
+          </div>
+          <div class="value-small">
+            <span>10</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>System</span>
+          </div>
+          <div class="value-small">
+            <span>10</span>
+          </div>
+        </div>
+        <div class="stat-small-wide">
+          <div class="tagBlue tag-small">
+            <span>Defense</span>
+          </div>
+          <div class="value-small">
+            <span>1/-/-/1</span>
+          </div>
+        </div>
+        <ul>
+          <li><strong>Hull Type/Class: </strong>Starfighter/TIE Series.</li>
+          <li><strong>Manufacturer: </strong>Sienar Fleet Systems.</li>
+          <li><strong>Hyperdrive: </strong>Primary: Class 2, Backup: None.</li>
+          <li><strong>Navicomputer: </strong>Yes.</li>
+          <li><strong>Sensor Range: </strong>Close.</li>
+          <li><strong>Ship's Complement: </strong>One pilot.</li>
+          <li><strong>Encumbrance Cap: </strong> 5.</li>
+          <li><strong>Passenger Capacity: </strong>0.</li>
+          <li><strong>Consumables: </strong>One week.</li>
+          <li><strong>Cost/Rarity: </strong>300,000 <span class="aurebesh cr"></span>(R)/8.</li>
+          <li><strong>Customization Hard Points: </strong>0</li>
+          <li><strong>Weapons:</strong>
+            <li><span class="em">Wingtip-mounted Medium Laser Cannons:</span> Fire Arc Forward; Damage 6; Crit 3; Close; Linked
+              3.</li>
+            <li><span class="em">Cockpit-mounted Twin Light Ion Cannon:</span> Fire Arc Forward; Damage 5; Crit 4; Close; Ion,
+              Linked 1.</li>
+            <li><span class="em">Cockpit-mounted Concussion Missile Launcher:</span> Fire Arc Forward; Damage 6; Crit 3; Short;
+              Blast 4, Breach 4, Guided 3, Limited Ammo 6, Linked 1, Slow Firing 1.</li>
+          </li>
+        </ul>
+      </div>
+      <div class="info">
+        <h2>EF76 nebulon-B Escort Frigate</h2>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Silhouette</span>
+          </div>
+          <div class="value-small">
+            <span>6</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Speed</span>
+          </div>
+          <div class="value-small">
+            <span>3</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tag-small">
+            <span>Handling</span>
+          </div>
+          <div class="value-small">
+            <span>-1</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Armor</span>
+          </div>
+          <div class="value-small">
+            <span>6</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>Hull</span>
+          </div>
+          <div class="value-small">
+            <span>71</span>
+          </div>
+        </div>
+        <div class="stat-small">
+          <div class="tagBlue tag-small">
+            <span>System</span>
+          </div>
+          <div class="value-small">
+            <span>40</span>
+          </div>
+        </div>
+        <div class="stat-small-wide">
+          <div class="tagBlue tag-small">
+            <span>Defense</span>
+          </div>
+          <div class="value-small">
+            <span>2/2/2/2</span>
+          </div>
+        </div>
+        <ul>
+          <li><strong>Hull Type/Class: </strong>Frigate/Nebulon-B.</li>
+          <li><strong>Manufacturer: </strong>Kuat Drive Yards.</li>
+          <li><strong>Hyperdrive: </strong>Class 2; Backup Class 12.</li>
+          <li><strong>Navicomputer: </strong>Yes.</li>
+          <li><strong>Sensor Range: </strong>Long.</li>
+          <li><strong>Ship's Complement: </strong>920 officers, pilots, and enlisted crew.</li>
+          <li><strong>Starfighter Complement: </strong>Twenty-four starfighters.</li>
+          <li><strong>Encumbrance Cap: </strong> 4,000 depending on configuration.</li>
+          <li><strong>Passenger Capacity: </strong>75 troops.</li>
+          <li><strong>Consumables: </strong>Two years.</li>
+          <li><strong>Cost/Rarity: </strong>8,500,000 <span class="aurebesh cr"></span>(R)/7.</li>
+          <li><strong>Customization Hard Points: </strong>2</li>
+          <li><strong>Weapons:</strong>
+            <li><span class="em">Six Port and Six Starboard Turret Mounted Retractable Medium Turbolasers:</span> Fire Arc Forward, Aft, and Port OR
+              Forward, Aft, and Starboard; Damage 10; Crit 3; Long; Breach 3, Slow-Firing 1.</li>
+            <li><span class="em">Three Port, Starboard, Forward, and Aft Turret Mounted Retractable Light Laser Cannons:</span> Fire Arc Any 1; Damage
+              5; Crit 3; Close.</li>
+            <li><span class="em">Three Forward Mounted Heavy Tractor Beam Emitters:</span> Fire Arc Forward; Damage -; Crit -; Medium; Tractor 6.</li>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div class="section footer">
-			<p class="aurebesh-bold">This Star Wars site is created solely to enjoy the Fantasy Flight Games tabletop game. It is in no way official.</p>
-		</div>
+      <p class="aurebesh-bold">This Star Wars site is created solely to enjoy the Fantasy Flight Games tabletop game. It is in no way official.</p>
+    </div>
   </div>
   <div class="back-to-top"><a href="#">TOP</a></div>
-	<script src="../../js/main.js"></script>
+  <script src="../../js/main.js"></script>
 </body>
+
 </html>
