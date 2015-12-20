@@ -58,34 +58,103 @@ $(document).ready(function(){
     var advantage = $('#advantage-roll').val();
     var triumph = $('#triumph-roll').val();
 
-  	$('.slot:last-child').append('<div class="field success-roll"><span>'+ success +'</span><span class="eote su init"></span></div>');
-  	$('.slot:last-child').append('<div class="field advantage-roll"><span>'+ advantage +'</span><span class="eote ad init"></span></div>');
-  	$('.slot:last-child').append('<div class="field triumph-roll"><span>'+ triumph +'</span><span class="eote tr init"></span></div>');
-  	$('.slot:last-child').append('<div class="field"><div class="remove">X</div></div>');
+    if (success > 0 || advantage > 0 || triumph > 0) {
+      $('.slot:last-child').append('<div class="field success-roll"><span>'+ success +'</span><span class="eote su init"></span></div>');
+      $('.slot:last-child').append('<div class="field advantage-roll"><span>'+ advantage +'</span><span class="eote ad init"></span></div>');
+      $('.slot:last-child').append('<div class="field triumph-roll"><span>'+ triumph +'</span><span class="eote tr init"></span></div>');
+      $('.slot:last-child').append('<div class="field"><div class="remove">X</div></div>');
+    } else {
+      return false;
+    }
+  };
+  
+  //Function to create a monitor entry.
+  var monitor = function () {
+    var name = $('#char-name').val();
+    var wounds = $('#wound-thr').val();
+    var strain = $('#strain-thr').val();
+    
+    if (name.length > 0) {
+      
+      $("#monitor-container").append("<div class='char-block working'></div>");
+      $("div.working").append("<h3>" + name + "</h3>")
+      
+      if (wounds.length > 0) {
+        $("div.working").append(
+          "<div class='stat-small-wide'>"+
+            "<div class='tag-small clear-wounds'>Wounds / Threshold</div>"+
+            "<div class='value-small adj-wounds'><span class='wounds'>0</span> / <span class='wound-thr'>"+wounds+"</span></div>"+
+          "</div> ")
+      }
+      
+      if (strain.length > 0) {
+        $("div.working").append(
+          "<div class='stat-small-wide'>"+
+            "<div class='tag-small clear-strain'>Strain / Threshold</div>"+
+            "<div class='value-small adj-strain'><span class='strain'>0</span> / <span class='strain-thr'>"+strain+"</span></div>"+
+          "</div> ")
+      }
+      
+      $("div.working").append(
+        "<div class='stat-small'>"+
+          "<div class='tag-small clear-boost'><span class='eote bo2'></span></div>"+
+          "<div class='value-small adj-boost'>0</div>"+
+        "</div> ")
+        $("div.working").append(
+        "<div class='stat-small'>"+
+          "<div class='tag-small clear-setback'><span class='eote se2'></span></div>"+
+          "<div class='value-small adj-setback'>0</div>"+
+        "</div>")
+      
+      $("div.working").removeClass("working");
+    } else {
+      return false;
+    }
   };
 
   // Add new combatants.
   $('.add-pc').click(function(){
-    $('.tracker-list').append('<li class="slot"></div>');
-    $('.slot:last-child').append('<div class="field player"><span>PC</span></div>');
+    var success = $('#success-roll').val();
+    var advantage = $('#advantage-roll').val();
+    var triumph = $('#triumph-roll').val();
+    
+    if (success > 0 || advantage > 0 || triumph > 0) {
+      $('.tracker-list').append('<li class="slot"></div>');
+      $('.slot:last-child').append('<div class="field player"><span>PC</span></div>');
+    }
 
     fill();
+    monitor();
     reset();
   });
 
   $('.add-ally').click(function(){
-    $('.tracker-list').append('<li class="slot"></div>');
-    $('.slot:last-child').append('<div class="field ally"><span>NPC</span></div>');
+    var success = $('#success-roll').val();
+    var advantage = $('#advantage-roll').val();
+    var triumph = $('#triumph-roll').val();
+    
+    if (success > 0 || advantage > 0 || triumph > 0) {
+      $('.tracker-list').append('<li class="slot"></div>');
+      $('.slot:last-child').append('<div class="field ally"><span>NPC</span></div>');
+    }
 
     fill();
+    monitor();
     reset();
   });
 
   $('.add-enemy').click(function(){
-    $('.tracker-list').append('<li class="slot"></div>');
-    $('.slot:last-child').append('<div class="field enemy"><span>NPC</span></div>');
+    var success = $('#success-roll').val();
+    var advantage = $('#advantage-roll').val();
+    var triumph = $('#triumph-roll').val();
+    
+    if (success > 0 || advantage > 0 || triumph > 0) {
+      $('.tracker-list').append('<li class="slot"></div>');
+      $('.slot:last-child').append('<div class="field enemy"><span>NPC</span></div>');
+    }
 
     fill();
+    monitor();
     reset();
   });
 
@@ -96,6 +165,7 @@ $(document).ready(function(){
 
   $(document).on("click", "#clear", function() {
     $(".tracker-list").children('li').remove();
+    $("#monitor-container").empty();
   });
 
 });

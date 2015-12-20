@@ -126,6 +126,10 @@ td {
 	font-size: 1.15em;
 	content: "\21B6";
 }
+.em {
+	font-weight: 600;
+	color: $eotebrown;
+}
 .eoteTable {
 	font-size: 1em;
 	width: 100%;
@@ -310,7 +314,7 @@ td {
 	}
   strong {
     font-weight: 600;
-    color: $eoteyellow; 
+    color: $eoteyellow;
   }
 }
 .block {
