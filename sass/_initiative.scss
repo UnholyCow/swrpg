@@ -1,3 +1,22 @@
+button {
+  cursor: pointer;
+  border: none;
+  background: #FFF;
+  color: #222;
+  font-family: $special-font;
+  font-size: 1.15em;
+  padding: 10px;
+  margin: 5px;
+  transition: .115s;
+  &:hover { 
+    box-shadow: inset 0 0 0 3px $eoteyellow;
+    background: none;
+    color: #FFF;
+  }
+  &:focus {
+    outline: none;
+  }
+}
 #char-name {
 	width: 300px; 
 }
@@ -19,7 +38,7 @@
     margin: 5px;
     text-align: center;
     display: inline-block;
-    border-radius: 15px;
+    // border-radius: 15px;
     width: 100px;
     height: 60px;
     border: none;
@@ -28,6 +47,8 @@
     line-height: 30px;
     font-size: 1.15em;
     padding: 0;
+    height: 40px;
+    transition: box-shadow .115s;
     &:first-child {
       margin-left: 0;
     }
@@ -75,38 +96,13 @@
     }
   }
 }
-.ally {
-  background-color: $eotedarkblue;
-}
-.char-block {
+.character {
 	height: 100px;
-	text-align: center;
-	margin: 3px 0 0 0; 
-	// h3 {
-	// 	text-align: center
-	// }
-}
-.enemy {
-  background-color: $eotered;
-}
-.field {
-  display: inline-block;
-  margin: 0;
-  padding: 0 10px;
-  height: 40px;
-  width: 70px;
-  line-height: 40px;
-  font-size: 40px;
-  text-align: center;
-  &:first-child {
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    text-align: right;
-    width: 85px;
-  }
-  &:last-child {
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+	margin: 3px 0 0 0;
+  padding: 5px 10px;
+  transition: .115s;
+  &.selected-char {
+    box-shadow: inset 3px 0 0 0 $eoteyellow;
   }
 }
 .finished {
@@ -127,25 +123,40 @@
 	float: right;
 	margin: 10px 0 0 0; 
 }
-.player {
-  background-color: $eotegreen;
-}
 .remove {
-  color: $eoteyellow;
-  cursor: pointer;
-  transition: color .3s, background-color .5s;
+  display: inline-block;
+  float: right;
+  text-align: center;
+  width: 40px;
+  color: lighten($eotered, 20%);
+  transition: .3s;
   &:hover {
+    background-color: lighten($eotered, 20%);
     color: #FFF;
-    background-color: $eotered;
   }
 }
 .slot {
+  height: 40px;
+  line-height: 40px;
+  margin: 15px 0;
+  font-size: 1.25em;
+  background-color: $eoteslate;
+  transition: box-shadow .115s;
+  .large {
+    color: $eoteyellow;
+    margin: 0 5px 0 0;
+  }
+}
+.slot-field {
   display: inline-block;
-  width: 480px;
-  margin: 6px;
-  border-radius: 15px;
-  transition: box-shadow .5s;
-  background-color: $eoteslate; 
+  text-align: center;
+  height: 40px;
+  min-width: 70px;
+  font-size: 1.5em;
+  margin: 0 10px 0 0;
+  span {
+    color: $eoteyellow;
+  }
 }
 .tracker {
   width: 46%;
@@ -155,28 +166,27 @@
   display: inline-block;
   position: relative;
   margin: 10px 0 0 0;  
-  button {
-    cursor: pointer;
-    border: none;
-    background: #FFF;
-    color: #222;
-    font-family: $special-font;
-    font-size: 1.15em;
-    padding: 10px;
-    margin: 5px;
-    transition: background .5s, color .3s, box-shadow .2s;
-    &:hover { 
-      box-shadow: inset 0 0 0 3px $eoteyellow;
-      background: none;
-      color: #FFF;
-    }
-    &:focus {
-      outline: none;
-    }
-  }
   .round-counter {
     position: absolute;
     top: 20px;
     right: 10px;
+  }
+}
+.type {
+  display: inline-block;
+  text-align: right;
+  height: 40px;
+  width: 70px;
+  font-size: 1.5em;
+  padding: 0 5px 0 0;
+  margin: 0 10px 0 0;
+  &.ally {
+    background-color: $eotedarkblue;
+  }
+  &.enemy {
+    background-color: $eotered;
+  }
+  &.player {
+    background-color: $eotegreen;
   }
 }

@@ -53,6 +53,9 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+.icon-cross:before {
+  content: "\e90b";
+}
 .icon-tick:before {
 	content: "\e900";
 }
