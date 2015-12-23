@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Star Wars Roleplaying</title>
+	<title>Combat Tracker</title>
 	<link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<link rel="icon" href="img/icon.png">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -29,7 +29,7 @@
 					<li><a href="groups/monarch/nysro.html">Nysro</a></li>
 					<li><a href="groups/monarch/rusku.html">Rusku</a></li>
 					<li><a href="groups/monarch/trooper.html">TK</a></li>
-					<li><a href="groups/monarch/themonarch.html">Grey Nexu</a></li>
+					<li><a href="groups/monarch/themonarch.html">Elleffay</a></li>
 				</ul>
 			</li>
 			<li><a href="rules.html" class="toggle-rules-nav active">Rules</a>
@@ -51,11 +51,11 @@
 			<p>Enter the results of the initiative roll and select the slot type to add. Entering a name and wound or strain thresholds will create a monitor entry.</p>
 			<form action="" method="post">
 				<input id="char-name" type="text" name="name" value="" placeholder="Name">
-				<input id="success-roll" type="text" name="success" value="" placeholder="Success">
-				<input id="advantage-roll" type="text" name="advantage" value="" placeholder="Advantage">
-				<input id="triumph-roll" type="text" name="advantage" value="" placeholder="Triumph">
 				<input id="wound-thr" type="text" name="wounds" value="" placeholder="Wounds">
 				<input id="strain-thr" type="text" name="strain" value="" placeholder="Strain">
+        <input id="success-roll" type="text" name="success" value="" placeholder="Success">
+				<input id="advantage-roll" type="text" name="advantage" value="" placeholder="Advantage">
+				<input id="triumph-roll" type="text" name="advantage" value="" placeholder="Triumph">
 			</form>
 			<button type="button" name="pc" class="add-pc">+PC</button>
 			<button type="button" name="ally" class="add-ally">+Ally</button>
@@ -68,19 +68,41 @@
 				<button type="button" name="begin-combat" id="begin-combat">Begin Combat</button>
 				<button type="button" name="end-turn" id="end-turn">End Turn</button>
 				<button type="button" name="end-round" id="end-round">End Round</button>
-				<button type="button" name="end-combat" id="end-combat">End Combat</button>
-				<button type="button" name="clear-all" id="clear">Clear All</button>
+				<button type="button" name="init-clear" id="init-clear">Clear</button>
 			</div>
 			<div class="round-counter"><h2>Round <span id="round-count" class="aurebesh">1</span></h2></div>
 			<div>
 				<ul id="sortable" class="tracker-list">
-				</ul>
+        </ul>
 			</div>
 		</div>
 		<div class="monitor">
 			<h2>Character Monitor</h2>
-			<p>Track wounds, strain, bonuses, and penalties to specific characters. Click a value to modify it or click the header to reset the current value.</p>
+			<p>Track wounds, strain, bonuses, and penalties to specific characters.</p>
+      <div class="section">
+				<button type="button" name="char-wounds" id="char-wound">Wounds</button>
+				<button type="button" name="char-strain" id="char-strain">Strain</button>
+				<button type="button" name="char-bo" id="char-bo">Boost</button>
+				<button type="button" name="char-se" id="char-se">Setback</button>
+				<button type="button" name="char-crit" id="char-crit">Critical</button>
+        <button type="button" name="char-clear" id="char-clear">Clear</button>
+			</div>
 			<div id="monitor-container">
+        <div class="character selected-char">
+          <h3>Sample Dudebro</h3>
+          <div class="stat-small-wide">
+            <div class="tag-small">Wounds / Threshold</div>
+            <div class="value-small">0 / 0</div>
+          </div>
+          <div class="stat-small-wide">
+            <div class="tag-small">Strain / Threshold</div>
+            <div class="value-small">0 / 0</div>
+          </div>
+          
+        </div>
+        <div class="character">
+          <h3>Example Dudette</h3>
+        </div>
 			</div>
 		</div>
 		<div class="section footer">
