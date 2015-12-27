@@ -1,13 +1,12 @@
 @import "compass/css3";
 
 @import url(http://fonts.googleapis.com/css?family=News+Cycle:400,700);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
 
 html,
 body {
-  width: 100%;
-  height: 100%;
   font: 700 1em "News Cycle", sans-serif;
-  letter-spacing:.15em;
+  letter-spacing: .15vw;
 	color: #DFC663;
 	background: #000;
 	overflow: hidden;
@@ -15,132 +14,130 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.starwars { 
-  
-  section {
-	position: absolute;
-	top: 45%;
-	left: 50%;
-	z-index: 1;
-  } 
+#starfield-cover {
+  background: #000;
+  animation: bkg 84s linear 9s;
+}
 
-  .start {
-	font-size: 240%;
-	$start-width: 14em;
-	width: $start-width;
-	margin: -4em 0 0 (- $start-width / 2);
+#intro {
+  color: rgb(75, 213, 238);
+  text-align: left;
+  font-size: 3.5vw;
+  letter-spacing: .115em;
+  font-weight: 400;
+  top: 35%;
+  left: 23%;
+  opacity: 0;
+  animation: intro 6s ease-out 1s;
+}
+
+#logo {
+  margin: -3% 0 0 0;
+  width: 100%;
+  opacity: 0;
+  animation: logo 7s linear 9s;
+}
+
+#start {
+  font-size: 240%;
 	text-align: center;
 	cursor: pointer;
-	
-	span {
-	  color: #DFC663; 
-	}
-  }    
+  margin-top: 18%;
+}
+
+.plate {
+  width: 100%;
+  height: auto;
+  bottom: 0px;
+  top: 0px;
+  left: 0;
+  position: absolute;
+}
+
+#titles {
+  text-align: center;
+  transform-origin: 50% 100%;
+	@include transform(perspective(700px) rotateX(35deg));
+  @include backface-visibility(hidden);
+  position: absolute;
+  opacity: 0;
+  margin-top: 0;
+  animation: titles 80s linear 13s;
   
-  .intro {
-	  $intro-width: 80%;
-		width: $intro-width;
-	  margin: (- $intro-width * 0.035) 0 0 (- $intro-width * 0.25);
-	  font-size: 340%;
-	  font-weight: 400;
-		color: rgb(75, 213, 238);
-	  opacity: 0;
-	  animation: intro 6s ease-out 1s;
+  #crawl_episode {
+    font-size: 7vw;
   }
   
-  .logo {
-	opacity: 0;
-	animation: logo 9s ease-out 9s; 
-	
-	svg {
-	  width: inherit;
-	  fill: #DFC663;
-	}
+  .crawl-text {
+    text-align: justify;
+    font-size: 7vw;
   }
   
-  .titles {
-	$titles-width: 95%;
-	width: $titles-width;
-	margin: 0 0 0 (- $titles-width / 2);
-	top: auto;
-	bottom: 0;
-	height: 50em;
-	font-size: 450%;
-	text-align: justify;
-	overflow: hidden;
-	transform-origin: 50% 100%;
-	@include transform(perspective(800px) rotateX(40deg));
-  
-	> div {
-		position: absolute;
-		top: 100%;
-		animation: titles 70s linear 13s;
-	
-	  > p {
-		  margin: 1.35em 0 1.85em 0;
-		  line-height: 1.50em;
-		
-		@include backface-visibility(hidden);
-	  }
-	}
+  #crawl_title {
+    font: 200 8.5vw "Oswald", sans-serif;
+    text-transform: uppercase;
   }
+  
 }
 
 @keyframes intro {
   0% {
-	opacity: 0;
-  }  
-	20% { 
-	opacity: 1; 
+    opacity: 0;
   }
-	90% { 
-	opacity: 1; 
+  20% {
+    opacity: 1;
   }
-	100% { 
-	opacity: 0;
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
 @keyframes logo {
 	0% { 
-	$logo-width: 24em;
-	width: $logo-width;
-	margin: (- $logo-width / 2) 0 0 (- $logo-width / 2);
-	
-	@include transform(scale(2.75)); 
-	opacity: 1; 
+    @include transform(scale(1.75)); 
+    opacity: 1;
   }
 	50% { 
-	opacity: 1; 
-	
-	$logo-width: 25em;
-	width: $logo-width;
-	margin: (- $logo-width / 2) 0 0 (- $logo-width / 2);
+    opacity: 1; 
   }
 	100% { 
-	@include transform(scale(.1)); 
-	opacity: 0;
-	
-	$logo-width: 25em;
-	width: $logo-width;
-	margin: (- $logo-width / 2) 0 0 (- $logo-width / 2);
+    @include transform(scale(.01)); 
+    opacity: 0;
   }
 }
 
 @keyframes titles {
 	0% { 
-	top: 100%; 
-	opacity: 1;
+    top: 100%;
+    opacity: 1;
   }
   95% {
-	opacity: 1;
+    opacity: 1;
   }
 	100% { 
-	top: 10%; 
-	opacity: 0;
+    top: -600%;
+    opacity: 0;
   }
 }
 
-.crawl_episode, .crawl_title {
-  text-align: center;
+@keyframes bkg {
+  0% {
+    opacity: 0;
+    background: #000 url(../img/bg-fullscreen.png) repeat;
+  }
+  1% {
+    opacity: 1;
+    background: #000 url(../img/bg-fullscreen.png) repeat;
+  }
+  99% {
+    opacity: 1;
+    background: #000 url(../img/bg-fullscreen.png) repeat;
+  }
+  100% {
+    opacity: 0;
+    background: #000;
+  }
 }
