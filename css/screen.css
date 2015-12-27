@@ -136,12 +136,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   content: "\e90b";
 }
 
-/* line 59, ../sass/_fonts.scss */
+/* line 60, ../sass/_fonts.scss */
+.icon-minus:before {
+  content: "\e90d";
+}
+
+/* line 64, ../sass/_fonts.scss */
+.icon-plus:before {
+  content: "\e90c";
+}
+
+/* line 68, ../sass/_fonts.scss */
 .icon-tick:before {
   content: "\e900";
 }
 
-/* line 62, ../sass/_fonts.scss */
+/* line 71, ../sass/_fonts.scss */
 .icon-tick2:before {
   content: "\e901";
 }
@@ -1510,7 +1520,7 @@ button:focus {
   font-size: 1.2em;
   padding: 10px;
   margin: 5px;
-  transition: background .5s, color .3s, box-shadow .2s;
+  transition: .115s;
   cursor: pointer;
 }
 /* line 76, ../sass/_initiative.scss */
@@ -1536,30 +1546,67 @@ button:focus {
 }
 
 /* line 99, ../sass/_initiative.scss */
+.char-field {
+  display: inline-block;
+  font-size: 2.5em;
+  margin: 0 0 0 15px;
+  padding: 15px 0 0 0;
+  vertical-align: top;
+}
+
+/* line 106, ../sass/_initiative.scss */
+.char-strain-dmg,
+.char-wound-dmg {
+  display: inline-block;
+  font-size: .5em;
+  padding: 7px 0 0 5px;
+  float: left;
+}
+/* line 112, ../sass/_initiative.scss */
+.char-strain-dmg:hover,
+.char-wound-dmg:hover {
+  color: #761213;
+}
+
+/* line 116, ../sass/_initiative.scss */
+.char-strain-heal,
+.char-wound-heal {
+  display: inline-block;
+  font-size: .5em;
+  padding: 7px 5px 0 0;
+  float: right;
+}
+/* line 122, ../sass/_initiative.scss */
+.char-strain-heal:hover,
+.char-wound-heal:hover {
+  color: #51634B;
+}
+
+/* line 126, ../sass/_initiative.scss */
 .character {
   height: 100px;
   margin: 3px 0 0 0;
   padding: 5px 10px;
   transition: .115s;
 }
-/* line 104, ../sass/_initiative.scss */
+/* line 131, ../sass/_initiative.scss */
 .character.selected-char {
   box-shadow: inset 3px 0 0 0 #DFC663;
 }
 
-/* line 108, ../sass/_initiative.scss */
+/* line 135, ../sass/_initiative.scss */
 .finished {
   box-shadow: 0 0 5px 5px #761213;
 }
 
-/* line 111, ../sass/_initiative.scss */
+/* line 138, ../sass/_initiative.scss */
 .init {
   color: #DFC663;
   font-size: 30px;
   padding-bottom: 5px;
 }
 
-/* line 116, ../sass/_initiative.scss */
+/* line 143, ../sass/_initiative.scss */
 .monitor {
   display: inline-block;
   background-color: #222;
@@ -1571,8 +1618,8 @@ button:focus {
   margin: 10px 0 0 0;
 }
 
-/* line 126, ../sass/_initiative.scss */
-.remove {
+/* line 153, ../sass/_initiative.scss */
+.remove, .remove-char {
   display: inline-block;
   float: right;
   text-align: center;
@@ -1580,13 +1627,32 @@ button:focus {
   color: #cf2021;
   transition: .3s;
 }
-/* line 133, ../sass/_initiative.scss */
-.remove:hover {
+/* line 160, ../sass/_initiative.scss */
+.remove:hover, .remove-char:hover {
   background-color: #cf2021;
   color: #FFF;
 }
 
-/* line 138, ../sass/_initiative.scss */
+/* line 165, ../sass/_initiative.scss */
+.remove-char {
+  border-radius: 50%;
+}
+
+/* line 169, ../sass/_initiative.scss */
+.remove-dice {
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+  font-size: .8em;
+  padding: 33px 0 0 0;
+  transition: .115s;
+}
+/* line 176, ../sass/_initiative.scss */
+.remove-dice:hover {
+  color: #cf2021;
+}
+
+/* line 180, ../sass/_initiative.scss */
 .slot {
   height: 40px;
   line-height: 40px;
@@ -1595,13 +1661,13 @@ button:focus {
   background-color: #495558;
   transition: box-shadow .115s;
 }
-/* line 145, ../sass/_initiative.scss */
+/* line 187, ../sass/_initiative.scss */
 .slot .large {
   color: #DFC663;
   margin: 0 5px 0 0;
 }
 
-/* line 150, ../sass/_initiative.scss */
+/* line 192, ../sass/_initiative.scss */
 .slot-field {
   display: inline-block;
   text-align: center;
@@ -1610,12 +1676,12 @@ button:focus {
   font-size: 1.5em;
   margin: 0 10px 0 0;
 }
-/* line 157, ../sass/_initiative.scss */
+/* line 199, ../sass/_initiative.scss */
 .slot-field span {
   color: #DFC663;
 }
 
-/* line 161, ../sass/_initiative.scss */
+/* line 203, ../sass/_initiative.scss */
 .tracker {
   width: 46%;
   border-radius: 15px;
@@ -1625,14 +1691,14 @@ button:focus {
   position: relative;
   margin: 10px 0 0 0;
 }
-/* line 169, ../sass/_initiative.scss */
+/* line 211, ../sass/_initiative.scss */
 .tracker .round-counter {
   position: absolute;
   top: 20px;
   right: 10px;
 }
 
-/* line 175, ../sass/_initiative.scss */
+/* line 217, ../sass/_initiative.scss */
 .type {
   display: inline-block;
   text-align: right;
@@ -1642,15 +1708,15 @@ button:focus {
   padding: 0 5px 0 0;
   margin: 0 10px 0 0;
 }
-/* line 183, ../sass/_initiative.scss */
+/* line 225, ../sass/_initiative.scss */
 .type.ally {
   background-color: #284666;
 }
-/* line 186, ../sass/_initiative.scss */
+/* line 228, ../sass/_initiative.scss */
 .type.enemy {
   background-color: #761213;
 }
-/* line 189, ../sass/_initiative.scss */
+/* line 231, ../sass/_initiative.scss */
 .type.player {
   background-color: #51634B;
 }
