@@ -20,10 +20,10 @@ StarWars = (function () {
     this.audio = this.el.find('audio').get(0);
     
     // Start the animation
-    this.start = this.el.find('.start');
+    this.start = this.el.find('#start');
     
     // The animation wrapper
-    this.animation = this.el.find('.animation');
+    this.animation = this.el.find('#animation');
     
     // Remove animation and shows the start screen
     this.reset();
@@ -56,5 +56,5 @@ StarWars = (function () {
 })();
 
 new StarWars({
-  el: '.starwars'
+  el: '#starwars'
 });
