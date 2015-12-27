@@ -63,10 +63,10 @@ body {
   text-align: justify;
   overflow: hidden;
   transform-origin: 50% 100%;
-  -moz-transform: perspective(800px) rotateX(25deg);
-  -ms-transform: perspective(800px) rotateX(25deg);
-  -webkit-transform: perspective(800px) rotateX(25deg);
-  transform: perspective(800px) rotateX(25deg);
+  -moz-transform: perspective(800px) rotateX(40deg);
+  -ms-transform: perspective(800px) rotateX(40deg);
+  -webkit-transform: perspective(800px) rotateX(40deg);
+  transform: perspective(800px) rotateX(40deg);
 }
 /* line 74, ../sass/crawl.scss */
 .starwars .titles > div {

@@ -67,7 +67,7 @@ button {
     font-size: 1.2em;
     padding: 10px;
     margin: 5px;
-    transition: background .5s, color .3s, box-shadow .2s;
+    transition: .115s;
     cursor: pointer;
   }
   .add-ally,
@@ -94,6 +94,33 @@ button {
       background-color: $eotered;
       color: #FFF;
     }
+  }
+}
+.char-field {
+  display: inline-block;
+  font-size: 2.5em;
+  margin: 0 0 0 15px;
+  padding: 15px 0 0 0;
+  vertical-align: top;
+}
+.char-strain-dmg,
+.char-wound-dmg {
+  display: inline-block;
+  font-size: .5em;
+  padding: 7px 0 0 5px;
+  float: left;
+  &:hover {
+    color: $eotered;
+  }
+}
+.char-strain-heal,
+.char-wound-heal {
+  display: inline-block;
+  font-size: .5em;
+  padding: 7px 5px 0 0;
+  float: right;
+  &:hover {
+    color: $eotegreen;
   }
 }
 .character {
@@ -133,6 +160,21 @@ button {
   &:hover {
     background-color: lighten($eotered, 20%);
     color: #FFF;
+  }
+}
+.remove-char {
+  @extend .remove;
+  border-radius: 50%;
+}
+.remove-dice {
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+  font-size: .8em;
+  padding: 33px 0 0 0;
+  transition: .115s;
+  &:hover {
+    color: lighten($eotered, 20%);
   }
 }
 .slot {

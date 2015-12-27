@@ -69,7 +69,7 @@ body {
 	text-align: justify;
 	overflow: hidden;
 	transform-origin: 50% 100%;
-	@include transform(perspective(800px) rotateX(25deg));
+	@include transform(perspective(800px) rotateX(40deg));
   
 	> div {
 		position: absolute;
