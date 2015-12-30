@@ -106,7 +106,8 @@
 }
 .li:before {
 	content: '\007A';
-	color: #FFF; 
+	color: #FFF;
+  -webkit-text-stroke: 1px #000;
 }
 .da:before {
 	content: '\007A';
