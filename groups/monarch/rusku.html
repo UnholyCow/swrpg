@@ -20,7 +20,7 @@
 	<nav>
 		<ul>
 			<li><a href="../../index.html">Home</a></li>
-			<li><a href="../../groups.html" class="toggle-groups-nav active">Players</a>
+			<li><a href="overview.html" class="toggle-groups-nav active">Players</a>
 				<ul id="groups-nav">
 					<li><a href="francis.html">FR4NC15</a></li>
 					<li><a href="hayynq.html">Hayynq</a></li>
@@ -65,7 +65,7 @@
 						<span>Specializations</span>
 					</div>
 					<div class="pillRight">
-						<span>Slicer, Politico</span>
+						<span>Slicer, Politico, Recruit, Force Sensitive Exile</span>
 					</div>
 				</div>
 				<div class="pill">
@@ -81,7 +81,7 @@
 						<span>Spent/Total XP</span>
 					</div>
 					<div class="pillRight">
-						<span>315/350</span>
+						<span>400/400</span>
 					</div>
 				</div>
 				<div class="pill">
@@ -89,7 +89,7 @@
 						<span>Available XP</span>
 					</div>
 					<div class="pillRight">
-						<span>35</span>
+						<span>0</span>
 					</div>
 				</div>
 			</div>
@@ -178,6 +178,14 @@
 						<span>1</span>
 					</div>
 				</div>
+        <div class="stat">
+          <div class="tagGreen">
+            <span>Force</span>
+          </div>
+          <div class="value">
+            <span>1</span>
+          </div>
+        </div>
 			</div>
 			<div class="section">
 				<h2>Skills</h2>
@@ -201,7 +209,7 @@
 					</tr>
 					<tr>
 						<td>Athletics (Br)</td>
-						<td></td>
+						<td><div class="icon icon-tick"></div></td>
 						<td>0</td>
 						<td>
 							<span class="eote ab2"></span>
@@ -214,6 +222,7 @@
 						<td>1</td>
 						<td>
 							<span class="eote pr2"></span>
+              <span class="eote fo2"></span>
 						</td>
 					</tr>
 					<tr>
@@ -223,6 +232,7 @@
 						<td>
 							<span class="eote ab2"></span>
 							<span class="eote pr2"></span>
+              <span class="eote fo2"></span>
 						</td>
 					</tr>
 					<tr>
@@ -263,11 +273,12 @@
 							<span class="eote ab2"></span>
 							<span class="eote pr2"></span>
 							<span class="eote pr2"></span>
+              <span class="eote fo2"></span>
 						</td>
 					</tr>
 					<tr>
 						<td>Discipline (Will)</td>
-						<td></td>
+						<td><div class="icon icon-tick"></div></td>
 						<td>0</td>
 						<td>
 							<span class="eote ab2"></span>
@@ -277,10 +288,12 @@
 					<tr>
 						<td>Leadership (Pr)</td>
 						<td><div class="icon icon-tick"></div></td>
-						<td>2</td>
+						<td>3</td>
 						<td>
+              <span class="eote ab2"></span>
 							<span class="eote ab2"></span>
 							<span class="eote pr2"></span>
+              <span class="eote fo2"></span>
 						</td>
 					</tr>
 					<tr>
@@ -312,6 +325,7 @@
 						<td>
 							<span class="eote ab2"></span>
 							<span class="eote pr2"></span>
+              <span class="eote fo2"></span>
 						</td>
 					</tr>
 					<tr>
@@ -382,7 +396,7 @@
 					</tr>
 					<tr>
 						<td>Survival (Cun)</td>
-						<td></td>
+						<td><div class="icon icon-tick"></div></td>
 						<td>0</td>
 						<td>
 							<span class="eote ab2"></span>
@@ -392,7 +406,7 @@
 					</tr>
 					<tr>
 						<td>Vigilance (Will)</td>
-						<td></td>
+						<td><div class="icon icon-tick"></div></td>
 						<td>0</td>
 						<td>
 							<span class="eote ab2"></span>
@@ -726,7 +740,49 @@
 						<td>2</td>
 						<td>Passive</td>
 						<td>Slicer x2</td>
-						<td>When defending computer systems, add <span class="eote se2"></span> <span class="eote se2"></span> to opponents' checks.</td>
+						<td>When defending computer systems, <span class="eote di2"></span><span class="eote di2"></span><span class="upgrade"></span><span class="eote ch2"></span><span class="eote ch2"></span> opponents' checks.</td>
+					</tr>
+          <tr>
+						<td class="passive">Defensive Slicing (Improved)</td>
+						<td>NA</td>
+						<td>Passive</td>
+						<td>Slicer</td>
+						<td>When defending computer systems, upgrade the opponent's check per rank. This replaces the usual benefits.</td>
+					</tr>
+          <tr>
+						<td class="power">Influence</td>
+						<td>NA</td>
+						<td>Action</td>
+						<td>Force</td>
+						<td>The character may attempt to guide, shape, and even twist the thoughts and feelings of others.<br><span>Special Rule ( <span class="eote li"></span> / <span class="eote da"></span> use):</span> When guiding and shaping thoughts, <span class="eote da"></span> can only be used for negative emotions and <span class="eote li"></span> can only be used for positive emotions. Neutral emotions such as confusion can be generated with either.<br>The character may spend <span class="eote li"></span> to stress the mind of one living target they are engaged with, inflicting 2 strain.</td>
+					</tr>
+          <tr>
+						<td class="power">Influence (Control: Emotion/Belief)</td>
+						<td>NA</td>
+						<td>NA</td>
+						<td>Force</td>
+						<td>Make an opposed <span>Discipline vs Discipline check</span> combined with an <span>Influence Power check</span>. If the user spends <span class="eote li"></span> and succeeds on the check, they can force the target to adopt an emotional state or believe something untrue, lasting for 1 round or 5 minutes.</td>
+					</tr>
+          <tr>
+						<td class="power">Influence (Control: Skills)</td>
+						<td>NA</td>
+						<td>NA</td>
+						<td>Force</td>
+						<td>When making a Charm, Coercion, Deception, Leadership, or Negotiation check, the Force user may roll an <span>Influence Power check</span> as part of their dice pool. They may spend <span class="eote li"></span> to gain <span class="eote su"></span> or <span class="eote ad"></span> (user's choice) on the check.</td>
+					</tr>
+          <tr>
+						<td class="power">Influence (Range)</td>
+						<td>1</td>
+						<td>NA</td>
+						<td>Force</td>
+						<td>Spend <span class="eote li"></span> to increase power range a number of range bands equal to rank.</td>
+					</tr>
+          <tr>
+						<td class="power">Influence (Strength)</td>
+						<td>1</td>
+						<td>NA</td>
+						<td>Force</td>
+						<td>When stressing the mind of a target, the character inflicts 2 strain.</td>
 					</tr>
 					<tr>
 						<td>Infravision</td>
