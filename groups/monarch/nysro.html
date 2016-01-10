@@ -73,7 +73,7 @@
 					<span>Encumbrance</span>
 				</div>
 				<div class="pillRight">
-					<span>8</span>
+					<span>16</span>
 				</div>
 			</div>
 			<div class="pill">
@@ -81,7 +81,7 @@
 					<span>Spent/Total XP</span>
 				</div>
 				<div class="pillRight">
-					<span>335/390</span>
+					<span>420/425</span>
 				</div>
 			</div>
 			<div class="pill">
@@ -89,7 +89,7 @@
 					<span>Available XP</span>
 				</div>
 				<div class="pillRight">
-					<span>55</span>
+					<span>5</span>
 				</div>
 			</div>
 		</div>
@@ -220,10 +220,10 @@
 				<tr>
 					<td>Coercion (Will)</td>
 					<td></td>
-					<td>0</td>
+					<td>1</td>
 					<td>
 						<span class="eote ab2"></span>
-						<span class="eote ab2"></span>
+						<span class="eote pr2"></span>
 					</td>
 				</tr>
 				<tr>
@@ -284,8 +284,9 @@
 				<tr>
 					<td>Mechanics (Int)</td>
 					<td><div class="icon icon-tick"></div></td>
-					<td>3</td>
+					<td>4</td>
 					<td>
+            <span class="eote ab2"></span>
 						<span class="eote ab2"></span>
 						<span class="eote pr2"></span>
 						<span class="eote pr2"></span>
@@ -321,10 +322,10 @@
 				<tr>
 					<td>Piloting - Planetary (Ag)</td>
 					<td><div class="icon icon-tick"></div></td>
-					<td>0</td>
+					<td>1</td>
 					<td>
 						<span class="eote ab2"></span>
-						<span class="eote ab2"></span>
+						<span class="eote pr2"></span>
 					</td>
 				</tr>
 				<tr>
@@ -339,21 +340,21 @@
 				<tr>
 					<td>Resilience (Br)</td>
 					<td></td>
-					<td>0</td>
+					<td>1</td>
 					<td>
 						<span class="eote ab2"></span>
 						<span class="eote ab2"></span>
 						<span class="eote ab2"></span>
-						<span class="eote ab2"></span>
+						<span class="eote pr2"></span>
 					</td>
 				</tr>
 				<tr>
 					<td>Skulduggery (Cun)</td>
 					<td></td>
-					<td>0</td>
+					<td>1</td>
 					<td>
 						<span class="eote ab2"></span>
-						<span class="eote ab2"></span>
+						<span class="eote pr2"></span>
 					</td>
 				</tr>
 				<tr>
@@ -423,9 +424,9 @@
 				<tr>
 					<td>Melee (Br)</td>
 					<td></td>
-					<td>3</td>
+					<td>4</td>
 					<td>
-						<span class="eote ab2"></span>
+						<span class="eote pr2"></span>
 						<span class="eote pr2"></span>
 						<span class="eote pr2"></span>
 						<span class="eote pr2"></span>
@@ -540,7 +541,7 @@
 					<td>9</td>
 					<td>Engaged</td>
 					<td><span class="eote ad"></span></td>
-					<td><span class="eote ab2"></span>
+					<td><span class="eote pr2"></span>
 					<span class="eote pr2"></span>
 					<span class="eote pr2"></span>
 					<span class="eote pr2"></span></td>
@@ -559,14 +560,13 @@
 					<td>Stun Setting</td>
 				</tr>
 				<tr>
-					<td>Combat Knife</td>
+					<td>Vibroknife</td>
 					<td>Melee</td>
 					<td>6</td>
 					<td>Engaged</td>
 					<td><span class="eote ad"></span>
-					<span class="eote ad"></span>
 					<span class="eote ad"></span></td>
-					<td><span class="eote ab2"></span>
+					<td><span class="eote pr2"></span>
 					<span class="eote pr2"></span>
 					<span class="eote pr2"></span>
 					<span class="eote pr2"></span></td>
@@ -639,8 +639,8 @@
 					<td>7</td>
 					<td>1</td>
 					<td>Engaged</td>
-					<td>3</td>
-					<td><span>Attachments: </span>Mono-molecular Edge (Crit -1), Jury Rigged: +1 damage.</td>
+					<td>2/3</td>
+					<td><span>Attachments: </span>Mono-molecular Edge (Crit-1 1HP), Jury Rigged (Dam+1).</td>
 				</tr>
 				<tr>
 					<td>Combat Knife</td>
@@ -757,12 +757,20 @@
 					<td>Credstick</td>
 				</tr>
 				<tr>
-					<td>Backpack</td>
+					<td>Modular Backpack w/ 3 Pouches</td>
 					<td>1</td>
 					<td>0</td>
 					<td><span class="icon icon-tick"></span></td>
 					<td><div class="icon icon-tick"></div></td>
-					<td>+4 encumbrance threshold.</td>
+					<td>+6 encumbrance threshold.</td>
+				</tr>
+        <tr>
+					<td>Utility Belt</td>
+					<td>1</td>
+					<td>0</td>
+					<td><span class="icon icon-tick"></span></td>
+					<td><div class="icon icon-tick"></div></td>
+					<td>+1 encumbrance threshold.</td>
 				</tr>
 			</table>
 		</div>
@@ -798,6 +806,13 @@
 					<td>When making a Melee or Brawl check, suffer a number of strain to upgrade the attack an equal number of times. The strain suffered may not exceed ranks.</td>
 				</tr>
         <tr>
+					<td class="passive">Grit</td>
+					<td>1</td>
+					<td>Passive</td>
+					<td>Outlaw Tech</td>
+					<td>Gain +1 strain threshold.</td>
+				</tr>
+        <tr>
 					<td class="active">Heroic Fortitude</td>
 					<td>NA</td>
 					<td>Incidental</td>
@@ -827,9 +842,9 @@
 				</tr>
 				<tr>
 					<td class="passive">Tinkerer</td>
-					<td>1</td>
+					<td>2</td>
 					<td>Passive</td>
-					<td>Outlaw Tech</td>
+					<td>Outlaw Tech x2</td>
 					<td>May add 1 additional hard point to a number of items equal to ranks in Tinkerer. Each item may only be modified once.</td>
 				</tr>
 				<tr>

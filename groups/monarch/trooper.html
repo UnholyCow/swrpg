@@ -73,7 +73,7 @@
 						<span>Encumbrance</span>
 					</div>
 					<div class="pillRight">
-						<span>7</span>
+						<span>8</span>
 					</div>
 				</div>
 				<div class="pill">
@@ -81,7 +81,7 @@
 						<span>Spent/Total XP</span>
 					</div>
 					<div class="pillRight">
-						<span>410/410</span>
+						<span>445/445</span>
 					</div>
 				</div>
 				<div class="pill">
@@ -89,7 +89,7 @@
 						<span>Available XP</span>
 					</div>
 					<div class="pillRight">
-						<span></span>
+						<span>0</span>
 					</div>
 				</div>
 			</div>
@@ -323,12 +323,12 @@
 					<tr>
 						<td>Piloting - Planetary (Ag)</td>
 						<td><div class="icon icon-tick"></div></td>
-						<td>0</td>
+						<td>1</td>
 						<td>
 							<span class="eote ab2"></span>
 							<span class="eote ab2"></span>
 							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
+							<span class="eote pr2"></span>
 						</td>
 					</tr>
 					<tr>
@@ -438,12 +438,12 @@
 					<tr>
 						<td>Ranged (Light) (Ag)</td>
 						<td><div class="icon icon-tick"></div></td>
-						<td>0</td>
+						<td>1</td>
 						<td>
 							<span class="eote ab2"></span>
 							<span class="eote ab2"></span>
 							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
+							<span class="eote pr2"></span>
 						</td>
 					</tr>
 					<tr>
@@ -562,7 +562,8 @@
 						<span class="eote ab2"></span>
 						<span class="eote pr2"></span>
 						<span class="eote pr2"></span>
-						<span class="eote bo2"></span></td>
+						<span class="eote bo2"></span>
+            <span class="eote ad"></span></td>
 						<td>Accurate 1 (Add <span class="eote bo2"></span> to attacks), Stun Setting</td>
 					</tr>
 					<tr>
@@ -618,8 +619,8 @@
 						<td>10</td>
 						<td>4</td>
 						<td>Long</td>
-						<td>4</td>
-						<td><span>Attachments: </span>Augmented Spin Barrel (Add <span class="eote se2"></span> to maintenance checks. Dam+1.) (Accurate 1 Mod) Dam+1. <span>Qualities: </span>Accurate 1, Stun Setting</td>
+						<td>0/4</td>
+						<td><span>Attachments: </span>Augmented Spin Barrel (Add <span class="eote se2"></span> to maintenance checks. Dam+1 [Mods: Accurate 1] 2HP), "Bantha's Eye" Laser Sight (Add <span class="eote ad"></span> to successful checks. 1HP), Weapon Sling (-1 Cumbersome. [Mods: Quick Draw] 1HP) <span>Qualities: </span>Accurate 1, Stun Setting</td>
 					</tr>
 					<tr>
 						<td>Blaster Pistol</td>
@@ -704,14 +705,6 @@
 						<td>First use restores 5 wounds. -1 wound recovery per use until the target gets 24 hours of rest.</td>
 					</tr>
 					<tr>
-						<td>Emergency Medpack</td>
-						<td>1</td>
-						<td>1</td>
-						<td><div class="icon icon-tick"></div></td>
-						<td></td>
-						<td>Make Medicine checks without penalty.</td>
-					</tr>
-					<tr>
 						<td>Binders</td>
 						<td>1</td>
 						<td>0</td>
@@ -721,13 +714,29 @@
 							 <span class="eote di2"></span>) Athletics or Coordination check</span> to escape.</td>
 					</tr>
 					<tr>
-						<td>Utility Belt</td>
-						<td>1</td>
-						<td>-</td>
-						<td></td>
-						<td><div class="icon icon-tick"></div></td>
-						<td>+1 encumbrance threshold.</td>
+            <td>ECM-598 Medical Backpack</td>
+            <td>1</td>
+            <td>2</td>
+            <td><span class="icon icon-tick"></span></td>
+            <td><div class="icon icon-tick"></div></td>
+            <td>Make Medicine checks without penalty and include <span class="eote bo2"></span>. Reduce the difficulty of treating Critical Injuries by 1 to a minimum of <span>Easy (<span class="eote di2"></span>)</span>. Includes a collapsible repulsor stretcher with a weight limit of 150kg.</td>
+          </tr>
+          <tr>
+						<td>Military Belt Pouch</td>
+						<td>2</td>
+						<td>0</td>
+						<td><span class="icon icon-tick"></span></td>
+						<td><span class="icon icon-tick"></span></td>
+						<td>Holds up to 2 items of 0 encumbrance. Access these items as an incidental.</td>
 					</tr>
+          <tr>
+            <td>Utility Belt</td>
+            <td>1</td>
+            <td>0</td>
+            <td><span class="icon icon-tick"></span></td>
+            <td><div class="icon icon-tick"></div></td>
+            <td>+1 encumbrance threshold.</td>
+          </tr>
 				</table>
 			</div>
 			<div class="section">
@@ -781,6 +790,13 @@
 						<td>Passive</td>
 						<td>Medic, Pilot</td>
 						<td>Gain +1 strain threshold.</td>
+					</tr>
+          <tr>
+						<td class="active">It's Not That Bad</td>
+						<td>NA</td>
+						<td>Action</td>
+						<td>Medic</td>
+						<td>Once per session when an ally would suffer a Critical Injury, may make a <span>Hard (<span class="eote di2"></span><span class="eote di2"></span><span class="eote di2"></span>) Medicine check</span> to stop the ally from gaining that Injury.</td>
 					</tr>
 					<tr>
 						<td class="passive">Skilled Jockey</td>
