@@ -1,0 +1,476 @@
+{
+  "description": {
+    "charName": "CHARACTER",
+    "playerName": "PLAYER",
+    "gender": "GENDER",
+    "species": {
+      "name": "SPECIES",
+      "ability": {
+        "name": "ABILITY",
+        "effect": "EFFECT"
+      } 
+    }
+  },
+  "xp": {
+    "totalXP": 0,
+    "spendXP": 0
+  },
+  "characteristics": {
+    "brawn": {
+      "name": "Brawn",
+      "abbrev": "(Br)",
+      "value": 1,
+      "boost": 0
+    },
+    "agility": {
+      "name": "Agility",
+      "abbrev": "(Ag)",
+      "value": 1,
+      "boost": 0
+    },
+    "intellect": {
+      "name": "Intellect",
+      "abbrev": "(Int)",
+      "value": 1,
+      "boost": 0
+    },
+    "cunning": {
+      "name": "Cunning",
+      "abbrev": "(Cun)",
+      "value": 1,
+      "boost": 0
+    },
+    "willpower": {
+      "name": "Willpower",
+      "abbrev": "(Will)",
+      "value": 1,
+      "boost": 0
+    },
+    "presence": {
+      "name": "Presence",
+      "abbrev": "(Pr)",
+      "value": 1,
+      "boost": 0
+    },
+    "force": {
+      "name": "Force Rating",
+      "value": 0
+    }
+  },
+  "attributes": {
+    "soak": 0, 
+    "woundThr": 0,
+    "strainThr": 0,
+    "defenseMelee": 0,
+    "defenseRanged": 0
+  },
+  "skills": {
+    "astrogation": {
+      "type:": "general",
+      "name": "Astrogation",
+      "characteristic": "intellect",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "athletics": {
+      "type:": "general",
+      "name": "Athletics",
+      "characteristic": "brawn",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "brawl": {
+      "type:": "combat",
+      "name": "Brawl",
+      "characteristic": "brawn",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "charm": {
+      "type:": "general",
+      "name": "Charm",
+      "characteristic": "presence",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "coercion": {
+      "type:": "general",
+      "name": "Coercion",
+      "characteristic": "willpower",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "computers": {
+      "type:": "general",
+      "name": "Computers",
+      "characteristic": "intellect",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "cool": {
+      "type:": "general",
+      "name": "Cool",
+      "characteristic": "presence",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "coordination": {
+      "type:": "general",
+      "name": "Coordination",
+      "characteristic": "agility",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "coreWorlds": {
+      "type:": "knowledge",
+      "name": "Core Worlds",
+      "characteristic": "intellect",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "deception": {
+      "type:": "general",
+      "name": "Deception",
+      "characteristic": "cunning",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "discipline": {
+      "type:": "general",
+      "name": "Discipline",
+      "characteristic": "willpower",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "education": {
+      "type:": "knowledge",
+      "name": "Education",
+      "characteristic": "intellect",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "gunnery": {
+      "type:": "combat",
+      "name": "Gunnery",
+      "characteristic": "agility",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "leadership": {
+      "type:": "general",
+      "name": "Leadership",
+      "characteristic": "presence",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "lightsaber": {
+      "type:": "combat",
+      "name": "Lightsaber",
+      "characteristic": "brawn",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "lore": {
+      "type:": "knowledge",
+      "name": "Lore",
+      "characteristic": "intellect",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "mechanics": {
+      "type:": "general",
+      "name": "Mechanics",
+      "characteristic": "intellect",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "medicine": {
+      "type:": "general",
+      "name": "Medicine",
+      "characteristic": "intellect",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "melee": {
+      "type:": "combat",
+      "name": "Melee",
+      "characteristic": "brawn",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "negotiation": {
+      "type:": "general",
+      "name": "Negotiation",
+      "characteristic": "presence",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "outerRim": {
+      "type:": "knowledge",
+      "name": "Outer Rim",
+      "characteristic": "intellect",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "perception": {
+      "type:": "general",
+      "name": "Perception",
+      "characteristic": "cunning",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "pilotingPlanetary": {
+      "type:": "general",
+      "name": "Piloting - Planetary",
+      "characteristic": "agility",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "pilotingSpace": {
+      "type:": "general",
+      "name": "Piloting - Space",
+      "characteristic": "agility",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "rangedLight": {
+      "type:": "combat",
+      "name": "Ranged - Light",
+      "characteristic": "agility",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "rangedHeavy": {
+      "type:": "combat",
+      "name": "Ranged - Heavy",
+      "characteristic": "agility",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "resilience": {
+      "type:": "general",
+      "name": "Resilience",
+      "characteristic": "brawn",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "skulduggery": {
+      "type:": "general",
+      "name": "Skulduggery",
+      "characteristic": "cunning",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "stealth": {
+      "type:": "general",
+      "name": "Stealth",
+      "characteristic": "agility",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "streetwise": {
+      "type:": "general",
+      "name": "Streetwise",
+      "characteristic": "cunning",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "survival": {
+      "type:": "general",
+      "name": "Survival",
+      "characteristic": "cunning",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "underworld": {
+      "type:": "knowledge",
+      "name": "Underworld",
+      "characteristic": "intellect",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "vigilance": {
+      "type:": "general",
+      "name": "Vigilance",
+      "characteristic": "willpower",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "warfare": {
+      "type:": "knowledge",
+      "name": "Warfare",
+      "characteristic": "intellect",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    },
+    "xenology": {
+      "type:": "knowledge",
+      "name": "Xenology",
+      "characteristic": "intellect",
+      "rank": 0,
+      "boost": 0,
+      "removeSetback": 0,
+      "force": 0,
+      "isCareer": false
+    }
+  },
+  "specializations": {
+    "spec": "SPEC"
+  },
+  "talents": {
+    "talent": {
+      "name": "TALENT",
+      "rank": 0,
+      "activation": "ACTIVE/PASSIVE/FORCE",
+      "action": "ACTION/MANEUVER/INCIDENTAL",
+      "acquisition": "SPEC",
+      "description": "DESCRIPTION" 
+    }
+  },
+  "weapons": {
+    "weapon": {
+      "name": "WEAPON",
+      "quantity": 0,
+      "encumbrance": 0,
+      "carried": false,
+      "equipped": false,
+      "skill": "SKILL",
+      "damage": 0,
+      "range": "ENGAGED/SHORT/MEDIUM/LONG/EXTREME",
+      "crit": 0,
+      "hardPointsUsed": 0,
+      "hardPointsMax": 0,
+      "special": "SPECIAL THINGS"
+    }
+  },
+  "armor": {
+    "armor": {
+      "name": "ARMOR",
+      "quantity": 0,
+      "encumbrance": 0,
+      "carried": false,
+      "equipped": false,
+      "soak": 0,
+      "defenseMelee": 0,
+      "defenseRanged": 0,
+      "hardPointsUsed": 0,
+      "hardPointsMax": 0,
+      "special": "SPECIAL THINGS"
+    }
+  },
+  "gear": {
+    "gear": {
+      "name": "GEAR",
+      "quantity": 0,
+      "encumbrance": 0,
+      "carried": false,
+      "equipped": false,
+      "special": "SPECIAL THINGS"
+    }
+  },
+  "obligation": {},
+  "duty": {},
+  "morality": {}
+}

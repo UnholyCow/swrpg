@@ -53,6 +53,19 @@ $(document).ready(function () {
     $('#strain-thr').val("");
   };
   
+  var resetVehicle = function () {
+    $('#vehicle-name').val("");
+    $('#hull-thr').val("");
+    $('#sys-strain-thr').val("");
+    $('#silhouette').val("");
+    $('#top-speed').val("");
+    $('#handling').val("");
+    $('#def-fore').val("");
+    $('#def-aft').val("");
+    $('#def-port').val("");
+    $('#def-starboard').val("");
+  };
+  
   //Sorting function
   function compare(a, b) {
     if (a.success < b.success)
@@ -221,6 +234,11 @@ $(document).ready(function () {
     init.addEnemy();
     display.addChar();
   });
+  
+  //Adding a vehicle.
+  $(document).on("click", ".add-vehicle", function () {
+    display.addVehicle();
+  });
 
   $("#begin-combat").click(function () {
     init.beginCombat();
@@ -275,16 +293,38 @@ $(document).ready(function () {
   //   $(this).addClass("selected-char");
   // });
   
+  //Adding a character to the monitor.
   Monitor.prototype.addChar = function () {
     var name = document.getElementById("char-name").value;
     var wounds = document.getElementById("wound-thr").value;
     var strain = document.getElementById("strain-thr").value;
 
     if (name != 0 && wounds > 0) {
-      display.chars.push({ name: name, woundCurrent: 0, woundThr: wounds, strainCurrent: 0, strainThr: strain, boost: 0, setback: 0 });
+      display.chars.push({ type: 0, name: name, woundCurrent: 0, woundThr: wounds, strainCurrent: 0, strainThr: strain, boost: 0, setback: 0 });
     }
     
     resetChar();
+    display.renderHTML();
+  }
+  
+  //Adding a vehicle/ship to the monitor.
+  Monitor.prototype.addVehicle = function () {
+    var name = document.getElementById("vehicle-name").value;
+    var wounds = document.getElementById("hull-thr").value;
+    var strain = document.getElementById("sys-strain-thr").value;
+    var silhouette = document.getElementById('silhouette').value;
+    var topSpeed = document.getElementById('top-speed').value;
+    var handling = document.getElementById("handling").value;
+    var defFore = document.getElementById("def-fore").value;
+    var defAft = document.getElementById("def-aft").value;
+    var defPort = document.getElementById('def-port').value;
+    var defStarboard = document.getElementById('def-starboard').value;
+
+    if (name != 0 && wounds > 0 && strain > 0 && silhouette > 0 && topSpeed > 0) {
+      display.chars.push({ type: 1, name: name, woundCurrent: 0, woundThr: wounds, strainCurrent: 0, strainThr: strain, silhouette: silhouette, topSpeed: topSpeed, currentSpeed: 0, handling: handling, defFore: defFore, defAft: defAft, defPort: defPort, defStarboard: defStarboard });
+    }
+    
+    resetVehicle();
     display.renderHTML();
   }
   
@@ -292,40 +332,133 @@ $(document).ready(function () {
     $("#monitor-container").empty();
     for (var i = 0; i < display.chars.length; i++) {
       var el = display.chars[i];
-      var htmlString = '<div class="character">';
-      htmlString += '<h3>' + el.name + '</h3>'
-      htmlString += '<div class="stat-small-wide"><div class="tag-small';
-      if (el.woundCurrent >= el.woundThr) {
-        htmlString += ' tagRed';
-      }
-      htmlString += '">Wounds / Threshold</div>';
-      htmlString += '<div class="value-small">';
-      htmlString += '<div class="char-wound-dmg"><span class="icon icon-plus"></span></div> ';
-      htmlString += el.woundCurrent;
-      htmlString += ' / ';
-      htmlString += el.woundThr;
-      htmlString += ' <div class="char-wound-heal"><span class="icon icon-minus"></span></div>';
-      htmlString += '</div></div> ';
-      if (el.strainThr > 0) {
-        htmlString += '<div class="stat-small-wide">';
-        htmlString += '<div class="tag-small';
-        if (el.strainCurrent >= el.strainThr) {
+      if (el.type === 0) {
+        var htmlString = '<div class="character">';
+        htmlString += '<h3>' + el.name + '</h3>'
+        htmlString += '<div class="stat-small-wide"><div class="tag-small';
+        if (el.woundCurrent >= el.woundThr) {
           htmlString += ' tagRed';
         }
-        htmlString += '">Strain / Threshold</div>';
+        htmlString += '">Wounds / Threshold</div>';
         htmlString += '<div class="value-small">';
-        htmlString += '<div class="char-strain-dmg"><span class="icon icon-plus"></span></div> ';
-        htmlString += el.strainCurrent;
+        htmlString += '<div class="char-wound-dmg"><span class="icon icon-plus"></span></div> ';
+        htmlString += el.woundCurrent;
         htmlString += ' / ';
-        htmlString += el.strainThr;
-        htmlString += ' <div class="char-strain-heal"><span class="icon icon-minus"></span></div>';
-        htmlString += '</div></div>';
+        htmlString += el.woundThr;
+        htmlString += ' <div class="char-wound-heal"><span class="icon icon-minus"></span></div>';
+        htmlString += '</div></div> ';
+        if (el.strainThr > 0) {
+          htmlString += '<div class="stat-small-wide">';
+          htmlString += '<div class="tag-small';
+          if (el.strainCurrent >= el.strainThr) {
+            htmlString += ' tagRed';
+          }
+          htmlString += '">Strain / Threshold</div>';
+          htmlString += '<div class="value-small">';
+          htmlString += '<div class="char-strain-dmg"><span class="icon icon-plus"></span></div> ';
+          htmlString += el.strainCurrent;
+          htmlString += ' / ';
+          htmlString += el.strainThr;
+          htmlString += ' <div class="char-strain-heal"><span class="icon icon-minus"></span></div>';
+          htmlString += '</div></div>';
+        }
+        htmlString += '<div class="char-field boost-count-char">'+ el.boost +'<span class="eote bo2"></span></div>';
+        htmlString += '<div class="char-field remove-dice remove-boost"><span class="icon icon-cross"></span></div>';
+        htmlString += '<div class="char-field setback-count-char">'+ el.setback +'<span class="eote se2 contrast"></span></div>';
+        htmlString += '<div class="char-field remove-dice remove-setback"><span class="icon icon-cross"></span></div>';
+        htmlString += '<div class="char-field right"><span class="icon icon-cross remove-char"></span></div></div>';
       }
-      htmlString += '<div class="char-field boost-count-char">'+ el.boost +'<span class="eote bo2"></span></div>';
-      htmlString += '<div class="char-field remove-dice remove-boost"><span class="icon icon-cross"></span></div>';
-      htmlString += '<div class="char-field setback-count-char">'+ el.setback +'<span class="eote se2 contrast"></span></div>';
-      htmlString += '<div class="char-field remove-dice remove-setback"><span class="icon icon-cross"></span></div>';
-      htmlString += '<div class="char-field right"><span class="icon icon-cross remove-char"></span></div></div>';
+      if (el.type === 1) {
+        var htmlString = '<div class="character">';
+         htmlString += '<h3>' + el.name + '</h3>'
+        htmlString += '<div class="stat-small-wide"><div class="tag-small';
+        if (el.woundCurrent >= el.woundThr) {
+          htmlString += ' tagRed';
+        }
+        htmlString += '">Hull / Threshold</div>';
+        htmlString += '<div class="value-small">';
+        htmlString += '<div class="char-wound-dmg"><span class="icon icon-plus"></span></div> ';
+        htmlString += el.woundCurrent;
+        htmlString += ' / ';
+        htmlString += el.woundThr;
+        htmlString += ' <div class="char-wound-heal"><span class="icon icon-minus"></span></div>';
+        htmlString += '</div></div> ';
+        if (el.strainThr > 0) {
+          htmlString += '<div class="stat-small-wide">';
+          htmlString += '<div class="tag-small';
+          if (el.strainCurrent >= el.strainThr) {
+            htmlString += ' tagRed';
+          }
+          htmlString += '">Sys Strain / Threshold</div>';
+          htmlString += '<div class="value-small">';
+          htmlString += '<div class="char-strain-dmg"><span class="icon icon-plus"></span></div> ';
+          htmlString += el.strainCurrent;
+          htmlString += ' / ';
+          htmlString += el.strainThr;
+          htmlString += ' <div class="char-strain-heal"><span class="icon icon-minus"></span></div>';
+          htmlString += '</div></div>';
+        }
+         htmlString += ' <div class="stat-small-wide"><div class="tag-small';
+        if (el.currentSpeed === 0) {
+          htmlString += ' tagRed';
+        } else if (el.currentSpeed >= el.topSpeed) {
+          htmlString += ' tagGreen';
+        } else {
+          htmlString += ' tagBlue';
+        }
+        htmlString += '">Speed / Top Speed</div>';
+        htmlString += '<div class="value-small">';
+        htmlString += '<div class="vehicle-speed-up"><span class="icon icon-plus"></span></div> ';
+        htmlString += el.currentSpeed;
+        htmlString += ' / ';
+        htmlString += el.topSpeed;
+        htmlString += ' <div class="vehicle-speed-down"><span class="icon icon-minus"></span></div>';
+        htmlString += '</div></div> ';
+        htmlString += '<div class="stat-small"><div class="tag-small"><span>Silhouette</span></div>';
+        htmlString += '<div class="value-small"><span>';
+        htmlString += el.silhouette;
+        htmlString += '</span></div></div><br>';
+        htmlString += '<div class="stat-small"><div class="tag-small"><span>Handling</span></div>';
+        htmlString += '<div class="value-small"><span>';
+        htmlString += el.handling;
+        htmlString += '</span></div></div>';
+        htmlString += ' <div class="stat-small"><div class="tag-small"><span>Def Fore</span></div>';
+        htmlString += '<div class="value-small"><span>';
+        if (el.defFore > 0) {
+          htmlString += el.defFore;
+        } else {
+          htmlString += 0
+        }
+        htmlString += '</span></div></div>';
+        htmlString += ' <div class="stat-small"><div class="tag-small"><span>Def Aft</span></div>';
+        htmlString += '<div class="value-small"><span>';
+        if (el.defAft > 0) {
+          htmlString += el.defAft;
+        } else {
+          htmlString += 0
+        }
+        htmlString += '</span></div></div>';
+        if (el.silhouette >= 5) {
+          htmlString += ' <div class="stat-small"><div class="tag-small"><span>Def Port</span></div>';
+          htmlString += '<div class="value-small"><span>';
+          if (el.defPort > 0) {
+            htmlString += el.defPort;
+          } else {
+            htmlString += 0
+          }
+          htmlString += '</span></div></div>';
+          htmlString += ' <div class="stat-small"><div class="tag-small"><span>Def Starboard</span></div>';
+          htmlString += '<div class="value-small"><span>';
+          if (el.defStarboard > 0) {
+            htmlString += el.defStarboard;
+          } else {
+            htmlString += 0
+          }
+          htmlString += '</span></div></div>';
+        }
+        
+        htmlString += '<div class="char-field right"><span class="icon icon-cross remove-char"></span></div></div>';
+      }
 
       $("#monitor-container").append(htmlString);
     }
@@ -406,6 +539,28 @@ $(document).ready(function () {
     var woundObject = $("#monitor-container div.character").index(parentSlot);
     
     display.chars[woundObject].setback = 0;
+    display.renderHTML();
+  });
+  
+  $(document).on("click", ".vehicle-speed-up", function () {
+    var parentSlot = $(this).closest(".character");
+    var speedObject = $("#monitor-container div.character").index(parentSlot);
+    
+    display.chars[speedObject].currentSpeed++;
+    if (display.chars[speedObject].currentSpeed > display.chars[speedObject].topSpeed) {
+      display.chars[speedObject].currentSpeed = display.chars[speedObject].topSpeed;
+    }
+    display.renderHTML();
+  });
+  
+  $(document).on("click", ".vehicle-speed-down", function () {
+    var parentSlot = $(this).closest(".character");
+    var speedObject = $("#monitor-container div.character").index(parentSlot);
+    
+    display.chars[speedObject].currentSpeed--;
+    if (display.chars[speedObject].currentSpeed < 0) {
+      display.chars[speedObject].currentSpeed = 0;
+    }
     display.renderHTML();
   });
   

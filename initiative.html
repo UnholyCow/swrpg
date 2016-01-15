@@ -63,6 +63,21 @@
       <button type="button" name="pc" class="add-pc">+PC</button>
       <button type="button" name="ally" class="add-ally">+Ally</button>
       <button type="button" name="npc" class="add-enemy">+Enemy</button>
+      <br><br><p>The first row of vehicle stats are required for a monitor entry.</p>
+      <form action="" method="post">
+        <input id="vehicle-name" type="text" name="v-name" value="" placeholder="Vehicle/Starship">
+        <input id="hull-thr" type="text" name="hull" value="" placeholder="Hull">
+        <input id="sys-strain-thr" type="text" name="sys-strain" value="" placeholder="Strain">
+        <input id="silhouette" type="text" name="silhouette" value="" placeholder="Silhouette">
+        <input id="top-speed" type="text" name="top-speed" value="" placeholder="Top Speed">
+        <input id="handling" type="text" name="handling" value="" placeholder="Handling">
+        <br><h4>Defense</h4>
+        <input id="def-fore" type="text" name="def-fore" value="" placeholder="Fore">
+        <input id="def-aft" type="text" name="def-aft" value="" placeholder="Aft">
+        <input id="def-port" type="text" name="def-port" value="" placeholder="Port">
+        <input id="def-starboard" type="text" name="def-starboard" value="" placeholder="Starboard">
+      </form>
+      <button type="button" name="vehicle" class="add-vehicle">+Vehicle</button>
     </div>
     <div class="tracker">
       <h2>Tracker</h2>
@@ -81,14 +96,14 @@
       </div>
     </div>
     <div class="monitor">
-      <h2>Character Monitor</h2>
+      <h2>Character &amp; Vehicle Monitor</h2>
       <p>Track wounds, strain, boosts, and setbacks for specific characters.</p>
       <div class="section">
-        <button type="button" name="char-wounds" id="char-wound">Wounds</button>
+        <!--<button type="button" name="char-wounds" id="char-wound">Wounds</button>
         <button type="button" name="char-strain" id="char-strain">Strain</button>
         <button type="button" name="char-bo" id="char-bo">Boost Clear</button>
         <button type="button" name="char-se" id="char-se">Setback</button>
-        <button type="button" name="char-crit" id="char-crit">Critical</button>
+        <button type="button" name="char-crit" id="char-crit">Critical</button>-->
         <button type="button" name="char-clear" id="char-clear">Clear</button>
       </div>
       <div id="monitor-container">
