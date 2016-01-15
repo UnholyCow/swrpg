@@ -17,7 +17,8 @@ button {
     outline: none;
   }
 }
-#char-name {
+#char-name,
+#vehicle-name {
 	width: 300px; 
 }
 .active-slot {
@@ -33,6 +34,9 @@ button {
   }
   h2 {
     margin: 0;
+  }
+  h4 {
+    display: inline-block;
   }
   input {
     margin: 5px;
@@ -72,7 +76,8 @@ button {
   }
   .add-ally,
   .add-enemy,
-  .add-pc {
+  .add-pc,
+  .add-vehicle {
     &:focus {
       outline: none;
     }
@@ -95,6 +100,12 @@ button {
       color: #FFF;
     }
   }
+  .add-vehicle {
+    &:hover {
+      background-color: $eoteslate;
+      color: #FFF;
+    }
+  }
 }
 .char-field {
   display: inline-block;
@@ -104,7 +115,8 @@ button {
   vertical-align: top;
 }
 .char-strain-dmg,
-.char-wound-dmg {
+.char-wound-dmg,
+.vehicle-speed-up {
   display: inline-block;
   font-size: .5em;
   padding: 7px 0 0 5px;
@@ -114,7 +126,8 @@ button {
   }
 }
 .char-strain-heal,
-.char-wound-heal {
+.char-wound-heal,
+.vehicle-speed-down {
   display: inline-block;
   font-size: .5em;
   padding: 7px 5px 0 0;
@@ -124,7 +137,7 @@ button {
   }
 }
 .character {
-	height: 100px;
+	// height: 100px;
 	margin: 3px 0 0 0;
   padding: 5px 10px;
   transition: .115s;

@@ -110,5 +110,5 @@ $(document).ready(function () {
     $('#groups-nav').hide();
     $('#rules-nav').toggle();
   });
-
+  
 });
