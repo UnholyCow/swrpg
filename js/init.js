@@ -68,20 +68,13 @@ $(document).ready(function () {
   
   //Sorting function
   function compare(a, b) {
-    if (a.success < b.success)
-      return 1;
-    if (a.success > b.success)
-      return -1;
-    if (a.success === b.success) {
-      if (a.advantage < b.advantage)
-        return 1;
-      if (a.advantage < b.advantage)
-        return -1;
-      if (a.advantage === b.advantage) {
-        if (a.type < b.type)
-          return 1;
-        if (a.type === b.type || a.type > b.type)
-          return 0;
+    if (a.success === b.success && a.advantage === b.advantage) {
+      return b.type - a.type;
+    } else {
+      if (a.success === b.success) {
+        return b.advantage - a.advantage;
+      } else {
+        return b.success - a.success;
       }
     }
   }

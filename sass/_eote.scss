@@ -7,6 +7,9 @@
 .contrast:before {
 	-webkit-text-stroke: 1px #FFF !important; 
 }
+.rem:before {
+  -webkit-text-stroke: 1px lighten($eotered, 35%) !important; 
+}
 .eote {
 	font-family: 'EotE';
 	speak: none;
