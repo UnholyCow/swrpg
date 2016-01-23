@@ -168,6 +168,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 10, ../sass/_eote.scss */
+.rem:before {
+  -webkit-text-stroke: 1px #e55557 !important;
+}
+
+/* line 13, ../sass/_eote.scss */
 .eote {
   font-family: 'EotE';
   speak: none;
@@ -182,91 +187,91 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* Dice ========= */
-/* line 24, ../sass/_eote.scss */
+/* line 27, ../sass/_eote.scss */
 .ab:before {
   content: "\0044";
   color: 51A44B;
 }
 
-/* line 28, ../sass/_eote.scss */
+/* line 31, ../sass/_eote.scss */
 .ab2:before {
   content: "\0064";
   color: #51A44B;
   -webkit-text-stroke: 1px #000;
 }
 
-/* line 33, ../sass/_eote.scss */
+/* line 36, ../sass/_eote.scss */
 .bo:before {
   content: "\0042";
   color: #76CDDA;
 }
 
-/* line 37, ../sass/_eote.scss */
+/* line 40, ../sass/_eote.scss */
 .bo2:before {
   content: "\0062";
   color: #76CDDA;
   -webkit-text-stroke: 1px #000;
 }
 
-/* line 42, ../sass/_eote.scss */
+/* line 45, ../sass/_eote.scss */
 .ch:before {
   content: "\0043";
   color: #B51213;
 }
 
-/* line 46, ../sass/_eote.scss */
+/* line 49, ../sass/_eote.scss */
 .ch2:before {
   content: "\0063";
   color: #B51213;
   -webkit-text-stroke: 1px #000;
 }
 
-/* line 51, ../sass/_eote.scss */
+/* line 54, ../sass/_eote.scss */
 .di:before {
   content: "\0044";
   color: #662D91;
 }
 
-/* line 55, ../sass/_eote.scss */
+/* line 58, ../sass/_eote.scss */
 .di2:before {
   content: "\0064";
   color: #662D91;
   -webkit-text-stroke: 1px #000;
 }
 
-/* line 60, ../sass/_eote.scss */
+/* line 63, ../sass/_eote.scss */
 .fo:before {
   content: "\0043";
   color: #FFF;
 }
 
-/* line 64, ../sass/_eote.scss */
+/* line 67, ../sass/_eote.scss */
 .fo2:before {
   content: "\0063";
   color: #FFF;
   -webkit-text-stroke: 1px #000;
 }
 
-/* line 69, ../sass/_eote.scss */
+/* line 72, ../sass/_eote.scss */
 .pr:before {
   content: "\0043";
   color: #DFC663;
 }
 
-/* line 73, ../sass/_eote.scss */
+/* line 76, ../sass/_eote.scss */
 .pr2:before {
   content: "\0063";
   color: #DFC663;
   -webkit-text-stroke: 1px #000;
 }
 
-/* line 78, ../sass/_eote.scss */
+/* line 81, ../sass/_eote.scss */
 .se:before {
   content: "\0042";
   color: #000;
 }
 
-/* line 82, ../sass/_eote.scss */
+/* line 85, ../sass/_eote.scss */
 .se2:before {
   content: "\0062";
   color: #000;
@@ -274,44 +279,44 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* Symbols */
-/* line 89, ../sass/_eote.scss */
+/* line 92, ../sass/_eote.scss */
 .su:before {
   content: "\0073";
 }
 
-/* line 92, ../sass/_eote.scss */
+/* line 95, ../sass/_eote.scss */
 .ad:before {
   content: '\0061';
 }
 
-/* line 95, ../sass/_eote.scss */
+/* line 98, ../sass/_eote.scss */
 .tr:before {
   content: '\0078';
 }
 
-/* line 98, ../sass/_eote.scss */
+/* line 101, ../sass/_eote.scss */
 .fa:before {
   content: '\0066';
 }
 
-/* line 101, ../sass/_eote.scss */
+/* line 104, ../sass/_eote.scss */
 .th:before {
   content: '\0074';
 }
 
-/* line 104, ../sass/_eote.scss */
+/* line 107, ../sass/_eote.scss */
 .de:before {
   content: '\0079';
 }
 
-/* line 107, ../sass/_eote.scss */
+/* line 110, ../sass/_eote.scss */
 .li:before {
   content: '\007A';
   color: #FFF;
   -webkit-text-stroke: 1px #000;
 }
 
-/* line 112, ../sass/_eote.scss */
+/* line 115, ../sass/_eote.scss */
 .da:before {
   content: '\007A';
   color: #000;
