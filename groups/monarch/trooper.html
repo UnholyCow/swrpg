@@ -1,596 +1,637 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>SWRPG - TK</title>
-	<link href="../../css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-	<link rel="icon" href="../../img/icon.png">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>SWRPG - TK</title>
+  <link href="../../css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="../../img/icon.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
-	<header>
-		<div id="hamburger">
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
-		<div class="logo"></div>
-	</header>
-	<nav>
-		<ul>
-			<li><a href="../../index.html">Home</a></li>
-			<li><a href="overview.html" class="toggle-groups-nav active">Players</a>
-				<ul id="groups-nav">
-					<li><a href="francis.html">FR4NC15</a></li>
-					<li><a href="hayynq.html">Hayynq</a></li>
-					<li><a href="nysro.html">Nysro</a></li>
-					<li><a href="rusku.html">Rusku</a></li>
-					<li><a href="trooper.html" class="active">TK</a></li>
-					<li><a href="themonarch.html">Elleffay</a></li>
-				</ul>
-			</li>
-			<li><a href="../../rules.html" class="toggle-rules-nav">Rules</a>
-				<ul id="rules-nav">
-					<li><a href="../../results.html">Results</a></li>
-					<li><a href="../../crits.html">Criticals</a></li>
-					<li><a href="../../initiative.html">Tracker</a></li>
-				</ul>
-			</li>
-			<li><a href="../../sessions.html">Sessions</a></li>
-		</ul>
-	</nav>
-	<div class="container">
-			<div class="trooperPic">
-				<h1>TK</h1>
-			</div>
-			<div class="section"> <!-- Basic info, no header. -->
-				<div class="pill">
-					<div class="pillLeft">
-						<span>Species</span>
-					</div>
-					<div class="pillRight">
-						<span>Corellian</span></div>
-				</div>
-				<div class="pill">
-					<div class="pillLeft">
-						<span>Career</span>
-					</div>
-					<div class="pillRight">
-						<span>Ace</span>
-					</div>
-				</div>
-				<div class="pill">
-					<div class="pillLeft">
-						<span>Specializations</span>
-					</div>
-					<div class="pillRight">
-						<span>Pilot, Medic, Recruit</span>
-					</div>
-				</div>
-				<div class="pill">
-					<div class="pillLeft">
-						<span>Encumbrance</span>
-					</div>
-					<div class="pillRight">
-						<span>8</span>
-					</div>
-				</div>
-				<div class="pill">
-					<div class="pillLeft">
-						<span>Spent/Total XP</span>
-					</div>
-					<div class="pillRight">
-						<span>515/515</span>
-					</div>
-				</div>
-				<div class="pill">
-					<div class="pillLeft">
-						<span>Available XP</span>
-					</div>
-					<div class="pillRight">
-						<span>0</span>
-					</div>
-				</div>
-			</div>
-			<div class="section">
-				<h2>Vitals</h2>
-				<div class="stat">
-					<div class="tagBlue">
-						<span>Soak Value</span>
-					</div>
-					<div class="value">
-						<span>3</span>
-					</div>
-				</div>
-				<div class="stat">
-					<div class="tagBlue">
-						<span>Wound Threshold</span>
-					</div>
-					<div class="value">
-						<span>16</span>
-					</div>
-				</div>
-				<div class="stat">
-					<div class="tagBlue">
-						<span>Strain Threshold</span>
-					</div>
-					<div class="value">
-						<span>15</span>
-					</div>
-				</div>
-				<div class="stat">
-					<div class="tagBlue">
-						<span>M/R Defense</span>
-					</div>
-					<div class="value">
-						<span>1/1</span>
-					</div>
-				</div>
-			</div>
-			<div class="section">
-				<h2>Characteristics</h2>
-				<div class="stat">
-					<div class="tagOrange">
-						<span>Brawn</span>
-					</div>
-					<div class="value">
-						<span>2</span>
-					</div>
-				</div>
-				<div class="stat">
-					<div class="tagOrange">
-						<span>Agility</span>
-					</div>
-					<div class="value">
-						<span>4</span>
-					</div>
-				</div>
-				<div class="stat">
-					<div class="tagOrange">
-						<span>Intellect</span>
-					</div>
-					<div class="value">
-						<span>3</span>
-					</div>
-				</div>
-				<div class="stat">
-					<div class="tagOrange">
-						<span>Cunning</span>
-					</div>
-					<div class="value">
-						<span>3</span>
-					</div>
-				</div>
-				<div class="stat">
-					<div class="tagOrange">
-						<span>Willpower</span>
-					</div>
-					<div class="value">
-						<span>2</span>
-					</div>
-				</div>
-				<div class="stat">
-					<div class="tagOrange">
-						<span>Presence</span>
-					</div>
-					<div class="value">
-						<span>2</span>
-					</div>
-				</div>
-			</div>
-			<div class="section">
-				<h2>Skills</h2>
-				<table class="eoteTable splitLeft justifyFirst">
-					<tr>
-						<th>General Skills</th>
-						<th>Career?</th>
-						<th>Rank</th>
-						<th>Base Pool</th>
-					</tr>
-					<tr>
-						<td>Astrogation (Int)</td>
-						<td><div class="icon icon-tick"></div></td>
-						<td>2</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote pr2"></span>
-							<span class="eote pr2"></span>
-              <span class="eote se2 rem"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Athletics (Br)</td>
-						<td><div class="icon icon-tick"></div></td>
-						<td>0</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Charm (Pr)</td>
-						<td></td>
-						<td>0</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Coercion (Will)</td>
-						<td></td>
-						<td>0</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Computers (Int)</td>
-						<td></td>
-						<td>0</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Cool (Pr)</td>
-						<td><div class="icon icon-tick"></div></td>
-						<td>2</td>
-						<td>
-							<span class="eote pr2"></span>
-							<span class="eote pr2"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Coordination (Ag)</td>
-						<td></td>
-						<td>0</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Deception (Cun)</td>
-						<td></td>
-						<td>0</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-              <span class="eote ab2"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Discipline (Will)</td>
-						<td><div class="icon icon-tick"></div></td>
-						<td>0</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Leadership (Pr)</td>
-						<td></td>
-						<td>0</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Mechanics (Int)</td>
-						<td><div class="icon icon-tick"></div></td>
-						<td>0</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Medicine (Int)</td>
-						<td><div class="icon icon-tick"></div></td>
-						<td>3</td>
-						<td>
-							<span class="eote pr2"></span>
-							<span class="eote pr2"></span>
-							<span class="eote pr2"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Negotiatioin (Pr)</td>
-						<td></td>
-						<td>0</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Perception (Cun)</td>
-						<td><div class="icon icon-tick"></div></td>
-						<td>2</td>
-						<td>
-							<span class="eote ab2"></span>
-              <span class="eote pr2"></span>
-							<span class="eote pr2"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Piloting - Planetary (Ag)</td>
-						<td><div class="icon icon-tick"></div></td>
-						<td>1</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-							<span class="eote pr2"></span>
-              <span class="eote se2 rem"></span>
-              <span class="eote se2 rem"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Piloting - Space (Ag)</td>
-						<td><div class="icon icon-tick"></div></td>
-						<td>3</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote pr2"></span>
-							<span class="eote pr2"></span>
-							<span class="eote pr2"></span>
-              <span class="eote se2 rem"></span>
-              <span class="eote se2 rem"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Resilience (Br)</td>
-						<td><div class="icon icon-tick"></div></td>
-						<td>0</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Skulduggery (Cun)</td>
-						<td></td>
-						<td>0</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-              <span class="eote ab2"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Stealth (Ag)</td>
-						<td></td>
-						<td>0</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Streetwise (Cun)</td>
-						<td></td>
-						<td>0</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-              <span class="eote ab2"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Survival (Cun)</td>
-						<td><div class="icon icon-tick"></div></td>
-						<td>0</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-              <span class="eote ab2"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Vigilance (Will)</td>
-						<td><div class="icon icon-tick"></div></td>
-						<td>2</td>
-						<td>
-							<span class="eote pr2"></span>
-							<span class="eote pr2"></span>
-						</td>
-					</tr>
-				</table>
-				<table class="eoteTable splitRight justifyFirst">
-					<tr>
-						<th>Combat Skills</th>
-						<th>Career?</th>
-						<th>Rank</th>
-						<th>Base Pool</th>
-					</tr>
-					<tr>
-						<td>Brawl (Br)</td>
-						<td><div class="icon icon-tick"></div></td>
-						<td>0</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Gunnery (Ag)</td>
-						<td><div class="icon icon-tick"></div></td>
-						<td>1</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-							<span class="eote pr2"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Melee (Br)</td>
-						<td><div class="icon icon-tick"></div></td>
-						<td>0</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Ranged (Light) (Ag)</td>
-						<td><div class="icon icon-tick"></div></td>
-						<td>1</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-							<span class="eote pr2"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Ranged (Heavy) (Ag)</td>
-						<td><div class="icon icon-tick"></div></td>
-						<td>2</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-							<span class="eote pr2"></span>
-							<span class="eote pr2"></span>
-						</td>
-					</tr>
-				</table>
-				<table class="eoteTable splitRight justifyFirst">
-					<tr>
-						<th>Knowledge Skills</th>
-						<th>Career?</th>
-						<th>Rank</th>
-						<th>Base Pool</th>
-					</tr>
-					<tr>
-						<td>Core Worlds (Int)</td>
-						<td></td>
-						<td>0</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Education (Int)</td>
-						<td></td>
-						<td>0</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Lore (Int)</td>
-						<td></td>
-						<td>0</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Outer Rim (Int)</td>
-						<td></td>
-						<td>0</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Underworld (Int)</td>
-						<td></td>
-						<td>0</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Warfare (Int)</td>
-						<td><div class="icon icon-tick"></div></td>
-						<td>0</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>Xenology (Int)</td>
-						<td><div class="icon icon-tick"></div></td>
-						<td>0</td>
-						<td>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-							<span class="eote ab2"></span>
-						</td>
-					</tr>
-				</table>
-			</div>
-			<div class="section">
-				<h2>Weapons</h2>
-				<table class="eoteTable justifyFirst justifyLast">
-					<tr>
-						<th>Weapon</th>
-						<th>Skill</th>
-						<th>Damage</th>
-						<th>Range</th>
-						<th>Crit</th>
-						<th>Pool</th>
-						<th>Special</th>
-					</tr>
-					<tr>
-						<td>BlasTech E-11</td>
-						<td>Ranged (Heavy)</td>
-						<td>10</td>
-						<td>Long</td>
-						<td><span class="eote ad"></span>
-						<span class="eote ad"></span>
-						<span class="eote ad"></span>
-						<span class="eote ad"></span></td>
-						<td><span class="eote ab2"></span>
-						<span class="eote ab2"></span>
-						<span class="eote pr2"></span>
-						<span class="eote pr2"></span>
-						<span class="eote bo2"></span>
+  <header>
+    <div id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="logo"></div>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="overview.html" class="toggle-groups-nav active">Players</a>
+        <ul id="groups-nav">
+          <li><a href="francis.html">FR4NC15</a></li>
+          <li><a href="hayynq.html">Hayynq</a></li>
+          <li><a href="nysro.html">Nysro</a></li>
+          <li><a href="rusku.html">Rusku</a></li>
+          <li><a href="trooper.html" class="active">TK</a></li>
+          <li><a href="themonarch.html">Elleffay</a></li>
+        </ul>
+      </li>
+      <li><a href="../../rules.html" class="toggle-rules-nav">Rules</a>
+        <ul id="rules-nav">
+          <li><a href="../../results.html">Results</a></li>
+          <li><a href="../../crits.html">Criticals</a></li>
+          <li><a href="../../initiative.html">Tracker</a></li>
+        </ul>
+      </li>
+      <li><a href="../../sessions.html">Sessions</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="trooperPic">
+      <h1>TK</h1>
+    </div>
+    <div class="section">
+      <!-- Basic info, no header. -->
+      <div class="pill">
+        <div class="pillLeft">
+          <span>Species</span>
+        </div>
+        <div class="pillRight">
+          <span>Corellian</span></div>
+      </div>
+      <div class="pill">
+        <div class="pillLeft">
+          <span>Career</span>
+        </div>
+        <div class="pillRight">
+          <span>Ace</span>
+        </div>
+      </div>
+      <div class="pill">
+        <div class="pillLeft">
+          <span>Specializations</span>
+        </div>
+        <div class="pillRight">
+          <span>Pilot, Medic, Recruit</span>
+        </div>
+      </div>
+      <div class="pill">
+        <div class="pillLeft">
+          <span>Encumbrance</span>
+        </div>
+        <div class="pillRight">
+          <span>8</span>
+        </div>
+      </div>
+      <div class="pill">
+        <div class="pillLeft">
+          <span>Spent/Total XP</span>
+        </div>
+        <div class="pillRight">
+          <span>545/545</span>
+        </div>
+      </div>
+      <div class="pill">
+        <div class="pillLeft">
+          <span>Available XP</span>
+        </div>
+        <div class="pillRight">
+          <span>0</span>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Vitals</h2>
+      <div class="stat">
+        <div class="tagBlue">
+          <span>Soak Value</span>
+        </div>
+        <div class="value">
+          <span>3</span>
+        </div>
+      </div>
+      <div class="stat">
+        <div class="tagBlue">
+          <span>Wound Threshold</span>
+        </div>
+        <div class="value">
+          <span>16</span>
+        </div>
+      </div>
+      <div class="stat">
+        <div class="tagBlue">
+          <span>Strain Threshold</span>
+        </div>
+        <div class="value">
+          <span>15</span>
+        </div>
+      </div>
+      <div class="stat">
+        <div class="tagBlue">
+          <span>M/R Defense</span>
+        </div>
+        <div class="value">
+          <span>1/1</span>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Characteristics</h2>
+      <div class="stat">
+        <div class="tagOrange">
+          <span>Brawn</span>
+        </div>
+        <div class="value">
+          <span>2</span>
+        </div>
+      </div>
+      <div class="stat">
+        <div class="tagOrange">
+          <span>Agility</span>
+        </div>
+        <div class="value">
+          <span>4</span>
+        </div>
+      </div>
+      <div class="stat">
+        <div class="tagOrange">
+          <span>Intellect</span>
+        </div>
+        <div class="value">
+          <span>3</span>
+        </div>
+      </div>
+      <div class="stat">
+        <div class="tagOrange">
+          <span>Cunning</span>
+        </div>
+        <div class="value">
+          <span>3</span>
+        </div>
+      </div>
+      <div class="stat">
+        <div class="tagOrange">
+          <span>Willpower</span>
+        </div>
+        <div class="value">
+          <span>2</span>
+        </div>
+      </div>
+      <div class="stat">
+        <div class="tagOrange">
+          <span>Presence</span>
+        </div>
+        <div class="value">
+          <span>2</span>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Skills</h2>
+      <table class="eoteTable splitLeft justifyFirst">
+        <tr>
+          <th>General Skills</th>
+          <th>Career?</th>
+          <th>Rank</th>
+          <th>Base Pool</th>
+        </tr>
+        <tr>
+          <td>Astrogation (Int)</td>
+          <td>
+            <div class="icon icon-tick"></div>
+          </td>
+          <td>2</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote pr2"></span>
+            <span class="eote pr2"></span>
+            <span class="eote se2 rem"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Athletics (Br)</td>
+          <td>
+            <div class="icon icon-tick"></div>
+          </td>
+          <td>0</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Charm (Pr)</td>
+          <td></td>
+          <td>0</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Coercion (Will)</td>
+          <td></td>
+          <td>0</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Computers (Int)</td>
+          <td></td>
+          <td>0</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Cool (Pr)</td>
+          <td>
+            <div class="icon icon-tick"></div>
+          </td>
+          <td>2</td>
+          <td>
+            <span class="eote pr2"></span>
+            <span class="eote pr2"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Coordination (Ag)</td>
+          <td></td>
+          <td>0</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Deception (Cun)</td>
+          <td></td>
+          <td>0</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Discipline (Will)</td>
+          <td>
+            <div class="icon icon-tick"></div>
+          </td>
+          <td>0</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Leadership (Pr)</td>
+          <td></td>
+          <td>0</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Mechanics (Int)</td>
+          <td>
+            <div class="icon icon-tick"></div>
+          </td>
+          <td>0</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Medicine (Int)</td>
+          <td>
+            <div class="icon icon-tick"></div>
+          </td>
+          <td>3</td>
+          <td>
+            <span class="eote pr2"></span>
+            <span class="eote pr2"></span>
+            <span class="eote pr2"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Negotiatioin (Pr)</td>
+          <td></td>
+          <td>0</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Perception (Cun)</td>
+          <td>
+            <div class="icon icon-tick"></div>
+          </td>
+          <td>3</td>
+          <td>
+            <span class="eote pr2"></span>
+            <span class="eote pr2"></span>
+            <span class="eote pr2"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Piloting - Planetary (Ag)</td>
+          <td>
+            <div class="icon icon-tick"></div>
+          </td>
+          <td>1</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+            <span class="eote pr2"></span>
+            <span class="eote se2 rem"></span>
+            <span class="eote se2 rem"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Piloting - Space (Ag)</td>
+          <td>
+            <div class="icon icon-tick"></div>
+          </td>
+          <td>3</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote pr2"></span>
+            <span class="eote pr2"></span>
+            <span class="eote pr2"></span>
+            <span class="eote se2 rem"></span>
+            <span class="eote se2 rem"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Resilience (Br)</td>
+          <td>
+            <div class="icon icon-tick"></div>
+          </td>
+          <td>0</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Skulduggery (Cun)</td>
+          <td></td>
+          <td>0</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Stealth (Ag)</td>
+          <td></td>
+          <td>0</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Streetwise (Cun)</td>
+          <td></td>
+          <td>0</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Survival (Cun)</td>
+          <td>
+            <div class="icon icon-tick"></div>
+          </td>
+          <td>0</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Vigilance (Will)</td>
+          <td>
+            <div class="icon icon-tick"></div>
+          </td>
+          <td>2</td>
+          <td>
+            <span class="eote pr2"></span>
+            <span class="eote pr2"></span>
+          </td>
+        </tr>
+      </table>
+      <table class="eoteTable splitRight justifyFirst">
+        <tr>
+          <th>Combat Skills</th>
+          <th>Career?</th>
+          <th>Rank</th>
+          <th>Base Pool</th>
+        </tr>
+        <tr>
+          <td>Brawl (Br)</td>
+          <td>
+            <div class="icon icon-tick"></div>
+          </td>
+          <td>0</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Gunnery (Ag)</td>
+          <td>
+            <div class="icon icon-tick"></div>
+          </td>
+          <td>1</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+            <span class="eote pr2"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Melee (Br)</td>
+          <td>
+            <div class="icon icon-tick"></div>
+          </td>
+          <td>0</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Ranged (Light) (Ag)</td>
+          <td>
+            <div class="icon icon-tick"></div>
+          </td>
+          <td>1</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+            <span class="eote pr2"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Ranged (Heavy) (Ag)</td>
+          <td>
+            <div class="icon icon-tick"></div>
+          </td>
+          <td>3</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote pr2"></span>
+            <span class="eote pr2"></span>
+            <span class="eote pr2"></span>
+          </td>
+        </tr>
+      </table>
+      <table class="eoteTable splitRight justifyFirst">
+        <tr>
+          <th>Knowledge Skills</th>
+          <th>Career?</th>
+          <th>Rank</th>
+          <th>Base Pool</th>
+        </tr>
+        <tr>
+          <td>Core Worlds (Int)</td>
+          <td></td>
+          <td>0</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Education (Int)</td>
+          <td></td>
+          <td>0</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Lore (Int)</td>
+          <td></td>
+          <td>0</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Outer Rim (Int)</td>
+          <td></td>
+          <td>0</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Underworld (Int)</td>
+          <td></td>
+          <td>0</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Warfare (Int)</td>
+          <td>
+            <div class="icon icon-tick"></div>
+          </td>
+          <td>0</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Xenology (Int)</td>
+          <td>
+            <div class="icon icon-tick"></div>
+          </td>
+          <td>0</td>
+          <td>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Weapons</h2>
+      <table class="eoteTable justifyFirst justifyLast">
+        <tr>
+          <th>Weapon</th>
+          <th>Skill</th>
+          <th>Damage</th>
+          <th>Range</th>
+          <th>Crit</th>
+          <th>Pool</th>
+          <th>Special</th>
+        </tr>
+        <tr>
+          <td>BlasTech E-11</td>
+          <td>Ranged (Heavy)</td>
+          <td>10</td>
+          <td>Long</td>
+          <td><span class="eote ad"></span>
+            <span class="eote ad"></span>
+            <span class="eote ad"></span>
             <span class="eote ad"></span></td>
-						<td>Accurate 1, Stun Setting</td>
-					</tr>
-					<tr>
-						<td>Blaster Pistol</td>
-						<td>Ranged (Light)</td>
-						<td>6</td>
-						<td>Medium</td>
-						<td><span class="eote ad"></span>
-						<span class="eote ad"></span>
-						<span class="eote ad"></span></td>
-						<td><span class="eote ab2"></span>
-						<span class="eote ab2"></span>
-						<span class="eote ab2"></span>
-						<span class="eote ab2"></span></td>
-						<td>Stun Setting</td>
-					</tr>
-					<!--<tr>
+          <td><span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+            <span class="eote pr2"></span>
+            <span class="eote pr2"></span>
+            <span class="eote bo2"></span>
+            <span class="eote ad"></span></td>
+          <td>Accurate 1, Stun Setting</td>
+        </tr>
+        <tr>
+          <td>Blaster Pistol</td>
+          <td>Ranged (Light)</td>
+          <td>6</td>
+          <td>Medium</td>
+          <td><span class="eote ad"></span>
+            <span class="eote ad"></span>
+            <span class="eote ad"></span></td>
+          <td><span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span>
+            <span class="eote ab2"></span></td>
+          <td>Stun Setting</td>
+        </tr>
+        <!--<tr>
 						<td>Stun Grenade</td>
 						<td>Ranged (Light)</td>
 						<td>8</td>
@@ -602,49 +643,57 @@
 						<span class="eote ab2"></span></td>
 						<td>Disorient 3, Stun Damage, Blast 8, Limited Ammo 1</td>
 					</tr>-->
-				</table>
-			</div>
-			<div class="section">
-				<h2>Gear</h2>
-				<table class="eoteTable justifyFirst justifyLast">
-					<caption>Weapons</caption>
-					<tr class="flush">
-						<th>Item</th>
-						<th>Qty</th>
-						<th>Enc</th>
-						<th>Carry</th>
-						<th>Equip</th>
-						<th>Dam</th>
-						<th>Crit</th>
-						<th>Range</th>
-						<th>HP</th>
-						<th>Notes</th>
-					</tr>
-					<tr>
-						<td>BlasTech E-11</td>
-						<td>1</td>
-						<td>4</td>
-						<td><div class="icon icon-tick"></div></td>
-						<td><div class="icon icon-tick"></div></td>
-						<td>10</td>
-						<td>4</td>
-						<td>Long</td>
-						<td>0/4</td>
-						<td><span>Attachments: </span>Augmented Spin Barrel (Add <span class="eote se2"></span> to maintenance checks. Dam+1 [Mods: Accurate 1] 2HP), "Bantha's Eye" Laser Sight (Add <span class="eote ad"></span> to successful checks. 1HP), Weapon Sling (-1 Cumbersome. [Mods: Quick Draw] 1HP) <span>Qualities: </span>Accurate 1, Stun Setting</td>
-					</tr>
-					<tr>
-						<td>Blaster Pistol</td>
-						<td>1</td>
-						<td>1</td>
-						<td><div class="icon icon-tick"></div></td>
-						<td></td>
-						<td>6</td>
-						<td>3</td>
-						<td>Medium</td>
-						<td>3</td>
-						<td><span>Qualities: </span>Stun Setting</td>
-					</tr>
-					<!--<tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Gear</h2>
+      <table class="eoteTable justifyFirst justifyLast">
+        <caption>Weapons</caption>
+        <tr class="flush">
+          <th>Item</th>
+          <th>Qty</th>
+          <th>Enc</th>
+          <th>Carry</th>
+          <th>Equip</th>
+          <th>Dam</th>
+          <th>Crit</th>
+          <th>Range</th>
+          <th>HP</th>
+          <th>Notes</th>
+        </tr>
+        <tr>
+          <td>BlasTech E-11</td>
+          <td>1</td>
+          <td>4</td>
+          <td>
+            <div class="icon icon-tick"></div>
+          </td>
+          <td>
+            <div class="icon icon-tick"></div>
+          </td>
+          <td>10</td>
+          <td>4</td>
+          <td>Long</td>
+          <td>0/4</td>
+          <td><span>Attachments: </span>Augmented Spin Barrel (Add <span class="eote se2"></span> to maintenance checks. Dam+1
+            [Mods: Accurate 1] 2HP), "Bantha's Eye" Laser Sight (Add <span class="eote ad"></span> to successful checks.
+            1HP), Weapon Sling (-1 Cumbersome. [Mods: Quick Draw] 1HP) <span>Qualities: </span>Accurate 1, Stun Setting</td>
+        </tr>
+        <tr>
+          <td>Blaster Pistol</td>
+          <td>1</td>
+          <td>1</td>
+          <td>
+            <div class="icon icon-tick"></div>
+          </td>
+          <td></td>
+          <td>6</td>
+          <td>3</td>
+          <td>Medium</td>
+          <td>3</td>
+          <td><span>Qualities: </span>Stun Setting</td>
+        </tr>
+        <!--<tr>
 						<td>Stun Grenade</td>
 						<td>1</td>
 						<td>1</td>
@@ -656,251 +705,284 @@
 						<td>0</td>
 						<td><span>Qualities: </span>Disorient 3, Stun Damage, Blast 8, Limited Ammo 1</td>
 					</tr>-->
-				</table><br>
-				<table class="eoteTable justifyFirst justifyLast">
-					<caption>Armor</caption>
-					<tr class="flush">
-						<th>Item</th>
-						<th>Qty</th>
-						<th>Enc</th>
-						<th>Carry</th>
-						<th>Equip</th>
-						<th>Soak</th>
-						<th>MDef</th>
-						<th>RDef</th>
-						<th>HP</th>
-						<th>Notes</th>
-					</tr>
-					<tr>
-						<td>Armored Clothing</td>
-						<td>1</td>
-						<td>4 (-3)</td>
-						<td></td>
-						<td><div class="icon icon-tick"></div></td>
-						<td>1</td>
-						<td>1</td>
-						<td>1</td>
-						<td>1</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Black Scout Trooper Armor</td>
-						<td>1</td>
-						<td>4 (-3)</td>
-						<td></td>
-						<td></td>
-						<td>2</td>
-						<td>0</td>
-						<td>0</td>
-						<td>3</td>
-						<td></td>
-					</tr>
-				</table><br>
-				<table class="eoteTable justifyFirst justifyLast">
-					<caption>Gear</caption>
-					<tr class="flush">
-						<th>Item</th>
-						<th>Qty</th>
-						<th>Enc</th>
-						<th>Carry</th>
-						<th>Equip</th>
-						<th>Notes</th>
-					</tr>
-					<tr>
-						<td>15 Stimpacks</td>
-						<td>15</td>
-						<td>0</td>
-						<td><div class="icon icon-tick"></div></td>
-						<td></td>
-						<td>First use restores 5 wounds. -1 wound recovery per use until the target gets 24 hours of rest.</td>
-					</tr>
-					<tr>
-						<td>Binders</td>
-						<td>1</td>
-						<td>0</td>
-						<td><div class="icon icon-tick"></div></td>
-						<td></td>
-						<td><span>Daunting (<span class="eote di2"></span> <span class="eote di2"></span> <span class="eote di2"></span>
-							 <span class="eote di2"></span>) Athletics or Coordination check</span> to escape.</td>
-					</tr>
-					<tr>
-            <td>ECM-598 Medical Backpack</td>
-            <td>1</td>
-            <td>2</td>
-            <td><span class="icon icon-tick"></span></td>
-            <td><div class="icon icon-tick"></div></td>
-            <td>Make Medicine checks without penalty and include <span class="eote bo2"></span>. Reduce the difficulty of treating Critical Injuries by 1 to a minimum of <span>Easy (<span class="eote di2"></span>)</span>. Includes a collapsible repulsor stretcher with a weight limit of 150kg.</td>
-          </tr>
-          <tr>
-						<td>Military Belt Pouch</td>
-						<td>2</td>
-						<td>0</td>
-						<td><span class="icon icon-tick"></span></td>
-						<td><span class="icon icon-tick"></span></td>
-						<td>Holds up to 2 items of 0 encumbrance. Access these items as an incidental.</td>
-					</tr>
-          <tr>
-            <td>Repli-Limb Prosthetic (Right Arm)</td>
-            <td>1</td>
-            <td>0</td>
-            <td><span class="icon icon-tick"></span></td>
-            <td><div class="icon icon-tick"></div></td>
-            <td>Replaces your missing right arm. Covered with synthflesh to appear to be a normal limb.</td>
-          </tr>
-          <tr>
-            <td>Shockhold Hardened Commlink</td>
-            <td>1</td>
-            <td>3</td>
-            <td></td>
-            <td></td>
-            <td>Adds automatic <span class="eote fa"></span><span class="eote fa"></span> to any checks made to decode and understand its transmission and automatic <span class="eote su"></span><span class="eote su"></span> to any checks made to broadcast through a jammer.</td>
-          </tr>
-          <tr>
-            <td>Utility Belt</td>
-            <td>1</td>
-            <td>0</td>
-            <td><span class="icon icon-tick"></span></td>
-            <td><div class="icon icon-tick"></div></td>
-            <td>+1 encumbrance threshold.</td>
-          </tr>
-				</table>
-			</div>
-			<div class="section">
-				<h2>Talents and Special Abilities</h2>
-				<table class="eoteTable justifyFirst justifyLast">
-					<tr>
-						<th>Name</th>
-						<th>Rank</th>
-						<th>Activation</th>
-						<th>Acquisition</th>
-						<th>Description</th>
-					</tr>
-					<tr>
-						<td class="passive">Bacta Specialist</td>
-						<td>1</td>
-						<td>Passive</td>
-						<td>Medic</td>
-						<td>Patients heal 1 additional wound per rank when they heal via bacta tanks or long-term care.</td>
-					</tr>
-          <tr>
-						<td class="passive">Dedication</td>
-						<td>NA</td>
-						<td>Passive</td>
-						<td>Medic</td>
-						<td>Cunning +1.</td>
-					</tr>
-          <tr>
-						<td class="passive">Forager</td>
-						<td>1</td>
-						<td>Passive</td>
-						<td>Medic</td>
-						<td>Remove up to <span class="eote se2"></span><span class="eote se2"></span> from skill checks to find food, water, or shelter. Survival checks to forage take half the time.</td>
-					</tr>
-					<tr>
-						<td class="active">Full Throttle</td>
-						<td>NA</td>
-						<td>Action</td>
-						<td>Pilot</td>
-						<td>Take a Full Throttle action. Make a <span>Hard (<span class="eote di2"></span> <span class="eote di2"></span> <span class="eote di2"></span>) Piloting check</span> to increase a vehicle's top speed by 2 for a number of rounds equal to Cunning.</td>
-					</tr>
-					<tr>
-						<td class="active">Full Throttle (Improved)</td>
-						<td>NA</td>
-						<td>Maneuver</td>
-						<td>Pilot</td>
-						<td>Suffer 1 strain to attempt Full Throttle as a maneuver and decrease its difficulty to <span>Average (<span class="eote di2"></span><span class="eote di2"></span>)</span>.</td>
-					</tr>
-          <tr>
-						<td class="passive">Full Throttle (Supreme)</td>
-						<td>NA</td>
-						<td>Passive</td>
-						<td>Pilot</td>
-						<td>When performing Full Throttle, top speed increases by 2 instead of 1.</td>
-					</tr>
-					<tr>
-						<td class="passive">Galaxy Mapper</td>
-						<td>1</td>
-						<td>Passive</td>
-						<td>Pilot</td>
-						<td>Remove <span class="eote se2"></span> per rank from Astrogation checks. Checks also take half normal time.</td>
-					</tr>
-					<tr>
-						<td class="passive">Grit</td>
-						<td>3</td>
-						<td>Passive</td>
-						<td>Medic x2, Pilot</td>
-						<td>Gain +1 strain threshold.</td>
-					</tr>
-          <tr>
-						<td class="active">It's Not That Bad</td>
-						<td>NA</td>
-						<td>Action</td>
-						<td>Medic</td>
-						<td>Once per session when an ally would suffer a Critical Injury, may make a <span>Hard (<span class="eote di2"></span><span class="eote di2"></span><span class="eote di2"></span>) Medicine check</span> to stop the ally from gaining that Injury.</td>
-					</tr>
-          <tr>
-						<td class="active">Second Wind</td>
-						<td>NA</td>
-						<td>Incidental</td>
-						<td>Recruit</td>
-						<td>Once per encounter, may heal strain equal to ranks.</td>
-					</tr>
-					<tr>
-						<td class="passive">Skilled Jockey</td>
-						<td>2</td>
-						<td>Passive</td>
-						<td>Pilot x2</td>
-						<td>Remove <span class="eote se2"></span> per rank from Space and Planetary Piloting checks.</td>
-					</tr>
-					<tr>
-						<td class="active">Stim Application</td>
-						<td>NA</td>
-						<td>Action</td>
-						<td>Medic</td>
-						<td>Take the Stim Application action; make an <span>Average (<span class="eote di2"></span>	<span class="eote di2"></span>) Medicine check.</span> If successful, 1 engaged ally increases 1 characteristic by 1 for the remainder of the encounter and suffers 4 strain.</td>
-					</tr>
-          <tr>
-						<td class="active">Stim Application (Improved)</td>
-						<td>NA</td>
-						<td>Action</td>
-						<td>Medic</td>
-						<td>When performing a Stim Application Action, may increase difficulty of check to <span>Hard (<span class="eote di2"></span> <span class="eote di2"></span> <span class="eote di2"></span>),</span> and target only suffers 1 strain.</td>
-					</tr>
-					<tr>
-						<td class="passive">Stimpack Specialization</td>
-						<td>3</td>
-						<td>Passive</td>
-						<td>Medic x3</td>
-						<td>Stimpacks heal for 1 additional wound per rank.</td>
-					</tr>
-					<tr>
-						<td class="passive">Surgeon</td>
-						<td>2</td>
-						<td>Passive</td>
-						<td>Medic x2</td>
-						<td>When making a Medicine check to help a character heal wounds, the target heals 1 additional wound per rank.</td>
-					</tr>
-          <tr>
-						<td class="passive">Tactical Combat Training</td>
-						<td>NA</td>
-						<td>Passive</td>
-						<td>Recruit</td>
-						<td>Melee and Ranged (Heavy) become career skills.</td>
-					</tr>
-          <tr>
-						<td class="passive">Toughened</td>
-						<td>2</td>
-						<td>Passive</td>
-						<td>Medic, Recruit</td>
-						<td>Gain +2 wound threshold.</td>
-					</tr>
-				</table>
-			</div>
-			<div class="section footer">
-				<p class="aurebesh-bold">This Star Wars site is created solely to enjoy the Fantasy Flight Games tabletop game. It is in no way official.</p>
-			</div>
-	</div>
-	<div class="back-to-top"><a href="#">TOP</a></div>
-	<script src="../../js/main.js"></script>
+      </table>
+      <br>
+      <table class="eoteTable justifyFirst justifyLast">
+        <caption>Armor</caption>
+        <tr class="flush">
+          <th>Item</th>
+          <th>Qty</th>
+          <th>Enc</th>
+          <th>Carry</th>
+          <th>Equip</th>
+          <th>Soak</th>
+          <th>MDef</th>
+          <th>RDef</th>
+          <th>HP</th>
+          <th>Notes</th>
+        </tr>
+        <tr>
+          <td>Armored Clothing</td>
+          <td>1</td>
+          <td>4 (-3)</td>
+          <td></td>
+          <td>
+            <div class="icon icon-tick"></div>
+          </td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Black Scout Trooper Armor</td>
+          <td>1</td>
+          <td>4 (-3)</td>
+          <td></td>
+          <td></td>
+          <td>2</td>
+          <td>0</td>
+          <td>0</td>
+          <td>3</td>
+          <td></td>
+        </tr>
+      </table>
+      <br>
+      <table class="eoteTable justifyFirst justifyLast">
+        <caption>Gear</caption>
+        <tr class="flush">
+          <th>Item</th>
+          <th>Qty</th>
+          <th>Enc</th>
+          <th>Carry</th>
+          <th>Equip</th>
+          <th>Notes</th>
+        </tr>
+        <tr>
+          <td>15 Stimpacks</td>
+          <td>15</td>
+          <td>0</td>
+          <td>
+            <div class="icon icon-tick"></div>
+          </td>
+          <td></td>
+          <td>First use restores 5 wounds. -1 wound recovery per use until the target gets 24 hours of rest.</td>
+        </tr>
+        <tr>
+          <td>Binders</td>
+          <td>1</td>
+          <td>0</td>
+          <td>
+            <div class="icon icon-tick"></div>
+          </td>
+          <td></td>
+          <td><span>Daunting (<span class="eote di2"></span> <span class="eote di2"></span> <span class="eote di2"></span>
+            <span class="eote di2"></span>) Athletics or Coordination check</span> to escape.</td>
+        </tr>
+        <tr>
+          <td>ECM-598 Medical Backpack</td>
+          <td>1</td>
+          <td>2</td>
+          <td><span class="icon icon-tick"></span></td>
+          <td>
+            <div class="icon icon-tick"></div>
+          </td>
+          <td>Make Medicine checks without penalty and include <span class="eote bo2"></span>. Reduce the difficulty of treating
+            Critical Injuries by 1 to a minimum of <span>Easy (<span class="eote di2"></span>)</span>. Includes a collapsible
+            repulsor stretcher with a weight limit of 150kg.</td>
+        </tr>
+        <tr>
+          <td>Military Belt Pouch</td>
+          <td>2</td>
+          <td>0</td>
+          <td><span class="icon icon-tick"></span></td>
+          <td><span class="icon icon-tick"></span></td>
+          <td>Holds up to 2 items of 0 encumbrance. Access these items as an incidental.</td>
+        </tr>
+        <tr>
+          <td>Shockhold Hardened Commlink</td>
+          <td>1</td>
+          <td>3</td>
+          <td></td>
+          <td></td>
+          <td>Adds automatic <span class="eote fa"></span><span class="eote fa"></span> to any checks made to decode and understand
+            its transmission and automatic <span class="eote su"></span><span class="eote su"></span> to any checks made
+            to broadcast through a jammer.</td>
+        </tr>
+        <tr>
+          <td>Utility Belt</td>
+          <td>1</td>
+          <td>0</td>
+          <td><span class="icon icon-tick"></span></td>
+          <td>
+            <div class="icon icon-tick"></div>
+          </td>
+          <td>+1 encumbrance threshold.</td>
+        </tr>
+      </table><br>
+      <table class="eoteTable justifyFirst justifyLast">
+        <caption>Cybernetics 2/2</caption>
+        <tr class="flush">
+          <th>Item</th>
+          <th>Notes</th>
+        </tr>
+        <tr>
+          <td>Gank Comm Implant</td>
+          <td>Allows non-verbal communication to other encoded gank implants.</td>
+        </tr>
+        <tr>
+          <td>Repli-Limb Prosthetic Right Arm</td>
+          <td>Replaces your missing right arm. Covered with synthflesh to appear to be a normal limb.</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Talents and Special Abilities</h2>
+      <table class="eoteTable justifyFirst justifyLast">
+        <tr>
+          <th>Name</th>
+          <th>Rank</th>
+          <th>Activation</th>
+          <th>Acquisition</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td class="passive">Bacta Specialist</td>
+          <td>1</td>
+          <td>Passive</td>
+          <td>Medic</td>
+          <td>Patients heal 1 additional wound per rank when they heal via bacta tanks or long-term care.</td>
+        </tr>
+        <tr>
+          <td class="passive">Dedication</td>
+          <td>NA</td>
+          <td>Passive</td>
+          <td>Medic</td>
+          <td>Cunning +1.</td>
+        </tr>
+        <tr>
+          <td class="passive">Forager</td>
+          <td>1</td>
+          <td>Passive</td>
+          <td>Medic</td>
+          <td>Remove up to <span class="eote se2"></span><span class="eote se2"></span> from skill checks to find food, water,
+            or shelter. Survival checks to forage take half the time.</td>
+        </tr>
+        <tr>
+          <td class="active">Full Throttle</td>
+          <td>NA</td>
+          <td>Action</td>
+          <td>Pilot</td>
+          <td>Take a Full Throttle action. Make a <span>Hard (<span class="eote di2"></span> <span class="eote di2"></span>
+            <span
+            class="eote di2"></span>) Piloting check</span> to increase a vehicle's top speed by 2 for a number of rounds equal to Cunning.</td>
+        </tr>
+        <tr>
+          <td class="active">Full Throttle (Improved)</td>
+          <td>NA</td>
+          <td>Maneuver</td>
+          <td>Pilot</td>
+          <td>Suffer 1 strain to attempt Full Throttle as a maneuver and decrease its difficulty to <span>Average (<span class="eote di2"></span>
+            <span
+            class="eote di2"></span>)</span>.</td>
+        </tr>
+        <tr>
+          <td class="passive">Full Throttle (Supreme)</td>
+          <td>NA</td>
+          <td>Passive</td>
+          <td>Pilot</td>
+          <td>When performing Full Throttle, top speed increases by 2 instead of 1.</td>
+        </tr>
+        <tr>
+          <td class="passive">Galaxy Mapper</td>
+          <td>1</td>
+          <td>Passive</td>
+          <td>Pilot</td>
+          <td>Remove <span class="eote se2"></span> per rank from Astrogation checks. Checks also take half normal time.</td>
+        </tr>
+        <tr>
+          <td class="passive">Grit</td>
+          <td>3</td>
+          <td>Passive</td>
+          <td>Medic x2, Pilot</td>
+          <td>Gain +1 strain threshold.</td>
+        </tr>
+        <tr>
+          <td class="active">It's Not That Bad</td>
+          <td>NA</td>
+          <td>Action</td>
+          <td>Medic</td>
+          <td>Once per session when an ally would suffer a Critical Injury, may make a <span>Hard (<span class="eote di2"></span>
+            <span
+            class="eote di2"></span><span class="eote di2"></span>) Medicine check</span> to stop the ally from gaining that Injury.</td>
+        </tr>
+        <tr>
+          <td class="active">Second Wind</td>
+          <td>NA</td>
+          <td>Incidental</td>
+          <td>Recruit</td>
+          <td>Once per encounter, may heal strain equal to ranks.</td>
+        </tr>
+        <tr>
+          <td class="passive">Skilled Jockey</td>
+          <td>2</td>
+          <td>Passive</td>
+          <td>Pilot x2</td>
+          <td>Remove <span class="eote se2"></span> per rank from Space and Planetary Piloting checks.</td>
+        </tr>
+        <tr>
+          <td class="active">Stim Application</td>
+          <td>NA</td>
+          <td>Action</td>
+          <td>Medic</td>
+          <td>Take the Stim Application action; make an <span>Average (<span class="eote di2"></span> <span class="eote di2"></span>)
+            Medicine check.</span> If successful, 1 engaged ally increases 1 characteristic by 1 for the remainder of the
+            encounter and suffers 4 strain.</td>
+        </tr>
+        <tr>
+          <td class="active">Stim Application (Improved)</td>
+          <td>NA</td>
+          <td>Action</td>
+          <td>Medic</td>
+          <td>When performing a Stim Application Action, may increase difficulty of check to <span>Hard (<span class="eote di2"></span>            <span class="eote di2"></span> <span class="eote di2"></span>),</span> and target only suffers 1 strain.</td>
+        </tr>
+        <tr>
+          <td class="passive">Stimpack Specialization</td>
+          <td>3</td>
+          <td>Passive</td>
+          <td>Medic x3</td>
+          <td>Stimpacks heal for 1 additional wound per rank.</td>
+        </tr>
+        <tr>
+          <td class="passive">Surgeon</td>
+          <td>2</td>
+          <td>Passive</td>
+          <td>Medic x2</td>
+          <td>When making a Medicine check to help a character heal wounds, the target heals 1 additional wound per rank.</td>
+        </tr>
+        <tr>
+          <td class="passive">Tactical Combat Training</td>
+          <td>NA</td>
+          <td>Passive</td>
+          <td>Recruit</td>
+          <td>Melee and Ranged (Heavy) become career skills.</td>
+        </tr>
+        <tr>
+          <td class="passive">Toughened</td>
+          <td>2</td>
+          <td>Passive</td>
+          <td>Medic, Recruit</td>
+          <td>Gain +2 wound threshold.</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section footer">
+      <p class="aurebesh-bold">This Star Wars site is created solely to enjoy the Fantasy Flight Games tabletop game. It is in no way official.</p>
+    </div>
+  </div>
+  <div class="back-to-top"><a href="#">TOP</a></div>
+  <script src="../../js/main.js"></script>
 </body>
+
 </html>
