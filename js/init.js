@@ -313,7 +313,7 @@ $(document).ready(function () {
     var defPort = document.getElementById('def-port').value;
     var defStarboard = document.getElementById('def-starboard').value;
 
-    if (name != 0 && wounds > 0 && strain > 0 && silhouette > 0 && topSpeed > 0 && handling > 0) {
+    if (name != 0 && wounds > 0 && strain > 0 && silhouette > 0 && topSpeed > 0) {
       display.chars.push({ type: 1, name: name, woundCurrent: 0, woundThr: wounds, strainCurrent: 0, strainThr: strain, silhouette: silhouette, topSpeed: topSpeed, currentSpeed: 0, handling: handling, defFore: defFore, defAft: defAft, defPort: defPort, defStarboard: defStarboard });
     }
     
