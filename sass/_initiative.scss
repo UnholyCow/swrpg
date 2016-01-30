@@ -21,6 +21,49 @@ button {
 #vehicle-name {
 	width: 300px; 
 }
+#init-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.85);
+  z-index: 9001;
+  transition: opacity 300ms ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+  div {
+    width: 250px;
+    position: relative;
+    margin: 10% auto;
+    padding: 10px;
+    border-radius: 15px;
+    background: #333;
+    text-align: center;
+    input {
+      margin: 5px;
+      text-align: center;
+      display: inline-block;
+      width: 100px;
+      height: 60px;
+      border: none;
+      background-color: $eoteslate;
+      color: #FFF;
+      line-height: 30px;
+      font-size: 1.15em;
+      padding: 0;
+      height: 40px;
+      transition: box-shadow .115s;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:focus {
+        box-shadow: 0 0 5px 5px $eoteyellow;
+        outline: none;
+      }
+    }
+  }
+}
 .active-slot {
   box-shadow: 0 0 5px 5px $eoteblue;
 }
@@ -141,6 +184,7 @@ button {
 	margin: 3px 0 0 0;
   padding: 5px 10px;
   transition: .115s;
+  background: #333;
   &.selected-char {
     box-shadow: inset 3px 0 0 0 $eoteyellow;
   }
@@ -177,7 +221,9 @@ button {
 }
 .remove-char {
   @extend .remove;
-  border-radius: 50%;
+  width: 20px;
+  padding: 4px 2px;
+  margin: -5px -10px 0 0;
 }
 .remove-dice {
   margin: 0;
