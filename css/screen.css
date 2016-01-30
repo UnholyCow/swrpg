@@ -9,7 +9,7 @@
 /* Tools */
 /* Media Queries */
 /* Site styling. */
-/* line 5, ../../../../Applications/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../Applications/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -31,45 +31,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../Applications/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../Applications/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../Applications/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../Applications/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../Applications/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../Applications/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../Applications/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../Applications/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../Applications/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../Applications/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../Applications/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../Applications/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../Applications/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../Applications/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../Applications/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../Applications/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -1482,30 +1482,79 @@ button:focus {
 }
 
 /* line 24, ../sass/_initiative.scss */
+#init-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9001;
+  transition: opacity 300ms ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+}
+/* line 35, ../sass/_initiative.scss */
+#init-modal div {
+  width: 250px;
+  position: relative;
+  margin: 10% auto;
+  padding: 10px;
+  border-radius: 15px;
+  background: #333;
+  text-align: center;
+}
+/* line 43, ../sass/_initiative.scss */
+#init-modal div input {
+  margin: 5px;
+  text-align: center;
+  display: inline-block;
+  width: 100px;
+  height: 60px;
+  border: none;
+  background-color: #495558;
+  color: #FFF;
+  line-height: 30px;
+  font-size: 1.15em;
+  padding: 0;
+  height: 40px;
+  transition: box-shadow .115s;
+}
+/* line 57, ../sass/_initiative.scss */
+#init-modal div input:first-child {
+  margin-left: 0;
+}
+/* line 60, ../sass/_initiative.scss */
+#init-modal div input:focus {
+  box-shadow: 0 0 5px 5px #DFC663;
+  outline: none;
+}
+
+/* line 68, ../sass/_initiative.scss */
 .active-slot {
   box-shadow: 0 0 5px 5px #76CDDA;
 }
 
-/* line 27, ../sass/_initiative.scss */
+/* line 71, ../sass/_initiative.scss */
 .add-combatant {
   display: inline-block;
   border-radius: 15px;
   padding: 20px 0;
   background-color: #222;
 }
-/* line 32, ../sass/_initiative.scss */
+/* line 76, ../sass/_initiative.scss */
 .add-combatant form {
   display: inline-block;
 }
-/* line 35, ../sass/_initiative.scss */
+/* line 79, ../sass/_initiative.scss */
 .add-combatant h2 {
   margin: 0;
 }
-/* line 38, ../sass/_initiative.scss */
+/* line 82, ../sass/_initiative.scss */
 .add-combatant h4 {
   display: inline-block;
 }
-/* line 41, ../sass/_initiative.scss */
+/* line 85, ../sass/_initiative.scss */
 .add-combatant input {
   margin: 5px;
   text-align: center;
@@ -1521,16 +1570,16 @@ button:focus {
   height: 40px;
   transition: box-shadow .115s;
 }
-/* line 56, ../sass/_initiative.scss */
+/* line 100, ../sass/_initiative.scss */
 .add-combatant input:first-child {
   margin-left: 0;
 }
-/* line 59, ../sass/_initiative.scss */
+/* line 103, ../sass/_initiative.scss */
 .add-combatant input:focus {
   box-shadow: 0 0 5px 5px #DFC663;
   outline: none;
 }
-/* line 64, ../sass/_initiative.scss */
+/* line 108, ../sass/_initiative.scss */
 .add-combatant button {
   display: inline-block;
   cursor: pointer;
@@ -1544,35 +1593,35 @@ button:focus {
   transition: .115s;
   cursor: pointer;
 }
-/* line 81, ../sass/_initiative.scss */
+/* line 125, ../sass/_initiative.scss */
 .add-combatant .add-ally:focus,
 .add-combatant .add-enemy:focus,
 .add-combatant .add-pc:focus,
 .add-combatant .add-vehicle:focus {
   outline: none;
 }
-/* line 86, ../sass/_initiative.scss */
+/* line 130, ../sass/_initiative.scss */
 .add-combatant .add-ally:hover {
   background-color: #284666;
   color: #FFF;
 }
-/* line 92, ../sass/_initiative.scss */
+/* line 136, ../sass/_initiative.scss */
 .add-combatant .add-pc:hover {
   background-color: #51634B;
   color: #FFF;
 }
-/* line 98, ../sass/_initiative.scss */
+/* line 142, ../sass/_initiative.scss */
 .add-combatant .add-enemy:hover {
   background-color: #761213;
   color: #FFF;
 }
-/* line 104, ../sass/_initiative.scss */
+/* line 148, ../sass/_initiative.scss */
 .add-combatant .add-vehicle:hover {
   background-color: #495558;
   color: #FFF;
 }
 
-/* line 110, ../sass/_initiative.scss */
+/* line 154, ../sass/_initiative.scss */
 .char-field {
   display: inline-block;
   font-size: 2.5em;
@@ -1581,7 +1630,7 @@ button:focus {
   vertical-align: top;
 }
 
-/* line 117, ../sass/_initiative.scss */
+/* line 161, ../sass/_initiative.scss */
 .char-strain-dmg,
 .char-wound-dmg,
 .vehicle-speed-up {
@@ -1590,14 +1639,14 @@ button:focus {
   padding: 7px 0 0 5px;
   float: left;
 }
-/* line 124, ../sass/_initiative.scss */
+/* line 168, ../sass/_initiative.scss */
 .char-strain-dmg:hover,
 .char-wound-dmg:hover,
 .vehicle-speed-up:hover {
   color: #761213;
 }
 
-/* line 128, ../sass/_initiative.scss */
+/* line 172, ../sass/_initiative.scss */
 .char-strain-heal,
 .char-wound-heal,
 .vehicle-speed-down {
@@ -1606,37 +1655,38 @@ button:focus {
   padding: 7px 5px 0 0;
   float: right;
 }
-/* line 135, ../sass/_initiative.scss */
+/* line 179, ../sass/_initiative.scss */
 .char-strain-heal:hover,
 .char-wound-heal:hover,
 .vehicle-speed-down:hover {
   color: #51634B;
 }
 
-/* line 139, ../sass/_initiative.scss */
+/* line 183, ../sass/_initiative.scss */
 .character {
   margin: 3px 0 0 0;
   padding: 5px 10px;
   transition: .115s;
+  background: #333;
 }
-/* line 144, ../sass/_initiative.scss */
+/* line 189, ../sass/_initiative.scss */
 .character.selected-char {
   box-shadow: inset 3px 0 0 0 #DFC663;
 }
 
-/* line 148, ../sass/_initiative.scss */
+/* line 193, ../sass/_initiative.scss */
 .finished {
   box-shadow: 0 0 5px 5px #761213;
 }
 
-/* line 151, ../sass/_initiative.scss */
+/* line 196, ../sass/_initiative.scss */
 .init {
   color: #DFC663;
   font-size: 30px;
   padding-bottom: 5px;
 }
 
-/* line 156, ../sass/_initiative.scss */
+/* line 201, ../sass/_initiative.scss */
 .monitor {
   display: inline-block;
   background-color: #222;
@@ -1648,7 +1698,7 @@ button:focus {
   margin: 10px 0 0 0;
 }
 
-/* line 166, ../sass/_initiative.scss */
+/* line 211, ../sass/_initiative.scss */
 .remove, .remove-char {
   display: inline-block;
   float: right;
@@ -1657,18 +1707,20 @@ button:focus {
   color: #cf2021;
   transition: .3s;
 }
-/* line 173, ../sass/_initiative.scss */
+/* line 218, ../sass/_initiative.scss */
 .remove:hover, .remove-char:hover {
   background-color: #cf2021;
   color: #FFF;
 }
 
-/* line 178, ../sass/_initiative.scss */
+/* line 223, ../sass/_initiative.scss */
 .remove-char {
-  border-radius: 50%;
+  width: 20px;
+  padding: 4px 2px;
+  margin: -5px -10px 0 0;
 }
 
-/* line 182, ../sass/_initiative.scss */
+/* line 229, ../sass/_initiative.scss */
 .remove-dice {
   margin: 0;
   display: inline-block;
@@ -1677,12 +1729,12 @@ button:focus {
   padding: 33px 0 0 0;
   transition: .115s;
 }
-/* line 189, ../sass/_initiative.scss */
+/* line 236, ../sass/_initiative.scss */
 .remove-dice:hover {
   color: #cf2021;
 }
 
-/* line 193, ../sass/_initiative.scss */
+/* line 240, ../sass/_initiative.scss */
 .slot {
   height: 40px;
   line-height: 40px;
@@ -1691,13 +1743,13 @@ button:focus {
   background-color: #495558;
   transition: box-shadow .115s;
 }
-/* line 200, ../sass/_initiative.scss */
+/* line 247, ../sass/_initiative.scss */
 .slot .large {
   color: #DFC663;
   margin: 0 5px 0 0;
 }
 
-/* line 205, ../sass/_initiative.scss */
+/* line 252, ../sass/_initiative.scss */
 .slot-field {
   display: inline-block;
   text-align: center;
@@ -1706,12 +1758,12 @@ button:focus {
   font-size: 1.5em;
   margin: 0 10px 0 0;
 }
-/* line 212, ../sass/_initiative.scss */
+/* line 259, ../sass/_initiative.scss */
 .slot-field span {
   color: #DFC663;
 }
 
-/* line 216, ../sass/_initiative.scss */
+/* line 263, ../sass/_initiative.scss */
 .tracker {
   width: 46%;
   border-radius: 15px;
@@ -1721,14 +1773,14 @@ button:focus {
   position: relative;
   margin: 10px 0 0 0;
 }
-/* line 224, ../sass/_initiative.scss */
+/* line 271, ../sass/_initiative.scss */
 .tracker .round-counter {
   position: absolute;
   top: 20px;
   right: 10px;
 }
 
-/* line 230, ../sass/_initiative.scss */
+/* line 277, ../sass/_initiative.scss */
 .type {
   display: inline-block;
   text-align: right;
@@ -1738,15 +1790,15 @@ button:focus {
   padding: 0 5px 0 0;
   margin: 0 10px 0 0;
 }
-/* line 238, ../sass/_initiative.scss */
+/* line 285, ../sass/_initiative.scss */
 .type.ally {
   background-color: #284666;
 }
-/* line 241, ../sass/_initiative.scss */
+/* line 288, ../sass/_initiative.scss */
 .type.enemy {
   background-color: #761213;
 }
-/* line 244, ../sass/_initiative.scss */
+/* line 291, ../sass/_initiative.scss */
 .type.player {
   background-color: #51634B;
 }

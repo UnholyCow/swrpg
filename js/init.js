@@ -320,13 +320,14 @@ $(document).ready(function () {
     resetVehicle();
     display.renderHTML();
   }
-  
+ 
   Monitor.prototype.renderHTML = function () {
     $("#monitor-container").empty();
     for (var i = 0; i < display.chars.length; i++) {
       var el = display.chars[i];
       if (el.type === 0) {
         var htmlString = '<div class="character">';
+        htmlString += '<div><span class="icon icon-cross remove-char"></span></div>';
         htmlString += '<h3>' + el.name + '</h3>'
         htmlString += '<div class="stat-small-wide"><div class="tag-small';
         if (el.woundCurrent >= el.woundThr) {
@@ -359,11 +360,11 @@ $(document).ready(function () {
         htmlString += '<div class="char-field remove-dice remove-boost"><span class="icon icon-cross"></span></div>';
         htmlString += '<div class="char-field setback-count-char">'+ el.setback +'<span class="eote se2 contrast"></span></div>';
         htmlString += '<div class="char-field remove-dice remove-setback"><span class="icon icon-cross"></span></div>';
-        htmlString += '<div class="char-field right"><span class="icon icon-cross remove-char"></span></div></div>';
       }
       if (el.type === 1) {
         var htmlString = '<div class="character">';
-         htmlString += '<h3>' + el.name + '</h3>'
+        htmlString += '<div><span class="icon icon-cross remove-char"></span></div>';
+        htmlString += '<h3>' + el.name + '</h3>'
         htmlString += '<div class="stat-small-wide"><div class="tag-small';
         if (el.woundCurrent >= el.woundThr) {
           htmlString += ' tagRed';
@@ -449,8 +450,6 @@ $(document).ready(function () {
           }
           htmlString += '</span></div></div>';
         }
-        
-        htmlString += '<div class="char-field right"><span class="icon icon-cross remove-char"></span></div></div>';
       }
 
       $("#monitor-container").append(htmlString);
