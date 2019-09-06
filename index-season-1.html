@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Star Wars Roleplaying</title>
+	<link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link rel="icon" href="img/icon.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+		<div id="hamburger">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="logo"></div>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html" class="active">Home</a></li>
+			<li><a href="groups/monarch/overview.html" class="toggle-groups-nav">Players</a>
+				<ul id="groups-nav">
+					<li><a href="groups/monarch/francis.html">FR4NC15</a></li>
+					<li><a href="groups/monarch/hayynq.html">Hayynq</a></li>
+					<li><a href="groups/monarch/nysro.html">Nysro</a></li>
+					<li><a href="groups/monarch/rusku.html">Rusku</a></li>
+					<li><a href="groups/monarch/trooper.html">TK</a></li>
+					<li><a href="groups/monarch/themonarch.html">Elleffay</a></li>
+				</ul>
+			</li>
+			<li><a href="rules.html" class="toggle-rules-nav">Rules</a>
+				<ul id="rules-nav">
+					<li><a href="results.html">Results</a></li>
+					<li><a href="crits.html">Criticals</a></li>
+					<li><a href="initiative.html">Tracker</a></li>
+				</ul>
+			</li>
+			<li><a href="sessions.html">Sessions</a></li>
+		</ul>
+	</nav>
+	<div class="container">
+		<div class="splitLeft">
+			<h1>Galactic News</h1>
+      <div class="divider"><h4>4/17/2016</h4></div>
+      <div class="info">
+        <h2>Imperial Navy Bulletin</h2>
+        <p>From: Commander Veers, Ryloth/1/BLK<br>
+        To: INC<br>
+        Subject: Arrest Bulletin</p>
+        <p>Notice of criminal/rebel activity.<br>
+        YT-1300f "Elleffay" IDT#:<span class="aurebesh">RL8cT998</span><br>
+        RegID: <span class="aurebesh">Hayynq Randomname</span>; Gand<br>
+        DiploID: <span class="aurebesh">ARK2187</span>; Chiss Ascendancy; Rebek'a Chaf<br>
+        FreightID: <span class="aurebesh">22KRp9T</span>; Tramp</p>
+        <p>Wanted for the bombing of a Quasar Fire-class Cruiser-Carrier and likely assistance of the Ryloth Resistance. A standard escape pod was modified with explosives (Type 4 Proton Grenades arrayed in sequence as determined by residuals and blast pattern.) and set adrift towards the carrier. SOP retrieval performed and by witness accounts the pod detonated on door seal depressurization. 11 dead. 4 TIE/sa destroyed. Carrier repairs expected to take 21 local rotations while 2 of its bays remain in service.</p>
+        <p>Three (3) standard hours prior, the vessel entered restricted space feigning navicomputer problems but later jumped out of system without warning. Immediately prior to the bombing the vessel was scanned down on the surface of Ryloth and a TIE/ln squadron was launched to disable it. Four (4) TIE losses in the pursuit. Still unknown how the vessel broke atmosphere without our knowledge.</p>
+        <p>Requesting permission to upgrade the Ryloth blockade to BLK-GL for the future safety of Imperial personnel.</p>
+        <span class="stinger aurebesh">You're burned. Time to live with it!</span>
+      </div>
+      <div class="divider"><h4>1/3/2016</h4></div>
+      <div class="info">
+        <h2>Kuat Drive Yards Memo</h2>
+        <p>With the 'internal' attack on Kuat Drive Yards we have recieved an Imperial Order. Either we improve our security or the local Moff will do it for us. I was barely able to keep them from taking the whole damn planet in the name of 'safety'. Either way we'll have Destroyers in orbit in the next few days.</p>
+        <p>I want information on Pato Sosen on my desk tomorrow morning. We need to know who or what made this guy snap. If we have another incident like this I don't think I can keep Moff Jorsa from suggesting the Emperor simply absorb KDY.</p>
+        <span class="stinger aurebesh">We all know the truth. Eventually the Empire will too.</span>
+      </div>
+      <div class="divider"><h4>12/27/2015</h4></div>
+      <div class="info">
+        <h2>Intercepted Imperial<br>Intelliegence Scandoc</h2>
+        <p>From: Ninya Dizlan, Malastare/1<br>
+        To: Fyn Terlok, Intelligence: Crisis<br>
+        Subject: Emergence 2nd Class<br>
+        Confirmed: SEND; TRAN37/49; RECV<br>
+        Context: 8E10; AEXC; RMAN<br>
+        Phasecycle: PSEG612564448461348125; ICON; 00.03.00BMUT; 00.15RMUT</p>
+        <p>Command,<br>
+        Firsthand confirmation of Emergence. Qoryn deceased. Target aware, capable, and aided. Human, Trandoshan, bug-like, blue skin/red eyes (Duros/Rodian NEG), droid (IG? AWARE). YT-1300 (MOD/FAST).</p>
+        <p>Human ID @ TK3186 Corporal Iris Solo. FMLY ID @ #SOLO-3321.</p>
+        <p>!Alert HAND!</p>
+        <span class="stinger aurebesh">Time to listen to the Imperial March.</span>
+      </div>
+			<div class="divider"><h4>12/6/2015</h4></div>
+			<div class="info">
+				<h2>BoSS Outage</h2>
+				<p>The Bureau of Ships and Services was sabotaged on the Mid Rim planet Ord Mantell. Star Destroyers were dispatched while the matter was being investigated, all current inhabitants should follow any and all instructions from their planetary governor.</p>
+				<p>Images captured as the suspects fled the BoSS building are attached to this message. If you have any information regarding this group of individuals that leads to their capture, death, or positive identification, a 30,000 <span class="aurebesh">$</span> reward is being offered.</p>
+				<p>Anyone being caught abusing the temporary outage of records will be imprisoned for no less than 10 standard Imperial years, their assets siezed, and known friends and family questioned.</p>
+				<span class="stinger aurebesh">This flagrant violation will not go unpunished.</span>
+			</div>
+			<div class="divider"><h4>11/1/2015</h4></div>
+			<div class="info">
+				<h2>Terrorists Attack Raxus Prime</h2>
+				<p>The Imperial shipyard located at Raxus Prime was attacked by an extremist group. earlier this week. Intelligence confirms their targets were the orbital docks though local system patrol craft were able to intervene before much damage was done.</p>
+				<p>Of the many craft used in the attack only two severely damaged CEC starships remained, one YT-1300 and a CR90 corvette. If you have any information that leads to the apprehension of the attackers a 3,000 <span class="aurebesh">$</span> bounty will be awarded.</p>
+				<span class="stinger aurebesh">Terrorists Attack Raxus Prime....</span>
+			</div>
+		</div>
+		<div class="splitRight">
+			<h1>Updates</h1>
+      <div class="divider"><h4>6/19/2016</h4></div>
+      <div class="info">
+        <h2>Rewards</h2><h2 class="corner">+60 XP</h2>
+        <p>Surviving the scheming of a hutt crime lord and the Empire.</p>
+        <span class="stinger aurebesh">Maybe the Empire will have a say in the safety of Nevro?</span>
+      </div>
+      <div class="info">
+        <h2>Rewards</h2><h2 class="corner">-25 Debt</h2>
+        <p>The debt owed to Nevro the Hutt is erased with his betrayl.</p>
+        <span class="stinger aurebesh">Publically attacking one hutt is generally a declaration of war on them all.</span>
+      </div>
+      <div class="info">
+        <h2>HAYYNQ</h2><h2 class="corner">-5 Obsession</h2>
+        <p>Saving the slaves has helped put your conscience at ease.</p>
+        <span class="stinger aurebesh">Finding Nysro's father didn't hurt either.</span>
+      </div>
+      <div class="info">
+        <h2>FR4NC15</h2><h2 class="corner">+5 Combat Duty</h2>
+        <p>For successfully crushing the Imperials aboard the Rusty Rivet.</p>
+        <span class="stinger aurebesh">It was easy, really.</span>
+      </div>
+      <div class="info">
+        <h2>NYSRO</h2><h2 class="corner">+15 Resource Duty</h2>
+        <p>The massive hauling ship is a massive boon for the Rebels.</p>
+        <span class="stinger aurebesh">It might have a tracking device in it, too.</span>
+      </div>
+      <div class="info">
+        <h2>TK</h2><h2 class="corner">+5 Support Duty</h2>
+        <p>For helping get Blue Squadron back home in one piece.</p>
+        <span class="stinger aurebesh">Great hyperspace jump!</span>
+      </div>
+      <div class="divider"><h4>5/22/2016</h4></div>
+      <div class="info">
+        <h2>Rewards</h2><h2 class="corner">+90 XP</h2>
+        <p>The ancient Holocron of Master Rak'norin was recovered from the Sith temple as Jay'ce died at the hands of Darth Vader.</p>
+        <span class="stinger aurebesh">All hopes of ressurrecting the Jedi Order have vanished.</span>
+      </div>
+      <div class="info">
+        <h2>Rewards</h2><h2 class="corner">+1 Contribution</h2>
+        <p>Without it even being your main objective you have made a huge effort on behalf of the Rebellion.</p>
+        <span class="stinger aurebesh">Didn't even think about this part, well done!</span>
+      </div>
+      <div class="info">
+        <h2>FR4NC15</h2><h2 class="corner">-5 Betrayal</h2>
+        <p>Hunting you is becoming too costly. While the Empire will never stop, their efforts are noticably reduced.</p>
+        <span class="stinger aurebesh">The Empire will still stop at nothing to learn how you gained freedom.</span>
+      </div>
+      <div class="info">
+        <h2>RUSKU</h2><h2 class="corner">Bounty Lifted</h2>
+        <p>Someone either forgot about extending your bounty or decided it was no longer worth pursuing.</p>
+        <span class="stinger aurebesh">Don't worry, it'll get worse next.</span>
+      </div>
+      <div class="info">
+        <h2>RUSKU</h2><h2 class="corner">+10 Criminal</h2>
+        <p>While not officially under your name, the Empire is grasping for any information it can get on this mysterious new Force sensitive.</p>
+        <span class="stinger aurebesh">It got worse.</span>
+      </div>
+      <div class="info">
+        <h2>FR4NC15</h2><h2 class="corner">+10 Combat Duty</h2>
+        <p>For destroying yet another TL droid and stranding Vader on a remote world, potentially saving Rebels out on mission.</p>
+        <span class="stinger aurebesh">Vader now knows you are still out there.</span>
+      </div>
+      <div class="info">
+        <h2>TK</h2><h2 class="corner">+5 Support Duty</h2>
+        <p>Stranding Darth Vader on a remote world and weakening the ranks of the Inquisitors.</p>
+        <span class="stinger aurebesh">Hopefully you weren't identified.</span>
+      </div>
+      <div class="info">
+        <h2>RUSKU</h2><h2 class="corner">+20 Tech Duty</h2>
+        <p>While very little of the knowledge contained in the holocron could actually help the Rebellion, they do know how important it is for the galaxy that the Jedi Order not completely die.</p>
+        <span class="stinger aurebesh">You cannot let the memory of the Jedi die.</span>
+      </div>
+      <div class="info">
+        <h2>NYSRO</h2><h2 class="corner">+10 Resource Duty</h2>
+        <p>Recovering ancient and modern examples of lightsabers. Hopefully something can come from researching the power sources of these weapons.</p>
+        <span class="stinger aurebesh">Now, if there was a tracker on the saber, that would be a big problem.</span>
+      </div>
+      <div class="info">
+        <h2>HAYYNQ</h2><h2 class="corner">+10 Sabotage Duty</h2>
+        <p>Keeping the holocron out of the hands of the Empire undoubtedly helps the Rebellion in the long run.</p>
+        <span class="stinger aurebesh">Remaining unidentified is probably for the best.</span>
+      </div>
+      <div class="divider"><h4>4/17/2016</h4></div>
+      <div class="info">
+        <h2>Rewards</h2><h2 class="corner">+85 XP</h2>
+        <p>You retrieved the missing supply drop and then rather creatively dropped them on Ryloth for the Rebellion.</p>
+        <span class="stinger aurebesh">Yet again you blow up whatever happens to be in the way. It's effective!</span>
+      </div>
+      <div class="info">
+        <h2>Rewards</h2><h2 class="corner">+14,000<span class="cr"></span></h2>
+        <p>Smuggling a ton of supplies through Imperial blockades pays pretty well.</p>
+        <span class="stinger aurebesh">It's a good thing you didn't just sell the neurotoxin to anyone.</span>
+      </div>
+      <div class="info">
+        <h2>FR4NC15</h2><h2 class="corner">+5 Combat Duty</h2>
+        <p>For turning plenty of TIE fighters into scrap.</p>
+        <span class="stinger aurebesh">The Black Sun aren't exactly our main concern.</span>
+      </div>
+      <div class="info">
+        <h2>Hayynq</h2><h2 class="corner">+15 Sabotage Duty</h2>
+        <p>You escape pod bombed an Imperial Navy carrier. Yeah.</p>
+        <span class="stinger aurebesh">The Elleffay is definitely a target now.</span>
+      </div>
+      <div class="info">
+        <h2>Nysro</h2><h2 class="corner">+10 Resource Duty</h2>
+        <p>Successful delivery of the supplies to the twi'lek rebels.</p>
+        <span class="stinger aurebesh">The rebels on Ryloth really needed everything you got to them.</span>
+      </div>
+      <div class="info">
+        <h2>Rusku</h2><h2 class="corner">+5 Tech Duty</h2>
+        <p>For locating and grabbing some extra supplies for the run.</p>
+        <span class="stinger aurebesh">Proud owner of the "Scannahackadataslicer".</span>
+      </div>
+      <div class="info">
+        <h2>TK</h2><h2 class="corner">+10 Support Duty</h2>
+        <p>For keeping Blue Squadron in the sky and not splattered on the surface of Ryloth.</p>
+        <span class="stinger aurebesh">Always there for the team.</span>
+      </div>
+      <div class="divider"><h4>2/28/2016</h4></div>
+      <div class="info">
+        <h2>Rewards</h2><h2 class="corner">+30 XP</h2>
+        <p>You turned a bounty into a potential new member of the Rebellion.</p>
+        <span class="stinger aurebesh">Dealing with a Hutt is eventually going to be very bad.</span>
+      </div>
+      <div class="info">
+        <h2>Obligation</h2><h2 class="corner">+25 Debt</h2>
+        <p>In exchange for handing over Vaabesh all of Blue Squadron owes Nevro the Hutt a favor.</p>
+        <span class="stinger aurebesh">This should be good...</span>
+      </div>
+      <div class="info">
+        <h2>Hayynq</h2><h2 class="corner">-5 Obsession</h2>
+        <p>You helped an old friend out of a dangerous situation.</p>
+        <span class="stinger aurebesh">That 'old friend' is still a mad bomber, but still.</span>
+      </div>
+      <div class="divider"><h4>2/14/2016</h4></div>
+      <div class="info">
+        <h2>Rewards</h2><h2 class="corner">+75 XP</h2>
+        <p>Saved a Rebel commander and the incredibly talented cryptography expert, Drusil Bephorin.</p>
+        <span class="stinger aurebesh">You took too long and lost a fellow Rebel. Disappointing.</span>
+      </div>
+      <div class="divider"><h4>1/24/2016</h4></div>
+      <div class="info">
+        <h2>Rewards</h2><h2 class="corner">+30 XP</h2>
+        <p>For discovering the location of Tichon and dealing with a team of Imperial bounty hunters!</p>
+        <span class="stinger aurebesh">Yes, the effects of that crit actually are permanent.</span>
+      </div>
+      <div class="divider"><h4>1/17/2016</h4></div>
+      <div class="info">
+        <h2>Rewards</h2><h2 class="corner">+70 XP</h2>
+        <p>For the daring and successful infiltration of an Imperial convoy and making it out alive (minus an arm).</p>
+        <span class="stinger aurebesh">It was so cool! That droid tore her arm right off!</span>
+      </div>
+      <div class="info">
+        <h2>Rewards</h2><h2 class="corner">25,000<span class="cr"></span> Group</h2>
+        <p>The group fund portion of the hard credits stolen from the Empire!</p>
+        <span class="stinger aurebesh">There actually aren't any catches here.</span>
+      </div>
+      <div class="info">
+        <h2>Rewards</h2><h2 class="corner">5,000<span class="cr"></span> Each</h2>
+        <p>The other half of the stolen credits!</p>
+        <span class="stinger aurebesh">Still no catches. This is rare.</span>
+      </div>
+      <div class="info">
+        <h2>Hayynq</h2><h2 class="corner">+10 Obsession</h2>
+        <p>You passed up a major opportunity to help the wookiees of Kashyyyk.</p>
+        <span class="stinger aurebesh">This is all on your shoulders.</span>
+      </div>
+      <div class="info">
+        <h2>Hayynq</h2><h2 class="corner">+10 Sabotage Duty</h2>
+        <p>Severely damaging a frigate and trashing some of the Empire's new droids.</p>
+        <span class="stinger aurebesh">You used to just be a bounty hunter.</span>
+      </div>
+      <div class="info">
+        <h2>FR4NC15</h2><h2 class="corner">-5 Betrayal</h2>
+        <p>The parts from the Stormtrooper droids are eerily similar to yours. They can help with throwing the Empire off of your trail.</p>
+        <span class="stinger aurebesh">That's right, you were the predecessor of the Dark Troopers.</span>
+      </div>
+      <div class="info">
+        <h2>FR4NC15</h2><h2 class="corner">+5 Combat Duty</h2>
+        <p>Destroying some of the Empire's new droids and capturing a squad of Stormtroopers.</p>
+        <span class="stinger aurebesh">There were holocams all over that ship, good thing you found some parts.</span>
+      </div>
+      <div class="info">
+        <h2>Nysro</h2><h2 class="corner">+15 Resource Duty</h2>
+        <p>Theft of a long range Lambda shuttle, credits, and piles of other intel tech.</p>
+        <span class="stinger aurebesh">This is an incredible boon to the Rebellion.</span>
+      </div>
+      <div class="info">
+        <h2>Rusku</h2><h2 class="corner">+10 Tech Duty</h2>
+        <p>For stealing the shuttle and intelligence tools.</p>
+        <span class="stinger aurebesh">Hopefully you can put these tools to use yourself.</span>
+      </div>
+      <div class="info">
+        <h2>TK</h2><h2 class="corner">+10 Support Duty</h2>
+        <p>Aiding Blue Squadron in the completion of your goals.</p>
+        <span class="stinger aurebesh">You supported them so hard you gave up an arm.</span>
+      </div>
+      <div class="divider"><h4>1/3/2016</h4></div>
+      <div class="info">
+        <h2>Duty</h2><h2 class="corner">+5 All</h2>
+        <p>You have taken your first steps into a larger world.</p>
+        <span class="stinger aurebesh">Please no more civilian bombings.</span>
+      </div>
+      <div class="info">
+        <h2>Rewards</h2><h2 class="corner">+35 XP</h2>
+        <p>First 'official' mission for the Rebellion complete! Goodbye Pato.</p>
+        <span class="stinger aurebesh">Seriously? Poor Pato. What did he every do to you?</span>
+      </div>
+      <div class="divider"><h4>12/27/2015</h4></div>
+      <div class="info">
+        <h2>Rusku</h2><h2 class="corner">Force Rating 1</h2>
+        <p>The Force has awakened inside you. Free access to the Force Sensitive Exile specialization.</p>
+        <span class="stinger aurebesh">I forsee a fall to the Dark Side.</span>
+      </div>
+      <div class="info">
+        <h2>Rewards</h2><h2 class="corner">+50 XP</h2>
+        <p>Experience and a Recruit specialization for training with the fledgling Rebel Alliance.</p>
+        <span class="stinger aurebesh">No Yoda backpacks for you guys.</span>
+      </div>
+      <div class="divider"><h4>12/20/2015</h4></div>
+      <div class="info">
+        <h2>Rewards</h2><h2 class="corner">+35 XP</h2>
+        <p>Awarded for the successful retrieval of Ehar's family, slipping through an Imperial checkpoint, finding Jay'ce, and wrecking some serious battle droids.</p>
+        <span class="stinger aurebesh">Are you not entertained?! Also, Jedi are incredibly strong.</span>
+      </div>
+       <div class="info">
+        <h2>Rewards</h2><h2 class="corner">8,400<span class="cr"></span></h2>
+        <p>Earnings from betting on yourselves and actually showing up Jay'ce the Juggernaut.</p>
+        <span class="stinger aurebesh">Yeah, that was a good bet.</span>
+      </div>
+			<div class="divider"><h4>12/13/2015</h4></div>
+			<div class="info">
+				<h2>Rewards</h2><h2 class="corner">+35 XP</h2>
+				<p>Joining the Rebellion, investigation, and not going for guns immediately? Nice job!</p>
+				<span class="stinger aurebesh">Trying to avoid combat? Insanity!</span>
+			</div>
+			<div class="divider"><h4>12/6/2015</h4></div>
+			<div class="info">
+				<h2>Rewards</h2><h2 class="corner">+30 XP</h2>
+				<p>For successfully hitting a BoSS office, dealing with a particularly dangerous assassin droid, and not dying in the process.</p>
+				<span class="stinger aurebesh">I seriously didn't see that coming.</span>
+			</div>
+			<div class="divider"><h4>11/29/2015</h4></div>
+			<div class="info">
+				<h2>Nysro</h2><h2 class="corner">Character</h2>
+				<p>XP didn't add up, could do everything you wanted but only Cool 1.</p>
+				<span class="stinger aurebesh">Math is hard.</span>
+			</div>
+			<div class="divider"><h4>11/22/2015</h4></div>
+			<div class="info">
+				<h2>Rewards</h2><h2 class="corner">+30 XP</h2>
+				<p>For smuggling, defending Hutts in the face of danger, and surviving an Imperial attack.</p>
+				<span class="stinger aurebesh">I should just put "Yeah Bitches" here.</span>
+			</div>
+			
+			<div class="divider"><h4>11/1/2015</h4></div>
+			<div class="info">
+				<h2>FR4NC15</h2><h2 class="corner">-5 Bounty</h2>
+				<p>Reom knows a guy inside the Imperial bounty system and managed to get your name stricken. It looks like it went well, can't find anything else public about you. Classified chatter was insane though...</p>
+				<span class="stinger aurebesh">The Empire still wants their property back.</span>
+			</div>
+			<div class="info">
+				<h2>Hayynq</h2><h2 class="corner">-5 Obsession</h2>
+				<p>It kind of cost us but we diverted supplies to some of the nonhuman refugees on the Outer Rim. The Hutts hit some of the shipments but it looks like a lot of people still got the help they needed.</p>
+				<span class="stinger aurebesh">You will never end the suffering of others.</span>
+			</div>
+			<div class="info">
+				<h2>Nysro</h2><h2 class="corner">-5 Criminal</h2>
+				<p>Reom sent some of the guys to hit a security station where the Imperials were holding some evidence against you. The entire building is a husk, there's no way they can stick some of what IsoTech does on your head any more.</p>
+				<span class="stinger aurebesh">Things will only get worse before the end.</span>
+			</div>
+			<div class="info">
+				<h2>Rusku</h2><h2 class="corner">-5 Bounty</h2>
+				<p>We had to dig pretty deep to even find where to "fix" your bounty. The slicers we paid off still don't know who even put the mark on you but they really, really hate you.</p>
+				<span class="stinger aurebesh">Do not think your secrets have gone without notice.</span>
+			</div>
+			<div class="info">
+				<h2>TK</h2><h2 class="corner">+15 Criminal</h2>
+				<p>We have some bad news, poking around for the rest of your crew eventually led to an Imperial communique. Stormtrooper Command is pissed that a defector even exists, let alone lives. We keep hearing chatter about Lord Vader...watch your back...</p>
+				<span class="stinger aurebesh">Switching sides does not erase your previous actions.</span>
+			</div>
+		</div>
+		<div class="section footer">
+			<p class="aurebesh-bold">This Star Wars site is created solely to enjoy the Fantasy Flight Games tabletop game. It is in no way official.</p>
+		</div>
+	</div>
+	<div class="back-to-top"><a href="#">TOP</a></div>
+	<script src="js/main.js"></script>
+</body>
+</html>
