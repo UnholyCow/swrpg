@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Star Wars Roleplaying [DM]</title>
+	<link href="../../css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link rel="icon" href="../../img/icon.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+		<div id="hamburger">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<a href="../../index.html"><div class="logo"></div></a>
+	</header>
+	<nav>
+		<ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="skills.html" class="toggle-adv-nav active">DM Screen</a>
+				<ul id="adv-nav">
+	        <li><a href="skills.html" class="active">Skills</a></li>
+	      </ul>
+      </li>
+      <li><a href="../adversaries.html" class="toggle-adv-nav">Adversaries</a>
+				<ul id="adv-nav">
+	        <li><a href="../adversaries/bountyhunters.html">Hunters</a></li>
+	        <li><a href="../adversaries/droids.html">Droids</a></li>
+	        <li><a href="../adversaries/imperial.html">Imperial</a></li>
+	        <li><a href="../adversaries/spaceport.html">Spaceport</a></li>
+	        <li><a href="../adversaries/underworld.html">Underworld</a></li>
+	        <li><a href="../adversaries/patronclient.html">Patrons</a></li>
+	        <li><a href="../adversaries/core.html">Core</a></li>
+	        <li><a href="../adversaries/oddities.html">Oddities</a></li>
+	      </ul>
+      </li>
+      <li><a href="../hyperspace.html">Travel</a></li>
+      <li><a href="../trade.html">Trade</a></li>
+      <li><a href="../payment.html">Payment</a></li>
+      <li><a href="../gear.html">Gear</a></li>
+		</ul>
+	</nav>
+  <div class="container">
+    <div class="section">
+      <h2>Skill Guide</h2>
+      <div class="splitLeft">
+        <table class="eoteTable justifyLast">
+          <tr>
+            <th>Roll</th>
+            <th>Effect</th>
+          </tr>
+          <tr>
+            <td colspan="2" class="table-divider">Astrogation (Intellect)</td> <!-- ========== ASTROGATION ========== -->
+          </tr>
+          <tr>
+            <td colspan="2">See also: Travel page.</td>
+          </tr>
+          <tr>
+            <td><span class="eote su"></span></td>
+            <td>Better target destination or reduce time spent calculating jump.</td>
+          </tr>
+          <tr>
+            <td><span class="eote ad"></span></td>
+            <td>Reduce travel time or better routing longer journeys.</td>
+          </tr>
+          <tr>
+            <td><span class="eote tr"></span></td>
+            <td>Calculate jump in minimum time, greatly reduce travel time, or gain highly valuable information such as an alternative route.</td>
+          </tr>
+          <tr>
+            <td><span class="eote th"></span></td>
+            <td>Decrease accuracy, increase travel time, or miss vital relevant information.</td>
+          </tr>
+          <tr>
+            <td><span class="eote de"></span></td>
+            <td>As <span class="eote th"></span> but to a greater magnitude or something horrible happens.</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="table-divider">Athletics (Brawn)</td> <!-- ========== ATHLETICS ========== -->
+          </tr>
+          <tr>
+            <td>+<span class="eote se2"></span></td>
+            <td>Adverse conditions. (Rain, winds, pursuit)</td>
+          </tr>
+          <tr>
+            <td><span class="upgrade"></span><span class="eote ch2"></span></td>
+            <td>Extreme conditions. (Hurricane, oil-covered surface)</td>
+          </tr>
+          <tr>
+            <td><span class="eote su"></span></td>
+            <td>Reduce time or increase distance.</td>
+          </tr>
+          <tr>
+            <td><span class="eote ad"></span><span class="eote ad"></span></td>
+            <td>+1 movement based maneuver.</td>
+          </tr>
+          <tr>
+            <td><span class="eote ad"></span></td>
+            <td>+<span class="eote ad2"></span> on other physical checks.</td>
+          </tr>
+          <tr>
+            <td><span class="eote th"></span></td>
+            <td>+1 strain.</td>
+          </tr>
+          <tr>
+            <td><span class="eote th"></span><span class="eote th"></span></td>
+            <td>Fall prone.</td>
+          </tr>
+          <tr>
+            <td><span class="eote th"></span><span class="eote th"></span><span class="eote th"></span></td>
+            <td>+1 wound.</td>
+          </tr>
+          <tr>
+            <td><span class="eote de"></span></td>
+            <td>Critical Injury</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="table-divider">Charm (Presence)</td> <!-- ========== CHARM ========== -->
+          </tr>
+          <tr>
+            <td colspan="2"><span>Large Groups: </span>Not an opposed check. GM sets difficulty.</td>
+          </tr>
+          <tr>
+            <td>+<span class="eote di2"></span></td>
+            <td>Outcome directly opposed to targets interests.</td>
+          </tr>
+          <tr>
+            <td><span class="eote su"></span></td>
+            <td>Extend support for +1 scene.</td>
+          </tr>
+          <tr>
+            <td><span class="eote ad"></span></td>
+            <td>Affect subjects beyond original target.</td>
+          </tr>
+          <tr>
+            <td><span class="eote tr"></span></td>
+            <td>Target becomes recurring ally.</td>
+          </tr>
+          <tr>
+            <td><span class="eote th"></span></td>
+            <td>Reduce number of people influenced.</td>
+          </tr>
+          <tr>
+            <td><span class="eote th"></span></td>
+            <td>Turn people other than target against them.</td>
+          </tr>
+          <tr>
+            <td><span class="eote de"></span></td>
+            <td>Target or other NPC becomes recurring adversary.</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="table-divider">Coercion (Willpower)</td> <!-- ========== COERCION ========== -->
+          </tr>
+          <tr>
+            <td colspan="2"><span>Large Groups: </span>Not an opposed check. GM sets difficulty.</td>
+          </tr>
+          <tr>
+            <td>+<span class="eote di2"></span></td>
+            <td>Target acting against core beliefs.</td>
+          </tr>
+          <tr>
+            <td><span class="eote su"></span><span class="eote su"></span></td>
+            <td>+1 strain.</td>
+          </tr>
+          <tr>
+            <td><span class="eote ad"></span><span class="eote ad"></span></td>
+            <td>Affect subjects beyond original target.</td>
+          </tr>
+          <tr>
+            <td><span class="eote tr"></span></td>
+            <td>Target becomes recurring subjugated ally.</td>
+          </tr>
+          <tr>
+            <td><span class="eote th"></span></td>
+            <td>Building resentment in the NPC.</td>
+          </tr>
+          <tr>
+            <td><span class="eote de"></span></td>
+            <td>Coercer reveals something about their true intentions.</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="table-divider">Computers (Intellect)</td> <!-- ========== COMPUTERS ========== -->
+          </tr>
+          <tr>
+            <td colspan="2"><span>Sensors - <span class="eote di2"></span>:</span> Use in active mode without ambient radiation, atmospheric disturbances, terrain, or active jamming.</td>
+          </tr>
+          <tr>
+            <td><span class="eote su"></span></td>
+            <td>Reduce time required.</td>
+          </tr>
+          <tr>
+            <td><span class="eote ad"></span></td>
+            <td>Uncover additional information (assets, journals, defenses, etc).</td>
+          </tr>
+          <tr>
+            <td><span class="eote tr"></span></td>
+            <td>Conceal the system slice.</td>
+          </tr>
+          <tr>
+            <td><span class="eote th"></span></td>
+            <td>Securit systems are alerted, other slicers gain +<span class="eote bo2"></span> against character.</td>
+          </tr>
+          <tr>
+            <td><span class="eote de"></span></td>
+            <td>Character can be traced/identified, +<span class="eote bo2"></span> against future checks targeting the slicer.</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="table-divider">Cool (Presence)</td> <!-- ========== COOL ========== -->
+          </tr>
+          <tr>
+            <td><span class="eote ad"></span></td>
+            <td>Additional insight into situation.</td>
+          </tr>
+          <tr>
+            <td><span class="eote tr"></span></td>
+            <td>-3 strain.</td>
+          </tr>
+          <tr>
+            <td><span class="eote th"></span></td>
+            <td>Miss vital detail/event.</td>
+          </tr>
+          <tr>
+            <td><span class="eote de"></span></td>
+            <td>Staggered for 1 round.</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="table-divider">Coordination (Agility)</td> <!-- ========== Coordination ========== -->
+          </tr>
+          <tr>
+            <td><span class="eote su"></span></td>
+            <td>Increase distance by 25%.</td>
+          </tr>
+          <tr>
+            <td><span class="eote su"></span></td>
+            <td>Decrease time.</td>
+          </tr>
+          <tr>
+            <td><span class="eote ad"></span><span class="eote ad"></span></td>
+            <td>+1 maneuver.</td>
+          </tr>
+          <tr>
+            <td><span class="eote th"></span></td>
+            <td>Lose free maneuver for 1 turn.</td>
+          </tr>
+          <tr>
+            <td><span class="eote de"></span></td>
+            <td>+1 wound/lose piece of equipment.</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="table-divider">Deception (Cunning)</td> <!-- ========== DECEPTION ========== -->
+          </tr>
+          <tr>
+            <td><span class="eote su"></span></td>
+            <td>Extend duration of deception.</td>
+          </tr>
+          <tr>
+            <td><span class="eote ad"></span></td>
+            <td>Increase value of goods/services gained.</td>
+          </tr><tr>
+            <td><span class="eote tr"></span></td>
+            <td>Target believes character is trustworthy; future checks are not opposed. (GM assigns difficulty based on lie)</td>
+          </tr>
+          <tr>
+            <td><span class="eote th"></span></td>
+            <td>Target sees through part of lie/knows he's been lied to.</td>
+          </tr>
+          <tr>
+            <td><span class="eote de"></span></td>
+            <td>Target spreads word of the deception.</td>
+          </tr>
+          <tr>
+            <td><span class="eote de"></span></td>
+            <td>Target tursn lie to their advantage (bad info/goods).</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="table-divider">Discipline (Willpower)</td> <!-- ========== DISCIPLINE ========== -->
+          </tr>
+          <tr>
+            <td><span class="eote su"></span></td>
+            <td>Downgrade <span class="eote ch2"></span> on next action.</td>
+          </tr>
+          <tr>
+            <td><span class="eote ad"></span></td>
+            <td>Additional insight into situation.</td>
+          </tr>
+          <tr>
+            <td><span class="eote tr"></span></td>
+            <td>+<span class="eote bo2"></span> to ally's Discipline checks for 1 round.</td>
+          </tr>
+          <tr>
+            <td><span class="eote th"></span></td>
+            <td>+<span class="eote di2"></span> to next action, characters resolve undermined. </td>
+          </tr>
+          <tr>
+            <td><span class="eote de"></span></td>
+            <td>Loses action/can only perform 1 maneuver next round.</td>
+          </tr>
+        </table>
+      </div>
+      <div class="splitRight">
+        <table class="eoteTable justifyLast">
+          <tr>
+            <th>Roll</th>
+            <th>Effect</th>
+          </tr>
+          <tr>
+            <td colspan="2" class="table-divider">Knowledge Skills (Intellect)</td> <!-- ========== KNOWLEDGE ========== -->
+          </tr>
+          <tr>
+            <td><span class="eote su"></span></td>
+            <td>Pieces of knowledge/speed of gaining knowledge.</td>
+          </tr>
+          <tr>
+            <td><span class="eote ad"></span></td>
+            <td>Particularly useful piece of knowledge.</td>
+          </tr>
+          <tr>
+            <td><span class="eote tr"></span></td>
+            <td>Extremely sueful piece of knowledge.</td>
+          </tr>
+          <tr>
+            <td><span class="eote th"></span></td>
+            <td>Omits vital detail or context.</td>
+          </tr>
+          <tr>
+            <td><span class="eote de"></span></td>
+            <td>Seeds minsinformation/outright falsehood.</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="table-divider">Leadership (Presence)</td> <!-- ========== LEADERSHIP ========== -->
+          </tr>
+          <tr>
+            <td><span class="eote su"></span></td>
+            <td>Extend duration of support.</td>
+          </tr>
+          <tr>
+            <td><span class="eote ad"></span></td>
+            <td>Affect subjects beyond original target.</td>
+          </tr>
+          <tr>
+            <td><span class="eote tr"></span></td>
+            <td>NPC becomes recurring faithful follower.</td>
+          </tr>
+          <tr>
+            <td><span class="eote th"></span></td>
+            <td>Ordered actiosn take longer or done poorly.</td>
+          </tr>
+          <tr>
+            <td><span class="eote de"></span></td>
+            <td>+<span class="eote di2"></span> to future leadershipo checks until rep repaired.</td>
+          </tr>
+          <tr>
+            <td><span class="eote de"></span><span class="eote de"></span></td>
+            <td>Target becomse recurring problem, refusing to take orders or turning others against character.</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="table-divider">Mechanics (Intellect)</td> <!-- ========== MECHANICS ========== -->
+          </tr>
+          <tr>
+            <td colspan="2"><span>Missing Tools/Components:</span> +<span class="eote di2"></span> to future checks using item.</td>
+          </tr>
+          <tr>
+            <td><span class="eote su"></span></td>
+            <td>Reduce time required by 10-20%.</td>
+          </tr>
+          <tr>
+            <td class="td"><span class="eote ad"></span></td>
+            <td class="td">+<span class="eote bo2"></span> using item for 1 session.</td>
+          </tr>
+          <tr>
+            <td>or</td>
+            <td>Item gains Superior quality for 1 session.</td>
+          </tr>
+          <tr>
+            <td><span class="eote tr"></span></td>
+            <td>Give device a new, single-use function.</td>
+          </tr>
+          <tr>
+            <td><span class="eote th"></span></td>
+            <td>Item malfunctions in the near future.</td>
+          </tr>
+          <tr>
+            <td><span class="eote de"></span></td>
+            <td>Additional damage to target.</td>
+          </tr>
+          <tr>
+            <td><span class="eote de"></span></td>
+            <td>Related components begin to malfunction.</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="table-divider">Negotiation (Presence)</td> <!-- ========== NEGOTIATION ========== -->
+          </tr>
+          <tr>
+            <td><span class="eote su"></span></td>
+            <td>Increase length of contract/profit by 5%.</td>
+          </tr>
+          <tr>
+            <td><span class="eote ad"></span></td>
+            <td>Gain perk/concession from target.</td>
+          </tr>
+          <tr>
+            <td><span class="eote tr"></span></td>
+            <td>NPC becomes regular client/vendor.</td>
+          </tr>
+          <tr>
+            <td><span class="eote th"></span></td>
+            <td>Increase cost/decrease value/shorten contract.</td>
+          </tr>
+          <tr>
+            <td><span class="eote de"></span></td>
+            <td>Agreement contains serious loophole.</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="table-divider">Perception (Cunning)</td> <!-- ========== PERCEPTION ========== -->
+          </tr>
+          <tr>
+            <td><span class="eote su"></span></td>
+            <td>Reveal additional details.</td>
+          </tr>
+          <tr>
+            <td><span class="eote ad"></span></td>
+            <td>Recall additional inforamtion about object noticed.</td>
+          </tr>
+          <tr>
+            <td><span class="eote tr"></span></td>
+            <td>Notice useful details, gain +<span class="eote bo2"></span> on future interactions.</td>
+          </tr>
+          <tr>
+            <td><span class="eote th"></span></td>
+            <td>Conceal vital details.</td>
+          </tr>
+          <tr>
+            <td><span class="eote tr"></span></td>
+            <td>False information.</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="table-divider">Piloting (Agility)</td> <!-- ========== PILOTING ========== -->
+          </tr>
+          <tr>
+            <td><span class="eote ad"></span></td>
+            <td>+<span class="eote bo2"></span> vs opponents piloting style.</td>
+          </tr>
+          <tr>
+            <td><span class="eote tr"></span></td>
+            <td>+1 maneuver with vehicle.</td>
+          </tr>
+          <tr>
+            <td><span class="eote th"></span><span class="eote th"></span></td>
+            <td>Opponent gains +<span class="eote bo2"></span> vs character.</td>
+          </tr>
+          <tr>
+            <td><span class="eote de"></span></td>
+            <td>Damage vehicle.</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="table-divider">Resilience (Brawn)</td> <!-- ========== RESILIENCE ========== -->
+          </tr>
+          <tr>
+            <td colspan="2"><span>No sleep for 24 hours:</span> <span class="eote di2"></span></td>
+          </tr>
+          <tr>
+            <td><span class="eote su"></span></td>
+            <td>Extend time before next Resilience check.</td>
+          </tr>
+          <tr>
+            <td><span class="eote ad"></span></td>
+            <td>Identify method of gaining +<span class="eote bo2"></span> on future Resilience checks (including for allies).</td>
+          </tr>
+          <tr>
+            <td><span class="eote tr"></span></td>
+            <td>-3 strain.</td>
+          </tr>
+          <tr>
+            <td><span class="eote th"></span></td>
+            <td>+<span class="eote se2"></span> on next Resilience check.</td>
+          </tr>
+          <tr>
+            <td><span class="eote de"></span></td>
+            <td>+1 wound or minor Critical Injury.</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="table-divider">Skulduggery (Cunning)</td> <!-- ========== SKULDUGGERY ========== -->
+          </tr>
+          <tr>
+            <td><span class="eote ad"></span></td>
+            <td>Gain additional items/identify additional target.</td>
+          </tr>
+          <tr>
+            <td><span class="eote tr"></span></td>
+            <td>Gain permanent bypass.</td>
+          </tr>
+          <tr>
+            <td><span class="eote tr"></span></td>
+            <td>Gain extra value/information.</td>
+          </tr>
+          <tr>
+            <td><span class="eote th"></span></td>
+            <td>NPC opportunity to catch them after the act.</td>
+          </tr>
+          <tr>
+            <td><span class="eote de"></span></td>
+            <td>Evidence left behind/lost equipment.</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="table-divider">Stealth (Agility)</td> <!-- ========== STEALTH ========== -->
+          </tr>
+          <tr>
+            <td><span class="eote su"></span></td>
+            <td>Add <span class="eote su"></span> to allied character.</td>
+          </tr>
+          <tr>
+            <td><span class="eote ad"></span></td>
+            <td>Reduce time required.</td>
+          </tr>
+          <tr>
+            <td><span class="eote tr"></span></td>
+            <td>Identify method of distracting opponent for entire scene.</td>
+          </tr>
+          <tr>
+            <td><span class="eote th"></span></td>
+            <td>Increase time required by 25%.</td>
+          </tr>
+          <tr>
+            <td><span class="eote de"></span></td>
+            <td>Evidence left behind/lost equipment.</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="table-divider">Survival (Cunning)</td> <!-- ========== SURVIVAL ========== -->
+          </tr>
+          <tr>
+            <td><span class="eote su"></span></td>
+            <td>Add <span class="eote su"></span> to allied character.</td>
+          </tr>
+          <tr>
+            <td><span class="eote su"></span></td>
+            <td>Gain additional supplies.</td>
+          </tr>
+          <tr>
+            <td><span class="eote ad"></span></td>
+            <td>Identify method of gaining +<span class="eote bo2"></span> on future Survival checks (including allies).</td>
+          </tr>
+          <tr>
+            <td><span class="eote ad"></span></td>
+            <td><span>Tracking:</span> Learn detail about target (numbers, species, age of tracks).</td>
+          </tr>
+          <tr>
+            <td><span class="eote tr"></span></td>
+            <td><span>Handle Animal:</span> Animal is now permanent companion.</td>
+          </tr>
+          <tr>
+            <td><span class="eote tr"></span></td>
+            <td><span>Tracking:</span> Learn detail about target (destination, disposition, prisoners/cargo).</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="table-divider">Vigilance (Willpower)</td> <!-- ========== VIGILANCE ========== -->
+          </tr>
+          <tr>
+            <td><span class="eote su"></span></td>
+            <td>Important resource is available.</td>
+          </tr>
+          <tr>
+            <td><span class="eote ad"></span></td>
+            <td>Spot environmental advantage (cover, escape route, +<span class="eote bo2"></span>)</td>
+          </tr>
+          <tr>
+            <td><span class="eote th"></span></td>
+            <td>Miss information about situation/environment.</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="section footer">
+			<p class="aurebesh-bold">This Star Wars site is created solely to enjoy the Fantasy Flight Games tabletop game. It is in no way official.</p>
+		</div>
+  </div>
+  <div class="back-to-top"><a href="#">TOP</a></div>
+	<script src="../../js/main.js"></script>
+</body>
+</html>

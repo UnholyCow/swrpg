@@ -20,6 +20,11 @@
 	<nav>
 		<ul>
       <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="adversaries.html" class="toggle-adv-nav">DM Screen</a>
+				<ul id="adv-nav">
+	        <li><a href="dmscreen/skills.html">Skills</a></li>
+	      </ul>
+      </li>
       <li><a href="adversaries.html" class="toggle-adv-nav">Adversaries</a>
 				<ul id="adv-nav">
 	        <li><a href="adversaries/bountyhunters.html">Hunters</a></li>
@@ -336,16 +341,16 @@
     </div>
     <div class="info">
      <div class="section">
-        <h2>Weapon Qualities</h2>
+        <h2>Item Qualities</h2>
        <i>Active qualities require <span class="eote ad"></span> <span class="eote ad"></span> to trigger unless listed otherwise.</i>
      </div>
       <div class="block">
         <ul>
           <li><strong>Accurate (Passive): </strong>Add <span class="eote bo2"></span> per rating to attack checks.</li>
           <li><strong>Auto-Fire (Passive): </strong>Increase difficulty of attack checks by <span class="eote di2 contrast"></span>. May trigger multiple times to generate additional hits.</li>
+          <li><strong>Blast (Active): </strong>When triggered, targets engaged with target suffer wounds equal to rating.</li>
           <li><strong>Breach (Passive): </strong>Ignore 1 point of armor (10 points of soak) per rating.</li>
           <li><strong>Burn (Active): </strong>When triggered, target suffers weapon's base damage for a number of rounds equal to</li>
-          <li><strong>Blast (Active): </strong>When triggered, targets engaged with target suffer wounds equal to rating.</li>
           <li><strong>Concussive (Active): </strong>When triggered, target is staggered a number of rounds equal to rating.</li>
           <li><strong>Cortosis (Passive): </strong>Weapons are immune to Sunder, armor is immune to Pierce and Breach.</li>
           <li><strong>Cumbersome (Passive): </strong>Must have Brawn equal to rating or increase difficulty by difference to all checks.</li>
@@ -458,15 +463,15 @@
             <th>Examples</th>
           </tr>
           <tr>
-            <td>+1</td>
+            <td><span class="eote se2"></span></td>
             <td>Mist, shadow, waist-high grass.</td>
           </tr>
           <tr>
-            <td>+2</td>
+            <td><span class="eote se2"></span><span class="eote se2"></span></td>
             <td>Fog, dawn or dusk, thick shoulder-high grass.</td>
           </tr>
           <tr>
-            <td>+3</td>
+            <td><span class="eote se2"></span><span class="eote se2"></span><span class="eote se2"></span></td>
             <td>Heavy fog, thick and choking smoke, the darkness of night, dense head-high underbrush and thick grass.</td>
           </tr>
         </table>
@@ -502,6 +507,26 @@
             <td>40</td>
           </tr>
         </table>
+        <h2>Falling Check</h2>
+        <p class="info"><span class="em">Athletics</span> / <span class="em">Coordination</span> (<span class="eote di2 contrast"></span><span class="eote di2 contrast"></span>)</p>
+        <table class="eoteTable justifyFirst">
+          <tr>
+            <th>Roll</th>
+            <th>Result</th>
+          </tr>
+          <tr>
+            <td><span class="eote su"></span></td>
+            <td>-1 damage</td>
+          </tr>
+          <tr>
+            <td><span class="eote ad"></span></td>
+            <td>-1 strain</td>
+          </tr>
+          <tr>
+            <td><span class="eote tr"></span></td>
+            <td>Reduce falling damage by one band.</td>
+          </tr>
+        </table>
       </div>
       <div class="splitRight">
         <h2>Fire, Acid, and Corrosive Atmospheres</h2>
@@ -530,7 +555,8 @@
       </div>
     </div>
     <div class="section">
-      <h2>Fear Guidelines</h2>
+      <h2>Fear Checks</h2>
+      <p class="info"><span class="em">Discipline</span> / <span class="em">Cool</span></p>
       <table class="eoteTable justifyLast">
         <tr>
           <th>State of Fear</th>
@@ -586,6 +612,43 @@
           <td>Confronting something known to be extremely dangerous and unique.</td>
           <td><span class="eote di2"><span class="eote di2"><span class="eote di2"></span><span class="upgrade"></span><span class="eote ch2"></span><span class="eote ch2"></span><span class="eote ch2"></span></td>
           <td>Fighting Darth Vader.</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Fear Check Results</h2>
+      <table class="eoteTable justifyLast">
+        <tr>
+          <th>Roll</th>
+          <th>Result</th>
+        </tr>
+        <tr>
+          <td><span class="eote fa"></span></td>
+          <td>+<span class="eote se2"></span> to all actions until end of encounter.</td>
+        </tr>
+        <tr>
+          <td><span class="eote th"></span></td>
+          <td>+1 strain per <span class="eote fa"></span>.</td>
+        </tr>
+        <tr>
+          <td><span class="eote th"></span><span class="eote th"></span><span class="eote th"></span></td>
+          <td>Staggered for 1 turn.</td>
+        </tr>
+        <tr>
+          <td><span class="eote de"></span></td>
+          <td>+<span class="eote di2"></span> to all actions until end of encounter.</td>
+        </tr>
+        <tr>
+          <td><span class="eote ad"></span></td>
+          <td>+<span class="eote bo2"></span> to any ally's next fear check.</td>
+        </tr>
+        <tr>
+          <td><span class="eote tr"></span></td>
+          <td>Cancel penalties from previous fear checks.</td>
+        </tr>
+        <tr>
+          <td><span class="eote tr"></span></td>
+          <td>No fear checks until end of encounter.</td>
         </tr>
       </table>
     </div>
