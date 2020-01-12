@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Star Wars Roleplaying [DM]</title>
+	<link href="../../css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link rel="icon" href="../../img/icon.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<header>
+		<div id="hamburger">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<a href="../../index.html">
+			<div class="logo"></div>
+		</a>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="skills.html" class="toggle-adv-nav active">DM Screen</a>
+				<ul id="adv-nav">
+					<li><a href="skills.html">Skills</a></li>
+					<li><a href="slicing.html" class="active">Slicing</a></li>
+				</ul>
+			</li>
+			<li><a href="../adversaries.html" class="toggle-adv-nav">Adversaries</a>
+				<ul id="adv-nav">
+					<li><a href="../adversaries/bountyhunters.html">Hunters</a></li>
+					<li><a href="../adversaries/droids.html">Droids</a></li>
+					<li><a href="../adversaries/imperial.html">Imperial</a></li>
+					<li><a href="../adversaries/spaceport.html">Spaceport</a></li>
+					<li><a href="../adversaries/underworld.html">Underworld</a></li>
+					<li><a href="../adversaries/patronclient.html">Patrons</a></li>
+					<li><a href="../adversaries/core.html">Core</a></li>
+					<li><a href="../adversaries/oddities.html">Oddities</a></li>
+				</ul>
+			</li>
+			<li><a href="../hyperspace.html">Travel</a></li>
+			<li><a href="../trade.html">Trade</a></li>
+			<li><a href="../payment.html">Payment</a></li>
+			<li><a href="../gear.html">Gear</a></li>
+		</ul>
+	</nav>
+	<div class="container">
+		<div class="section">
+			<h2>System Security</h2>
+		</div>
+		<table class="eoteTable justifyLast">
+			<tr>
+				<th>Example System</th>
+				<th>Difficulty</th>
+			</tr>
+			<tr>
+				<td>Unsecured/Passcode Known</td>
+				<td><span>Simple (-)</span></td>
+			</tr>
+			<tr>
+				<td>Cantina Terminal, Datapad</td>
+				<td><span>Easy (<span class="eote di2"></span>)</span></td>
+			</tr>
+			<tr>
+				<td>Common Shipboard Computer</td>
+				<td><span>Average (<span class="eote di2"></span> <span class="eote di2"></span>)</span></td>
+			</tr>
+			<tr>
+				<td>Local HoloNet Hub, Military Base/Starship Network</td>
+				<td><span>Hard (<span class="eote di2"></span> <span class="eote di2"></span> <span class="eote di2"></span>)</span></td>
+			</tr>
+			<tr>
+				<td>Imperial Datavault, Regional HoloNet Hub</td>
+				<td><span>Daunting (<span class="eote di2"></span> <span class="eote di2"></span> <span class="eote di2"></span> <span class="eote di2"></span>)</span></td>
+			</tr>
+			<tr>
+				<td>Ancient Archive</td>
+				<td><span>Formidable (<span class="eote di2"></span> <span class="eote di2"></span> <span class="eote di2"></span> <span class="eote di2"></span> <span class="eote di2"></span>)</span></td>
+			</tr>
+			<tr>
+				<td>System Administrator has Defensive Slicing talent</td>
+				<td>Add <span class="eote se2"></span> equal to ranks in Defensive Slicing</td>
+			</tr>
+			<tr>
+				<td>System Administrator has Improved Defensive Slicing talent</td>
+				<td>Upgrade difficulty a number of times equal to ranks in Defensive Slicing</td>
+			</tr>
+		</table>
+		<div class="section">
+			<h2>Slicing Actions</h2>
+		</div>
+		<div class="splitLeft">
+			<div class="info">
+				<h3>Access System</h3>
+				<p>
+					<strong>Difficulty:</strong> <span class="em">Simple (-) Computers Check</span><br>
+					<strong>Available To:</strong> Defender, Intruder<br>
+					<strong>Description:</strong> For a character to interact with a computer system, that individual must be able to get it to recognize basic commands. For most computers, some sort of indentity verification is required - a code, a key, or takes some other, more esoteric token.
+				</p>
+				<p>
+					As an action, if the system has no verification system, or the character posesses legitimate means of access (such as a code cylinder or passcode), a character may make a <span class="em">Simple (-) Computers Check</span> to gain access to it.
+				</p>
+			</div>
+			<div class="info">
+				<h3>Activate Security Program</h3>
+				<p>
+					<strong>Difficulty:</strong> <span class="em">Average (<span class="eote di2 contrast"></span><span class="eote di2 contrast"></span>) Computers Check</span><br>
+					<strong>Available To:</strong> Defender, Intruder<br>
+					<strong>Description:</strong> Security programs are the main impediment to interlopers in a computer system. As such, anyone trying to subvert a system's intended purpose wants to disable such programs, which anyone protecting the system wants to keep them operational.
+				</p>
+				<p>
+					As an action, a slicer may activate a security program with an <span class="em">Average (<span class="eote di2 contrast"></span><span class="eote di2 contrast"></span>) Computers Check</span>. While one or more security programs are active on a computer, intruders cannot take certain slicing actions.
+				</p>
+			</div>
+			<div class="info">
+				<h3>Disable Security Program</h3>
+				<p>
+					<strong>Difficulty:</strong> Computers Check (Difficulty Varies)<br>
+					<strong>Available To:</strong> Defender, Intruder<br>
+					<strong>Description:</strong> Typically, bringing down the security programs protecting a system is an intruding slicer's first job. If there is an administrator aware of the slicer and actively managing the system, however, keeping the system security suppressed is likely to be an ongoing task.
+				</p>
+				<p>
+					As an action, a slicer may attempt to shut down a security program with a Computers check. The difficulty of this check is based on the quality of the security program, for which the GM can consult the System Security table.
+				</p>
+			</div>
+			<div class="info">
+				<h3>Enact Command</h3>
+				<p>
+					<strong>Difficulty:</strong> Computers Check (Difficulty Varies)<br>
+					<strong>Available To:</strong> Defender, Intruder (if no security programs are active)<br>
+					<strong>Description:</strong> The slicer issues a single command to the system he has sliced. Commands are single-purpose requests that fall within the scope of the system. "Loop the past ten seconds of footage on the cameras in this facility that are facing the alley to the north," or "Access all information in this system on Boss Jerod's slave trading," would be valid commands, assuming the system included control of those routines.
+				</p>
+				<p>
+					The difficulty of the Computers checks is up to the GMs discretion, and depends how similar the slicer's command is to the intended use of the system. Unlocking a door controlled by a computer system might require an <span class="em">Easy (<span class="eote di2 contrast">)</span> Computers check</span>, while getting a door's locking mechanics to physically jam might require a <span class="em">Daunting (<span class="eote di2 contrast"></span><span class="eote di2 contrast"></span><span class="eote di2 contrast"></span><span class="eote di2 contrast"></span>) Computers check</span> instead, as the system is designed to open and close the door, but not to break it.
+				</p>
+			</div>
+		</div>
+		<div class="splitRight">
+			<div class="info">
+				<h3>Expel User</h3>
+				<p>
+					<strong>Difficulty:</strong> <span class="em">Opposed Computers vs Computers Check</span><br>
+					<strong>Available To:</strong> Defender, Intruder (if no security programs are active)<br>
+					<strong>Description:</strong> Once a slicer is aware of another user in the system, the slicer can cause that user to lose access and even impede future access.
+				</p>
+				<p>
+					As an action, a slicer may make an Opposed Computers vs Computers check to cause another user to lose access to the system. If the slicer has identified that user's signature, increase the difficulty of the user's Computers checks for the Access System action by two for this computer until the end of the encounter.
+				</p>
+			</div>
+			<div class="info">
+				<h3>Lockdown</h3>
+				<p>
+					<strong>Difficulty:</strong> <span class="em">Hard (<span class="eote di2 contrast"></span><span class="eote di2 contrast"></span><span class="eote di2 contrast"></span>) Computers Check</span><br>
+					<strong>Available To:</strong> Defender, Intruder (if no security programs are active)<br>
+					<strong>Description:</strong> A user with control of a system can usually shut it down with relative ease. For a slicer attacking a system, this is often the goal, leaving the enemy unable to act until they are able to reset the system. For a slicer on the defensive, it is an option of last resort.
+				</p>
+				<p>
+					As an action, a slicer may make a <span class="em">Hard (<span class="eote di2 contrast"></span><span class="eote di2 contrast"></span><span class="eote di2 contrast"></span>) Computers Check</span> to shut down the system, blocking access to all users. Any character with physical access to the system can restart it with an <span class="em">Average (<span class="eote di2 contrast"></span><span class="eote di2 contrast"></span>) Computers Check</span> that takes one hour to complete.
+				</p>
+			</div>
+			<div class="info">
+				<h3>Trace User</h3>
+				<p>
+					<strong>Difficulty:</strong> <span class="em">Opposed Computers vs Computers Check</span><br>
+					<strong>Available To:</strong> Defender, Intruder (if no security programs are active)<br>
+					<strong>Description:</strong> A slicer in a system can attempt to find more information about another user, such as that person's slicing signature or location.
+				</p>
+				<p>As an action, a slicer may make an Opposed Computers vs Computers check against another user in the system. If he succeeds, he learns the other user's physical location, a portion of the slicer's signature (see SM90), or a full list of the actions the user has taken on the system this encounter.</p>
+			</div>
+		</div>
+		<div class="section">
+			<h2>Spending <span class="eote ad"></span> and <span class="eote th"></span></h2>
+		</div>
+		<table class="eoteTable justifyLast">
+			<tr>
+				<th>Symbols</th>
+				<th>Result Options</th>
+			</tr>
+			<tr>
+				<td><span class="eote ad"></span> or <span class="eote tr"></span></td>
+				<td>
+					<span>Opportunity Identified:</span> The slicer finds gaps in the structure of the system that can
+					assist in the execution of another task. Add <span class="eote bo2"></span> to the slicer's next
+					Computers check in this system.</br>
+					<span>Valuable Data (Intruder):</span> While searching for vulnerabilites in the system, the slicer
+					encounters unrelated data that could provide useful or valudable. The nature of the data is up to
+					the GM and an additional <span class="eote ad"></span> may be spent on this result to indicate a
+					particularly interesting find.
+				</td>
+			</tr>
+			<tr>
+				<td><span class="eote ad"></span> <span class="eote ad"></span> or <span class="eote tr"></span></td>
+				<td>
+					<span>Temporary Bypass (Intruder):</span> The slicer creates a temporary bypass into the system that
+					helps avoid a specific slement of the security. The slicer may add <span class="eote bo2"></span><span class="eote bo2"></span> to a single future check to slice this system. This bonus may be
+					saved for any future check.</br>
+					<span>Cover the Tracks (Intruder):</span> A weakness in the system's defenses allows the slicer to
+					leave minimal evidence, adding <span class="eote se2"></span> to any checks by defensive slicers to
+					uncover his slicing signature in this system.</br>
+					<span>Signature Spotted (Defender):</span> A portion of the intruder's slicing signature is
+					discovered in the system, with the advantages that this entails (see SM90).
+				</td>
+			</tr>
+			<tr>
+				<td><span class="eote ad"></span> <span class="eote ad"></span> <span class="eote ad"></span> or <span
+						class="eote tr"></span></td>
+				<td>
+					<span>Spread Decoys:</span> The slicer obscures/uses false data to misdirect foes. Add <span
+						class="eote se2"></span><span class="eote se2"></span> to the next check to use the Expel User
+					or Trace User action against the slicer. If the slicer attempting the check fails with <span
+						class="eote th"></span> or <span class="eote de"></span>, it can be spent to cause that slicer
+					to acquire a piece of false data (such as an erroneous location or a fake name for the targeted
+					slicer).<br>
+					<span>Permanent Backdoor (Intruder):</span> The slicer sets up a permanent means of accessing the
+					system without needing to deal with its verification protocols. The PC may perform the Access System
+					action on this system as a maneuver and without performing a check, so long as the character has
+					access to a hard line or a connected network.<br>
+					<span>Telltale Sign (Defender):</span> The defender looks for a known user hidden amongst junk data.
+					Downgrade the difficulty of the character's next check to use the Expel User or Trace User action
+					once for each portion of the target's slicing signature the defender possesses.
+				</td>
+			</tr>
+			<tr>
+				<td><span class="eote tr"></span> <span class="eote tr"></span></td>
+				<td>
+					<span>Scripted Command (Intruder):</span> The next time that the intruder successfully performs the
+					Enact Command action this encounter, the character may resolve two commands instead of one.<br>
+					<span>Custom Encryption (Defender):</span> The defender chooses an action that the intruder has
+					already attempted. Increase the difficuly of the intruder's Computers check for that action by two
+					until the end of the encounter.
+				</td>
+			</tr>
+			<tr>
+				<td><span class="eote th"></span> or <span class="eote de"></span></td>
+				<td>
+					<span>Evidence of Presence:</span> Careless actions result in a trace of the slicer's signature
+					being left in the system. Add <span class="eote bo2"></span> to checks to acquire the slicer's
+					signature.<br>
+					<span>Authorized Access Only (Intruder):</span> The slicer stumbles into a particularly secure
+					subsystem and must take care to avoid triggering alarms. Add <span class="eote se2"></span> to the
+					intruder's next Computers check in the system.<br>
+					<span>Dummy Signatures (Defender):</span> A false trail or leftover signature confuses efforts to
+					identify the attacker. Add <span class="eote se2"></span> to the next Computers check made against
+					the intruder.
+				</td>
+			</tr>
+			<tr>
+				<td><span class="eote th"></span> <span class="eote th"></span> or <span class="eote de"></span></td>
+				<td>
+					<span>Limited Access (Intruder):</span> The Defender chooses one Slicing Action: the intruder cannot
+					perform that action during the next round this encounter.<br>
+					<span>Accidental Backdoor (Defender):</span> Moving quickly through the system to respond to the
+					threat causes the slicer to unknowlingly leave important access routes into the system. The intruder
+					may add <span class="eote bo2"></span><span class="eote bo2"></span> to a single future check to
+					slice this system. This bonus may be saved for any future check.<br>
+				</td>
+			</tr>
+			<tr>
+				<td><span class="eote th"></span>
+					<span class="eote th"></span>
+					<span class="eote th"></span> or <span class="eote de"></span></td>
+				<td>
+					<span>Major Alert (Intruder):</span> All users with full access to the system becomes aware of the
+					presence of an intruder, potentially alerting defensive slicers or dispatching security teams to
+					deal with the intruder.<br>
+					<span>Encryption (Defender):</span> A muddle of encryption ruins any elements of the attacker's
+					signature that have been gathered. The defending slicer loses all fragments of the intruder's
+					slicing signature (see SM90), along with all <span class="eote bo2"></span> from posessing them.<br>
+				</td>
+			</tr>
+			<tr>
+				<td><span class="eote de"></span> <span class="eote de"></span></td>
+				<td>
+					<span>Automatic Lockdown (Intruder):</span> Emergency secutiry measures are triggered across the
+					whole system. The entire system shuts down as if a slicer successfully performed the Lockdown
+					action.<br>
+					<span>Key Vulnerability (Defender):</span> Efforts to defend one area of the system leave another
+					critically vulnerable. The intruder may immediately resolve a command as if they had successfully
+					performed the Enact Command action (even if the system has active security programs).
+				</td>
+			</tr>
+		</table>
+		<div class="section footer">
+			<p class="aurebesh-bold">This Star Wars site is created solely to enjoy the Fantasy Flight Games tabletop
+				game. It is in no way official.</p>
+		</div>
+	</div>
+	<div class="back-to-top"><a href="#">TOP</a></div>
+	<script src="../../js/main.js"></script>
+</body>
+
+</html>
