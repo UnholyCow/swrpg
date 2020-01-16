@@ -9,12 +9,12 @@ button {
   margin: 5px;
   transition: .115s;
   &:hover { 
-    box-shadow: inset 0 0 0 3px $eoteyellow;
-    background: none;
-    color: #FFF;
+	box-shadow: inset 0 0 0 3px $eoteyellow;
+	background: none;
+	color: #FFF;
   }
   &:focus {
-    outline: none;
+	outline: none;
   }
 }
 #char-name,
@@ -33,35 +33,35 @@ button {
   opacity: 0;
   pointer-events: none;
   div {
-    width: 250px;
-    position: relative;
-    margin: 10% auto;
-    padding: 10px;
-    border-radius: 15px;
-    background: #333;
-    text-align: center;
-    input {
-      margin: 5px;
-      text-align: center;
-      display: inline-block;
-      width: 100px;
-      height: 60px;
-      border: none;
-      background-color: $eoteslate;
-      color: #FFF;
-      line-height: 30px;
-      font-size: 1.15em;
-      padding: 0;
-      height: 40px;
-      transition: box-shadow .115s;
-      &:first-child {
-        margin-left: 0;
-      }
-      &:focus {
-        box-shadow: 0 0 5px 5px $eoteyellow;
-        outline: none;
-      }
-    }
+	width: 250px;
+	position: relative;
+	margin: 10% auto;
+	padding: 10px;
+	border-radius: 15px;
+	background: #333;
+	text-align: center;
+	input {
+	  margin: 5px;
+	  text-align: center;
+	  display: inline-block;
+	  width: 100px;
+	  height: 60px;
+	  border: none;
+	  background-color: $eoteslate;
+	  color: #FFF;
+	  line-height: 30px;
+	  font-size: 1.15em;
+	  padding: 0;
+	  height: 40px;
+	  transition: box-shadow .115s;
+	  &:first-child {
+		margin-left: 0;
+	  }
+	  &:focus {
+		box-shadow: 0 0 5px 5px $eoteyellow;
+		outline: none;
+	  }
+	}
   }
 }
 .active-slot {
@@ -73,81 +73,81 @@ button {
   padding: 20px 0;
   background-color: #222;
   form {
-    display: inline-block;
+	display: inline-block;
   }
   h2 {
-    margin: 0;
+	margin: 0;
   }
   h4 {
-    display: inline-block;
+	display: inline-block;
   }
   input {
-    margin: 5px;
-    text-align: center;
-    display: inline-block;
-    // border-radius: 15px;
-    width: 100px;
-    height: 60px;
-    border: none;
-    background-color: $eoteslate;
-    color: #FFF;
-    line-height: 30px;
-    font-size: 1.15em;
-    padding: 0;
-    height: 40px;
-    transition: box-shadow .115s;
-    &:first-child {
-      margin-left: 0;
-    }
-    &:focus {
-      box-shadow: 0 0 5px 5px $eoteyellow;
-      outline: none;
-    }
+	margin: 5px;
+	text-align: center;
+	display: inline-block;
+	// border-radius: 15px;
+	width: 100px;
+	height: 60px;
+	border: none;
+	background-color: $eoteslate;
+	color: #FFF;
+	line-height: 30px;
+	font-size: 1.15em;
+	padding: 0;
+	height: 40px;
+	transition: box-shadow .115s;
+	&:first-child {
+	  margin-left: 0;
+	}
+	&:focus {
+	  box-shadow: 0 0 5px 5px $eoteyellow;
+	  outline: none;
+	}
   }
   button {
-    display: inline-block;
-    cursor: pointer;
-    border: none;
-    background: #FFF;
-    color: #222;
-    font-family: $special-font;
-    font-size: 1.2em;
-    padding: 10px;
-    margin: 5px;
-    transition: .115s;
-    cursor: pointer;
+	display: inline-block;
+	cursor: pointer;
+	border: none;
+	background: #FFF;
+	color: #222;
+	font-family: $special-font;
+	font-size: 1.2em;
+	padding: 10px;
+	margin: 5px;
+	transition: .115s;
+	cursor: pointer;
   }
   .add-ally,
   .add-enemy,
   .add-pc,
   .add-vehicle {
-    &:focus {
-      outline: none;
-    }
+	&:focus {
+	  outline: none;
+	}
   }
   .add-ally {
-    &:hover {
-      background-color: $eotedarkblue;
-      color: #FFF;
-    }
+	&:hover {
+	  background-color: $eotedarkblue;
+	  color: #FFF;
+	}
   }
   .add-pc {
-    &:hover {
-      background-color: $eotegreen;
-      color: #FFF;
-    }
+	&:hover {
+	  background-color: $eotegreen;
+	  color: #FFF;
+	}
   }
   .add-enemy {
-    &:hover {
-      background-color: $eotered;
-      color: #FFF;
-    }
+	&:hover {
+	  background-color: $eotered;
+	  color: #FFF;
+	}
   }
   .add-vehicle {
-    &:hover {
-      background-color: $eoteslate;
-      color: #FFF;
-    }
+	&:hover {
+	  background-color: $eoteslate;
+	  color: #FFF;
+	}
   }
 }
 .char-field {
@@ -165,7 +165,7 @@ button {
   padding: 7px 0 0 5px;
   float: left;
   &:hover {
-    color: $eotered;
+	color: $eotered;
   }
 }
 .char-strain-heal,
@@ -176,7 +176,7 @@ button {
   padding: 7px 5px 0 0;
   float: right;
   &:hover {
-    color: $eotegreen;
+	color: $eotegreen;
   }
 }
 .character {
@@ -186,7 +186,27 @@ button {
   transition: .115s;
   background: #333;
   &.selected-char {
-    box-shadow: inset 3px 0 0 0 $eoteyellow;
+	box-shadow: inset 3px 0 0 0 $eoteyellow;
+  }
+}
+.destiny {
+  @extend .monitor;
+  @extend .add-combatant;
+  float: left;
+
+  h2 {
+    text-align: center;
+  }
+
+  .lightSide {
+    width: 40%;
+    height: 50px;
+    background-color: $eoteblue;
+  }
+
+  .darkSide {
+    @extend .lightSide;
+    background-color: $eotered;
   }
 }
 .finished {
@@ -215,8 +235,8 @@ button {
   color: lighten($eotered, 20%);
   transition: .3s;
   &:hover {
-    background-color: lighten($eotered, 20%);
-    color: #FFF;
+	background-color: lighten($eotered, 20%);
+	color: #FFF;
   }
 }
 .remove-char {
@@ -233,7 +253,7 @@ button {
   padding: 33px 0 0 0;
   transition: .115s;
   &:hover {
-    color: lighten($eotered, 20%);
+	color: lighten($eotered, 20%);
   }
 }
 .slot {
@@ -244,8 +264,8 @@ button {
   background-color: $eoteslate;
   transition: box-shadow .115s;
   .large {
-    color: $eoteyellow;
-    margin: 0 5px 0 0;
+	color: $eoteyellow;
+	margin: 0 5px 0 0;
   }
 }
 .slot-field {
@@ -256,7 +276,13 @@ button {
   font-size: 1.5em;
   margin: 0 10px 0 0;
   span {
-    color: $eoteyellow;
+	color: $eoteyellow;
+  }
+}
+.stdBtn {
+  &:hover {
+    color: #FFF;
+    background-color: #222;
   }
 }
 .tracker {
@@ -268,9 +294,9 @@ button {
   position: relative;
   margin: 10px 0 0 0;  
   .round-counter {
-    position: absolute;
-    top: 20px;
-    right: 10px;
+	position: absolute;
+	top: 20px;
+	right: 10px;
   }
 }
 .type {
@@ -282,12 +308,12 @@ button {
   padding: 0 5px 0 0;
   margin: 0 10px 0 0;
   &.ally {
-    background-color: $eotedarkblue;
+	background-color: $eotedarkblue;
   }
   &.enemy {
-    background-color: $eotered;
+	background-color: $eotered;
   }
   &.player {
-    background-color: $eotegreen;
+	background-color: $eotegreen;
   }
 }
