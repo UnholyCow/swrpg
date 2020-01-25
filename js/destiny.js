@@ -3,13 +3,13 @@
 /* ======================================== */
 
 // Destiny Point tracker
-function Tracker() {
+function tracker() {
 	this.light = 0;
 	this.dark = 0;
 }
 
 // Creating new Tracker
-var destiny = new Tracker();
+var destiny = new tracker();
 
 /* ======================================== */
 /* =============== FUNCTIONS ============== */
@@ -17,7 +17,7 @@ var destiny = new Tracker();
 
 
 // Fetching light and dark values for Tracker
-Tracker.prototype.trackDestiny = function() {
+tracker.prototype.trackDestiny = function() {
 	light = document.getElementById("lightSide").value;
 	dark = document.getElementById("darkSide").value;
 	console.log(light, dark);
@@ -26,14 +26,14 @@ Tracker.prototype.trackDestiny = function() {
 }
 
 // End and reset current destiny Tracker
-Tracker.prototype.resetDestiny = function() {
+tracker.prototype.resetDestiny = function() {
 	light = 0;
 	dark = 0;
 	console.log(light, dark);
 }
 
 // Spend Dark Side point
-Tracker.prototype.spendDark = function() {
+tracker.prototype.spendDark = function() {
 	light++;
 	dark--;
 	this.updateUI();
@@ -43,7 +43,7 @@ Tracker.prototype.spendDark = function() {
 }
 
 // Spend Light Side point
-Tracker.prototype.spendLight = function() {
+tracker.prototype.spendLight = function() {
 	light--;
 	dark++;
 	this.updateUI();
@@ -53,13 +53,15 @@ Tracker.prototype.spendLight = function() {
 }
 
 // Reset Tracker form inputs
-Tracker.prototype.resetForm = function() {
+tracker.prototype.resetForm = function() {
 	$('#lightSide').val("");
 	$('#darkSide').val("");
+
+	this.updateUI();
 }
 
 // Update Destiny display values
-Tracker.prototype.updateUI = function() {
+tracker.prototype.updateUI = function() {
 	lightString = '<h2>' + light + '</h2>';
 	darkString = '<h2>' + dark + '</h2>';
 	
@@ -82,14 +84,15 @@ $('#begin-desTrack').click(function () {
 // ON-CLICK end and reset Tracker
 $('#end-desTrack').click(function () {
 	destiny.resetDestiny();
+	destiny.updateUI();
 })
 
 // ON-CLICK spend Dark Side point
-$('#spend-dark').click(function () {
+$('.darkSide').click(function () {
 	destiny.spendDark();
 })
 
 // ON-CLICK spend Light Side point
-$('#spend-light').click(function () {
+$('.lightSide').click(function () {
 	destiny.spendLight();
 })

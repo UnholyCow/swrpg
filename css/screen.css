@@ -1583,22 +1583,67 @@ button:focus {
           box-shadow: inset 3px 0 0 0 #DFC663;
 }
 
-.destiny {
-  float: left;
-}
-
 .destiny h2 {
   text-align: center;
 }
 
+.destiny p {
+  text-align: center;
+}
+
+.destiny .flexPanel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .destiny .lightSide, .destiny .darkSide {
-  width: 40%;
-  height: 50px;
   background-color: #76CDDA;
+  width: 150px;
+  height: 100px;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 10px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.destiny .lightSide h2, .destiny .darkSide h2 {
+  color: #FFF;
+  font-size: 4.5rem;
+}
+
+.destiny .lightSide:hover, .destiny .darkSide:hover {
+  -webkit-box-shadow: 0 0 5px 5px #DFC663;
+          box-shadow: 0 0 5px 5px #DFC663;
+  background-color: #1c5e68;
+}
+
+.destiny .lightSide:hover h2, .destiny .darkSide:hover h2 {
+  color: #DFC663;
 }
 
 .destiny .darkSide {
   background-color: #761213;
+}
+
+.destiny .darkSide:hover {
+  background-color: #4a0b0c;
 }
 
 .finished {

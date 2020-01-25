@@ -192,21 +192,56 @@ button {
 .destiny {
   @extend .monitor;
   @extend .add-combatant;
-  float: left;
 
   h2 {
     text-align: center;
   }
+  
+  p {
+    text-align: center;
+  }
+
+  .flexPanel {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+  }
 
   .lightSide {
-    width: 40%;
-    height: 50px;
     background-color: $eoteblue;
+    width: 150px;
+    height: 100px;
+    border-radius: 6px;
+    display: flex;
+    flex: 1;
+    margin: 10px;
+    justify-content: space-around;
+    align-items: center;
+    transition: .5s;
+
+    h2 {
+      color: #FFF;
+      font-size: 4.5rem;
+    }
+
+    &:hover {
+      box-shadow: 0 0 5px 5px $eoteyellow;
+      background-color: darken($eoteblue, 40%);
+      
+      h2 {
+        color: $eoteyellow;
+      }
+    }
   }
 
   .darkSide {
     @extend .lightSide;
     background-color: $eotered;
+
+    &:hover {
+      background-color: darken($eotered, 10%);
+    }
   }
 }
 .finished {
