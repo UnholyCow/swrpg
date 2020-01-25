@@ -219,6 +219,7 @@ button {
     justify-content: space-around;
     align-items: center;
     transition: .5s;
+    user-select: none;
 
     h2 {
       color: #FFF;

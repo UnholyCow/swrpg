@@ -1621,6 +1621,10 @@ button:focus {
           align-items: center;
   -webkit-transition: .5s;
   transition: .5s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .destiny .lightSide h2, .destiny .darkSide h2 {
